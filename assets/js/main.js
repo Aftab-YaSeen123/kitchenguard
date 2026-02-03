@@ -27,8 +27,8 @@ if (document.getElementById('layout-menu')) {
          showDropdownOnHover: localStorage.getItem('templateCustomizer-' + templateName + '--ShowDropdownOnHover') // If value(showDropdownOnHover) is set in local storage
             ? localStorage.getItem('templateCustomizer-' + templateName + '--ShowDropdownOnHover') === 'true' // Use the local storage value
             : window.templateCustomizer !== undefined // If value is set in config.js
-              ? window.templateCustomizer.settings.defaultShowDropdownOnHover // Use the config.js value
-              : true // Use this if you are not using the config.js and want to set value directly from here
+            ? window.templateCustomizer.settings.defaultShowDropdownOnHover // Use the config.js value
+            : true // Use this if you are not using the config.js and want to set value directly from here
       });
       // Change parameter to true if you want scroll animation
       window.Helpers.scrollToActive((animate = false));
@@ -41,6 +41,23 @@ if (document.getElementById('layout-menu')) {
       item.addEventListener('click', event => {
          event.preventDefault();
          window.Helpers.toggleCollapsed();
+         // Toggle icon inside the toggler (bx-menu <-> bx-x)
+         try {
+            const iconEls = item.querySelectorAll('i[class*="bx-"]');
+            if (iconEls.length) {
+               iconEls.forEach(icon => {
+                  if (icon.classList.contains('bx-menu')) {
+                     icon.classList.remove('bx-menu');
+                     icon.classList.add('bx-x');
+                  } else {
+                     icon.classList.remove('bx-x');
+                     icon.classList.add('bx-menu');
+                  }
+               });
+            }
+         } catch (err) {
+            // ignore if DOM structure differs
+         }
          // Enable menu state with local storage support if enableMenuLocalStorage = true from config.js
          if (config.enableMenuLocalStorage && !window.Helpers.isSmallScreen()) {
             try {
@@ -76,6 +93,28 @@ if (document.getElementById('layout-menu')) {
          }
       });
    }
+
+   // Reset toggler icons when overlay closes the sidebar
+   document.querySelectorAll('.layout-overlay.layout-menu-toggle').forEach(function (overlay) {
+      overlay.addEventListener('click', function () {
+         document.querySelectorAll('.layout-menu-toggle').forEach(function (btn) {
+            var iconEls = btn.querySelectorAll('i[class*="bx-"]');
+            iconEls.forEach(function (icon) {
+               icon.classList.remove('bx-x');
+               icon.classList.add('bx-menu');
+            });
+         });
+      });
+   });
+
+   // Ensure toggler icons start as menu icon
+   document.querySelectorAll('.layout-menu-toggle').forEach(function (btn) {
+      var iconEls = btn.querySelectorAll('i[class*="bx-"]');
+      iconEls.forEach(function (icon) {
+         icon.classList.remove('bx-x');
+         icon.classList.add('bx-menu');
+      });
+   });
 
    // Menu swipe gesture
 
