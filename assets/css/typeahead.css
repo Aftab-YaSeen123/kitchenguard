@@ -1,0 +1,88 @@
+.twitter-typeahead {
+  display: block !important;
+}
+.twitter-typeahead .tt-menu {
+  float: left;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  text-align: left;
+  list-style: none;
+  background-clip: padding-box;
+  display: none;
+}
+[dir=rtl] .twitter-typeahead .tt-menu {
+  float: right;
+  left: auto !important;
+  right: 0 !important;
+  text-align: right;
+}
+.twitter-typeahead .tt-menu .tt-suggestion {
+  text-align: inherit;
+  border: 0;
+  width: 100%;
+  display: block;
+  white-space: nowrap;
+  background: none;
+  clear: both;
+  cursor: pointer;
+}
+.twitter-typeahead .tt-menu .tt-suggestion p {
+  margin: 0;
+}
+.twitter-typeahead .tt-hint {
+  color: #999;
+}
+[dir=rtl] .twitter-typeahead .tt-input {
+  direction: rtl;
+}
+
+.light-style .twitter-typeahead .tt-menu {
+  min-width: 12rem;
+  padding: 0.3125rem 0;
+  font-size: 0.9375rem;
+  z-index: 1000;
+  margin: 0.125rem 0;
+  color: rgb(104.6, 122.2, 141.4);
+  box-shadow: 0 0.25rem 1rem rgba(161, 172, 184, 0.45);
+  background-color: #fff;
+  border-radius: 0.375rem;
+}
+.light-style .twitter-typeahead .tt-hint {
+  color: rgb(179.8, 188.6, 198.2);
+}
+.light-style .twitter-typeahead .tt-suggestion {
+  font-weight: 400;
+  color: rgb(104.6, 122.2, 141.4);
+  padding: 0.532rem 1.25rem;
+}
+.light-style .twitter-typeahead .tt-suggestion:hover, .light-style .twitter-typeahead .tt-suggestion:focus {
+  text-decoration: none;
+  color: rgb(94.14, 109.98, 127.26);
+  background-color: rgba(67, 89, 113, 0.04);
+}
+
+.dark-style .twitter-typeahead .tt-menu {
+  color: rgb(163.3, 164, 203.9);
+  min-width: 12rem;
+  padding: 0.3125rem 0;
+  margin: 0.125rem 0;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.2);
+  font-size: 0.9375rem;
+  background-color: rgb(49.6, 50, 72.8);
+  z-index: 1000;
+  border-radius: 0.375rem;
+}
+.dark-style .twitter-typeahead .tt-menu .tt-suggestion {
+  font-weight: 400;
+  color: rgb(163.3, 164, 203.9);
+  padding: 0.532rem 1.25rem;
+}
+.dark-style .twitter-typeahead .tt-menu .tt-suggestion:hover, .dark-style .twitter-typeahead .tt-menu .tt-suggestion:focus {
+  text-decoration: none;
+  color: rgb(146.97, 147.6, 183.51);
+  background-color: rgba(124, 125, 182, 0.1);
+}
+.dark-style .twitter-typeahead .tt-hint {
+  color: #7c7db6;
+}/*# sourceMappingURL=typeahead.css.map */
