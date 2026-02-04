@@ -814,6 +814,10 @@ html:not(.layout-footer-fixed) .content-wrapper {
    flex-basis: auto;
 }
 
+.menu-item.active .menu-sub a.active div {
+   font-weight: 600;
+}
+
 /* dashboard page  */
 
 .main-title {
@@ -833,7 +837,7 @@ html:not(.layout-footer-fixed) .content-wrapper {
 
 .cust-select.form-select {
    background-image: url(../../assets/img/custom/angle-down.svg);
-   padding: 10px 40px 10px 20px;
+   padding: 9px 40px 9px 20px;
 
 }
 
@@ -1561,6 +1565,30 @@ html:not(.layout-footer-fixed) .content-wrapper {
    max-height: 200px;
 }
 
+.contentEngagement canvas {
+   min-height: 400px;
+}
+
+.completionRates canvas {
+   max-height: 200px;
+}
+
+.rotate-text {
+   writing-mode: vertical-lr;
+   transform: rotate(180deg);
+   left: unset;
+   top: 0;
+   bottom: 0;
+}
+
+.rotate-text p {
+   text-orientation: mixed;
+}
+
+.min-height-280 {
+   min-height: 280px;
+}
+
 /* #kitchen guard employee  */
 .half-circle-graph .text {
    max-width: 370px;
@@ -1718,6 +1746,23 @@ html:not(.layout-footer-fixed) .content-wrapper {
    border: var(--border-gray-300);
    border-radius: 8px;
    transition: var(--transition);
+}
+
+.full-video-card .video-thumbnail {
+   width: 62%;
+}
+
+.full-video-card .video-text {
+   width: 38%;
+   padding: 20px;
+}
+
+.full-video-card img {
+   max-width: unset;
+}
+
+.full-video-card .abs-btn {
+   max-width: 65px;
 }
 
 /* media queries  */
@@ -2089,6 +2134,10 @@ html:not(.layout-footer-fixed) .content-wrapper {
       max-width: 100%;
    }
 
+   .contentEngagement canvas {
+      min-height: unset;
+   }
+
    .video-card {
       flex-direction: column;
    }
@@ -2108,6 +2157,10 @@ html:not(.layout-footer-fixed) .content-wrapper {
       display: flex;
       align-items: center;
       gap: 10px;
+   }
+
+   .min-height-280 {
+      min-height: unset;
    }
 
    .workflow-timeline::before {
