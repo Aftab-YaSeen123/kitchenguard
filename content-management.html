@@ -1,1068 +1,901 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="assets/" data-template="vertical-menu-template-no-customizer">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-<head>
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+      <title>Content Management | Kitchen Gaurd</title>
 
-   <title>Content Management | Kitchen Gaurd</title>
+      <meta name="description" content="" />
 
-   <meta name="description" content="" />
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="assets/img/custom/favicon.svg" />
 
-   <!-- Favicon -->
-   <link rel="icon" type="image/x-icon" href="assets/img/custom/favicon.svg" />
+      <!-- Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-   <!-- Fonts -->
-   <link rel="preconnect" href="https://fonts.googleapis.com" />
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <!-- Icons -->
+      <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css" />
+      <link rel="stylesheet" href="assets/vendor/fonts/flag-icons.css" />
 
-   <!-- Icons -->
-   <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css" />
-   <link rel="stylesheet" href="assets/vendor/fonts/flag-icons.css" />
+      <!-- Core CSS -->
+      <link rel="stylesheet" href="assets/vendor/css/rtl/core.css" />
+      <link rel="stylesheet" href="assets/vendor/css/rtl/theme-default.css" />
+      <link rel="stylesheet" href="assets/css/demo.css" />
+      <link rel="stylesheet" href="assets/css/style.css" />
 
-   <!-- Core CSS -->
-   <link rel="stylesheet" href="assets/vendor/css/rtl/core.css" />
-   <link rel="stylesheet" href="assets/vendor/css/rtl/theme-default.css" />
-   <link rel="stylesheet" href="assets/css/demo.css" />
-   <link rel="stylesheet" href="assets/css/style.css" />
+      <!-- Vendors CSS -->
+      <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+      <link rel="stylesheet" href="assets/vendor/libs/typeahead-js/typeahead.css" />
+      <link rel="stylesheet" href="assets/vendor/libs/apex-charts/apex-charts.css" />
+      <link rel="stylesheet" href="/libs/fancybox/fancybox.css" />
 
-   <!-- Vendors CSS -->
-   <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-   <link rel="stylesheet" href="assets/vendor/libs/typeahead-js/typeahead.css" />
-   <link rel="stylesheet" href="assets/vendor/libs/apex-charts/apex-charts.css" />
-   <link rel="stylesheet" href="/libs/fancybox/fancybox.css" />
+      <!-- Page CSS -->
 
-   <!-- Page CSS -->
+      <!-- Helpers -->
+      <script src="assets/vendor/js/helpers.js"></script>
 
-   <!-- Helpers -->
-   <script src="assets/vendor/js/helpers.js"></script>
+      <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+      <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+      <script src="assets/js/config.js"></script>
+   </head>
 
-   <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
-   <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-   <script src="assets/js/config.js"></script>
-</head>
+   <body>
+      <!-- Layout wrapper -->
+      <div class="layout-wrapper layout-content-navbar">
+         <div class="layout-container">
+            <!-- Menu -->
 
-<body>
-   <!-- Layout wrapper -->
-   <div class="layout-wrapper layout-content-navbar">
-      <div class="layout-container">
-         <!-- Menu -->
-
-         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-            <div class="app-brand demo">
-               <a href="index.html" class="app-brand-link">
-                  <div class="app-brand-logo demo">
-                     <img src="assets/img/custom/logo.svg" alt="Image" />
-                  </div>
-               </a>
-            </div>
-
-            <ul class="menu-inner py-1">
-               <!-- Dashboards -->
-               <li class="menu-item">
-                  <a href="index.html" class="menu-link">
-                     <i class="menu-icon fa-light fa-gauge-high"></i>
-                     <div data-i18n="Dashboard">Dashboard</div>
+            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+               <div class="app-brand demo">
+                  <a href="index.html" class="app-brand-link">
+                     <div class="app-brand-logo demo">
+                        <img src="assets/img/custom/logo.svg" alt="Image" />
+                     </div>
                   </a>
-               </li>
-               <li class="menu-item">
-                  <a href="franchise-oversight.html" class="menu-link">
-                     <i class="menu-icon fal fa-store-alt"></i>
-                     <div data-i18n="Franchise Oversight">Franchise Oversight</div>
-                  </a>
-               </li>
-               <li class="menu-item active">
-                  <a href="content-management.html" class="menu-link">
-                     <i class="menu-icon fa-light fa-book"></i>
-                     <div data-i18n="Content Management">Content Management</div>
-                  </a>
-               </li>
-               <li class="menu-item">
-                  <a href="user-management.html" class="menu-link">
-                     <i class="menu-icon fa-light fa-users"></i>
-                     <div data-i18n="User Management">User Management</div>
-                  </a>
-               </li>
-               <li class="menu-item">
-                  <a href="analytics-reports.html" class="menu-link">
-                     <i class="menu-icon fa-light fa-chart-line"></i>
-                     <div data-i18n="Analytics & Reports">Analytics & Reports</div>
-                  </a>
-               </li>
-               <li class="menu-item">
-                  <a href="javascript:void(0);" class="menu-link menu-toggle">
-                     <i class="menu-icon fa-regular fa-bell"></i>
-                     <div data-i18n="Notifications">Notifications</div>
-                  </a>
-                  <ul class="menu-sub">
-                     <li class="menu-item">
-                        <a href="javascript:void(0)" class="menu-link">
-                           <div data-i18n="Video Library">Video Library</div>
-                        </a>
-                     </li>
-                     <li class="menu-item">
-                        <a href="javascript:void(0)" class="menu-link">
-                           <div data-i18n="Quiz Management">Quiz Management</div>
-                        </a>
-                     </li>
-                     <li class="menu-item">
-                        <a href="javascript:void(0)" class="menu-link">
-                           <div data-i18n="VR Scenarios">VR Scenarios</div>
-                        </a>
-                     </li>
-                  </ul>
-               </li>
-               <li class="menu-header">
-                  <span class="menu-header-text">Quick Actions</span>
-               </li>
-               <li class="menu-item">
-                  <a href="javascript:void(0);" class="menu-link">
-                     <i class="menu-icon fa-light fa-plus"></i>
-                     <div data-i18n="Add Franchise ">Add Franchise</div>
-                  </a>
-               </li>
-               <li class="menu-item">
-                  <a href="javascript:void(0);" class="menu-link">
-                     <i class="menu-icon fa-regular fa-upload"></i>
-                     <div data-i18n="Upload Content">Upload Content</div>
-                  </a>
-               </li>
-               <li class="menu-item">
-                  <a href="javascript:void(0)" class="menu-link">
-                     <i class="menu-icon fa-light fa-file-export"></i>
-                     <div data-i18n="Export Report">Export Report</div>
-                  </a>
-               </li>
+               </div>
 
-               <li class="menu-header">
-                  <span class="menu-header-text">Training Modules</span>
-               </li>
-
-               <li class="menu-item">
-                  <a href="javascript:void(0)" class="menu-link">
-                     <i class="menu-icon fa-light fa-video"></i>
-                     <div data-i18n="Video Library">Video Library</div>
-                  </a>
-               </li>
-               <li class="menu-item">
-                  <a href="javascript:void(0)" class="menu-link">
-                     <i class="menu-icon fa-sharp fa-light fa-circle-question"></i>
-                     <div data-i18n="Quiz Management">Quiz Management</div>
-                  </a>
-               </li>
-               <li class="menu-item">
-                  <a href="javascript:void(0)" class="menu-link">
-                     <i class="menu-icon fa-light fa-vr-cardboard"></i>
-                     <div data-i18n="VR Scenarios">VR Scenarios</div>
-                  </a>
-               </li>
-            </ul>
-         </aside>
-         <!-- / Menu -->
-
-         <!-- Layout container -->
-         <div class="layout-page">
-            <!-- Navbar -->
-
-            <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme justify-content-between" id="layout-navbar">
-               <div class="navbar-nav-right d-flex align-items-md-center align-items-start" id="navbar-collapse">
-                  <!-- heading-->
-                  <div class="layout-menu-toggle navbar-nav align-items-xl-center d-xl-none">
-                     <a class=" nav-item nav-link p-0" href="javascript:void(0)">
-                        <i class="bx bx-menu bx-sm"></i>
+               <ul class="menu-inner py-1">
+                  <!-- Dashboards -->
+                  <li class="menu-item">
+                     <a href="index.html" class="menu-link">
+                        <i class="menu-icon fa-light fa-gauge-high"></i>
+                        <div data-i18n="Dashboard">Dashboard</div>
                      </a>
-                  </div>
-                  <div class="navbar-nav align-items-center">
-                     <div class="heading">
-                        <h1>Content Management</h1>
-                        <p>Upload, organize and manage training videos, quizzes, VR <br class="d-none d-xl-block" />tutorials, and training paths</p>
+                  </li>
+                  <li class="menu-item">
+                     <a href="franchise-oversight.html" class="menu-link">
+                        <i class="menu-icon fal fa-store-alt"></i>
+                        <div data-i18n="Franchise Oversight">Franchise Oversight</div>
+                     </a>
+                  </li>
+                  <li class="menu-item active">
+                     <a href="content-management.html" class="menu-link">
+                        <i class="menu-icon fa-light fa-book"></i>
+                        <div data-i18n="Content Management">Content Management</div>
+                     </a>
+                  </li>
+                  <li class="menu-item">
+                     <a href="user-management.html" class="menu-link">
+                        <i class="menu-icon fa-light fa-users"></i>
+                        <div data-i18n="User Management">User Management</div>
+                     </a>
+                  </li>
+                  <li class="menu-item">
+                     <a href="analytics-reports.html" class="menu-link">
+                        <i class="menu-icon fa-light fa-chart-line"></i>
+                        <div data-i18n="Analytics & Reports">Analytics & Reports</div>
+                     </a>
+                  </li>
+                  <li class="menu-item">
+                     <a href="javascript:void(0);" class="menu-link menu-toggle">
+                        <i class="menu-icon fa-regular fa-bell"></i>
+                        <div data-i18n="Notifications">Notifications</div>
+                     </a>
+                     <ul class="menu-sub">
+                        <li class="menu-item">
+                           <a href="notification.html" class="menu-link">
+                              <div data-i18n="Notification">Notification</div>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="javascript:void(0)" class="menu-link">
+                              <div data-i18n="Quiz Management">Quiz Management</div>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="javascript:void(0)" class="menu-link">
+                              <div data-i18n="VR Scenarios">VR Scenarios</div>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="menu-header">
+                     <span class="menu-header-text">Quick Actions</span>
+                  </li>
+                  <li class="menu-item">
+                     <a href="javascript:void(0);" class="menu-link">
+                        <i class="menu-icon fa-light fa-plus"></i>
+                        <div data-i18n="Add Franchise ">Add Franchise</div>
+                     </a>
+                  </li>
+                  <li class="menu-item">
+                     <a href="javascript:void(0);" class="menu-link">
+                        <i class="menu-icon fa-regular fa-upload"></i>
+                        <div data-i18n="Upload Content">Upload Content</div>
+                     </a>
+                  </li>
+                  <li class="menu-item">
+                     <a href="javascript:void(0)" class="menu-link">
+                        <i class="menu-icon fa-light fa-file-export"></i>
+                        <div data-i18n="Export Report">Export Report</div>
+                     </a>
+                  </li>
+
+                  <li class="menu-header">
+                     <span class="menu-header-text">Training Modules</span>
+                  </li>
+
+                  <li class="menu-item">
+                     <a href="javascript:void(0)" class="menu-link">
+                        <i class="menu-icon fa-light fa-video"></i>
+                        <div data-i18n="Video Library">Video Library</div>
+                     </a>
+                  </li>
+                  <li class="menu-item">
+                     <a href="javascript:void(0)" class="menu-link">
+                        <i class="menu-icon fa-sharp fa-light fa-circle-question"></i>
+                        <div data-i18n="Quiz Management">Quiz Management</div>
+                     </a>
+                  </li>
+                  <li class="menu-item">
+                     <a href="javascript:void(0)" class="menu-link">
+                        <i class="menu-icon fa-light fa-vr-cardboard"></i>
+                        <div data-i18n="VR Scenarios">VR Scenarios</div>
+                     </a>
+                  </li>
+               </ul>
+            </aside>
+            <!-- / Menu -->
+
+            <!-- Layout container -->
+            <div class="layout-page">
+               <!-- Navbar -->
+
+               <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme justify-content-between" id="layout-navbar">
+                  <div class="navbar-nav-right d-flex align-items-md-center align-items-start" id="navbar-collapse">
+                     <!-- heading-->
+                     <div class="layout-menu-toggle navbar-nav align-items-xl-center d-xl-none">
+                        <a class="nav-item nav-link p-0" href="javascript:void(0)">
+                           <i class="bx bx-menu bx-sm"></i>
+                        </a>
+                     </div>
+                     <div class="navbar-nav align-items-center">
+                        <div class="heading">
+                           <h1>Content Management</h1>
+                           <p>Upload, organize and manage training videos, quizzes, VR <br class="d-none d-xl-block" />tutorials, and training paths</p>
+                        </div>
                      </div>
                   </div>
-               </div>
 
-               <div class="header-btns">
-                  <a href="#" class="site-btn"><i class="fa-solid fa-calendar-days"></i>Storage: 847GB/1TB</a>
-                  <a href="#" class="site-btn"><i class="fa-solid fa-arrows-rotate"></i>Sync Library</a>
-                  <a href="#" class="site-btn green-btn"><i class="fa-solid fa-plus"></i>Add Content</a>
-               </div>
+                  <div class="header-btns">
+                     <a href="#" class="site-btn"><i class="fa-solid fa-calendar-days"></i>Storage: 847GB/1TB</a>
+                     <a href="#" class="site-btn"><i class="fa-solid fa-arrows-rotate"></i>Sync Library</a>
+                     <a href="#" class="site-btn green-btn"><i class="fa-solid fa-plus"></i>Add Content</a>
+                  </div>
 
-               <!-- Search Small Screens -->
-               <div class="navbar-search-wrapper search-input-wrapper d-none">
-                  <input type="text" class="form-control search-input container-xxl border-0" placeholder="Search..." aria-label="Search..." />
-                  <i class="bx bx-x bx-sm search-toggler cursor-pointer"></i>
-               </div>
-            </nav>
+                  <!-- Search Small Screens -->
+                  <div class="navbar-search-wrapper search-input-wrapper d-none">
+                     <input type="text" class="form-control search-input container-xxl border-0" placeholder="Search..." aria-label="Search..." />
+                     <i class="bx bx-x bx-sm search-toggler cursor-pointer"></i>
+                  </div>
+               </nav>
 
-            <!-- / Navbar -->
+               <!-- / Navbar -->
 
-            <!-- Content wrapper -->
-            <div class="content-wrapper py-lg-4 py-md-3 py-2">
-               <!-- Content -->
-               <div class="container-xxl flex-grow-1">
-                  <div class="main-wrapper section-space">
-                     <div class="row">
-                        <div class="col-12">
-                           <div class="card-wrapper row-gx">
-                              <div class="row gy-lg-0 gy-3">
-                                 <div class="col-lg-4 col-md-6">
-                                    <div class="card-bg drag-card">
-                                       <div class="flex-align-start">
-                                          <div class="flex-gap">
-                                             <div class="cust-icon">
-                                                <i class="fa-solid fa-video"></i>
-                                             </div>
-                                             <div class="text">
-                                                <h2>Training Videos</h2>
-                                                <p class="mt-1">MP4, AVI, MOV files</p>
-                                             </div>
-                                          </div>
-                                          <div class="dropdown icon">
-                                             <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                                             </button>
-                                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
-                                                <a class="dropdown-item" href="javascript:void(0);">View More</a>
-                                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                             </div>
-                                          </div>
-                                       </div>
-
-                                       <div class="drag-body mt-4 mb-4 dashed-border text-center position-relative">
-                                          <div class="lg-icon">
-                                             <i class="fa-solid fa-cloud-arrow-up"></i>
-                                          </div>
-                                          <div class="file-selection mt-1 mb-2">
-                                             <input type="file" id="drag-file-1" hidden />
-                                             <label for="drag-file-1">Drag & drop video files here or <br />
-                                                <span class="border-text blue-700"> browse files</span></label>
-                                          </div>
-
-                                          <p class="gray-400 font-14">Max size: 500MB per file</p>
-                                       </div>
-
-                                       <div class="drag-foot flex-between">
-                                          <p class="gray-400 font-14">127 videos uploaded</p>
-                                          <a href="#" class="site-btn"><i class="fa-solid fa-upload"></i>Upload Video</a>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="col-lg-4 col-md-6">
-                                    <div class="card-bg drag-card">
-                                       <div class="flex-align-start">
-                                          <div class="flex-gap">
-                                             <div class="cust-icon">
-                                                <i class="fa-solid fa-circle-question"></i>
-                                             </div>
-                                             <div class="text">
-                                                <h2>Quiz Moduless</h2>
-                                                <p class="mt-1">Interactive assessments</p>
-                                             </div>
-                                          </div>
-                                          <div class="dropdown icon">
-                                             <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                                             </button>
-                                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
-                                                <a class="dropdown-item" href="javascript:void(0);">View More</a>
-                                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                             </div>
-                                          </div>
-                                       </div>
-
-                                       <div class="drag-body mt-4 mb-4 dashed-border text-center position-relative">
-                                          <div class="lg-icon">
-                                             <i class="fa-solid fa-file-lines"></i>
-                                          </div>
-                                          <div class="file-selection mt-1 mb-2">
-                                             <input type="file" id="drag-file-2" hidden />
-                                             <label for="drag-file-2">Create new quiz or import <br />JSON, CSV or<span class="border-text blue-700"> from scratch</span></label>
-                                          </div>
-                                          <p class="gray-400 font-14">Multiple choice, True/False, Image-based</p>
-                                       </div>
-
-                                       <div class="drag-foot flex-between">
-                                          <p class="gray-400 font-14">89 quizzes created</p>
-                                          <a href="#" class="site-btn"><i class="fa-solid fa-plus"></i>Create Quiz</a>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="col-lg-4 col-md-6">
-                                    <div class="card-bg drag-card">
-                                       <div class="flex-align-start">
-                                          <div class="flex-gap">
-                                             <div class="cust-icon">
-                                                <i class="fa-solid fa-vr-cardboard"></i>
-                                             </div>
-                                             <div class="text">
-                                                <h2>VR Scenarios</h2>
-                                                <p class="mt-1">Immersive training</p>
-                                             </div>
-                                          </div>
-                                          <div class="dropdown icon">
-                                             <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                                             </button>
-                                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
-                                                <a class="dropdown-item" href="javascript:void(0);">View More</a>
-                                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                             </div>
-                                          </div>
-                                       </div>
-
-                                       <div class="drag-body mt-4 mb-4 dashed-border text-center position-relative">
-                                          <div class="lg-icon">
-                                             <i class="fa-solid fa-cube"></i>
-                                          </div>
-
-                                          <div class="file-selection mt-1 mb-2">
-                                             <input type="file" id="drag-file-3" hidden />
-                                             <label for="drag-file-3">Upload VR packages unity3d, <br />.apk files or <span class="border-text blue-700">web builds</span> </label>
-                                          </div>
-
-                                          <p class="gray-400 font-14">From third-party VR platforms</p>
-                                       </div>
-
-                                       <div class="drag-foot flex-between">
-                                          <p class="gray-400 font-14">34 VR scenarios</p>
-                                          <a href="#" class="site-btn"><i class="fa-solid fa-upload"></i>Upload VR</a>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="col-12">
-                           <div class="card-bg">
-                              <div class="flex-between main-title">
-                                 <div class="heading">
-                                    <h2>Content Organization & Tagging</h2>
-                                    <p>Categorize and tag content for easy discover and assignment</p>
-                                 </div>
-                                 <div class="btns flex-gap">
-                                    <a href="#" class="site-btn"><i class="fa-solid fa-sliders"></i>Filter Content</a>
-                                    <a href="#" class="site-btn green-btn"><i class="fa-solid fa-tags"></i>Manage Tags</a>
-                                 </div>
-                              </div>
+               <!-- Content wrapper -->
+               <div class="content-wrapper py-lg-4 py-md-3 py-2">
+                  <!-- Content -->
+                  <div class="container-xxl flex-grow-1">
+                     <div class="main-wrapper section-space">
+                        <div class="row">
+                           <div class="col-12">
                               <div class="card-wrapper row-gx">
                                  <div class="row gy-lg-0 gy-3">
-                                    <div class="col-lg-3 col-md-6">
-                                       <div class="card-border">
-                                          <div class="cust-header">
-                                             <div>
-                                                <h3>Select Categories</h3>
-                                             </div>
-                                          </div>
-                                          <div class="cust-body mt-3">
-                                             <div class="flex-between">
-                                                <p>Food Safety:</p>
-                                                <span class="font-weight-500">47</span>
-                                             </div>
-                                             <div class="flex-between mt-2">
-                                                <p>Equipment Safety:</p>
-                                                <span class="font-weight-500">32</span>
-                                             </div>
-                                             <div class="flex-between mt-2">
-                                                <p>Hygiene Protocols:</p>
-                                                <span class="font-weight-500">28</span>
-                                             </div>
-                                             <div class="flex-between mt-2">
-                                                <p>Emergency Procedures:</p>
-                                                <span class="font-weight-500">19</span>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                       <div class="card-border">
-                                          <div class="cust-header">
-                                             <div>
-                                                <h3>Difficulty Levels</h3>
-                                             </div>
-                                          </div>
-                                          <div class="cust-body mt-3">
-                                             <div class="flex-between">
-                                                <p>Beginner:</p>
-                                                <span class="font-weight-500">89</span>
-                                             </div>
-                                             <div class="flex-between mt-2">
-                                                <p>Intermediate:</p>
-                                                <span class="font-weight-500">67</span>
-                                             </div>
-                                             <div class="flex-between mt-2">
-                                                <p>Advanced</p>
-                                                <span class="font-weight-500">34</span>
-                                             </div>
-                                             <div class="flex-between mt-2">
-                                                <p>Expert:</p>
-                                                <span class="font-weight-500">12</span>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                       <div class="card-border">
-                                          <div class="cust-header">
-                                             <div>
-                                                <h3>Duration Range</h3>
-                                             </div>
-                                          </div>
-                                          <div class="cust-body mt-3">
-                                             <div class="flex-between">
-                                                <p>&lt; 5 minutes:</p>
-                                                <span class="font-weight-500">23</span>
-                                             </div>
-                                             <div class="flex-between mt-2">
-                                                <p>5-15 minutes:</p>
-                                                <span class="font-weight-500">78</span>
-                                             </div>
-                                             <div class="flex-between mt-2">
-                                                <p>15-30 minutes:</p>
-                                                <span class="font-weight-500">45</span>
-                                             </div>
-                                             <div class="flex-between mt-2">
-                                                <p>&gt;30 minutes:</p>
-                                                <span class="font-weight-500">16</span>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6">
-                                       <div class="card-border">
-                                          <div class="cust-header">
-                                             <div>
-                                                <h3>Content Status</h3>
-                                             </div>
-                                          </div>
-                                          <div class="cust-body mt-3">
-                                             <div class="flex-between">
-                                                <p>Published:</p>
-                                                <span class="font-weight-500">189</span>
-                                             </div>
-                                             <div class="flex-between mt-2">
-                                                <p>Draft:</p>
-                                                <span class="font-weight-500">34</span>
-                                             </div>
-                                             <div class="flex-between mt-2">
-                                                <p>Under Review:</p>
-                                                <span class="font-weight-500">18</span>
-                                             </div>
-                                             <div class="flex-between mt-2">
-                                                <p>Archived:</p>
-                                                <span class="font-weight-500">9</span>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="badges-wrapper mt-4">
-                                 <div class="flex-between mb-4">
-                                    <h2>Popular Tags</h2>
-                                    <a href="#" class="site-btn"><i class="fa-solid fa-plus"></i>Add New Tag</a>
-                                 </div>
-                                 <div class="badges-row flex-gap flex-wrap">
-                                    <span class="cust-badge green-badge">Safety-critical (47)</span>
-                                    <span class="cust-badge orange-badge">Hands-on (32)</span>
-                                    <span class="cust-badge blue-600-badge">Certification (28)</span>
-                                    <span class="cust-badge">Interactive (24)</span>
-                                    <span class="cust-badge red-badge">Assessment (21)</span>
-                                    <span class="cust-badge purple-badge">Refresh (19)</span>
-                                    <span class="cust-badge green-badge">Compliance (17)</span>
-                                    <span class="cust-badge">Leadership (14)</span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="col-12">
-                           <div class="card-bg">
-                              <div class="flex-between mb-4 flex-wrap gap-3">
-                                 <div class="heading">
-                                    <h2>Content Library</h2>
-                                    <p>Browse, edit and manage all training content</p>
-                                 </div>
-                                 <div class="filteration-row flex-grow-1 flex-gap justify-content-lg-end justify-content-start">
-                                    <a href="#" class="site-btn">Grid View <i class="fa-regular fa-grid-2"></i></a>
-                                    <select class="form-select cust-select" aria-label="Default select example">
-                                       <option selected="">All types</option>
-                                       <option>Other types</option>
-                                       <option>Half types</option>
-                                       <option>Some types</option>
-                                    </select>
-                                    <select class="form-select cust-select" aria-label="Default select example">
-                                       <option selected="">All Status</option>
-                                       <option>Half Status</option>
-                                       <option>Some Status</option>
-                                       <option>Other Status</option>
-                                    </select>
-                                    <form action="javascript:void()" class="search-field">
-                                       <input class="form-control" id="src-icon" placeholder="Search content..." aria-label="Search" />
-                                       <label for="src-icon" class="src-bar">
-                                          <i class="fa-solid fa-magnifying-glass"></i>
-                                       </label>
-                                    </form>
-                                 </div>
-                              </div>
-
-                              <div class="card-wrapper row-gx row-gy">
-                                 <div class="row">
-                                    <div class="col-lg-6">
-                                       <div class="video-card d-flex gray-200-border h-100">
-                                          <div class="text video-thumbnail black-overlay">
-                                             <img src="assets/img/custom/cook.jpg" />
-                                             <div class="absolute-text flex-between">
-                                                <span class="cust-badge green-badge font-italic">Video</span>
-                                                <div class="dropdown icon">
-                                                   <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                      <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                   </button>
-                                                   <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
-                                                      <a class="dropdown-item" href="javascript:void(0);">View More</a>
-                                                      <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                   </div>
+                                    <div class="col-lg-4 col-md-6">
+                                       <div class="card-bg drag-card">
+                                          <div class="flex-align-start">
+                                             <div class="flex-gap">
+                                                <div class="cust-icon">
+                                                   <i class="fa-solid fa-video"></i>
+                                                </div>
+                                                <div class="text">
+                                                   <h2>Training Videos</h2>
+                                                   <p class="mt-1">MP4, AVI, MOV files</p>
                                                 </div>
                                              </div>
-                                             <a href="https://youtu.be/_GE6zf_hH48?si=aO6xdd69rMSa22ES" data-fancybox>
-                                                <div class="abs-btn">
-                                                   <img src="assets/img/custom/play-btn.svg " alt="play-btn" />
+                                             <div class="dropdown icon">
+                                                <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                   <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
+                                                   <a class="dropdown-item" href="javascript:void(0);">View More</a>
+                                                   <a class="dropdown-item" href="javascript:void(0);">Delete</a>
                                                 </div>
-                                             </a>
-                                             <span class="cust-badge square-badge">12:34</span>
-                                          </div>
-
-                                          <div class="video-text">
-                                             <h4>Food Safety Fundamentals</h4>
-                                             <p>Essential food handing and safety <br />protocols for kitchen staff</p>
-                                             <p class="flex-gap mt-3 mb-2 font-weight-500">Beginner <span>&#9642;</span>12 min</p>
-                                             <div class="badge-box flex-gap flex-wrap">
-                                                <span class="cust-badge green-badge">Published</span>
-                                                <span class="cust-badge purple-v2-badge">Certification</span>
-                                                <span class="cust-badge blue-600-badge">Safety-Critical</span>
-                                             </div>
-                                             <div class="flex-between mt-4">
-                                                <div class="sm-icons flex-gap">
-                                                   <i class="fa-solid fa-play"></i>
-                                                   <i class="fa-solid fa-pen-to-square"></i>
-                                                   <i class="fa-solid fa-copy"></i>
-                                                </div>
-                                                <span class="gray-800 font-weight-500">847 Views</span>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                       <div class="video-card d-flex gray-200-border h-100">
-                                          <div class="text video-thumbnail black-overlay">
-                                             <img src="assets/img/custom/question-box.png" />
-                                             <div class="absolute-text flex-between">
-                                                <span class="cust-badge orange-badge font-italic">Quiz</span>
-                                                <div class="dropdown icon">
-                                                   <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                      <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                   </button>
-                                                   <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
-                                                      <a class="dropdown-item" href="javascript:void(0);">View More</a>
-                                                      <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                             <div class="abs-btn">
-                                                <img src="assets/img/custom/question-icon.svg" alt="Icon" />
                                              </div>
                                           </div>
 
-                                          <div class="video-text">
-                                             <h4>Hygiene Assessment</h4>
-                                             <p>Comprehensive quiz on personal hygiene and sanitation</p>
-                                             <p class="flex-gap mt-3 mb-2 font-weight-500">15 questions <span>&#9642;</span>8 min</p>
-                                             <div class="badge-box flex-gap flex-wrap">
-                                                <span class="cust-badge green-badge">Published</span>
-                                                <span class="cust-badge orange-badge">Assessment</span>
-                                                <span class="cust-badge purple-v2-badge">Hygiene</span>
+                                          <div class="drag-body mt-4 mb-4 dashed-border text-center position-relative">
+                                             <div class="lg-icon">
+                                                <i class="fa-solid fa-cloud-arrow-up"></i>
                                              </div>
-                                             <div class="flex-between mt-4">
-                                                <div class="sm-icons flex-gap">
-                                                   <i class="fa-solid fa-play"></i>
-                                                   <i class="fa-solid fa-pen-to-square"></i>
-                                                   <i class="fa-solid fa-copy"></i>
-                                                </div>
-                                                <span class="gray-800 font-weight-500">98% pass rate</span>
+                                             <div class="file-selection mt-1 mb-2">
+                                                <input type="file" id="drag-file-1" hidden />
+                                                <label for="drag-file-1"
+                                                   >Drag & drop video files here or <br />
+                                                   <span class="border-text blue-700"> browse files</span></label
+                                                >
                                              </div>
+
+                                             <p class="gray-400 font-14">Max size: 500MB per file</p>
+                                          </div>
+
+                                          <div class="drag-foot flex-between">
+                                             <p class="gray-400 font-14">127 videos uploaded</p>
+                                             <a href="#" class="site-btn"><i class="fa-solid fa-upload"></i>Upload Video</a>
                                           </div>
                                        </div>
                                     </div>
-                                    <div class="col-lg-6">
-                                       <div class="video-card d-flex gray-200-border h-100">
-                                          <div class="text video-thumbnail black-overlay">
-                                             <img src="assets/img/custom/vr-user.jpg" />
-                                             <div class="absolute-text flex-between">
-                                                <span class="cust-badge blue-badge font-italic">VR</span>
-                                                <div class="dropdown icon">
-                                                   <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                      <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                   </button>
-                                                   <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
-                                                      <a class="dropdown-item" href="javascript:void(0);">View More</a>
-                                                      <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                   </div>
+                                    <div class="col-lg-4 col-md-6">
+                                       <div class="card-bg drag-card">
+                                          <div class="flex-align-start">
+                                             <div class="flex-gap">
+                                                <div class="cust-icon">
+                                                   <i class="fa-solid fa-circle-question"></i>
+                                                </div>
+                                                <div class="text">
+                                                   <h2>Quiz Moduless</h2>
+                                                   <p class="mt-1">Interactive assessments</p>
                                                 </div>
                                              </div>
-                                             <div class="abs-btn">
-                                                <img src="assets/img/custom/vr-btn.svg" alt="Vr-btn" />
+                                             <div class="dropdown icon">
+                                                <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                   <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
+                                                   <a class="dropdown-item" href="javascript:void(0);">View More</a>
+                                                   <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                                                </div>
                                              </div>
-                                             <span class="cust-badge square-badge">VR Ready</span>
                                           </div>
 
-                                          <div class="video-text">
-                                             <h4>Emergency Response Drll</h4>
-                                             <p>Immersive fire safety and <br />evacuation training scenario</p>
-                                             <p class="flex-gap mt-3 mb-2 font-weight-500">Advanced<span>&#9642;</span>20 min</p>
-                                             <div class="badge-box flex-gap flex-wrap">
-                                                <span class="cust-badge blue-badge">Published</span>
-                                                <span class="cust-badge">Interactive</span>
-                                                <span class="cust-badge red-badge">Emergency</span>
+                                          <div class="drag-body mt-4 mb-4 dashed-border text-center position-relative">
+                                             <div class="lg-icon">
+                                                <i class="fa-solid fa-file-lines"></i>
                                              </div>
-                                             <div class="flex-between mt-4">
-                                                <div class="sm-icons flex-gap">
+                                             <div class="file-selection mt-1 mb-2">
+                                                <input type="file" id="drag-file-2" hidden />
+                                                <label for="drag-file-2">Create new quiz or import <br />JSON, CSV or<span class="border-text blue-700"> from scratch</span></label>
+                                             </div>
+                                             <p class="gray-400 font-14">Multiple choice, True/False, Image-based</p>
+                                          </div>
+
+                                          <div class="drag-foot flex-between">
+                                             <p class="gray-400 font-14">89 quizzes created</p>
+                                             <a href="#" class="site-btn"><i class="fa-solid fa-plus"></i>Create Quiz</a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                       <div class="card-bg drag-card">
+                                          <div class="flex-align-start">
+                                             <div class="flex-gap">
+                                                <div class="cust-icon">
                                                    <i class="fa-solid fa-vr-cardboard"></i>
-                                                   <i class="fa-solid fa-pen-to-square"></i>
-                                                   <i class="fa-solid fa-copy"></i>
                                                 </div>
-                                                <span class="gray-800 font-weight-500">234 Completions</span>
+                                                <div class="text">
+                                                   <h2>VR Scenarios</h2>
+                                                   <p class="mt-1">Immersive training</p>
+                                                </div>
                                              </div>
+                                             <div class="dropdown icon">
+                                                <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                   <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
+                                                   <a class="dropdown-item" href="javascript:void(0);">View More</a>
+                                                   <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                                                </div>
+                                             </div>
+                                          </div>
+
+                                          <div class="drag-body mt-4 mb-4 dashed-border text-center position-relative">
+                                             <div class="lg-icon">
+                                                <i class="fa-solid fa-cube"></i>
+                                             </div>
+
+                                             <div class="file-selection mt-1 mb-2">
+                                                <input type="file" id="drag-file-3" hidden />
+                                                <label for="drag-file-3">Upload VR packages unity3d, <br />.apk files or <span class="border-text blue-700">web builds</span> </label>
+                                             </div>
+
+                                             <p class="gray-400 font-14">From third-party VR platforms</p>
+                                          </div>
+
+                                          <div class="drag-foot flex-between">
+                                             <p class="gray-400 font-14">34 VR scenarios</p>
+                                             <a href="#" class="site-btn"><i class="fa-solid fa-upload"></i>Upload VR</a>
                                           </div>
                                        </div>
                                     </div>
-                                    <div class="col-lg-6">
-                                       <div class="video-card d-flex gray-200-border h-100">
-                                          <div class="text video-thumbnail black-overlay">
-                                             <img src="assets/img/custom/video-map.jpg" />
-                                             <div class="absolute-text flex-between">
-                                                <span class="cust-badge green-badge font-italic">Video</span>
-                                                <div class="dropdown icon">
-                                                   <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                      <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                   </button>
-                                                   <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
-                                                      <a class="dropdown-item" href="javascript:void(0);">View More</a>
-                                                      <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                             <span class="cust-badge square-badge">12:34</span>
-                                          </div>
-
-                                          <div class="video-text">
-                                             <h4>New Employee Onboarding</h4>
-                                             <p>Complete training path for new kitchen staff memeber</p>
-                                             <p class="flex-gap mt-3 mb-2 font-weight-500">5 modules <span>&#9642;</span>2 hours</p>
-                                             <div class="badge-box flex-gap flex-wrap">
-                                                <span class="cust-badge green-badge">2 hours</span>
-                                                <span class="cust-badge orange-badge">Onboarding</span>
-                                                <span class="cust-badge purple-v2-badge">Comprehensive</span>
-                                             </div>
-                                             <div class="flex-between mt-4">
-                                                <div class="sm-icons flex-gap">
-                                                   <i class="fa-solid fa-play"></i>
-                                                   <i class="fa-solid fa-pen-to-square"></i>
-                                                   <i class="fa-solid fa-copy"></i>
-                                                </div>
-                                                <span class="gray-800 font-weight-500">156 Enrolled</span>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="flex-between mt-4 flex-wrap gap-3">
-                                 <p>Showing 1-4 of 42 employees</p>
-
-                                 <div class="pagination">
-                                    <a href="#">Previous</a>
-                                    <a href="#" class="active">1</a>
-                                    <a href="#">2</a>
-                                    <a href="#">3</a>
-                                    <a href="#">Next</a>
                                  </div>
                               </div>
                            </div>
-                        </div>
 
-                        <div class="col-12">
-                           <div class="card-bg">
-                              <div class="flex-between main-title">
-                                 <div class="heading">
-                                    <h2>Training Path Builder</h2>
-                                    <p>Create structured learning sequences combining videos, quizzes and VR training</p>
+                           <div class="col-12">
+                              <div class="card-bg">
+                                 <div class="flex-between main-title">
+                                    <div class="heading">
+                                       <h2>Content Organization & Tagging</h2>
+                                       <p>Categorize and tag content for easy discover and assignment</p>
+                                    </div>
+                                    <div class="btns flex-gap">
+                                       <a href="#" class="site-btn"><i class="fa-solid fa-sliders"></i>Filter Content</a>
+                                       <a href="#" class="site-btn green-btn"><i class="fa-solid fa-tags"></i>Manage Tags</a>
+                                    </div>
                                  </div>
-                                 <div class="btns flex-gap">
-                                    <a href="#" class="site-btn"><i class="fa-solid fa-floppy-disk"></i>Save Draft</a>
-                                    <a href="#" class="site-btn green-btn"><i class="fa-solid fa-plus"></i>New Path</a>
-                                 </div>
-
-                                 <!-- iii -->
-                              </div>
-                              <div class="card-wrapper row-gx row-gy">
-                                 <div class="row">
-                                    <div class="col-lg-4">
-                                       <div class="card-bg">
-                                          <div class="inner-title mb-4">
-                                             <h3>Available Content</h3>
+                                 <div class="card-wrapper row-gx">
+                                    <div class="row gy-lg-0 gy-3">
+                                       <div class="col-lg-3 col-md-6">
+                                          <div class="card-border">
+                                             <div class="cust-header">
+                                                <div>
+                                                   <h3>Select Categories</h3>
+                                                </div>
+                                             </div>
+                                             <div class="cust-body mt-3">
+                                                <div class="flex-between">
+                                                   <p>Food Safety:</p>
+                                                   <span class="font-weight-500">47</span>
+                                                </div>
+                                                <div class="flex-between mt-2">
+                                                   <p>Equipment Safety:</p>
+                                                   <span class="font-weight-500">32</span>
+                                                </div>
+                                                <div class="flex-between mt-2">
+                                                   <p>Hygiene Protocols:</p>
+                                                   <span class="font-weight-500">28</span>
+                                                </div>
+                                                <div class="flex-between mt-2">
+                                                   <p>Emergency Procedures:</p>
+                                                   <span class="font-weight-500">19</span>
+                                                </div>
+                                             </div>
                                           </div>
-                                          <div class="card-wrapper">
-                                             <div class="row gy-3">
-                                                <div class="col-12">
-                                                   <div class="flex-between card-border align-items-start">
-                                                      <div class="flex-gap align-items-start">
+                                       </div>
+                                       <div class="col-lg-3 col-md-6">
+                                          <div class="card-border">
+                                             <div class="cust-header">
+                                                <div>
+                                                   <h3>Difficulty Levels</h3>
+                                                </div>
+                                             </div>
+                                             <div class="cust-body mt-3">
+                                                <div class="flex-between">
+                                                   <p>Beginner:</p>
+                                                   <span class="font-weight-500">89</span>
+                                                </div>
+                                                <div class="flex-between mt-2">
+                                                   <p>Intermediate:</p>
+                                                   <span class="font-weight-500">67</span>
+                                                </div>
+                                                <div class="flex-between mt-2">
+                                                   <p>Advanced</p>
+                                                   <span class="font-weight-500">34</span>
+                                                </div>
+                                                <div class="flex-between mt-2">
+                                                   <p>Expert:</p>
+                                                   <span class="font-weight-500">12</span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-lg-3 col-md-6">
+                                          <div class="card-border">
+                                             <div class="cust-header">
+                                                <div>
+                                                   <h3>Duration Range</h3>
+                                                </div>
+                                             </div>
+                                             <div class="cust-body mt-3">
+                                                <div class="flex-between">
+                                                   <p>&lt; 5 minutes:</p>
+                                                   <span class="font-weight-500">23</span>
+                                                </div>
+                                                <div class="flex-between mt-2">
+                                                   <p>5-15 minutes:</p>
+                                                   <span class="font-weight-500">78</span>
+                                                </div>
+                                                <div class="flex-between mt-2">
+                                                   <p>15-30 minutes:</p>
+                                                   <span class="font-weight-500">45</span>
+                                                </div>
+                                                <div class="flex-between mt-2">
+                                                   <p>&gt;30 minutes:</p>
+                                                   <span class="font-weight-500">16</span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-lg-3 col-md-6">
+                                          <div class="card-border">
+                                             <div class="cust-header">
+                                                <div>
+                                                   <h3>Content Status</h3>
+                                                </div>
+                                             </div>
+                                             <div class="cust-body mt-3">
+                                                <div class="flex-between">
+                                                   <p>Published:</p>
+                                                   <span class="font-weight-500">189</span>
+                                                </div>
+                                                <div class="flex-between mt-2">
+                                                   <p>Draft:</p>
+                                                   <span class="font-weight-500">34</span>
+                                                </div>
+                                                <div class="flex-between mt-2">
+                                                   <p>Under Review:</p>
+                                                   <span class="font-weight-500">18</span>
+                                                </div>
+                                                <div class="flex-between mt-2">
+                                                   <p>Archived:</p>
+                                                   <span class="font-weight-500">9</span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="badges-wrapper mt-4">
+                                    <div class="flex-between mb-4">
+                                       <h2>Popular Tags</h2>
+                                       <a href="#" class="site-btn"><i class="fa-solid fa-plus"></i>Add New Tag</a>
+                                    </div>
+                                    <div class="badges-row flex-gap flex-wrap">
+                                       <span class="cust-badge green-badge">Safety-critical (47)</span>
+                                       <span class="cust-badge orange-badge">Hands-on (32)</span>
+                                       <span class="cust-badge blue-600-badge">Certification (28)</span>
+                                       <span class="cust-badge">Interactive (24)</span>
+                                       <span class="cust-badge red-badge">Assessment (21)</span>
+                                       <span class="cust-badge purple-badge">Refresh (19)</span>
+                                       <span class="cust-badge green-badge">Compliance (17)</span>
+                                       <span class="cust-badge">Leadership (14)</span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="col-12">
+                              <div class="card-bg">
+                                 <div class="flex-between mb-4 flex-wrap gap-3">
+                                    <div class="heading">
+                                       <h2>Content Library</h2>
+                                       <p>Browse, edit and manage all training content</p>
+                                    </div>
+                                    <div class="filteration-row flex-grow-1 flex-gap justify-content-lg-end justify-content-start">
+                                       <a href="#" class="site-btn">Grid View <i class="fa-regular fa-grid-2"></i></a>
+                                       <select class="form-select cust-select" aria-label="Default select example">
+                                          <option selected="">All types</option>
+                                          <option>Other types</option>
+                                          <option>Half types</option>
+                                          <option>Some types</option>
+                                       </select>
+                                       <select class="form-select cust-select" aria-label="Default select example">
+                                          <option selected="">All Status</option>
+                                          <option>Half Status</option>
+                                          <option>Some Status</option>
+                                          <option>Other Status</option>
+                                       </select>
+                                       <form action="javascript:void()" class="search-field">
+                                          <input class="form-control" id="src-icon" placeholder="Search content..." aria-label="Search" />
+                                          <label for="src-icon" class="src-bar">
+                                             <i class="fa-solid fa-magnifying-glass"></i>
+                                          </label>
+                                       </form>
+                                    </div>
+                                 </div>
+
+                                 <div class="card-wrapper row-gx row-gy">
+                                    <div class="row">
+                                       <div class="col-lg-6">
+                                          <div class="video-card d-flex gray-200-border h-100">
+                                             <div class="text video-thumbnail black-overlay">
+                                                <img src="assets/img/custom/cook.jpg" />
+                                                <div class="absolute-text flex-between">
+                                                   <span class="cust-badge green-badge font-italic">Video</span>
+                                                   <div class="dropdown icon">
+                                                      <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                         <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                      </button>
+                                                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
+                                                         <a class="dropdown-item" href="javascript:void(0);">View More</a>
+                                                         <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <a href="https://youtu.be/_GE6zf_hH48?si=aO6xdd69rMSa22ES" data-fancybox>
+                                                   <div class="abs-btn">
+                                                      <img src="assets/img/custom/play-btn.svg " alt="play-btn" />
+                                                   </div>
+                                                </a>
+                                                <span class="cust-badge square-badge">12:34</span>
+                                             </div>
+
+                                             <div class="video-text">
+                                                <h4>Food Safety Fundamentals</h4>
+                                                <p>Essential food handing and safety <br />protocols for kitchen staff</p>
+                                                <p class="flex-gap mt-3 mb-2 font-weight-500">Beginner <span>&#9642;</span>12 min</p>
+                                                <div class="badge-box flex-gap flex-wrap">
+                                                   <span class="cust-badge green-badge">Published</span>
+                                                   <span class="cust-badge purple-v2-badge">Certification</span>
+                                                   <span class="cust-badge blue-600-badge">Safety-Critical</span>
+                                                </div>
+                                                <div class="flex-between mt-4">
+                                                   <div class="sm-icons flex-gap">
+                                                      <i class="fa-solid fa-play"></i>
+                                                      <i class="fa-solid fa-pen-to-square"></i>
+                                                      <i class="fa-solid fa-copy"></i>
+                                                   </div>
+                                                   <span class="gray-800 font-weight-500">847 Views</span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-lg-6">
+                                          <div class="video-card d-flex gray-200-border h-100">
+                                             <div class="text video-thumbnail black-overlay">
+                                                <img src="assets/img/custom/question-box.png" />
+                                                <div class="absolute-text flex-between">
+                                                   <span class="cust-badge orange-badge font-italic">Quiz</span>
+                                                   <div class="dropdown icon">
+                                                      <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                         <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                      </button>
+                                                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
+                                                         <a class="dropdown-item" href="javascript:void(0);">View More</a>
+                                                         <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="abs-btn">
+                                                   <img src="assets/img/custom/question-icon.svg" alt="Icon" />
+                                                </div>
+                                             </div>
+
+                                             <div class="video-text">
+                                                <h4>Hygiene Assessment</h4>
+                                                <p>Comprehensive quiz on personal hygiene and sanitation</p>
+                                                <p class="flex-gap mt-3 mb-2 font-weight-500">15 questions <span>&#9642;</span>8 min</p>
+                                                <div class="badge-box flex-gap flex-wrap">
+                                                   <span class="cust-badge green-badge">Published</span>
+                                                   <span class="cust-badge orange-badge">Assessment</span>
+                                                   <span class="cust-badge purple-v2-badge">Hygiene</span>
+                                                </div>
+                                                <div class="flex-between mt-4">
+                                                   <div class="sm-icons flex-gap">
+                                                      <i class="fa-solid fa-play"></i>
+                                                      <i class="fa-solid fa-pen-to-square"></i>
+                                                      <i class="fa-solid fa-copy"></i>
+                                                   </div>
+                                                   <span class="gray-800 font-weight-500">98% pass rate</span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-lg-6">
+                                          <div class="video-card d-flex gray-200-border h-100">
+                                             <div class="text video-thumbnail black-overlay">
+                                                <img src="assets/img/custom/vr-user.jpg" />
+                                                <div class="absolute-text flex-between">
+                                                   <span class="cust-badge blue-badge font-italic">VR</span>
+                                                   <div class="dropdown icon">
+                                                      <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                         <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                      </button>
+                                                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
+                                                         <a class="dropdown-item" href="javascript:void(0);">View More</a>
+                                                         <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="abs-btn">
+                                                   <img src="assets/img/custom/vr-btn.svg" alt="Vr-btn" />
+                                                </div>
+                                                <span class="cust-badge square-badge">VR Ready</span>
+                                             </div>
+
+                                             <div class="video-text">
+                                                <h4>Emergency Response Drll</h4>
+                                                <p>Immersive fire safety and <br />evacuation training scenario</p>
+                                                <p class="flex-gap mt-3 mb-2 font-weight-500">Advanced<span>&#9642;</span>20 min</p>
+                                                <div class="badge-box flex-gap flex-wrap">
+                                                   <span class="cust-badge blue-badge">Published</span>
+                                                   <span class="cust-badge">Interactive</span>
+                                                   <span class="cust-badge red-badge">Emergency</span>
+                                                </div>
+                                                <div class="flex-between mt-4">
+                                                   <div class="sm-icons flex-gap">
+                                                      <i class="fa-solid fa-vr-cardboard"></i>
+                                                      <i class="fa-solid fa-pen-to-square"></i>
+                                                      <i class="fa-solid fa-copy"></i>
+                                                   </div>
+                                                   <span class="gray-800 font-weight-500">234 Completions</span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-lg-6">
+                                          <div class="video-card d-flex gray-200-border h-100">
+                                             <div class="text video-thumbnail black-overlay">
+                                                <img src="assets/img/custom/video-map.jpg" />
+                                                <div class="absolute-text flex-between">
+                                                   <span class="cust-badge green-badge font-italic">Video</span>
+                                                   <div class="dropdown icon">
+                                                      <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                         <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                      </button>
+                                                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
+                                                         <a class="dropdown-item" href="javascript:void(0);">View More</a>
+                                                         <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <span class="cust-badge square-badge">12:34</span>
+                                             </div>
+
+                                             <div class="video-text">
+                                                <h4>New Employee Onboarding</h4>
+                                                <p>Complete training path for new kitchen staff memeber</p>
+                                                <p class="flex-gap mt-3 mb-2 font-weight-500">5 modules <span>&#9642;</span>2 hours</p>
+                                                <div class="badge-box flex-gap flex-wrap">
+                                                   <span class="cust-badge green-badge">2 hours</span>
+                                                   <span class="cust-badge orange-badge">Onboarding</span>
+                                                   <span class="cust-badge purple-v2-badge">Comprehensive</span>
+                                                </div>
+                                                <div class="flex-between mt-4">
+                                                   <div class="sm-icons flex-gap">
+                                                      <i class="fa-solid fa-play"></i>
+                                                      <i class="fa-solid fa-pen-to-square"></i>
+                                                      <i class="fa-solid fa-copy"></i>
+                                                   </div>
+                                                   <span class="gray-800 font-weight-500">156 Enrolled</span>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="flex-between mt-4 flex-wrap gap-3">
+                                    <p>Showing 1-4 of 42 employees</p>
+
+                                    <div class="pagination">
+                                       <a href="#">Previous</a>
+                                       <a href="#" class="active">1</a>
+                                       <a href="#">2</a>
+                                       <a href="#">3</a>
+                                       <a href="#">Next</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="col-12">
+                              <div class="card-bg">
+                                 <div class="flex-between main-title">
+                                    <div class="heading">
+                                       <h2>Training Path Builder</h2>
+                                       <p>Create structured learning sequences combining videos, quizzes and VR training</p>
+                                    </div>
+                                    <div class="btns flex-gap">
+                                       <a href="#" class="site-btn"><i class="fa-solid fa-floppy-disk"></i>Save Draft</a>
+                                       <a href="#" class="site-btn green-btn"><i class="fa-solid fa-plus"></i>New Path</a>
+                                    </div>
+
+                                    <!-- iii -->
+                                 </div>
+                                 <div class="card-wrapper row-gx row-gy">
+                                    <div class="row">
+                                       <div class="col-lg-4">
+                                          <div class="card-bg">
+                                             <div class="inner-title mb-4">
+                                                <h3>Available Content</h3>
+                                             </div>
+                                             <div class="card-wrapper">
+                                                <div class="row gy-3">
+                                                   <div class="col-12">
+                                                      <div class="flex-between card-border align-items-start">
+                                                         <div class="flex-gap align-items-start">
+                                                            <div class="flat-icon">
+                                                               <i class="fa-solid fa-video"></i>
+                                                            </div>
+                                                            <div class="text">
+                                                               <h4>Food Safety Basics</h4>
+                                                               <p class="flex-gap mt-1 font-weight-500">12 min<span>▪</span>Beginner</p>
+                                                            </div>
+                                                         </div>
+                                                         <div class="flat-icon"><i class="fa-solid fa-plus"></i></div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-12">
+                                                      <div class="flex-between card-border align-items-start">
+                                                         <div class="flex-gap align-items-start">
+                                                            <div class="flat-icon">
+                                                               <i class="fa-solid fa-circle-question"></i>
+                                                            </div>
+                                                            <div class="text">
+                                                               <h4>Safety Knowledge Check</h4>
+                                                               <p class="flex-gap mt-1 font-weight-500">10 questions<span>▪</span> 5 min</p>
+                                                            </div>
+                                                         </div>
+                                                         <div class="flat-icon"><i class="fa-solid fa-plus"></i></div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-12">
+                                                      <div class="flex-between card-border align-items-start">
+                                                         <div class="flex-gap align-items-start">
+                                                            <div class="flat-icon">
+                                                               <i class="fa-solid fa-vr-cardboard"></i>
+                                                            </div>
+                                                            <div class="text">
+                                                               <h4>Kitchen Safety VR</h4>
+                                                               <p class="flex-gap mt-1 font-weight-500">15 min<span>▪</span>Interactive</p>
+                                                            </div>
+                                                         </div>
+                                                         <div class="flat-icon"><i class="fa-solid fa-plus"></i></div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-12">
+                                                      <div class="flex-between card-border align-items-start">
+                                                         <div class="flex-gap align-items-start">
+                                                            <div class="flat-icon">
+                                                               <i class="fa-solid fa-video"></i>
+                                                            </div>
+                                                            <div class="text">
+                                                               <h3>Equipment Handling</h3>
+                                                               <p class="flex-gap mt-1 font-weight-500">18 min<span>▪</span>Intermediate</p>
+                                                            </div>
+                                                         </div>
+                                                         <div class="flat-icon"><i class="fa-solid fa-plus"></i></div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-lg-4">
+                                          <div class="card-bg h-100">
+                                             <div class="inner-title mb-4 flex-between">
+                                                <h3>Available Content</h3>
+                                                <p class="font-14">Drag & drop to build</p>
+                                             </div>
+                                             <div class="card-wrapper">
+                                                <div class="card-border">
+                                                   <div class="flex-between">
+                                                      <span class="circle-icon">1</span>
+                                                      <div class="flat-icon">
+                                                         <i class="fa-solid fa-xmark"></i>
+                                                      </div>
+                                                   </div>
+                                                   <div class="text">
+                                                      <div class="flex-gap mt-2 mb-2">
                                                          <div class="flat-icon">
                                                             <i class="fa-solid fa-video"></i>
                                                          </div>
-                                                         <div class="text">
-                                                            <h4>Food Safety Basics</h4>
-                                                            <p class="flex-gap mt-1 font-weight-500">12 min<span>▪</span>Beginner</p>
-                                                         </div>
+                                                         <h4>Food Safety Basics</h4>
                                                       </div>
-                                                      <div class="flat-icon"><i class="fa-solid fa-plus"></i></div>
+                                                      <p>12 min · Required · Passing score: 80%</p>
                                                    </div>
                                                 </div>
-                                                <div class="col-12">
-                                                   <div class="flex-between card-border align-items-start">
-                                                      <div class="flex-gap align-items-start">
+                                                <div class="vertical-rule"></div>
+
+                                                <div class="card-border">
+                                                   <div class="flex-between">
+                                                      <span class="circle-icon">2</span>
+                                                      <div class="flat-icon">
+                                                         <i class="fa-solid fa-xmark"></i>
+                                                      </div>
+                                                   </div>
+                                                   <div class="text">
+                                                      <div class="flex-gap mt-2 mb-2">
                                                          <div class="flat-icon">
                                                             <i class="fa-solid fa-circle-question"></i>
                                                          </div>
-                                                         <div class="text">
-                                                            <h4>Safety Knowledge Check</h4>
-                                                            <p class="flex-gap mt-1 font-weight-500">10 questions<span>▪</span> 5 min</p>
-                                                         </div>
+                                                         <h4>Safety Knowledge Check</h4>
                                                       </div>
-                                                      <div class="flat-icon"><i class="fa-solid fa-plus"></i></div>
+                                                      <p>10 questions · Required · Pass to continue</p>
                                                    </div>
                                                 </div>
-                                                <div class="col-12">
-                                                   <div class="flex-between card-border align-items-start">
-                                                      <div class="flex-gap align-items-start">
-                                                         <div class="flat-icon">
-                                                            <i class="fa-solid fa-vr-cardboard"></i>
-                                                         </div>
-                                                         <div class="text">
-                                                            <h4>Kitchen Safety VR</h4>
-                                                            <p class="flex-gap mt-1 font-weight-500">15 min<span>▪</span>Interactive</p>
-                                                         </div>
-                                                      </div>
-                                                      <div class="flat-icon"><i class="fa-solid fa-plus"></i></div>
+                                                <div class="mt-2 dashed-border text-center position-relative">
+                                                   <div class="lg-icon font-20">
+                                                      <i class="fa-solid fa-plus"></i>
                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                   <div class="flex-between card-border align-items-start">
-                                                      <div class="flex-gap align-items-start">
-                                                         <div class="flat-icon">
-                                                            <i class="fa-solid fa-video"></i>
-                                                         </div>
-                                                         <div class="text">
-                                                            <h3>Equipment Handling</h3>
-                                                            <p class="flex-gap mt-1 font-weight-500">18 min<span>▪</span>Intermediate</p>
-                                                         </div>
-                                                      </div>
-                                                      <div class="flat-icon"><i class="fa-solid fa-plus"></i></div>
+                                                   <div class="file-selection mt-1 mb-3">
+                                                      <input type="file" id="drag-file-4" hidden="" />
+                                                      <label for="drag-file-4" class="border-text green">Drop content here to add to path</label>
                                                    </div>
                                                 </div>
                                              </div>
                                           </div>
                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                       <div class="card-bg h-100">
-                                          <div class="inner-title mb-4 flex-between">
-                                             <h3>Available Content</h3>
-                                             <p class="font-14">Drag & drop to build</p>
-                                          </div>
-                                          <div class="card-wrapper">
-                                             <div class="card-border">
-                                                <div class="flex-between">
-                                                   <span class="circle-icon">1</span>
-                                                   <div class="flat-icon">
-                                                      <i class="fa-solid fa-xmark"></i>
-                                                   </div>
-                                                </div>
-                                                <div class="text">
-                                                   <div class="flex-gap mt-2 mb-2">
-                                                      <div class="flat-icon">
-                                                         <i class="fa-solid fa-video"></i>
-                                                      </div>
-                                                      <h4>Food Safety Basics</h4>
-                                                   </div>
-                                                   <p>12 min · Required · Passing score: 80%</p>
-                                                </div>
+                                       <div class="col-lg-4">
+                                          <div class="card-bg">
+                                             <div class="inner-title mb-4">
+                                                <h3>Path Configuration</h3>
                                              </div>
-                                             <div class="vertical-rule"></div>
+                                             <div class="form-wrapper">
+                                                <form action="javascript:void(0)" class="submit-form">
+                                                   <div class="row gy-4">
+                                                      <div class="col-12">
+                                                         <div class="form-group">
+                                                            <label for="name" class="form-label">Path Name</label>
+                                                            <input type="text" id="name" class="form-control" placeholder="New Employee Safety training" />
+                                                         </div>
+                                                      </div>
+                                                      <div class="col-12">
+                                                         <div class="form-group">
+                                                            <label for="description" class="form-label">Description</label>
+                                                            <textarea id="description" class="form-control" placeholder="Comprehensive safety training for new kitchen staff members" rows="3"></textarea>
+                                                         </div>
+                                                      </div>
+                                                      <div class="col-12">
+                                                         <div class="form-group">
+                                                            <label for="target2" class="form-label">Target Role</label>
+                                                            <select class="form-select cust-select" id="target2" aria-label="Default select example" fdprocessedid="lig1u">
+                                                               <option selected="">All Employees</option>
+                                                               <option>200 Employees</option>
+                                                               <option>! Employee</option>
+                                                               <option>Test</option>
+                                                            </select>
+                                                         </div>
+                                                      </div>
+                                                      <div class="col-12">
+                                                         <div class="form-group">
+                                                            <label for="number">Estimated Duration</label>
+                                                            <input type="number" id="number" placeholder="45 min" class="form-control" />
+                                                         </div>
+                                                      </div>
 
-                                             <div class="card-border">
-                                                <div class="flex-between">
-                                                   <span class="circle-icon">2</span>
-                                                   <div class="flat-icon">
-                                                      <i class="fa-solid fa-xmark"></i>
-                                                   </div>
-                                                </div>
-                                                <div class="text">
-                                                   <div class="flex-gap mt-2 mb-2">
-                                                      <div class="flat-icon">
-                                                         <i class="fa-solid fa-circle-question"></i>
+                                                      <div class="col-12">
+                                                         <div class="point-list">
+                                                            <h3>Completion Requirements</h3>
+                                                            <ul>
+                                                               <li>Complete all modules</li>
+                                                               <li>Pass all assessments</li>
+                                                               <li>Manager approval</li>
+                                                            </ul>
+                                                         </div>
                                                       </div>
-                                                      <h4>Safety Knowledge Check</h4>
-                                                   </div>
-                                                   <p>10 questions · Required · Pass to continue</p>
-                                                </div>
-                                             </div>
-                                             <div class="mt-2 dashed-border text-center position-relative">
-                                                <div class="lg-icon font-20">
-                                                   <i class="fa-solid fa-plus"></i>
-                                                </div>
-                                                <div class="file-selection mt-1 mb-3">
-                                                   <input type="file" id="drag-file-4" hidden="" />
-                                                   <label for="drag-file-4" class="border-text green">Drop content here to add to path</label>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                       <div class="card-bg">
-                                          <div class="inner-title mb-4">
-                                             <h3>Path Configuration</h3>
-                                          </div>
-                                          <div class="form-wrapper">
-                                             <form action="javascript:void(0)" class="submit-form">
-                                                <div class="row gy-4">
-                                                   <div class="col-12">
-                                                      <div class="form-group">
-                                                         <label for="name" class="form-label">Path Name</label>
-                                                         <input type="text" id="name" class="form-control" placeholder="New Employee Safety training" />
-                                                      </div>
-                                                   </div>
-                                                   <div class="col-12">
-                                                      <div class="form-group">
-                                                         <label for="description" class="form-label">Description</label>
-                                                         <textarea id="description" class="form-control" placeholder="Comprehensive safety training for new kitchen staff members" rows="3"></textarea>
-                                                      </div>
-                                                   </div>
-                                                   <div class="col-12">
-                                                      <div class="form-group">
-                                                         <label for="target" class="form-label">Target Role</label>
-                                                         <select class="form-select cust-select" id="target" aria-label="Default select example" fdprocessedid="lig1u">
-                                                            <option selected="">All Employees</option>
-                                                            <option>200 Employees</option>
-                                                            <option>! Employee</option>
-                                                            <option>Test</option>
-                                                         </select>
-                                                      </div>
-                                                   </div>
-                                                   <div class="col-12">
-                                                      <div class="form-group">
-                                                         <label for="number">Estimated Duration</label>
-                                                         <input type="number" id="number" placeholder="45 min" class="form-control" />
-                                                      </div>
-                                                   </div>
 
-                                                   <div class="col-12">
-                                                      <div class="point-list">
-                                                         <h3>Completion Requirements</h3>
-                                                         <ul>
-                                                            <li>Complete all modules</li>
-                                                            <li>Pass all assessments</li>
-                                                            <li>Manager approval</li>
-                                                         </ul>
+                                                      <div class="col-12">
+                                                         <div class="form-group">
+                                                            <label for="number-2" class="form-label">Due Date</label>
+                                                            <input type="text" id="number-2" class="form-control" placeholder="MM-DD-YYYY" />
+                                                         </div>
+                                                      </div>
+                                                      <div class="col-12">
+                                                         <div class="form-group">
+                                                            <label for="target" class="form-label">Recertification</label>
+                                                            <select class="form-select cust-select" id="target" aria-label="Default select example" fdprocessedid="lig1u">
+                                                               <option selected="">None</option>
+                                                               <option>Yes</option>
+                                                               <option>May Be</option>
+                                                            </select>
+                                                         </div>
                                                       </div>
                                                    </div>
-
-                                                   <div class="col-12">
-                                                      <div class="form-group">
-                                                         <label for="number-2" class="form-label">Due Date</label>
-                                                         <input type="text" id="number-2" class="form-control" placeholder="MM-DD-YYYY" />
-                                                      </div>
-                                                   </div>
-                                                   <div class="col-12">
-                                                      <div class="form-group">
-                                                         <label for="target" class="form-label">Recertification</label>
-                                                         <select class="form-select cust-select" id="target" aria-label="Default select example" fdprocessedid="lig1u">
-                                                            <option selected="">None</option>
-                                                            <option>Yes</option>
-                                                            <option>May Be</option>
-                                                         </select>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </form>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="col-12">
-                           <div class="card-bg">
-                              <div class="flex-between main-title">
-                                 <div class="heading">
-                                    <h2>Content Performance Analytics</h2>
-                                    <p>Track engagement, completion rates, and effectiveness of training materials</p>
-                                 </div>
-                                 <div class="btns flex-gap flex-grow-1 justify-content-lg-end">
-                                    <select class="form-select cust-select" id="target" aria-label="Default select example" fdprocessedid="lig1u">
-                                       <option selected="">Last 30 days</option>
-                                       <option>Last 15 days</option>
-                                       <option>Last 7 days</option>
-                                       <option>Last one Month</option>
-                                    </select>
-                                    <a href="#" class="site-btn green-btn"><i class="fa-solid fa-download"></i>Export Report</a>
-                                 </div>
-
-                                 <!-- iii -->
-                              </div>
-                              <div class="card-border position-relative">
-                                 <div class="inner-title mb-4">
-                                    <h2>Content Engagement Trends</h2>
-                                 </div>
-                                 <div class="rotate-text">
-                                    <p>Views / Completions</p>
-                                 </div>
-                                 <div class="image pt-2 ps-4">
-                                    <img src="assets/img/custom/graph-2.png" alt="" />
-                                 </div>
-                                 <div class="doted-list mt-4">
-                                    <ul class="justify-content-center">
-                                       <li class="purple-dot">Video Views</li>
-                                       <li class="brown-dot">Quiz Attempts</li>
-                                       <li class="orange-dot">VR Sessions</li>
-                                    </ul>
-                                 </div>
-                              </div>
-                              <div class="card-border position-relative mt-4 mb-4">
-                                 <div class="inner-title mb-4">
-                                    <h3>Completion Rates by Content Type</h3>
-                                 </div>
-                                 <div class="rotate-text">
-                                    <p>Completion Rate (%)</p>
-                                 </div>
-                                 <div class="image pt-2 ps-4">
-                                    <img src="assets/img/custom/colorful-graph-3.png" alt="" />
-                                 </div>
-                                 <div class="text-center mt-4">
-                                    <p>Completion Rate</p>
-                                 </div>
-                              </div>
-                              <div class="card-wrapper row-gx">
-                                 <div class="row gy-lg-0 gy-3">
-                                    <div class="col-lg-4 col-md-6">
-                                       <div class="card-border">
-                                          <div class="flex-gap">
-                                             <span class="flat-icon"><i class="fa-solid fa-trophy"></i></span>
-                                             <h3>Top Performing Videos</h3>
-                                          </div>
-                                          <div class="cust-body mt-4 mb-4">
-                                             <div class="flex-align-start">
-                                                <p>
-                                                   Food Safety Fundamentals <br />
-                                                   96.3% completion rate
-                                                </p>
-                                                <span>A+</span>
-                                             </div>
-                                             <div class="flex-align-start mt-2 mb-2">
-                                                <p>
-                                                   Kitchen Equipment Safety <br />
-                                                   94.1% completion rate
-                                                </p>
-                                                <span>A+</span>
-                                             </div>
-                                             <div class="flex-align-start">
-                                                <p>
-                                                   Personal Hygiene Standards <br />
-                                                   91.8% completion rate
-                                                </p>
-                                                <span>A</span>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                       <div class="card-border">
-                                          <div class="flex-gap">
-                                             <span class="flat-icon"><i class="fa-solid fa-star"></i></span>
-                                             <h3>Most Engaging Quizzes</h3>
-                                          </div>
-                                          <div class="cust-body mt-4 mb-4">
-                                             <div class="flex-align-start">
-                                                <p>
-                                                   Safety Protocol Quiz <br />
-                                                   4.8/5 average rating
-                                                </p>
-                                                <div class="rating-stars">
-                                                   <i class="fa-solid fa-star"></i>
-                                                   <i class="fa-solid fa-star"></i>
-                                                   <i class="fa-solid fa-star"></i>
-                                                   <i class="fa-solid fa-star"></i>
-                                                   <i class="fa-solid fa-star"></i>
-                                                </div>
-                                             </div>
-                                             <div class="flex-align-start mt-2 mb-2">
-                                                <p>
-                                                   Hygiene Assessment <br />
-                                                   4.6/5 average rating
-                                                </p>
-                                                <div class="rating-stars">
-                                                   <i class="fa-solid fa-star"></i>
-                                                   <i class="fa-solid fa-star"></i>
-                                                   <i class="fa-solid fa-star"></i>
-                                                   <i class="fa-solid fa-star"></i>
-                                                   <i class="fa-solid fa-star"></i>
-                                                </div>
-                                             </div>
-                                             <div class="flex-align-start">
-                                                <p>
-                                                   Equipment Knowledge Test <br />
-                                                   4.4/5 average rating
-                                                </p>
-                                                <div class="rating-stars">
-                                                   <i class="fa-solid fa-star"></i>
-                                                   <i class="fa-solid fa-star"></i>
-                                                   <i class="fa-solid fa-star"></i>
-                                                   <i class="fa-solid fa-star"></i>
-                                                   <i class="fa-regular fa-star"></i>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                       <div class="card-border">
-                                          <div class="flex-gap">
-                                             <span class="flat-icon"><i class="fa-solid fa-vr-cardboard"></i></span>
-                                             <h3>VR Training Impact</h3>
-                                          </div>
-                                          <div class="cust-body mt-4 mb-4">
-                                             <div class="flex-align-start">
-                                                <p>
-                                                   Safety Protocol Quiz <br />
-                                                   4.8/5 average rating
-                                                </p>
-                                                <span>+89%</span>
-                                             </div>
-                                             <div class="flex-align-start mt-2 mb-2">
-                                                <p>
-                                                   Hygiene Assessment <br />
-                                                   4.6/5 average rating
-                                                </p>
-                                                <span>+76%</span>
-                                             </div>
-                                             <div class="flex-align-start">
-                                                <p>
-                                                   Equipment Knowledge Test <br />
-                                                   4.4/5 average rating
-                                                </p>
-                                                <span>+68%</span>
+                                                </form>
                                              </div>
                                           </div>
                                        </div>
@@ -1070,294 +903,462 @@
                                  </div>
                               </div>
                            </div>
-                        </div>
 
-                        <div class="col-12">
-                           <div class="card-bg">
-                              <div class="flex-between main-title">
-                                 <div class="heading">
-                                    <h2>Bulk Operations</h2>
-                                    <p>Performance batch actions on multiple content items</p>
-                                 </div>
-                                 <div class="checked-btn flex-gap">
-                                    <input type="checkbox" id="checked-select" />
-                                    <label for="checked-select">Select All</label>
-                                 </div>
+                           <div class="col-12">
+                              <div class="card-bg">
+                                 <div class="flex-between main-title">
+                                    <div class="heading">
+                                       <h2>Content Performance Analytics</h2>
+                                       <p>Track engagement, completion rates, and effectiveness of training materials</p>
+                                    </div>
+                                    <div class="btns flex-gap flex-grow-1 justify-content-lg-end">
+                                       <select class="form-select cust-select" id="target" aria-label="Default select example" fdprocessedid="lig1u">
+                                          <option selected="">Last 30 days</option>
+                                          <option>Last 15 days</option>
+                                          <option>Last 7 days</option>
+                                          <option>Last one Month</option>
+                                       </select>
+                                       <a href="#" class="site-btn green-btn"><i class="fa-solid fa-download"></i>Export Report</a>
+                                    </div>
 
-                                 <!-- iii -->
-                              </div>
-                              <div class="card-wrapper row-gx">
-                                 <div class="row gy-md-0 gy-2">
-                                    <div class="col-md-3">
-                                       <div class="dashed-border flex-gap justify-content-center card-border">
-                                          <div class="flat-icon">
-                                             <i class="fa-solid fa-tags"></i>
+                                    <!-- iii -->
+                                 </div>
+                                 <div class="card-border position-relative">
+                                    <div class="inner-title mb-4">
+                                       <h2>Content Engagement Trends</h2>
+                                    </div>
+                                    <div class="rotate-text">
+                                       <p>Views / Completions</p>
+                                    </div>
+                                    <div class="contentEngagement ps-md-4 ps-4">
+                                       <canvas id="contentEngagement" class="chartjs"></canvas>
+                                    </div>
+                                    <div class="doted-list mt-4">
+                                       <ul class="justify-content-center">
+                                          <li class="purple-dot">Video Views</li>
+                                          <li class="brown-dot">Quiz Attempts</li>
+                                          <li class="orange-dot">VR Sessions</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="card-border position-relative mt-4 mb-4">
+                                    <div class="inner-title mb-4">
+                                       <h3>Completion Rates by Content Type</h3>
+                                    </div>
+                                    <div class="rotate-text">
+                                       <p>Completion Rate (%)</p>
+                                    </div>
+                                    <div class="completionRates ps-md-5 ps-4">
+                                       <canvas id="completionRates" class="chartjs"></canvas>
+                                    </div>
+                                    <div class="text-center mt-4">
+                                       <p>Completion Rate</p>
+                                    </div>
+                                 </div>
+                                 <div class="card-wrapper row-gx">
+                                    <div class="row gy-lg-0 gy-3">
+                                       <div class="col-lg-4 col-md-6">
+                                          <div class="card-border">
+                                             <div class="flex-gap">
+                                                <span class="flat-icon"><i class="fa-solid fa-trophy"></i></span>
+                                                <h3>Top Performing Videos</h3>
+                                             </div>
+                                             <div class="cust-body mt-4 mb-4">
+                                                <div class="flex-align-start">
+                                                   <p>
+                                                      Food Safety Fundamentals <br />
+                                                      96.3% completion rate
+                                                   </p>
+                                                   <span>A+</span>
+                                                </div>
+                                                <div class="flex-align-start mt-2 mb-2">
+                                                   <p>
+                                                      Kitchen Equipment Safety <br />
+                                                      94.1% completion rate
+                                                   </p>
+                                                   <span>A+</span>
+                                                </div>
+                                                <div class="flex-align-start">
+                                                   <p>
+                                                      Personal Hygiene Standards <br />
+                                                      91.8% completion rate
+                                                   </p>
+                                                   <span>A</span>
+                                                </div>
+                                             </div>
                                           </div>
-                                          <h3>Bulk Tag</h3>
                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                       <div class="dashed-border flex-gap justify-content-center card-border">
-                                          <div class="flat-icon"><i class="fa-solid fa-eye"></i></div>
-                                          <h3>Publish</h3>
+                                       <div class="col-lg-4 col-md-6">
+                                          <div class="card-border">
+                                             <div class="flex-gap">
+                                                <span class="flat-icon"><i class="fa-solid fa-star"></i></span>
+                                                <h3>Most Engaging Quizzes</h3>
+                                             </div>
+                                             <div class="cust-body mt-4 mb-4">
+                                                <div class="flex-align-start">
+                                                   <p>
+                                                      Safety Protocol Quiz <br />
+                                                      4.8/5 average rating
+                                                   </p>
+                                                   <div class="rating-stars">
+                                                      <i class="fa-solid fa-star"></i>
+                                                      <i class="fa-solid fa-star"></i>
+                                                      <i class="fa-solid fa-star"></i>
+                                                      <i class="fa-solid fa-star"></i>
+                                                      <i class="fa-solid fa-star"></i>
+                                                   </div>
+                                                </div>
+                                                <div class="flex-align-start mt-2 mb-2">
+                                                   <p>
+                                                      Hygiene Assessment <br />
+                                                      4.6/5 average rating
+                                                   </p>
+                                                   <div class="rating-stars">
+                                                      <i class="fa-solid fa-star"></i>
+                                                      <i class="fa-solid fa-star"></i>
+                                                      <i class="fa-solid fa-star"></i>
+                                                      <i class="fa-solid fa-star"></i>
+                                                      <i class="fa-solid fa-star"></i>
+                                                   </div>
+                                                </div>
+                                                <div class="flex-align-start">
+                                                   <p>
+                                                      Equipment Knowledge Test <br />
+                                                      4.4/5 average rating
+                                                   </p>
+                                                   <div class="rating-stars">
+                                                      <i class="fa-solid fa-star"></i>
+                                                      <i class="fa-solid fa-star"></i>
+                                                      <i class="fa-solid fa-star"></i>
+                                                      <i class="fa-solid fa-star"></i>
+                                                      <i class="fa-regular fa-star"></i>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                       <div class="dashed-border flex-gap justify-content-center card-border">
-                                          <div class="flat-icon"><i class="fa-solid fa-eye-slash"></i></div>
-                                          <h3>Unpublish</h3>
-                                       </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                       <div class="dashed-border flex-gap justify-content-center card-border">
-                                          <div class="flat-icon"><i class="fa-solid fa-box-archive"></i></div>
-                                          <h3>Archive</h3>
+                                       <div class="col-lg-4 col-md-6">
+                                          <div class="card-border">
+                                             <div class="flex-gap">
+                                                <span class="flat-icon"><i class="fa-solid fa-vr-cardboard"></i></span>
+                                                <h3>VR Training Impact</h3>
+                                             </div>
+                                             <div class="cust-body mt-4 mb-4">
+                                                <div class="flex-align-start">
+                                                   <p>
+                                                      Safety Protocol Quiz <br />
+                                                      4.8/5 average rating
+                                                   </p>
+                                                   <span>+89%</span>
+                                                </div>
+                                                <div class="flex-align-start mt-2 mb-2">
+                                                   <p>
+                                                      Hygiene Assessment <br />
+                                                      4.6/5 average rating
+                                                   </p>
+                                                   <span>+76%</span>
+                                                </div>
+                                                <div class="flex-align-start">
+                                                   <p>
+                                                      Equipment Knowledge Test <br />
+                                                      4.4/5 average rating
+                                                   </p>
+                                                   <span>+68%</span>
+                                                </div>
+                                             </div>
+                                          </div>
                                        </div>
                                     </div>
                                  </div>
                               </div>
-                              <div class="card-wrapper row-gx">
-                                 <div class="inner-title mt-3 mb-3">
-                                    <h3>Import & Export Tools</h3>
+                           </div>
+
+                           <div class="col-12">
+                              <div class="card-bg">
+                                 <div class="flex-between main-title">
+                                    <div class="heading">
+                                       <h2>Bulk Operations</h2>
+                                       <p>Performance batch actions on multiple content items</p>
+                                    </div>
+                                    <div class="checked-btn flex-gap">
+                                       <input type="checkbox" id="checked-select" />
+                                       <label for="checked-select">Select All</label>
+                                    </div>
+
+                                    <!-- iii -->
                                  </div>
+                                 <div class="card-wrapper row-gx">
+                                    <div class="row gy-md-0 gy-2">
+                                       <div class="col-md-3">
+                                          <div class="dashed-border flex-gap justify-content-center card-border">
+                                             <div class="flat-icon">
+                                                <i class="fa-solid fa-tags"></i>
+                                             </div>
+                                             <h3>Bulk Tag</h3>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-3">
+                                          <div class="dashed-border flex-gap justify-content-center card-border">
+                                             <div class="flat-icon"><i class="fa-solid fa-eye"></i></div>
+                                             <h3>Publish</h3>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-3">
+                                          <div class="dashed-border flex-gap justify-content-center card-border">
+                                             <div class="flat-icon"><i class="fa-solid fa-eye-slash"></i></div>
+                                             <h3>Unpublish</h3>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-3">
+                                          <div class="dashed-border flex-gap justify-content-center card-border">
+                                             <div class="flat-icon"><i class="fa-solid fa-box-archive"></i></div>
+                                             <h3>Archive</h3>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="card-wrapper row-gx">
+                                    <div class="inner-title mt-3 mb-3">
+                                       <h3>Import & Export Tools</h3>
+                                    </div>
+                                    <div class="row gy-3">
+                                       <div class="col-md-4">
+                                          <div class="card-border equal-card">
+                                             <div class="flex-gap lg-gap">
+                                                <div class="cust-icon">
+                                                   <i class="fa-solid fa-upload"></i>
+                                                </div>
+                                                <h2>Bulk Import</h2>
+                                             </div>
+                                             <div class="cust-body mt-3 mb-4">
+                                                <p>Import multiple content files with <br class="d-lg-block d-none" />metadata</p>
+                                             </div>
+                                             <div class="cust-footer">
+                                                <a href="#" class="site-btn green-outline w-100"><i class="fa-solid fa-file-import"></i>Import Content</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-4">
+                                          <div class="card-border equal-card">
+                                             <div class="flex-gap lg-gap">
+                                                <div class="cust-icon">
+                                                   <i class="fa-solid fa-download"></i>
+                                                </div>
+                                                <h2>Export Library</h2>
+                                             </div>
+                                             <div class="cust-body mt-3 mb-4">
+                                                <p>Export content metadata and analytics</p>
+                                             </div>
+                                             <div class="cust-footer">
+                                                <a href="#" class="site-btn green-outline w-100"><i class="fa-solid fa-download"></i>Export Data</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-4">
+                                          <div class="card-border equal-card">
+                                             <div class="flex-gap lg-gap">
+                                                <div class="cust-icon">
+                                                   <i class="fa-solid fa-arrows-rotate"></i>
+                                                </div>
+                                                <h2>Sync External</h2>
+                                             </div>
+                                             <div class="cust-body mt-3 mb-4">
+                                                <p>Sync with external content platforms</p>
+                                             </div>
+                                             <div class="cust-footer">
+                                                <a href="#" class="site-btn green-outline w-100"><i class="fa-solid fa-link"></i>Connect Platform</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="col-12">
+                              <div class="card-bg">
+                                 <div class="flex-between main-title">
+                                    <div class="heading">
+                                       <h2>Content Approval Workflow</h2>
+                                       <p>Review and approve content before publishing to franchises</p>
+                                    </div>
+                                    <div class="flex-gap">
+                                       <span class="cust-badge orange-badge"> 18 pending approval </span>
+                                       <a href="#" class="site-btn green-btn"><i class="fa-solid fa-eye"></i>Review Queue</a>
+                                    </div>
+                                 </div>
+
+                                 <div class="workflow-timeline">
+                                    <div class="row gy-md-0 gy-4">
+                                       <div class="col-md-3">
+                                          <div class="timeline-text">
+                                             <span class="circle-lg-icon"></span>
+                                             <p>Content Upload</p>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-3">
+                                          <div class="timeline-text">
+                                             <span class="circle-lg-icon"></span>
+                                             <p>Quality Review</p>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-3">
+                                          <div class="timeline-text">
+                                             <span class="circle-lg-icon"></span>
+                                             <p>Compliance Check</p>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-3">
+                                          <div class="timeline-text">
+                                             <span class="circle-lg-icon"></span>
+                                             <p>Published</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="card-wrapper">
+                                    <div class="row gy-3 gy-md-0">
+                                       <div class="col-md-6">
+                                          <div class="card-border">
+                                             <div class="flex-gap">
+                                                <div class="cust-icon">
+                                                   <i class="fa-solid fa-video"></i>
+                                                </div>
+                                                <div class="text">
+                                                   <h2>Advanced Equipment Training</h2>
+                                                   <p>Submitted by: Training Team · 2 hours ago</p>
+                                                </div>
+                                             </div>
+                                             <div class="cust-body mt-4 mb-4">
+                                                <div class="flex-between">
+                                                   <p>Duration:</p>
+                                                   <span class="font-weight-500">24 minutes</span>
+                                                </div>
+                                                <div class="flex-between mt-2 mb-2">
+                                                   <p>Target Level:</p>
+                                                   <span class="font-weight-500">Intermediate</span>
+                                                </div>
+                                                <div class="flex-between">
+                                                   <p>File Size:</p>
+                                                   <span class="font-weight-500">187 MB</span>
+                                                </div>
+                                             </div>
+                                             <div class="cust-foot">
+                                                <div class="flex-gap">
+                                                   <a href="#" class="site-btn w-100 gray-color-btn"><i class="fa-solid fa-xmark"></i>Reject</a>
+                                                   <a href="#" class="site-btn w-100 green-btn"><i class="fa-solid fa-check"></i>Approve</a>
+                                                </div>
+                                                <a href="#" class="site-btn mt-3 gray-800 gray-color-btn">Quality Review</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-6">
+                                          <div class="card-border">
+                                             <div class="flex-gap">
+                                                <div class="cust-icon">
+                                                   <i class="fa-solid fa-circle-question"></i>
+                                                </div>
+                                                <div class="text">
+                                                   <h2>Updated Safety Quiz</h2>
+                                                   <p>Submitted by: Content Manager · 4 hours ago</p>
+                                                </div>
+                                             </div>
+                                             <div class="cust-body mt-4 mb-4">
+                                                <div class="flex-between">
+                                                   <p>Questions:</p>
+                                                   <span class="font-weight-500">20 questions</span>
+                                                </div>
+                                                <div class="flex-between mt-2 mb-2">
+                                                   <p>Passing Score:</p>
+                                                   <span class="font-weight-500">80%</span>
+                                                </div>
+                                                <div class="flex-between">
+                                                   <p>Time Limit:</p>
+                                                   <span class="font-weight-500">15 minutes</span>
+                                                </div>
+                                             </div>
+                                             <div class="cust-foot">
+                                                <div class="flex-gap">
+                                                   <a href="#" class="site-btn w-100 gray-color-btn"><i class="fa-solid fa-xmark"></i>Reject</a>
+                                                   <a href="#" class="site-btn w-100 green-btn"><i class="fa-solid fa-check"></i>Approve</a>
+                                                </div>
+                                                <a href="#" class="site-btn mt-3 gray-800 gray-color-btn">Compliance Check</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="col-12">
+                              <div class="card-bg">
+                                 <div class="flex-between main-title">
+                                    <div class="heading">
+                                       <h2>Content Management Settings</h2>
+                                       <p>Configure system-wide content policies and automation rules</p>
+                                    </div>
+                                    <a href="#" class="site-btn green-outline"> <i class="fa-solid fa-floppy-disk"></i>Save Settings</a>
+                                 </div>
+
                                  <div class="row gy-3">
-                                    <div class="col-md-4">
-                                       <div class="card-border equal-card">
-                                          <div class="flex-gap lg-gap">
-                                             <div class="cust-icon">
-                                                <i class="fa-solid fa-upload"></i>
-                                             </div>
-                                             <h2>Bulk Import</h2>
-                                          </div>
-                                          <div class="cust-body mt-3 mb-4">
-                                             <p>Import multiple content files with <br class="d-lg-block d-none" />metadata</p>
-                                          </div>
-                                          <div class="cust-footer">
-                                             <a href="#" class="site-btn green-outline w-100"><i class="fa-solid fa-file-import"></i>Import Content</a>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                       <div class="card-border equal-card">
-                                          <div class="flex-gap lg-gap">
-                                             <div class="cust-icon">
-                                                <i class="fa-solid fa-download"></i>
-                                             </div>
-                                             <h2>Export Library</h2>
-                                          </div>
-                                          <div class="cust-body mt-3 mb-4">
-                                             <p>Export content metadata and analytics</p>
-                                          </div>
-                                          <div class="cust-footer">
-                                             <a href="#" class="site-btn green-outline w-100"><i class="fa-solid fa-download"></i>Export Data</a>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                       <div class="card-border equal-card">
-                                          <div class="flex-gap lg-gap">
-                                             <div class="cust-icon">
-                                                <i class="fa-solid fa-arrows-rotate"></i>
-                                             </div>
-                                             <h2>Sync External</h2>
-                                          </div>
-                                          <div class="cust-body mt-3 mb-4">
-                                             <p>Sync with external content platforms</p>
-                                          </div>
-                                          <div class="cust-footer">
-                                             <a href="#" class="site-btn green-outline w-100"><i class="fa-solid fa-link"></i>Connect Platform</a>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="col-12">
-                           <div class="card-bg">
-                              <div class="flex-between main-title">
-                                 <div class="heading">
-                                    <h2>Content Approval Workflow</h2>
-                                    <p>Review and approve content before publishing to franchises</p>
-                                 </div>
-                                 <div class="flex-gap">
-                                    <span class="cust-badge orange-badge"> 18 pending approval </span>
-                                    <a href="#" class="site-btn green-btn"><i class="fa-solid fa-eye"></i>Review Queue</a>
-                                 </div>
-                              </div>
-
-                              <div class="workflow-timeline">
-                                 <div class="row gy-md-0 gy-4">
-                                    <div class="col-md-3">
-                                       <div class="timeline-text">
-                                          <span class="circle-lg-icon"></span>
-                                          <p>Content Upload</p>
-                                       </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                       <div class="timeline-text">
-                                          <span class="circle-lg-icon"></span>
-                                          <p>Quality Review</p>
-                                       </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                       <div class="timeline-text">
-                                          <span class="circle-lg-icon"></span>
-                                          <p>Compliance Check</p>
-                                       </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                       <div class="timeline-text">
-                                          <span class="circle-lg-icon"></span>
-                                          <p>Published</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-
-                              <div class="card-wrapper">
-                                 <div class="row gy-3 gy-md-0">
                                     <div class="col-md-6">
-                                       <div class="card-border">
-                                          <div class="flex-gap">
-                                             <div class="cust-icon">
-                                                <i class="fa-solid fa-video"></i>
-                                             </div>
-                                             <div class="text">
-                                                <h2>Advanced Equipment Training</h2>
-                                                <p>Submitted by: Training Team · 2 hours ago</p>
-                                             </div>
+                                       <div class="card-border h-100">
+                                          <div class="inner-title mb-3">
+                                             <h3>Upload Polices</h3>
                                           </div>
-                                          <div class="cust-body mt-4 mb-4">
-                                             <div class="flex-between">
-                                                <p>Duration:</p>
-                                                <span class="font-weight-500">24 minutes</span>
-                                             </div>
-                                             <div class="flex-between mt-2 mb-2">
-                                                <p>Target Level:</p>
-                                                <span class="font-weight-500">Intermediate</span>
-                                             </div>
-                                             <div class="flex-between">
-                                                <p>File Size:</p>
-                                                <span class="font-weight-500">187 MB</span>
-                                             </div>
+                                          <div class="submit-form mt-2">
+                                             <label for="file-size">Maximum File Size</label>
+                                             <input type="number" class="form-control" id="file-size" placeholder="500 MB per file" />
                                           </div>
-                                          <div class="cust-foot">
-                                             <div class="flex-gap">
-                                                <a href="#" class="site-btn w-100 gray-color-btn"><i class="fa-solid fa-xmark"></i>Reject</a>
-                                                <a href="#" class="site-btn w-100 green-btn"><i class="fa-solid fa-check"></i>Approve</a>
-                                             </div>
-                                             <a href="#" class="site-btn mt-3 gray-800 gray-color-btn">Quality Review</a>
+                                          <div class="point-list mb-3 mt-3">
+                                             <h3>Allowed Video Formats</h3>
+                                             <ul>
+                                                <li>MP4 (recommended)</li>
+                                                <li>AVI</li>
+                                                <li>MOV</li>
+                                                <li>WMV</li>
+                                             </ul>
+                                          </div>
+                                          <div class="point-list">
+                                             <h3>Auto-processing</h3>
+                                             <ul>
+                                                <li>Generate thumbnails</li>
+                                                <li>Create multiple resolutions</li>
+                                                <li>Auto-generate subtitles</li>
+                                             </ul>
                                           </div>
                                        </div>
                                     </div>
                                     <div class="col-md-6">
                                        <div class="card-border">
-                                          <div class="flex-gap">
-                                             <div class="cust-icon">
-                                                <i class="fa-solid fa-circle-question"></i>
-                                             </div>
-                                             <div class="text">
-                                                <h2>Updated Safety Quiz</h2>
-                                                <p>Submitted by: Content Manager · 4 hours ago</p>
-                                             </div>
+                                          <div class="inner-title mb-3">
+                                             <h3>Content Policies</h3>
                                           </div>
-                                          <div class="cust-body mt-4 mb-4">
-                                             <div class="flex-between">
-                                                <p>Questions:</p>
-                                                <span class="font-weight-500">20 questions</span>
-                                             </div>
-                                             <div class="flex-between mt-2 mb-2">
-                                                <p>Passing Score:</p>
-                                                <span class="font-weight-500">80%</span>
-                                             </div>
-                                             <div class="flex-between">
-                                                <p>Time Limit:</p>
-                                                <span class="font-weight-500">15 minutes</span>
-                                             </div>
+                                          <div class="submit-form">
+                                             <label for="publication">Default Publication Status</label>
+                                             <input type="text" class="form-control" id="publication" placeholder="Draft (requires approval)" />
                                           </div>
-                                          <div class="cust-foot">
-                                             <div class="flex-gap">
-                                                <a href="#" class="site-btn w-100 gray-color-btn"><i class="fa-solid fa-xmark"></i>Reject</a>
-                                                <a href="#" class="site-btn w-100 green-btn"><i class="fa-solid fa-check"></i>Approve</a>
-                                             </div>
-                                             <a href="#" class="site-btn mt-3 gray-800 gray-color-btn">Compliance Check</a>
+                                          <div class="point-list mb-3 mt-3">
+                                             <h3>Approval Workflow</h3>
+                                             <ul>
+                                                <li>Require quality review</li>
+                                                <li>Compliance verification</li>
+                                                <li>Manager approval for VR content</li>
+                                             </ul>
                                           </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="col-12">
-                           <div class="card-bg">
-                              <div class="flex-between main-title">
-                                 <div class="heading">
-                                    <h2>Content Management Settings</h2>
-                                    <p>Configure system-wide content policies and automation rules</p>
-                                 </div>
-                                 <a href="#" class="site-btn green-outline"> <i class="fa-solid fa-floppy-disk"></i>Save Settings</a>
-                              </div>
-
-                              <div class="row gy-3">
-                                 <div class="col-md-6">
-                                    <div class="card-border h-100">
-                                       <div class="inner-title mb-3">
-                                          <h3>Upload Polices</h3>
-                                       </div>
-                                       <div class="submit-form mt-2">
-                                          <label for="file-size">Maximum File Size</label>
-                                          <input type="number" class="form-control" id="file-size" placeholder="500 MB per file" />
-                                       </div>
-                                       <div class="point-list mb-3 mt-3">
-                                          <h3>Allowed Video Formats</h3>
-                                          <ul>
-                                             <li>MP4 (recommended)</li>
-                                             <li>AVI</li>
-                                             <li>MOV</li>
-                                             <li>WMV</li>
-                                          </ul>
-                                       </div>
-                                       <div class="point-list">
-                                          <h3>Auto-processing</h3>
-                                          <ul>
-                                             <li>Generate thumbnails</li>
-                                             <li>Create multiple resolutions</li>
-                                             <li>Auto-generate subtitles</li>
-                                          </ul>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="col-md-6">
-                                    <div class="card-border">
-                                       <div class="inner-title mb-3">
-                                          <h3>Content Policies</h3>
-                                       </div>
-                                       <div class="submit-form">
-                                          <label for="publication">Default Publication Status</label>
-                                          <input type="text" class="form-control" id="publication" placeholder="Draft (requires approval)" />
-                                       </div>
-                                       <div class="point-list mb-3 mt-3">
-                                          <h3>Approval Workflow</h3>
-                                          <ul>
-                                             <li>Require quality review</li>
-                                             <li>Compliance verification</li>
-                                             <li>Manager approval for VR content</li>
-                                          </ul>
-                                       </div>
-                                       <div class="point-list mb-3">
-                                          <h3>Version Control</h3>
-                                          <ul>
-                                             <li>Keep version history</li>
-                                             <li>Auto-backup before updates</li>
-
-                                          </ul>
-                                       </div>
-                                       <div class="submit-form">
-                                          <label for="version">Maximum version to keep</label>
-                                          <input type="number" class="form-control" id="version" placeholder="5" />
+                                          <div class="point-list mb-3">
+                                             <h3>Version Control</h3>
+                                             <ul>
+                                                <li>Keep version history</li>
+                                                <li>Auto-backup before updates</li>
+                                             </ul>
+                                          </div>
+                                          <div class="submit-form">
+                                             <label for="version">Maximum version to keep</label>
+                                             <input type="number" class="form-control" id="version" placeholder="5" />
+                                          </div>
                                        </div>
                                     </div>
                                  </div>
@@ -1366,69 +1367,68 @@
                         </div>
                      </div>
                   </div>
+
+                  <!-- Footer -->
+                  <footer class="content-footer footer mb-4">
+                     <div class="container-xxl">
+                        <div class="card-bg w-100 d-flex flex-wrap justify-content-lg-between justify-content-center flex-md-row gap-lg-0 gap-2 text-center">
+                           <div class="mb-2 mb-md-0">
+                              <p><a href="index.html">&copy; 2025 Kitchen Guard Training Platform.</a> All rights reserved.</p>
+                           </div>
+                           <div>
+                              <a href="#" class="footer-link me-lg-3 me-2">Privacy Policy</a>
+                              <a href="#" class="footer-link me-lg-3 me-2">Terms of Service</a>
+                              <a href="#" class="footer-link me-lg-3 me-2">Support</a>
+                              <a href="#" class="footer-link">Documentation</a>
+                           </div>
+                        </div>
+                     </div>
+                  </footer>
+                  <!-- / Footer -->
+
+                  <div class="content-backdrop fade"></div>
                </div>
-
-               <!-- Footer -->
-               <footer class="content-footer footer mb-4">
-                  <div class="container-xxl">
-                     <div class="card-bg w-100 d-flex flex-wrap justify-content-lg-between justify-content-center flex-md-row gap-lg-0 gap-2 text-center">
-                        <div class="mb-2 mb-md-0">
-                           <p><a href="index.html">&copy; 2025 Kitchen Guard Training Platform.</a> All rights reserved.</p>
-                        </div>
-                        <div>
-                           <a href="#" class="footer-link me-lg-3 me-2">Privacy Policy</a>
-                           <a href="#" class="footer-link me-lg-3 me-2">Terms of Service</a>
-                           <a href="#" class="footer-link me-lg-3 me-2">Support</a>
-                           <a href="#" class="footer-link">Documentation</a>
-                        </div>
-                     </div>
-                  </div>
-               </footer>
-               <!-- / Footer -->
-
-               <div class="content-backdrop fade"></div>
+               <!-- Content wrapper -->
             </div>
-            <!-- Content wrapper -->
+            <!-- / Layout page -->
          </div>
-         <!-- / Layout page -->
+
+         <!-- Overlay -->
+         <div class="layout-overlay layout-menu-toggle"></div>
+
+         <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+         <div class="drag-target"></div>
       </div>
+      <!-- / Layout wrapper -->
 
-      <!-- Overlay -->
-      <div class="layout-overlay layout-menu-toggle"></div>
+      <!-- Core JS -->
+      <!-- build:js assets/vendor/js/core.js -->
+      <script src="assets/vendor/libs/jquery/jquery.js"></script>
+      <script src="assets/vendor/libs/popper/popper.js"></script>
+      <script src="assets/vendor/js/bootstrap.js"></script>
+      <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
-      <!-- Drag Target Area To SlideIn Menu On Small Screens -->
-      <div class="drag-target"></div>
-   </div>
-   <!-- / Layout wrapper -->
+      <script src="assets/vendor/libs/hammer/hammer.js"></script>
+      <script src="assets/vendor/libs/i18n/i18n.js"></script>
+      <script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
 
-   <!-- Core JS -->
-   <!-- build:js assets/vendor/js/core.js -->
-   <script src="assets/vendor/libs/jquery/jquery.js"></script>
-   <script src="assets/vendor/libs/popper/popper.js"></script>
-   <script src="assets/vendor/js/bootstrap.js"></script>
-   <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+      <script src="assets/vendor/js/menu.js"></script>
+      <!-- endbuild -->
 
-   <script src="assets/vendor/libs/hammer/hammer.js"></script>
-   <script src="assets/vendor/libs/i18n/i18n.js"></script>
-   <script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
+      <!-- Vendors JS -->
+      <script src="assets/vendor/libs/chartjs/chartjs.js"></script>
 
-   <script src="assets/vendor/js/menu.js"></script>
-   <!-- endbuild -->
+      <!-- Main JS -->
+      <script src="assets/js/main.js"></script>
 
-   <!-- Vendors JS -->
-   <script src="assets/vendor/libs/apex-charts/apexcharts.js"></script>
+      <!-- Page JS -->
+      <script src="assets/js/dashboards-crm.js"></script>
+      <script src="assets/js/charts-custmize.js"></script>
 
-   <!-- Main JS -->
-   <script src="assets/js/main.js"></script>
-
-   <!-- Page JS -->
-   <script src="assets/js/dashboards-crm.js"></script>
-
-   <!-- fancybox -->
-   <script src="/libs/fancybox/fancybox.js"></script>
-   <script>
-      Fancybox.bind('[data-fancybox]', {});
-   </script>
-</body>
-
+      <!-- fancybox -->
+      <script src="libs/fancybox/fancybox.js"></script>
+      <script>
+         Fancybox.bind('[data-fancybox]', {});
+      </script>
+   </body>
 </html>

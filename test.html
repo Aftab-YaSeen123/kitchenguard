@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Completion Rate Chart</title>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <style>
+         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffffff;
+         }
+         .chart-container {
+            width: 80%;
+            max-width: 800px;
+         }
+         h2 {
+            text-align: center;
+            color: #666;
+            font-weight: 400;
+            margin-bottom: 20px;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="chart-container">
+         <canvas id="completionChart"></canvas>
+         <p style="text-align: center; color: #888; font-size: 14px; margin-top: 10px">Completion Rate</p>
+      </div>
+
+      <script>
+         const ctx = document.getElementById('completionChart').getContext('2d');
+
+         // Values and Colors mapped from image_2766e7.png
+         const dataValues = [92, 80, 80, 85]; // Approximate percentages
+         const barColors = [
+            '#00bcd4', // Cyan for Videos
+            '#e67e22', // Orange for Quizzes
+            '#8bc34a', // Lime Green for VR Training
+            '#8e24aa' // Purple for Training Path
+         ];
+
+         new Chart(ctx, {
+            type: 'bar',
+            data: {
+               labels: ['Videos', 'Quizzes', 'VR Training', 'Training Path'], //
+               datasets: [
+                  {
+                     data: dataValues,
+                     backgroundColor: barColors,
+                     borderRadius: 8, // Rounded corners on bars
+                     borderSkipped: false,
+                     barThickness: 70 // Adjust thickness to match visual
+                  }
+               ]
+            },
+            options: {
+               responsive: true,
+               plugins: {
+                  legend: {
+                     display: false // No legend in original image
+                  },
+                  tooltip: {
+                     enabled: true
+                  }
+               },
+               scales: {
+                  y: {
+                     beginAtZero: true,
+                     max: 100, // Scale 0 to 100
+                     ticks: {
+                        stepSize: 50, // 0, 50, 100 labels
+                        color: '#999'
+                     },
+                     grid: {
+                        drawBorder: false,
+                        color: '#f0f0f0' // Subtle horizontal lines
+                     }
+                  },
+                  x: {
+                     grid: {
+                        display: false // Remove vertical grid lines
+                     },
+                     ticks: {
+                        color: '#666'
+                     }
+                  }
+               }
+            }
+         });
+      </script>
+   </body>
+</html>
