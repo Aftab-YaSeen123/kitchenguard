@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Home | Kitchen Gaurd</title>
+    <title>Video Library | Kitchen Gaurd</title>
 
     <meta name="description" content="" />
 
@@ -62,7 +62,7 @@
                     <li class="menu-header">
                         <span class="menu-header-text">Dashboard</span>
                     </li>
-                    <li class="menu-item active">
+                    <li class="menu-item">
                         <a href="javascipt:void(0)" class="menu-link">
                             <i class="menu-icon fa-regular fa-house"></i>
                             <div data-i18n="Overview">Overview</div>
@@ -89,7 +89,7 @@
                     <li class="menu-header">
                         <span class="menu-header-text">My Training</span>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item active">
                         <a href="javascipt:void(0)" class="menu-link">
                             <i class="menu-icon fa-regular fa-play"></i>
                             <div data-i18n="Video Library">Video Library</div>
@@ -279,131 +279,71 @@
                                 <div class="col-12">
                                     <div class="card-bg">
                                         <div class="flex-between">
-                                            <div class="left-content">
-                                                <div class="flex-gap-start lg-gap mb-3">
-                                                    <div class="image lg-size">
-                                                        <img src="../assets/img/custom/boy-1.png" alt="User">
+                                            <div class="content">
+                                                <div class="text mb-3">
+                                                    <h1>Video Training Library</h1>
+                                                    <p class="mt-1 font-14">Watch assigned videos, track progress, and mark modules as complete</p>
+                                                </div>
+                                                <div class="flex-gap gap-40">
+                                                    <div class="flex-gap sm-gap">
+                                                        <i class="fa-solid fa-circle-play green"></i>
+                                                        <p>24 of 30 videos completes</p>
                                                     </div>
-                                                    <div class="content">
-                                                        <div class="text mb-3">
-                                                            <h1>Good Morning, Marcus! </h1>
-                                                            <p class="mt-1 font-14">Ready to continue your kitchen safety journey?</p>
-                                                        </div>
-                                                        <div class="flex-gap gap-4">
-                                                            <div class="flex-gap sm-gap">
-                                                                <i class="fa-solid  green fa-calendar-check"></i>
-                                                                <p>Last login: Today, 8:30 Am</p>
-                                                            </div>
-                                                            <div class="flex-gap sm-gap">
-                                                                <i class="fa-solid  green fa-calendar-check"></i>
-                                                                <p>Training role: Kitchen Staff Level 2</p>
-                                                            </div>
-                                                        </div>
+                                                    <div class="flex-gap sm-gap">
+                                                        <i class="fa-solid fa-clock green"></i>
+                                                        <p>6 videos remaining</p>
+                                                    </div>
+                                                    <div class="flex-gap sm-gap">
+                                                        <i class="fa-solid fa-calendar green"></i>
+                                                        <p>Next due: Today</p>
                                                     </div>
                                                 </div>
-
                                             </div>
+
                                             <div class="lg-badge white column-flex gap-1">
-                                                <i class="fa-solid fa-fire"></i>
-                                                <h2 class="font-24 mt-1">7 Days</h2>
-                                                <p>Training Streak</p>
+                                                <h2 class="font-24 mt-1">80%</h2>
+                                                <p>Videos Complete</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="card-wrapper row-gx row-gy">
-                                        <div class="row">
-                                            <!-- card  -->
-                                            <div class="col-lg-3 col-md-6">
-                                                <div class="card-bg">
-                                                    <div class="cust-icon">
-                                                        <i class="fa-solid fa-chart-line"></i>
-                                                    </div>
-                                                    <div class="highlight text mt-xl-4 mt-3">
-                                                        <span>Overall Progress</span>
-                                                        <h3>78%</h3>
-                                                        <p class="green">+ 12% this week</p>
+                                    <div class="card-bg">
+                                        <div class="flex-between">
+                                            <div class="filteration-row flex-gap">
+                                                <select class="form-select cust-select" aria-label="Default select example" fdprocessedid="p6etmm">
+                                                    <option selected="">All Categories</option>
+                                                    <option>Half Categories</option>
+                                                    <option>Some Categories</option>
+                                                    <option>1 Categories</option>
+                                                </select>
+                                                <select class="form-select cust-select" aria-label="Default select example" fdprocessedid="7tl41">
+                                                    <option selected="">All Difficulty</option>
+                                                    <option>Half Status</option>
+                                                    <option>Some Status</option>
+                                                    <option>1 Status</option>
+                                                </select>
+                                                <select class="form-select cust-select" aria-label="Default select example" fdprocessedid="7tl41">
+                                                    <option selected="">All Status</option>
+                                                    <option>Half Difficulty</option>
+                                                    <option>Some Difficulty</option>
+                                                    <option>1 Difficulty</option>
+                                                </select>
 
-                                                    </div>
-                                                </div>
                                             </div>
-
-                                            <!-- card  -->
-                                            <div class="col-lg-3 col-md-6">
-                                                <div class="card-bg">
+                                            <div class="filteration flex-gap">
+                                                <div class="sorting-btns v2 flex-gap">
+                                                    <div class="cust-icon active">
+                                                        <i class="fa-solid fa-grid"></i>
+                                                    </div>
                                                     <div class="cust-icon">
-                                                        <i class="fa-solid fa-play"></i>
-                                                    </div>
-                                                    <div class="highlight text mt-xl-4 mt-3">
-                                                        <span>Videos Completed</span>
-                                                        <h3>24/30</h3>
-                                                        <p class="green">6 remaining</p>
+                                                        <i class="fa-solid fa-list"></i>
                                                     </div>
                                                 </div>
-                                            </div>
+                                                <span class="sort-icon flex-gap sm-gap">
+                                                    <i class="fa-solid fa-angles-up-down"></i>Sort by Due Date
+                                                </span>
 
-                                            <!-- card  -->
-                                            <div class="col-lg-3 col-md-6">
-                                                <div class="card-bg">
-                                                    <div class="cust-icon">
-                                                        <i class="fa-solid fa-circle-question"></i>
-                                                    </div>
-                                                    <div class="highlight text mt-xl-4 mt-3">
-                                                        <span>Quiz Average</span>
-                                                        <h3>92%</h3>
-                                                        <p class="green">Excellent!</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- card  -->
-                                            <div class="col-lg-3 col-md-6">
-                                                <div class="card-bg">
-                                                    <div class="cust-icon">
-                                                        <i class="fa-solid fa-vr-cardboard"></i>
-                                                    </div>
-                                                    <div class="highlight text mt-xl-4 mt-3">
-                                                        <span>VR Sessions</span>
-                                                        <h3>78%</h3>
-                                                        <p class="green">+ 12% this week</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="card-wrapper">
-                                        <div class="row row-gx">
-                                            <div class="col-md-6">
-                                                <div class="card-bg h-100 half-circle-graph">
-                                                    <div class="inner-title margin-bottom">
-                                                        <h2>Training Path Progress</h2>
-                                                    </div>
-                                                    <div class="image half-circle-graph">
-                                                        <img src="../assets/img/custom/half-circle-graph.png" style="max-width: 370px; margin: auto; display: block;" alt="Image">
-                                                    </div>
-                                                    <div class="flex-between text">
-                                                        <p class="font-26 font-weight-500">0</p>
-                                                        <p class="font-26 font-weight-500">100</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="card-bg h-100">
-                                                    <div class="inner-title margin-bottom">
-                                                        <h2>Weekly Activity</h2>
-                                                    </div>
-                                                    <div class="image">
-                                                        <img src="../assets/img/custom/purple-graph.png" alt="Graph">
-                                                    </div>
-                                                    <div class="doted-list mt-4">
-                                                        <ul class="justify-content-center">
-                                                            <li class="purple-dot">Training Time</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -429,7 +369,7 @@
                                                                 <h2 class="mb-1">Fire Safety Quiz</h2>
                                                                 <p>Test your knowledge on kitchen fire prevention and emergency procedures.</p>
                                                             </div>
-                                                            <div class="flex-gap xgap-4 mt-3">
+                                                            <div class="flex-gap xxl-gap mt-3">
                                                                 <div class="flex-gap sm-gap">
                                                                     <i class="fa-solid  green fa-calendar-check"></i>
                                                                     <p>15 minutes</p>
@@ -459,7 +399,7 @@
                                                                 <h2 class="mb-1">Knife Safety Training</h2>
                                                                 <p>Learn proper knife handing techniques <br>and safety protocols.</p>
                                                             </div>
-                                                            <div class="flex-gap xgap-4 mt-3">
+                                                            <div class="flex-gap xxl-gap mt-3">
                                                                 <div class="flex-gap sm-gap">
                                                                     <i class="fa-solid  green fa-calendar-check"></i>
                                                                     <p>25 minutes</p>
@@ -489,7 +429,7 @@
                                                                 <h2 class="mb-1">VR Emergency Response</h2>
                                                                 <p>Practice emergency procedures in a <br>virtual kitchen environment.</p>
                                                             </div>
-                                                            <div class="flex-gap xgap-4 mt-3">
+                                                            <div class="flex-gap xxl-gap mt-3">
                                                                 <div class="flex-gap sm-gap">
                                                                     <i class="fa-solid  green fa-calendar-check"></i>
                                                                     <p>30 minutes</p>
