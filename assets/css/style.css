@@ -159,6 +159,14 @@ img {
    box-shadow: unset !important;
 }
 
+.rounded-8 {
+   border-radius: 8px !important;
+}
+
+.rounded-12 {
+   border-radius: 12px !important;
+}
+
 .gray-200-border {
    border: var(--border-gray-200) !important;
 }
@@ -302,7 +310,7 @@ img {
 }
 
 .margin-bottom {
-   margin-bottom: 32px;
+   margin-bottom: 32px !important;
 }
 
 .margin-top {
@@ -838,7 +846,6 @@ html:not(.layout-footer-fixed) .content-wrapper {
 .cust-select.form-select {
    background-image: url(../../assets/img/custom/angle-down.svg);
    padding: 9px 40px 9px 20px;
-
 }
 
 .cust-select.form-select:focus {
@@ -1026,8 +1033,6 @@ html:not(.layout-footer-fixed) .content-wrapper {
    overflow: hidden;
 }
 
-
-
 .green-graph img {
    max-width: 433px;
    display: block;
@@ -1205,7 +1210,7 @@ html:not(.layout-footer-fixed) .content-wrapper {
    padding: 12px;
 }
 
-.video-card img {
+.video-img img {
    max-width: 310px;
 }
 
@@ -1387,19 +1392,15 @@ html:not(.layout-footer-fixed) .content-wrapper {
 
 /* user-management  */
 
-
 .filteration-row.v2 .search-field {
    max-width: unset;
 }
 
 @media (min-width: 992px) {
    .custmize-col .col-lg-3 {
-
       width: 27%;
    }
 }
-
-
 
 .cust-table th i {
    color: var(--gray-600);
@@ -1544,14 +1545,6 @@ html:not(.layout-footer-fixed) .content-wrapper {
    border: var(--border-gray-200);
 }
 
-.rounded-8 {
-   border-radius: 8px !important;
-}
-
-.rounded-12 {
-   border-radius: 12px !important;
-}
-
 .form-control:focus,
 .form-select:focus {
    border-color: var(--primary-color);
@@ -1593,7 +1586,6 @@ html:not(.layout-footer-fixed) .content-wrapper {
 .half-circle-graph .text {
    max-width: 370px;
    margin: 7px auto 0;
-
 }
 
 .selected-card {
@@ -1605,7 +1597,7 @@ html:not(.layout-footer-fixed) .content-wrapper {
 }
 
 .selected-card.active {
-   border-color: #B2FB40;
+   border-color: #b2fb40;
    background-color: var(--green-100);
 }
 
@@ -1619,14 +1611,12 @@ html:not(.layout-footer-fixed) .content-wrapper {
 
 .user-dp {
    position: relative;
-
 }
 
 .img-selection {
    position: absolute;
    bottom: -7px;
    right: -11px;
-
 }
 
 .img-selection label {
@@ -1668,14 +1658,13 @@ html:not(.layout-footer-fixed) .content-wrapper {
    color: var(--primary-color);
 }
 
+
 .footer-list h3 {
    margin-bottom: 30px;
 }
 
 .footer-list ul {
    list-style-type: none;
-
-
 }
 
 .footer-list li {
@@ -1689,7 +1678,6 @@ html:not(.layout-footer-fixed) .content-wrapper {
 .custmize-footer .divider-rule {
    margin: 25px 0 20px;
 }
-
 
 .custmize-footer .social-links a {
    min-width: 35px;
@@ -1716,7 +1704,6 @@ html:not(.layout-footer-fixed) .content-wrapper {
    border: var(--border-gray-300);
    border-radius: 8px;
    padding: 3px 4px;
-
 }
 
 .sorting-btns .cust-icon {
@@ -1726,13 +1713,11 @@ html:not(.layout-footer-fixed) .content-wrapper {
    border-radius: 4px;
    height: 38px;
    font-size: 20px;
-
 }
 
 .sorting-btns .cust-icon.active {
    background-color: var(--primary-color);
    color: var(--white);
-
 }
 
 .sort-icon {
@@ -1757,9 +1742,6 @@ html:not(.layout-footer-fixed) .content-wrapper {
    padding: 20px;
 }
 
-.full-video-card img {
-   max-width: unset;
-}
 
 .full-video-card .abs-btn {
    max-width: 65px;
@@ -1861,10 +1843,7 @@ html:not(.layout-footer-fixed) .content-wrapper {
       min-width: unset;
    }
 
-
    /* header  */
-
-
 
    .layout-navbar {
       flex-wrap: wrap;
@@ -1877,7 +1856,6 @@ html:not(.layout-footer-fixed) .content-wrapper {
       justify-content: space-between;
       flex-direction: row-reverse;
    }
-
 }
 
 /* tab  */
@@ -1968,10 +1946,6 @@ html:not(.layout-footer-fixed) .content-wrapper {
       max-width: 150px;
    }
 
-   .video-card img {
-      max-width: 250px;
-   }
-
    .flex-between {
       flex-wrap: wrap;
       gap: 10px;
@@ -2004,7 +1978,6 @@ html:not(.layout-footer-fixed) .content-wrapper {
 
 /* mob  */
 @media (max-width: 767px) {
-
    .layout-navbar {
       flex-wrap: wrap;
       background-color: transparent !important;
@@ -2143,7 +2116,6 @@ html:not(.layout-footer-fixed) .content-wrapper {
    }
 
    .video-card img {
-      max-width: 100%;
       max-height: 200px;
    }
 
