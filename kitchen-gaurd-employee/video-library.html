@@ -168,95 +168,153 @@
             <div class="layout-page">
                 <!-- Navbar -->
 
-                <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme justify-content-between" id="layout-navbar">
-                    <div class="navbar-nav-right d-flex align-items-md-center align-items-start" id="navbar-collapse">
-                        <!-- heading-->
-                        <div class="layout-menu-toggle navbar-nav align-items-xl-center d-xl-none">
+                <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached bg-navbar-theme flex-gap user-header flex-row-reverse" id="layout-navbar">
+                    <div class="navbar-nav-right d-flex align-items-md-center align-items-start gap-md-0 gap-1" id="navbar-collapse">
+                        <div class="flex-gap  gap-lg-3 order-1 user-content">
+                            <div class="nav-item dropdown-notifications navbar-dropdown dropdown order-xl-0 order-1">
+                                <a class="nav-link dropdown-toggle flat-icon hide-arrow p-1" href="javascript:void(0);" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                    <i class="green fa-solid fa-bell"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end py-0">
+                                    <li class="dropdown-menu-header border-bottom">
+                                        <div class="dropdown-header d-flex align-items-center py-3">
+                                            <h4 class="text-body mb-0 me-auto gray-1000">Notification</h4>
+                                            <a href="javascript:void(0)" class="dropdown-notifications-all text-body" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Mark all as read" data-bs-original-title="Mark all as read"><i class="bx fs-4 bx-envelope-open"></i></a>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-notifications-list scrollable-container ps ps--active-y">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                                <div class="d-flex">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <div class="avatar">
+                                                            <img src="../assets/img/custom/user-1.png" alt="" class="w-px-40 h-auto rounded-circle">
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="mb-1 gray-1000">Congratulation Lettie 🎉</h6>
+                                                        <p class="mb-0 gra-800">Won the monthly best seller gold badge</p>
+                                                        <small class="text-muted">1h ago</small>
+                                                    </div>
+
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                                <div class="d-flex">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <div class="avatar">
+                                                            <span class="avatar-initial rounded-circle bg-primary">CF</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="mb-1 gray-1000">Charles Franklin</h6>
+                                                        <p class="mb-0 gray-800">Accepted your connection</p>
+                                                        <small class="text-muted">12hr ago</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                        <div class="ps__rail-x" style="left: 0px; bottom: -86px;">
+                                            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                                        </div>
+                                        <div class="ps__rail-y" style="top: 86px; right: 0px; height: 480px;">
+                                            <div class="ps__thumb-y" tabindex="0" style="top: 41px; height: 228px;"></div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-menu-footer border-top">
+                                        <a href="javascript:void(0);" class="dropdown-item d-flex justify-content-center p-3"> View all notifications </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="vertical-rule d-xl-block d-none"></div>
+                            <div class="nav-item navbar-dropdown dropdown-user dropdown">
+                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="flex-gap lg-gap">
+                                        <div class="image md-size">
+                                            <img src="../assets/img/custom/boy-1.png" alt="User">
+                                        </div>
+                                        <div class="text">
+                                            <h5 class="gray-800">Downtown Franchise</h5>
+                                            <p class="mt-1">Manager Dashboard</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <i class="bx bx-user me-2 green"></i>
+                                            <span class="align-middle">My Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <i class="bx bx-cog me-2 green"></i>
+                                            <span class="align-middle">Settings</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <span class="d-flex align-items-center align-middle">
+                                                <i class="flex-shrink-0 bx bx-credit-card me-2 green"></i>
+                                                <span class="flex-grow-1 align-middle">Billing</span>
+
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="divider-rule"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <i class="bx bx-support me-2 green"></i>
+                                            <span class="align-middle">Help</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <i class="bx bx-help-circle me-2 green"></i>
+                                            <span class="align-middle">FAQ</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <i class="bx bx-dollar me-2 green"></i>
+                                            <span class="align-middle">Pricing</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="divider-rule"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <i class="bx bx-power-off me-2 green"></i>
+                                            <span class="align-middle">Log Out</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="layout-menu-toggle align-items-xl-center d-xl-none">
                             <a class="nav-item nav-link p-0" href="javascript:void(0)">
                                 <i class="menu-icon bx bx-menu bx-sm"></i>
                             </a>
                         </div>
-                        <div class="navbar-nav align-items-center">
-                            <form action="javascript:void()" class="search-field">
+                    </div>
+
+                    <div class="user-menu flex-between flex-grow-1">
+
+                        <!-- heading-->
+                        <div class="navbar-nav flex-between flex-grow-1">
+                            <form action="javascript:void()" class="search-field cust-width">
                                 <input class="form-control" id="src-icon" placeholder="Search training modules..." aria-label="Search">
                                 <label for="src-icon" class="src-bar">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </label>
                             </form>
-                        </div>
-                    </div>
-
-                    <div class="header-btns flex-grow-1 justify-content-end">
-                        <span class="lg-badge lg-skyblue-badge"><i class="fa-solid fa-fire"></i>7 Day Streak</span>
-                        <span class="lg-badge"><i class="fa-solid fa-star"></i>Level 12</span>
-                        <div class="nav-item dropdown-notifications navbar-dropdown dropdown">
-                            <a class="nav-link dropdown-toggle hide-arrow p-1" href="javascript:void(0);" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                                <i class="green fa-solid fa-bell"></i>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end py-0">
-                                <li class="dropdown-menu-header border-bottom">
-                                    <div class="dropdown-header d-flex align-items-center py-3">
-                                        <h5 class="text-body mb-0 me-auto">Notification</h5>
-                                        <a href="javascript:void(0)" class="dropdown-notifications-all text-body" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Mark all as read" data-bs-original-title="Mark all as read"><i class="bx fs-4 bx-envelope-open"></i></a>
-                                    </div>
-                                </li>
-                                <li class="dropdown-notifications-list scrollable-container ps ps--active-y">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
-                                            <div class="d-flex">
-                                                <div class="flex-shrink-0 me-3">
-                                                    <div class="avatar">
-                                                        <img src="../assets/img/custom/user-1.png" alt="" class="w-px-40 h-auto rounded-circle">
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1">
-                                                    <h6 class="mb-1">Congratulation Lettie 🎉</h6>
-                                                    <p class="mb-0">Won the monthly best seller gold badge</p>
-                                                    <small class="text-muted">1h ago</small>
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
-                                            <div class="d-flex">
-                                                <div class="flex-shrink-0 me-3">
-                                                    <div class="avatar">
-                                                        <span class="avatar-initial rounded-circle bg-label-danger">CF</span>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1">
-                                                    <h6 class="mb-1">Charles Franklin</h6>
-                                                    <p class="mb-0">Accepted your connection</p>
-                                                    <small class="text-muted">12hr ago</small>
-                                                </div>
-                                                <div class="flex-shrink-0 dropdown-notifications-actions">
-                                                    <a href="javascript:void(0)" class="dropdown-notifications-read"><span class="badge badge-dot"></span></a>
-                                                    <a href="javascript:void(0)" class="dropdown-notifications-archive"><span class="bx bx-x"></span></a>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                    </ul>
-                                    <div class="ps__rail-x" style="left: 0px; bottom: -86px;">
-                                        <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
-                                    </div>
-                                    <div class="ps__rail-y" style="top: 86px; right: 0px; height: 480px;">
-                                        <div class="ps__thumb-y" tabindex="0" style="top: 41px; height: 228px;"></div>
-                                    </div>
-                                </li>
-                                <li class="dropdown-menu-footer border-top">
-                                    <a href="javascript:void(0);" class="dropdown-item d-flex justify-content-center p-3"> View all notifications </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="vertical-rule"></div>
-                        <div class="flex-gap lg-gap">
-                            <div class="image md-size">
-                                <img src="../assets/img/custom/boy-1.png" alt="User">
-                            </div>
-                            <div class="text">
-                                <h5 class="gray-800">Downtown Franchise</h5>
-                                <p class="mt-1">Manager Dashboard</p>
+                            <div class="btn-badges flex-gap">
+                                <span class="lg-badge lg-skyblue-badge"><i class="fa-solid fa-fire"></i>7 Day Streak</span>
+                                <span class="lg-badge"><i class="fa-solid fa-star"></i>Level 12</span>
                             </div>
                         </div>
                     </div>
@@ -271,7 +329,7 @@
                 <!-- / Navbar -->
 
                 <!-- Content wrapper -->
-                <div class="content-wrapper py-lg-4 py-3">
+                <div class="content-wrapper">
                     <!-- Content -->
 
                     <div class="container-xxl flex-grow-1">
@@ -655,92 +713,93 @@
                         </div>
 
                     </div>
-                </div>
 
 
-                <!-- Footer -->
-                <footer class="content-footer footer mb-4 custmize-footer">
-                    <div class="container-xxl">
-                        <div class="wrapper card-bg">
-                            <div class="row justify-content-between">
-                                <div class="col-md-3 col-lg-4">
-                                    <div class="text">
-                                        <a href="index.html">
-                                            <div class="footer-logo">
-                                                <img src="../assets/img/custom/logo.svg" alt="Logo">
+                    <!-- Footer -->
+                    <footer class="content-footer footer mb-4 custmize-footer">
+                        <div class="container-xxl">
+                            <div class="wrapper card-bg">
+                                <div class="row justify-content-between">
+                                    <div class="col-md-3 col-lg-4">
+                                        <div class="text">
+                                            <a href="index.html">
+                                                <div class="footer-logo">
+                                                    <img src="../assets/img/custom/logo.svg" alt="Logo">
+                                                </div>
+                                            </a>
+                                            <p>Empowering kitchen professionals <br>with comprehensive safety training <br>and certification programs.</p>
+                                            <div class="social-links flex-gap">
+                                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
                                             </div>
-                                        </a>
-                                        <p>Empowering kitchen professionals <br>with comprehensive safety training <br>and certification programs.</p>
-                                        <div class="social-links flex-gap">
-                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-auto">
+                                        <div class="footer-list">
+                                            <h3>Quick Links</h3>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Dashboard</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">My Training</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Certificates </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Progress Report</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-auto">
+                                        <div class="footer-list">
+                                            <h3>Support </h3>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Help Center </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Technical Support </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Contact Us </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">System Status</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-auto">
+                                        <div class="footer-list v2">
+                                            <h3>Contact Info</h3>
+                                            <ul>
+                                                <li>
+                                                    <a href="#" class="flex-gap"><i class="fa-solid fa-location-dot"></i>24/7 Support Available</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="flex-gap"><i class="fa-solid fa-phone"></i>1-800-Kitchen</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="flex-gap"><i class="fa-solid fa-envelope"></i>Support@kitchenguard.com</a>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-auto">
-                                    <div class="footer-list">
-                                        <h3>Quick Links</h3>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Dashboard</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">My Training</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Certificates </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Progress Report</a>
-                                            </li>
-
-                                        </ul>
-                                    </div>
+                                <div class="divider-rule"></div>
+                                <div class="bottom-text text-center">
+                                    <p><a href="index.html">Copyright © 2024 Kitchen Guard Training Platform</a>. All rights reserved.</p>
                                 </div>
-                                <div class="col-md-auto">
-                                    <div class="footer-list">
-                                        <h3>Support </h3>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Help Center </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Technical Support </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Contact Us </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">System Status</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-md-auto">
-                                    <div class="footer-list v2">
-                                        <h3>Contact Info</h3>
-                                        <ul>
-                                            <li>
-                                                <a href="#" class="flex-gap"><i class="fa-solid fa-location-dot"></i>24/7 Support Available</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="flex-gap"><i class="fa-solid fa-phone"></i>1-800-Kitchen</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="flex-gap"><i class="fa-solid fa-envelope"></i>Support@kitchenguard.com</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="divider-rule"></div>
-                            <div class="bottom-text text-center">
-                                <p><a href="index.html">Copyright © 2024 Kitchen Guard Training Platform</a>. All rights reserved.</p>
                             </div>
                         </div>
-                    </div>
-                </footer>
+                    </footer>
+                </div>
+
             </div>
             <!-- / Footer -->
 

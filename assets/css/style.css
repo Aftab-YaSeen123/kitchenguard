@@ -812,6 +812,10 @@ html:not(.layout-footer-fixed) .content-wrapper {
    margin: 15px auto 0;
 }
 
+.main-wrapper {
+   padding: 24px 0;
+}
+
 .header-btns {
    display: flex;
    align-items: center;
@@ -1583,6 +1587,15 @@ html:not(.layout-footer-fixed) .content-wrapper {
 }
 
 /* #kitchen guard employee  */
+/* header  */
+.search-field.cust-width {
+   max-width: unset;
+   width: 42%;
+}
+
+
+
+/* overview  */
 .half-circle-graph .text {
    max-width: 370px;
    margin: 7px auto 0;
@@ -1658,6 +1671,14 @@ html:not(.layout-footer-fixed) .content-wrapper {
    color: var(--primary-color);
 }
 
+.custmize-footer a {
+   transition: var(--transition);
+}
+
+.custmize-footer a:hover {
+   color: var(--primary-color);
+   text-decoration: underline;
+}
 
 .footer-list h3 {
    margin-bottom: 30px;
@@ -1688,10 +1709,23 @@ html:not(.layout-footer-fixed) .content-wrapper {
    background-color: var(--primary-color);
    color: var(--white) !important;
    border-radius: 50%;
+   transition: var(--transition);
+   border: 1px solid transparent;
+}
+
+.custmize-footer .social-links a:hover {
+   background-color: var(--white);
+   border-color: var(--primary-color);
+   text-decoration: none;
+}
+
+.custmize-footer .social-links a:hover i {
+   color: var(--primary-color) !important;
 }
 
 .custmize-footer .social-links a i {
    color: var(--white) !important;
+   transition: var(--transition);
 }
 
 .custmize-footer .bottom-text p,
@@ -1856,12 +1890,28 @@ html:not(.layout-footer-fixed) .content-wrapper {
       justify-content: space-between;
       flex-direction: row-reverse;
    }
+
+   /* #kitchen-gaurd-employeee  */
+   /* header  */
+   .layout-navbar.user-header {
+      flex-direction: column-reverse;
+      gap: 25px;
+   }
+
+   .user-header .navbar-nav {
+      flex-direction: row;
+   }
 }
 
 /* tab  */
 
 @media (max-width: 991px) {
    /* header  */
+
+   .main-wrapper {
+      padding: 16px 0;
+   }
+
    /* 
    .layout-navbar-fixed .layout-wrapper:not(.layout-horizontal):not(.layout-without-menu) .layout-page.cust-padding {
       padding-top: 120px !important;
@@ -1974,6 +2024,14 @@ html:not(.layout-footer-fixed) .content-wrapper {
    .video-text {
       width: 65%;
    }
+
+   /* #kitchen-gaurd-employeee  */
+   /* header  */
+   .layout-navbar.user-header {
+      flex-direction: column-reverse;
+      gap: 15px;
+   }
+
 }
 
 /* mob  */
@@ -2173,5 +2231,59 @@ html:not(.layout-footer-fixed) .content-wrapper {
       display: flex;
       min-height: 1px;
       width: 100%;
+   }
+
+   /* #kitcehn-gaurd-employee  */
+   /* header  */
+
+   .lg-gap {
+      gap: 12px !important;
+   }
+
+   .user-header .btn-badges {
+      width: 100%;
+      flex-direction: column;
+   }
+
+   .search-field.cust-width {
+      width: 100%;
+   }
+
+   .user-header .btn-badges .lg-badge {
+      width: 100%;
+   }
+
+   .user-header .text p {
+      font-size: 13px;
+      margin-top: 2px !important;
+   }
+
+   .user-header .md-size img {
+      max-width: 36px;
+   }
+
+   .user-header .navbar-nav {
+      background-color: var(--white);
+      box-shadow: var(--box-shadow-black);
+      border-radius: 12px;
+      padding: 15px;
+   }
+
+   .user-header.layout-navbar .navbar-nav-right {
+      align-items: center !important;
+   }
+
+   .user-header .layout-menu-toggle .menu-icon {
+      margin: 0;
+
+   }
+
+   .user-header .user-content {
+      justify-content: space-between;
+      width: 100%;
+   }
+
+   .user-header .dropdown-menu-end[data-bs-popper] {
+      right: -48px;
    }
 }
