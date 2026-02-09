@@ -1,3 +1,26 @@
+function createCenterTextPlugin(text, fontSize = 24, color = '#535353') {
+   return {
+      id: 'centerText_' + Math.random(),
+      beforeDatasetsDraw(chart) {
+         const { width, height, ctx } = chart;
+         const chartArea = chart.chartArea;
+         ctx.save();
+
+         ctx.font = `bold ${fontSize}px helveticaneue, sans-serif`;
+         ctx.textBaseline = 'middle';
+         ctx.textAlign = 'center';
+         ctx.fillStyle = color;
+
+         // Calculate center of chart area
+         const xPos = (chartArea.left + chartArea.right) / 2;
+         const yPos = (chartArea.top + chartArea.bottom) / 1.2;
+         ctx.fillText(text, xPos, yPos);
+
+         ctx.restore();
+      }
+   };
+}
+
 // line chart
 const lineAreaChart = document.getElementById('cashChart');
 if (lineAreaChart) {
@@ -527,6 +550,121 @@ if (regionalDistribution) {
    });
 }
 
+// doughnut chart 3
+const moduleCategory = document.getElementById('moduleCategory');
+if (moduleCategory) {
+   new Chart(moduleCategory, {
+      type: 'doughnut',
+      data: {
+         labels: ['Video Training: 42.3%', 'Quizzes: 35.7%', 'VR Training: 22.0%'],
+         datasets: [
+            {
+               data: [40.8, 30.6, 28.6, 15.8],
+               backgroundColor: ['#133F5C', '#F3A533', '#800080', '#EB5F5E'],
+               borderWidth: 0,
+               cutout: '68%',
+               borderRadius: 15,
+               spacing: 10
+            }
+         ]
+      },
+      options: {
+         responsive: true,
+         maintainAspectRatio: false,
+         plugins: {
+            legend: {
+               display: false,
+               position: 'right',
+               labels: {
+                  usePointStyle: true,
+                  font: { size: 14 }
+               }
+            },
+            tooltip: {
+               callbacks: {
+                  label: function (context) {
+                     let value = context.raw.toLocaleString();
+                     return `${context.label}: $${value}`;
+                  }
+               }
+            }
+         }
+      }
+   });
+}
+
+// doughnut chart 4
+const certificationCate = document.getElementById('certificationCate');
+if (certificationCate) {
+   new Chart(certificationCate, {
+      type: 'doughnut',
+      data: {
+         labels: ['Video Training: 42.3%', 'Quizzes: 35.7%', 'VR Training: 22.0%'],
+         datasets: [
+            {
+               data: [40.8, 30.6, 28.6, 15.8],
+               backgroundColor: ['#133F5C', '#F3A533', '#800080', '#EB5F5E'],
+               borderWidth: 0,
+               cutout: '68%',
+               borderRadius: 15,
+               spacing: 10
+            }
+         ]
+      },
+      options: {
+         responsive: true,
+         maintainAspectRatio: false,
+         plugins: {
+            legend: {
+               display: false,
+               position: 'right',
+               labels: {
+                  usePointStyle: true,
+                  font: { size: 14 }
+               }
+            },
+            tooltip: {
+               callbacks: {
+                  label: function (context) {
+                     let value = context.raw.toLocaleString();
+                     return `${context.label}: $${value}`;
+                  }
+               }
+            }
+         }
+      }
+   });
+}
+
+// doughnut chart 5
+const overallCompletion = document.getElementById('overallCompletion');
+if (overallCompletion) {
+   new Chart(overallCompletion, {
+      type: 'doughnut',
+      data: {
+         datasets: [
+            {
+               data: [87, 13],
+               backgroundColor: ['#93D033', '#EEFFE1'],
+               borderWidth: 0,
+               cutout: '70%'
+            }
+         ]
+      },
+      options: {
+         rotation: 270,
+         circumference: 180,
+         plugins: {
+            legend: { display: true },
+            tooltip: { enabled: true }
+         },
+         aspectRatio: 2,
+         responsive: true
+      },
+      plugins: [createCenterTextPlugin('87%', 38, '#4a4a4a')]
+   });
+}
+
 // bar chart
 const learnEffectiveness = document.getElementById('learnEffectiveness');
 if (learnEffectiveness) {
@@ -648,6 +786,7 @@ if (performanceComparison) {
       }
    });
 }
+
 // bar chart 3
 const completionRates = document.getElementById('completionRates');
 if (completionRates) {
@@ -710,7 +849,170 @@ if (completionRates) {
    });
 }
 
-// single line chart
+// bar chart 4
+const quizPerformance = document.getElementById('quizPerformance');
+if (quizPerformance) {
+   new Chart(quizPerformance, {
+      type: 'bar',
+      data: {
+         labels: ['Food Safety', 'Equipment Safety', 'Hygiene Standards', 'Emergency Procedures', 'Testmark', 'Problem Solving', 'Communication', 'Leadership'],
+         datasets: [
+            {
+               data: [100, 78, 68, 65, 72, 78, 78, 78],
+               backgroundColor: '#98d045',
+               borderRadius: 8,
+               borderSkipped: false,
+               barPercentage: 0.9,
+               borderRadius: {
+                  topLeft: 6,
+                  topRight: 6,
+                  bottomLeft: 0,
+                  bottomRight: 0
+               },
+               barThickness: function () {
+                  return window.innerWidth <= 992 ? 20 : 100;
+               }
+            }
+         ]
+      },
+      options: {
+         plugins: {
+            legend: { display: false }
+         },
+         scales: {
+            y: {
+               beginAtZero: true,
+               max: 100,
+               ticks: {
+                  stepSize: 25,
+                  color: '#535353'
+               },
+               grid: {
+                  drawBorder: false,
+                  color: '#eee'
+               }
+            },
+            x: {
+               grid: {
+                  display: false // Hide vertical grid lines
+               },
+               ticks: {
+                  callback: function (value, index) {
+                     const label = this.getLabelForValue(value);
+                     if (label.length > 10) {
+                        return label.split(' ');
+                     }
+                     return label;
+                  },
+                  display: function (context) {
+                     return context.chart.width > 768;
+                  },
+                  color: '#535353',
+                  font: { size: 16 }
+               }
+            }
+         }
+      }
+   });
+}
+
+// bar chart 5
+const certificationProgress = document.getElementById('certificationProgress');
+if (certificationProgress) {
+   new Chart(certificationProgress, {
+      type: 'bar',
+      data: {
+         labels: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+         datasets: [
+            {
+               data: [145, 110, 120, 95, 140, 155],
+               backgroundColor: '#800080',
+               borderSkipped: false,
+               barThickness: 22,
+               borderRadius: {
+                  topLeft: 6,
+                  topRight: 6,
+                  bottomLeft: 0,
+                  bottomRight: 0
+               }
+            }
+         ]
+      },
+      options: {
+         plugins: {
+            legend: { display: false }
+         },
+         scales: {
+            y: {
+               beginAtZero: true,
+               max: 160,
+               ticks: {
+                  // callback: function (value) {
+                  //    if ([0, 20, 40, 160].includes(value)) return value === 20 ? 2 : value === 40 ? 4 : value;
+                  //    return null;
+                  // },
+                  stepSize: 20
+               },
+               grid: {
+                  drawBorder: false,
+                  color: '#e0e0e0'
+               }
+            },
+            x: {
+               grid: { display: false },
+               ticks: { color: '#999' }
+            }
+         }
+      }
+   });
+}
+// bar chart 6
+const learningVelocity = document.getElementById('learningVelocity').getContext('2d');
+if (learningVelocity) {
+   new Chart(learningVelocity, {
+      type: 'bar',
+      data: {
+         labels: ['M', 'T', 'W', 'T', 'F', 'S', 'Today'],
+         datasets: [
+            {
+               data: [45, 85, 35, 100, 85, 45, 35],
+
+               backgroundColor: ['#f0fde0', '#98d045', '#f0fde0', '#98d045', '#98d045', '#f0fde0', '#f0fde0'],
+               borderRadius: 8,
+               borderSkipped: false,
+               barThickness: function () {
+                  return window.innerWidth <= 992 ? 15 : 60;
+               }
+            }
+         ]
+      },
+      options: {
+         plugins: {
+            legend: { display: false }
+         },
+         scales: {
+            y: {
+               display: false,
+               beginAtZero: true
+            },
+            x: {
+               grid: { display: false },
+               border: { display: false },
+               ticks: {
+                  color: '#999',
+                  font: {
+                     size: 14,
+                     weight: '500'
+                  }
+               }
+            }
+         },
+         events: []
+      }
+   });
+}
+
+//  line chart 1
 const growthChart = document.getElementById('growthChart');
 if (growthChart) {
    new Chart(growthChart, {
@@ -767,18 +1069,21 @@ if (growthChart) {
                ticks: {
                   stepSize: 1000,
                   callback: value => (value === 0 ? '0' : value / 1000 + 'k'),
-                  color: '#999',
-                  font: { size: 14 }
+                  color: '#535353',
+                  font: { size: 16 }
                },
                grid: { display: false },
                border: { display: false }
             },
             x: {
                ticks: {
-                  color: '#999',
-                  font: { size: 14 },
+                  color: '#535353',
+                  font: { size: 16 },
                   maxRotation: 0,
-                  autoSkip: false
+                  autoSkip: false,
+                  display: function (context) {
+                     return context.chart.width > 768;
+                  }
                },
                grid: {
                   drawOnChartArea: true,
@@ -787,6 +1092,86 @@ if (growthChart) {
                   drawTicks: false
                },
                border: { display: false }
+            }
+         }
+      }
+   });
+}
+
+// line chart 2
+const peerComparison = document.getElementById('peerComparison');
+if (peerComparison) {
+   new Chart(peerComparison, {
+      type: 'line',
+      data: {
+         labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7'],
+         datasets: [
+            {
+               label: 'Activity',
+               data: [1500, 3600, 2200, 1800, 3100, 2800, 1800, 1400],
+               tension: 0.5,
+               fill: true,
+               borderWidth: 1,
+               backgroundColor: context => {
+                  const bgColor = ['rgba(104, 149, 34, 0.6)', 'rgba(104, 149, 34, 0)'];
+                  if (!context.chart.chartArea) {
+                     return;
+                  }
+                  const {
+                     ctx,
+                     data,
+                     chartArea: { top, bottom }
+                  } = context.chart;
+                  const gradientBg = ctx.createLinearGradient(0, top, 0, bottom);
+                  const colorTranches = 1 / (bgColor.length - 1);
+                  // console.log(colorTranches);
+                  for (let i = 0; i < bgColor.length; i++) {
+                     gradientBg.addColorStop(0 + i * colorTranches, bgColor[i]);
+                  }
+                  return gradientBg;
+               },
+               pointRadius: [0, 0, 0, 0, 10, 0, 0],
+               pointBackgroundColor: '#7AA33E',
+               pointBorderColor: '#fff',
+               pointBorderWidth: 6,
+               pointHoverRadius: 10,
+               borderColor: '#7AA33E',
+               borderWidth: 3,
+               tension: 0.5
+            }
+         ]
+      },
+      options: {
+         plugins: {
+            legend: { display: false }
+         },
+         scales: {
+            y: {
+               beginAtZero: true,
+               max: 4000,
+               ticks: {
+                  stepSize: 1000,
+                  callback: value => (value === 0 ? 0 : value / 1000 + 'k')
+               },
+               grid: {
+                  display: false
+               }
+            },
+            x: {
+               grid: {
+                  display: true,
+                  color: '#C0BEBE',
+                  borderDash: [5, 5],
+                  drawTicks: false
+               },
+               ticks: {
+                  display: function (context) {
+                     return context.chart.width > 768;
+                  },
+                  padding: 20,
+                  color: '#535353',
+                  font: { size: 16 }
+               }
             }
          }
       }

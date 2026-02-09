@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+
+<html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../assets/" data-template="vertical-menu-template-no-customizer">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+      <title>Team Management | Kitchen Gaurd</title>
+
+      <meta name="description" content="" />
+
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="../assets/img/custom/favicon.svg" />
+
+      <!-- Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+      <!-- Icons -->
+      <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+      <link rel="stylesheet" href="../assets/vendor/fonts/flag-icons.css" />
+
+      <!-- Core CSS -->
+      <link rel="stylesheet" href="../assets/vendor/css/rtl/core.css" />
+      <link rel="stylesheet" href="../assets/vendor/css/rtl/theme-default.css" />
+      <link rel="stylesheet" href="../assets/css/demo.css" />
+      <link rel="stylesheet" href="../assets/css/style.css" />
+      <link rel="stylesheet" href="../assets/css/franchiee.css" />
+
+      <!-- Vendors CSS -->
+      <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+      <link rel="stylesheet" href="../assets/vendor/libs/typeahead-js/typeahead.css" />
+      <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+
+      <!-- Page CSS -->
+
+      <!-- Helpers -->
+      <script src="../assets/vendor/js/helpers.js"></script>
+
+      <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+      <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+      <script src="../assets/js/config.js"></script>
+   </head>
+
+   <body>
+      <!-- Layout wrapper -->
+      <div class="layout-wrapper layout-content-navbar">
+         <div class="layout-container">
+            <!-- Menu -->
+
+            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+               <div class="app-brand demo">
+                  <a href="index.html" class="app-brand-link">
+                     <div class="app-brand-logo demo">
+                        <img src="../assets/img/custom/logo.svg" alt="Image" />
+                     </div>
+                  </a>
+               </div>
+
+               <ul class="menu-inner py-1">
+                  <!-- Dashboards -->
+                  <li class="menu-item">
+                     <a href="index.html" class="menu-link">
+                        <i class="menu-icon fa-light fa-gauge-high"></i>
+                        <div data-i18n="Dashboard">Dashboard</div>
+                     </a>
+                  </li>
+                  <li class="menu-item active">
+                     <a href="javascript:void(0)" class="menu-link menu-toggle">
+                        <i class="menu-icon fa-light fa-users"></i>
+                        <div data-i18n="Team Management">Team Management</div>
+                     </a>
+                     <ul class="menu-sub">
+                        <li class="menu-item">
+                           <a href="team-management.html" class="menu-link active">
+                              <div data-i18n="Management">Management</div>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="javascript:void(0)" class="menu-link">
+                              <div data-i18n="VR Scenarios">VR Scenarios</div>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="menu-item">
+                     <a href="javascript:void(0)" class="menu-link">
+                        <i class="menu-icon fa-light fa-graduation-cap"></i>
+                        <div data-i18n="Training Paths">Training Paths</div>
+                     </a>
+                  </li>
+                  <li class="menu-item">
+                     <a href="javascript:void(0)" class="menu-link menu-toggle">
+                        <i class="menu-icon fa-light fa-clipboard-list"></i>
+                        <div data-i18n="Assignments">Assignments</div>
+                     </a>
+                     <ul class="menu-sub">
+                        <li class="menu-item">
+                           <a href="javascript:void(0)" class="menu-link">
+                              <div data-i18n="Quiz Management">Quiz Management</div>
+                           </a>
+                        </li>
+                        <li class="menu-item">
+                           <a href="javascript:void(0)" class="menu-link">
+                              <div data-i18n="VR Scenarios">VR Scenarios</div>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="menu-item">
+                     <a href="report.html" class="menu-link">
+                        <i class="menu-icon fa-light fa-chart-bar"></i>
+                        <div data-i18n="Reports">Reports</div>
+                     </a>
+                  </li>
+                  <li class="menu-item">
+                     <a href="certifications.html" class="menu-link">
+                        <i class="menu-icon fa-light fa-certificate"></i>
+                        <div data-i18n="Certifications">Certifications</div>
+                     </a>
+                  </li>
+                  <li class="menu-item">
+                     <a href="javascript:void(0);" class="menu-link">
+                        <i class="menu-icon fa-regular fa-circle-play"></i>
+                        <div data-i18n="Content Library">Content Library</div>
+                     </a>
+                  </li>
+                  <li class="menu-item">
+                     <a href="javascript:void(0)" class="menu-link">
+                        <i class="menu-icon fa-regular fa-vr-cardboard"></i>
+                        <div data-i18n="VR Training">VR Training</div>
+                     </a>
+                  </li>
+                  <li class="menu-item">
+                     <a href="settings.html" class="menu-link">
+                        <i class="menu-icon fa-light fa-gear"></i>
+                        <div data-i18n="Settings">Settings</div>
+                     </a>
+                  </li>
+                  <li class="menu-item">
+                     <a href="javascript:void(0)" class="menu-link">
+                        <i class="menu-icon fa-sharp fa-light fa-headset"></i>
+                        <div data-i18n="Support">Support</div>
+                     </a>
+                  </li>
+                  <li class="menu-item">
+                     <a href="javascript:void(0)" class="menu-link">
+                        <i class="menu-icon fa-light fa-right-from-bracket"></i>
+                        <div data-i18n="Logout">Logout</div>
+                     </a>
+                  </li>
+               </ul>
+            </aside>
+            <!-- / Menu -->
+
+            <!-- Layout container -->
+            <div class="layout-page">
+               <!-- Navbar  -->
+               <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached bg-navbar-theme flex-gap user-header flex-row-reverse" id="layout-navbar">
+                  <div class="navbar-nav-right d-flex align-items-md-center align-items-start gap-md-0 gap-1" id="navbar-collapse">
+                     <div class="flex-gap gap-lg-3 order-1 user-content">
+                        <div class="nav-item dropdown-notifications navbar-dropdown dropdown order-xl-0 order-1">
+                           <a class="nav-link dropdown-toggle flat-icon hide-arrow p-1" href="javascript:void(0);" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                              <i class="green fa-solid fa-bell"></i>
+                           </a>
+                           <ul class="dropdown-menu dropdown-menu-end py-0">
+                              <li class="dropdown-menu-header border-bottom">
+                                 <div class="dropdown-header d-flex align-items-center py-3">
+                                    <h4 class="text-body mb-0 me-auto gray-1000">Notification</h4>
+                                    <a href="javascript:void(0)" class="dropdown-notifications-all text-body" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Mark all as read" data-bs-original-title="Mark all as read"><i class="bx fs-4 bx-envelope-open"></i></a>
+                                 </div>
+                              </li>
+                              <li class="dropdown-notifications-list scrollable-container ps ps--active-y">
+                                 <ul class="list-group list-group-flush">
+                                    <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                       <div class="d-flex">
+                                          <div class="flex-shrink-0 me-3">
+                                             <div class="avatar">
+                                                <img src="../assets/img/custom/user-1.png" alt="" class="w-px-40 h-auto rounded-circle" />
+                                             </div>
+                                          </div>
+                                          <div class="flex-grow-1">
+                                             <h6 class="mb-1 gray-1000">Congratulation Lettie 🎉</h6>
+                                             <p class="mb-0 gra-800">Won the monthly best seller gold badge</p>
+                                             <small class="text-muted">1h ago</small>
+                                          </div>
+                                       </div>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                       <div class="d-flex">
+                                          <div class="flex-shrink-0 me-3">
+                                             <div class="avatar">
+                                                <span class="avatar-initial rounded-circle bg-primary">CF</span>
+                                             </div>
+                                          </div>
+                                          <div class="flex-grow-1">
+                                             <h6 class="mb-1 gray-1000">Charles Franklin</h6>
+                                             <p class="mb-0 gray-800">Accepted your connection</p>
+                                             <small class="text-muted">12hr ago</small>
+                                          </div>
+                                       </div>
+                                    </li>
+                                 </ul>
+                                 <div class="ps__rail-x" style="left: 0px; bottom: -86px">
+                                    <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px"></div>
+                                 </div>
+                                 <div class="ps__rail-y" style="top: 86px; right: 0px; height: 480px">
+                                    <div class="ps__thumb-y" tabindex="0" style="top: 41px; height: 228px"></div>
+                                 </div>
+                              </li>
+                              <li class="dropdown-menu-footer border-top">
+                                 <a href="javascript:void(0);" class="dropdown-item d-flex justify-content-center p-3"> View all notifications </a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="vertical-rule d-xl-block d-none"></div>
+                        <div class="nav-item navbar-dropdown dropdown-user dropdown">
+                           <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
+                              <div class="flex-gap lg-gap">
+                                 <div class="image md-size">
+                                    <img src="../assets/img/custom/boy-1.png" alt="User" />
+                                 </div>
+                                 <div class="text">
+                                    <h5 class="gray-800">Downtown Franchise</h5>
+                                    <p class="mt-1">Manager Dashboard</p>
+                                 </div>
+                              </div>
+                           </a>
+                           <ul class="dropdown-menu dropdown-menu-end">
+                              <li>
+                                 <a class="dropdown-item" href="javascript:void(0)">
+                                    <i class="bx bx-user me-2 green"></i>
+                                    <span class="align-middle">My Profile</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="javascript:void(0)">
+                                    <i class="bx bx-cog me-2 green"></i>
+                                    <span class="align-middle">Settings</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="javascript:void(0)">
+                                    <span class="d-flex align-items-center align-middle">
+                                       <i class="flex-shrink-0 bx bx-credit-card me-2 green"></i>
+                                       <span class="flex-grow-1 align-middle">Billing</span>
+                                    </span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <div class="divider-rule"></div>
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="javascript:void(0)">
+                                    <i class="bx bx-support me-2 green"></i>
+                                    <span class="align-middle">Help</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="javascript:void(0)">
+                                    <i class="bx bx-help-circle me-2 green"></i>
+                                    <span class="align-middle">FAQ</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="javascript:void(0)">
+                                    <i class="bx bx-dollar me-2 green"></i>
+                                    <span class="align-middle">Pricing</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <div class="divider-rule"></div>
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="javascript:void(0)">
+                                    <i class="bx bx-power-off me-2 green"></i>
+                                    <span class="align-middle">Log Out</span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="layout-menu-toggle align-items-xl-center d-xl-none">
+                        <a class="nav-item nav-link p-0" href="javascript:void(0)">
+                           <i class="menu-icon bx bx-menu bx-sm"></i>
+                        </a>
+                     </div>
+                  </div>
+
+                  <div class="user-menu flex-between flex-grow-1">
+                     <!-- heading-->
+                     <div class="navbar-nav flex-between flex-grow-1">
+                        <form action="javascript:void()" class="search-field cust-width">
+                           <input class="form-control" id="src-icon" placeholder="Search training modules..." aria-label="Search" />
+                           <label for="src-icon" class="src-bar">
+                              <i class="fa-solid fa-magnifying-glass"></i>
+                           </label>
+                        </form>
+                     </div>
+                  </div>
+
+                  <!-- Search Small Screens -->
+                  <div class="navbar-search-wrapper search-input-wrapper d-none">
+                     <input type="text" class="form-control search-input container-xxl border-0" placeholder="Search..." aria-label="Search..." />
+                     <i class="menu-icon bx bx-x bx-sm search-toggler cursor-pointer"></i>
+                  </div>
+               </nav>
+               <!-- / Navbar -->
+
+               <!-- Content wrapper -->
+               <div class="content-wrapper py-lg-4 py-3">
+                  <!-- Content -->
+
+                  <div class="container-xxl flex-grow-1">
+                     <div class="main-wrapper section-space">
+                        <!-- title  -->
+                        <div class="flex-between main-title">
+                           <div class="heading">
+                              <h1>Team Management</h1>
+                              <p>Add, edit and manage your franchise employees with role- <br />based assignments</p>
+                           </div>
+                           <div class="btns flex-gap">
+                              <a href="#" class="site-btn"><i class="fa-solid fa-users-gear"></i>Bulk Actions</a>
+                              <a href="#" class="site-btn"><i class="fa-solid fa-download"></i>Export</a>
+                              <a href="#" class="site-btn green-btn"><i class="fa-solid fa-user-plus"></i>Add New Employee</a>
+                           </div>
+                        </div>
+
+                        <div class="row">
+                           <div class="col-12">
+                              <div class="card-wrapper row-gy">
+                                 <div class="row flex-xxl-nowrap gx-2 justify-content-start">
+                                    <!-- card  -->
+                                    <div class="col-xxl col-lg-4 col-md-6">
+                                       <div class="card-bg h-100 p-3">
+                                          <div class="flex-gap lg-gap">
+                                             <div class="cust-icon">
+                                                <i class="fa-solid fa-users"></i>
+                                             </div>
+                                             <div class="text highlight-2">
+                                                <span class="mt-2">Total Employees</span>
+                                                <h3>12</h3>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                    <!-- card  -->
+                                    <div class="col-xxl col-lg-4 col-md-6">
+                                       <div class="card-bg h-100 p-3">
+                                          <div class="flex-gap lg-gap">
+                                             <div class="cust-icon">
+                                                <i class="fa-solid fa-wrench"></i>
+                                             </div>
+                                             <div class="text highlight-2">
+                                                <span class="mt-2">Field Technician</span>
+                                                <h3>6</h3>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                    <!-- card  -->
+                                    <div class="col-xxl col-lg-4 col-md-6">
+                                       <div class="card-bg h-100 p-3">
+                                          <div class="flex-gap lg-gap">
+                                             <div class="cust-icon">
+                                                <i class="fa-solid fa-spray-can"></i>
+                                             </div>
+                                             <div class="text highlight-2">
+                                                <span class="mt-2">Kitchen Cleaner</span>
+                                                <h3>4</h3>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                    <!-- card  -->
+                                    <div class="col-xxl col-lg-4 col-md-6">
+                                       <div class="card-bg h-100 p-3">
+                                          <div class="flex-gap lg-gap">
+                                             <div class="cust-icon">
+                                                <i class="fa-solid fa-user-tie"></i>
+                                             </div>
+                                             <div class="text highlight-2">
+                                                <span class="mt-2">Supervisors</span>
+                                                <h3>2</h3>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                    <!-- card  -->
+                                    <div class="col-xxl col-lg-4 col-md-6">
+                                       <div class="card-bg h-100 p-3">
+                                          <div class="flex-gap lg-gap">
+                                             <div class="cust-icon">
+                                                <i class="fa-solid fa-triangle-exclamation"></i>
+                                             </div>
+                                             <div class="text highlight-2">
+                                                <span class="mt-2">Pending Actions</span>
+                                                <h3>7</h3>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="col-12">
+                              <div class="card-wrapper row-gx">
+                                 <div class="row gy-lg-0 gy-3">
+                                    <!-- graph  -->
+                                    <div class="col-lg-8">
+                                       <div class="card-bg h-100">
+                                          <div class="flex-between main-title">
+                                             <div class="heading">
+                                                <h2>Training Progress Overview</h2>
+                                             </div>
+                                             <select class="form-select cust-select" aria-label="Default select example">
+                                                <option selected>Last 30 days</option>
+                                                <option>Last 10 days</option>
+                                                <option>Last 1 days</option>
+                                                <option>1 Year</option>
+                                             </select>
+                                          </div>
+                                          <div class="cashChart" style="min-height: 290px">
+                                             <canvas id="cashChart" class="chartjs"></canvas>
+                                          </div>
+                                          <div class="doted-list mt-4">
+                                             <ul>
+                                                <li class="purple-dot">Video Training</li>
+                                                <li class="brown-dot">Quiz Modules</li>
+                                                <li class="orange-dot">VR Scenarios</li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!-- pie  -->
+                                    <div class="col-lg-4">
+                                       <div class="card-bg h-100">
+                                          <div class="flex-between main-title">
+                                             <h2>Overall Completion Rate</h2>
+                                             <div class="dropdown icon">
+                                                <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                   <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
+                                                   <a class="dropdown-item" href="javascript:void(0);">View More</a>
+                                                   <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <!-- chart  -->
+                                          <div class="overallCompletion pt-md-4">
+                                             <canvas id="overallCompletion" class="chartjs"></canvas>
+                                          </div>
+                                          <!-- chart-persantage -->
+                                          <div class="chart-persantage flex-between mx-auto mt-3" style="width: 93.5%">
+                                             <span class="font-26 flex-center font-weight-500" style="width: 40px">0</span>
+                                             <span class="font-26 flex-center font-weight-500" style="width: 40px">100</span>
+                                          </div>
+                                          <div class="divider-rule my-4"></div>
+                                          <!-- chart data  -->
+                                          <div class="cust-body">
+                                             <div class="flex-between mb-3">
+                                                <p class="font-weight-500">Completed</p>
+                                                <span class="green-600">87%</span>
+                                             </div>
+                                             <div class="flex-between mb-3">
+                                                <p class="font-weight-500">In Progress</p>
+                                                <span class="orange-600">8%</span>
+                                             </div>
+                                             <div class="flex-between">
+                                                <p class="font-weight-500">Not Started</p>
+                                                <span class="red-600">5%</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- main-col  -->
+                           <div class="col-12">
+                              <div class="card-bg">
+                                 <div class="main-title">
+                                    <div class="heading">
+                                       <h2>Training Path Assignment</h2>
+                                    </div>
+                                 </div>
+                                 <div class="card-wrapper row-gx row-gy">
+                                    <div class="row">
+                                       <div class="col-md-4">
+                                          <div class="card-border">
+                                             <div class="flex-gap lg-gap">
+                                                <div class="cust-icon">
+                                                   <i class="fa-solid fa-wrench"></i>
+                                                </div>
+                                                <div class="text heading">
+                                                   <h2>Field Technician</h2>
+                                                </div>
+                                             </div>
+                                             <div class="text mt-4">
+                                                <p>Complete safety protocols, equipment handling, and customer service training</p>
+                                                <div class="flex-between gap-2 mt-3">
+                                                   <p>8 modules</p>
+                                                   <button class="site-btn green-outline"><i class="fa-solid fa-user-tie"></i> Assign</button>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-4">
+                                          <div class="card-border">
+                                             <div class="flex-gap lg-gap">
+                                                <div class="cust-icon">
+                                                   <i class="fa-solid fa-spray-can"></i>
+                                                </div>
+                                                <div class="text heading">
+                                                   <h2>Kitchen Cleaner</h2>
+                                                </div>
+                                             </div>
+                                             <div class="text mt-4">
+                                                <p>Chemical safety, cleaning procedures, and hygiene standards certification</p>
+                                                <div class="flex-between gap-2 mt-3">
+                                                   <p>6 modules</p>
+                                                   <button class="site-btn green-outline"><i class="fa-solid fa-user-tie"></i> Assign</button>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-4">
+                                          <div class="card-border">
+                                             <div class="flex-gap lg-gap">
+                                                <div class="cust-icon">
+                                                   <i class="fa-solid fa-user-tie"></i>
+                                                </div>
+                                                <div class="text heading">
+                                                   <h2>Supervisor</h2>
+                                                </div>
+                                             </div>
+                                             <div class="text mt-4">
+                                                <p>Team management, quality control, and compliance oversight training</p>
+                                                <div class="flex-between gap-2 mt-3">
+                                                   <p>12 modules</p>
+                                                   <button class="site-btn green-outline"><i class="fa-solid fa-user-tie"></i> Assign</button>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- main-col  -->
+                           <div class="col-12">
+                              <div class="card-wrapper card-bg">
+                                 <div class="flex-between main-title">
+                                    <div class="heading">
+                                       <h2>Active Employees</h2>
+                                    </div>
+                                    <div class="btns flex-gap">
+                                       <select class="form-select cust-select" aria-label="Default select example">
+                                          <option selected="">All Roles</option>
+                                          <option>Roles 1</option>
+                                          <option>Roles2</option>
+                                       </select>
+                                       <form action="javascript:void()" class="search-field">
+                                          <input class="form-control" id="src-icon-field" placeholder="Search employees..." aria-label="Search" />
+                                          <label for="src-icon-field" class="src-bar">
+                                             <i class="fa-solid fa-magnifying-glass"></i>
+                                          </label>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="cust-table">
+                                    <div class="table-responsive text-nowrap">
+                                       <table class="table">
+                                          <thead>
+                                             <tr class="text-nowrap">
+                                                <th>Report Name</th>
+                                                <th>Role</th>
+                                                <th>Progress</th>
+                                                <th>Last Activity</th>
+                                                <th>Status</th>
+                                                <th width="10%">Actions</th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <!-- tr  -->
+                                             <tr>
+                                                <td>
+                                                   <div class="flex-gap">
+                                                      <div class="image">
+                                                         <img src="../assets/img/custom/denver.png" alt="User" />
+                                                      </div>
+                                                      <div class="text">
+                                                         <p>Denver Central</p>
+                                                         <span>denvercentral@gmail.com</span>
+                                                      </div>
+                                                   </div>
+                                                </td>
+                                                <td><span class="cust-badge blue-600-badge">Field Technician</span></td>
+                                                <td>85%</td>
+                                                <td>2 hours ago</td>
+                                                <td><span class="cust-badge green-badge">Active</span></td>
+                                                <td>
+                                                   <button class="green flat-btn"><i class="fa-solid fa-eye"></i></button>
+                                                   <button class="green flat-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+                                                   <button class="green flat-btn"><i class="fa-solid fa-plus"></i></button>
+                                                </td>
+                                             </tr>
+                                             <!-- tr  -->
+                                             <tr>
+                                                <td>
+                                                   <div class="flex-gap">
+                                                      <div class="image">
+                                                         <img src="../assets/img/custom/boy-1.png" alt="User" />
+                                                      </div>
+                                                      <div class="text">
+                                                         <p>Mike Rodriguez</p>
+                                                         <span>mike.rodriguez@email.com</span>
+                                                      </div>
+                                                   </div>
+                                                </td>
+                                                <td><span class="cust-badge green-badge">Kitchen Cleaner</span></td>
+                                                <td>60%</td>
+                                                <td>1 day ago</td>
+                                                <td><span class="cust-badge">In Progress</span></td>
+                                                <td>
+                                                   <button class="green flat-btn"><i class="fa-solid fa-eye"></i></button>
+                                                   <button class="green flat-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+                                                   <button class="green flat-btn"><i class="fa-solid fa-plus"></i></button>
+                                                </td>
+                                             </tr>
+                                             <!-- tr  -->
+                                             <tr>
+                                                <td>
+                                                   <div class="flex-gap">
+                                                      <div class="image">
+                                                         <img src="../assets/img/custom/boy-2.png" alt="User" />
+                                                      </div>
+                                                      <div class="text">
+                                                         <p>David Chen</p>
+                                                         <span>david.chen@email.com</span>
+                                                      </div>
+                                                   </div>
+                                                </td>
+                                                <td><span class="cust-badge">Supervisor</span></td>
+                                                <td>100%</td>
+                                                <td>30 minutes ago</td>
+                                                <td><span class="cust-badge blue-600-badge">Certified</span></td>
+                                                <td>
+                                                   <button class="green flat-btn"><i class="fa-solid fa-eye"></i></button>
+                                                   <button class="green flat-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+                                                   <button class="green flat-btn"><i class="fa-solid fa-plus"></i></button>
+                                                </td>
+                                             </tr>
+                                             <!-- tr  -->
+                                             <tr>
+                                                <td>
+                                                   <div class="flex-gap">
+                                                      <div class="image">
+                                                         <img src="../assets/img/custom/girl-1.png" alt="User" />
+                                                      </div>
+                                                      <div class="text">
+                                                         <p>Sarah Johnson</p>
+                                                         <span>sarah.johnson@email.com</span>
+                                                      </div>
+                                                   </div>
+                                                </td>
+                                                <td><span class="cust-badge blue-600-badge">Field Technician</span></td>
+                                                <td>25%</td>
+                                                <td>3 days ago</td>
+                                                <td><span class="cust-badge red-badge">Behind</span></td>
+                                                <td>
+                                                   <button class="green flat-btn"><i class="fa-solid fa-eye"></i></button>
+                                                   <button class="green flat-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+                                                   <button class="green flat-btn"><i class="fa-solid fa-plus"></i></button>
+                                                </td>
+                                             </tr>
+                                             <!-- tr  -->
+                                             <tr>
+                                                <td>
+                                                   <div class="flex-gap">
+                                                      <div class="image">
+                                                         <img src="../assets/img/custom/boy-1.png" alt="User" />
+                                                      </div>
+                                                      <div class="text">
+                                                         <p>Mike Rodriguez</p>
+                                                         <span>mike.rodriguez@email.com</span>
+                                                      </div>
+                                                   </div>
+                                                </td>
+                                                <td><span class="cust-badge green-badge">Kitchen Cleaner</span></td>
+                                                <td>95%</td>
+                                                <td>1 hour ago</td>
+                                                <td><span class="cust-badge orange-badge">Nearly Complete</span></td>
+                                                <td>
+                                                   <button class="green flat-btn"><i class="fa-solid fa-eye"></i></button>
+                                                   <button class="green flat-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+                                                   <button class="green flat-btn"><i class="fa-solid fa-plus"></i></button>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- main-col  -->
+                           <div class="col-12">
+                              <div class="card-wrapper">
+                                 <div class="row gx-lg-4 gy-lg-0 gy-4 gx-3">
+                                    <!-- cards  -->
+                                    <div class="col-lg-6">
+                                       <div class="card-bg h-100">
+                                          <div class="flex-between mb-4 flex-wrap gap-2">
+                                             <div class="flex-gap gap-lg-3 gap-2">
+                                                <div class="flat-icon"><i class="fa-solid green fa-triangle-exclamation"></i></div>
+                                                <h3>Overdue Assignment</h3>
+                                             </div>
+                                             <span class="cust-badge red-badge">5 Items</span>
+                                          </div>
+                                          <div class="inner-wrapper row-gy">
+                                             <div class="row">
+                                                <div class="col-12">
+                                                   <div class="card-border rounded-8">
+                                                      <div class="flex-align-start mb-3">
+                                                         <div class="flex-gap card-col-d">
+                                                            <div class="image img-rounded-36">
+                                                               <img src="../assets/img/custom/boy-1.png" alt="User" />
+                                                            </div>
+                                                            <div class="text">
+                                                               <h4>Kitchen Safety Protocol</h4>
+                                                               <p class="fw-medium mt-05">Alex Thompson - Field Technician</p>
+                                                            </div>
+                                                         </div>
+                                                         <div class="flat-icon navyblue"><i class="fa-solid fa-bell"></i></div>
+                                                      </div>
+                                                      <p class="fw-medium">Due: 3 days ago</p>
+                                                   </div>
+                                                </div>
+                                                <div class="col-12">
+                                                   <div class="card-border rounded-8">
+                                                      <div class="flex-align-start mb-3">
+                                                         <div class="flex-gap card-col-d">
+                                                            <div class="image img-rounded-36">
+                                                               <img src="../assets/img/custom/boy-2.png" alt="User" />
+                                                            </div>
+                                                            <div class="text">
+                                                               <h4>Chemical Handling Certification</h4>
+                                                               <p class="fw-medium mt-05">James Wilson - Kitchen Cleaner</p>
+                                                            </div>
+                                                         </div>
+                                                         <div class="flat-icon navyblue"><i class="fa-solid fa-bell"></i></div>
+                                                      </div>
+                                                      <p class="fw-medium">Due: 2 days ago</p>
+                                                   </div>
+                                                </div>
+                                                <div class="col-12">
+                                                   <div class="card-border rounded-8">
+                                                      <div class="flex-align-start mb-3">
+                                                         <div class="flex-gap card-col-d">
+                                                            <div class="image img-rounded-36">
+                                                               <img src="../assets/img/custom/girl-1.png" alt="User" />
+                                                            </div>
+                                                            <div class="text">
+                                                               <h4>Customer Service Excellence</h4>
+                                                               <p class="fw-medium mt-05">Ryan Martinez - Field Technician</p>
+                                                            </div>
+                                                         </div>
+                                                         <div class="flat-icon navyblue"><i class="fa-solid fa-bell"></i></div>
+                                                      </div>
+                                                      <p class="fw-medium">Due: 2 days ago</p>
+                                                   </div>
+                                                </div>
+                                                <div class="col-12">
+                                                   <button class="site-btn w-100 green-outline mt-2">View All Overdue Assignments <i class="fa-solid fa-arrow-right"></i></button>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!-- cards  -->
+                                    <div class="col-lg-6">
+                                       <div class="card-bg h-100">
+                                          <div class="flex-between mb-4 flex-wrap gap-2">
+                                             <div class="flex-gap gap-lg-3 gap-2">
+                                                <div class="flat-icon"><i class="fa-solid green fa-calendar-days"></i></div>
+                                                <h3>Upcoming Assignment</h3>
+                                             </div>
+                                             <span class="cust-badge blue-600-badge">8 Items</span>
+                                          </div>
+                                          <div class="inner-wrapper row-gy">
+                                             <div class="row">
+                                                <div class="col-12">
+                                                   <div class="card-border rounded-8">
+                                                      <div class="flex-align-start mb-3">
+                                                         <div class="flex-gap card-col-d">
+                                                            <div class="image img-rounded-36">
+                                                               <img src="../assets/img/custom/boy-2.png" alt="User" />
+                                                            </div>
+                                                            <div class="text">
+                                                               <h4>Advanced Equipment Training</h4>
+                                                               <p class="fw-medium mt-05">Sarah-Johnson - Field Technician</p>
+                                                            </div>
+                                                         </div>
+                                                         <div class="flat-icon navyblue"><i class="fa-solid fa-vr-cardboard"></i></div>
+                                                      </div>
+                                                      <p class="fw-medium">Due: Tomorrow</p>
+                                                   </div>
+                                                </div>
+                                                <div class="col-12">
+                                                   <div class="card-border rounded-8">
+                                                      <div class="flex-align-start mb-3">
+                                                         <div class="flex-gap card-col-d">
+                                                            <div class="image img-rounded-36">
+                                                               <img src="../assets/img/custom/girl-1.png" alt="User" />
+                                                            </div>
+                                                            <div class="text">
+                                                               <h4>Hygiene Standard Update</h4>
+                                                               <p class="fw-medium mt-05">Mike Rodriguez - Kitchen Cleaner</p>
+                                                            </div>
+                                                         </div>
+                                                         <div class="flat-icon navyblue"><i class="fa-solid fa-circle-play"></i></div>
+                                                      </div>
+                                                      <p class="fw-medium">Due: In 3 days</p>
+                                                   </div>
+                                                </div>
+                                                <div class="col-12">
+                                                   <div class="card-border rounded-8">
+                                                      <div class="flex-align-start mb-3">
+                                                         <div class="flex-gap card-col-d">
+                                                            <div class="image img-rounded-36">
+                                                               <img src="../assets/img/custom/boy-1.png" alt="User" />
+                                                            </div>
+                                                            <div class="text">
+                                                               <h4>Final Assessment Quiz</h4>
+                                                               <p class="fw-medium mt-05">Emma Davis - Kitchen Cleaner</p>
+                                                            </div>
+                                                         </div>
+                                                         <div class="flat-icon navyblue"><i class="fa-solid fa-circle-question"></i></div>
+                                                      </div>
+                                                      <p class="fw-medium">Due: In 5 days</p>
+                                                   </div>
+                                                </div>
+                                                <div class="col-12">
+                                                   <button class="site-btn w-100 green-outline mt-2">View All Upcoming Assignments<i class="fa-solid fa-arrow-right"></i></button>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- main-col  -->
+                           <div class="col-12">
+                              <div class="card-wrapper card-bg row-gx row-gy">
+                                 <div class="flex-between main-title flex-wrap gap-2">
+                                    <div class="flex-gap gap-lg-3 gap-2">
+                                       <div class="flat-icon"><i class="fa-solid green fa-vr-cardboard"></i></div>
+                                       <h3>Overdue Assignment</h3>
+                                    </div>
+                                    <button class="site-btn green-btn"><i class="fa-solid fa-vr-cardboard"> </i> Schedule VR Session</button>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-lg-4 col-md-6">
+                                       <div class="card-border">
+                                          <div class="flex-gap lg-gap">
+                                             <div class="cust-icon">
+                                                <i class="fa-solid fa-fire-extinguisher"></i>
+                                             </div>
+                                             <div class="text heading">
+                                                <h3>Fire Safety Drill</h3>
+                                                <p class="mt-05">Emergency Response</p>
+                                             </div>
+                                          </div>
+                                          <div class="text mt-4">
+                                             <div class="flex-between mb-2">
+                                                <p>Duration:</p>
+                                                <span class="font-weight-500">15 minutes</span>
+                                             </div>
+                                             <div class="flex-between mb-2">
+                                                <p>Completed:</p>
+                                                <span class="font-weight-500">8/12 employees</span>
+                                             </div>
+                                             <div class="flex-between mb-3">
+                                                <p>Avg Score:</p>
+                                                <span class="font-weight-500">92%</span>
+                                             </div>
+                                          </div>
+                                          <div class="foot-card flex-between md-gap align-items-stretch">
+                                             <a href="#" class="site-btn green-btn flex-grow-1">View Result</a>
+                                             <button class="site-btn px-3">
+                                                <i class="fa-solid fa-play"></i>
+                                             </button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                       <div class="card-border">
+                                          <div class="flex-gap lg-gap">
+                                             <div class="cust-icon">
+                                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                                             </div>
+                                             <div class="text heading">
+                                                <h3>Equipment Handling</h3>
+                                                <p class="mt-05">Technical Training</p>
+                                             </div>
+                                          </div>
+                                          <div class="text mt-4">
+                                             <div class="flex-between mb-2">
+                                                <p>Duration:</p>
+                                                <span class="font-weight-500">25 minutes</span>
+                                             </div>
+                                             <div class="flex-between mb-2">
+                                                <p>Completed:</p>
+                                                <span class="font-weight-500">5/12 employees</span>
+                                             </div>
+                                             <div class="flex-between mb-3">
+                                                <p>Avg Score:</p>
+                                                <span class="font-weight-500">87%</span>
+                                             </div>
+                                          </div>
+                                          <div class="foot-card flex-between md-gap align-items-stretch">
+                                             <a href="#" class="site-btn green-btn flex-grow-1">View Result</a>
+                                             <button class="site-btn px-3">
+                                                <i class="fa-solid fa-play"></i>
+                                             </button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                       <div class="card-border">
+                                          <div class="flex-gap lg-gap">
+                                             <div class="cust-icon">
+                                                <i class="fa-solid fa-handshake"></i>
+                                             </div>
+                                             <div class="text heading">
+                                                <h3>Customer Interaction</h3>
+                                                <p class="mt-05">Soft Skills Training</p>
+                                             </div>
+                                          </div>
+                                          <div class="text mt-4">
+                                             <div class="flex-between mb-2">
+                                                <p>Duration:</p>
+                                                <span class="font-weight-500">20 minutes</span>
+                                             </div>
+                                             <div class="flex-between mb-2">
+                                                <p>Completed:</p>
+                                                <span class="font-weight-500">12/12 employees</span>
+                                             </div>
+                                             <div class="flex-between mb-3">
+                                                <p>Avg Score:</p>
+                                                <span class="font-weight-500">95%</span>
+                                             </div>
+                                          </div>
+                                          <div class="foot-card flex-between md-gap align-items-stretch">
+                                             <a href="#" class="site-btn green-btn flex-grow-1">View Result</a>
+                                             <button class="site-btn px-3">
+                                                <i class="fa-solid fa-play"></i>
+                                             </button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <!-- main-col  -->
+                           <div class="col-12">
+                              <div class="card-bg">
+                                 <div class="flex-between main-title">
+                                    <h2>Recent Activity</h2>
+                                    <a href="#" class="site-btn green-outline gap-2">View All Activity <i class="fa-solid fa-arrow-right"></i></a>
+                                 </div>
+                                 <div class="row gy-3 abs-spans-mob">
+                                    <div class="col-12">
+                                       <div class="flex-between flex-nowrap card-border rounded-8">
+                                          <div class="flex-gap lg-gap flex-wrap">
+                                             <div class="cust-icon">
+                                                <i class="fa-solid fa-circle-check"></i>
+                                             </div>
+                                             <div class="text">
+                                                <h3>Sarah Johnson completed Kitchen Safety Protocols</h3>
+                                                <p class="flex-gap mt-05">2 hours ago</p>
+                                             </div>
+                                          </div>
+                                          <span class="cust-badge green-badge">Completed</span>
+                                       </div>
+                                    </div>
+                                    <div class="col-12">
+                                       <div class="flex-between card-border flex-nowrap rounded-8">
+                                          <div class="flex-gap lg-gap flex-wrap">
+                                             <div class="cust-icon">
+                                                <i class="fa-solid fa-play"></i>
+                                             </div>
+                                             <div class="text">
+                                                <h3>Mike Rodriguez started VR training session Equipment Handling</h3>
+                                                <p class="flex-gap mt-05">3 hours ago</p>
+                                             </div>
+                                          </div>
+                                          <span class="cust-badge blue-600-badge">In Progress</span>
+                                       </div>
+                                    </div>
+                                    <div class="col-12">
+                                       <div class="flex-between card-border flex-nowrap rounded-8">
+                                          <div class="flex-gap lg-gap flex-wrap">
+                                             <div class="cust-icon">
+                                                <i class="fa-solid fa-certificate"></i>
+                                             </div>
+                                             <div class="text">
+                                                <h3>David Chen earned certification for Supervisor Training Path</h3>
+                                                <p class="flex-gap mt-05">5 hours ago</p>
+                                             </div>
+                                          </div>
+                                          <span class="cust-badge orange-badge">Certified</span>
+                                       </div>
+                                    </div>
+                                    <div class="col-12">
+                                       <div class="flex-between card-border flex-nowrap rounded-8">
+                                          <div class="flex-gap lg-gap flex-wrap">
+                                             <div class="cust-icon">
+                                                <i class="fa-sharp fa-solid fa-alarm-clock"></i>
+                                             </div>
+                                             <div class="text">
+                                                <h3>Alex Thompson missed deadline for Chemical Safety Training</h3>
+                                                <p class="flex-gap mt-05">1 hours ago</p>
+                                             </div>
+                                          </div>
+                                          <span class="cust-badge red-badge">Overdue</span>
+                                       </div>
+                                    </div>
+                                    <div class="col-12">
+                                       <div class="flex-between card-border flex-nowrap rounded-8">
+                                          <div class="flex-gap lg-gap flex-wrap">
+                                             <div class="cust-icon">
+                                                <i class="fa-solid fa-play"></i>
+                                             </div>
+                                             <div class="text">
+                                                <h3>Emma Davis was assigned to Kitchen Cleaner Training Path</h3>
+                                                <p class="flex-gap mt-05">2 day ago</p>
+                                             </div>
+                                          </div>
+                                          <span class="cust-badge green-700-badge">Assigned</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- main-col  -->
+                           <div class="col-12">
+                              <div class="card-bg">
+                                 <div class="main-title mb-3">
+                                    <h2>Quick Actions</h2>
+                                 </div>
+                                 <div class="row gy-lg-0 gx-3 gy-3">
+                                    <!-- btn-col  -->
+                                    <div class="col-lg-3 col-md-6">
+                                       <button class="site-btn w-100 font-weight-500"><i class="fa-solid fa-user-plus"></i> Add New Employee</button>
+                                    </div>
+                                    <!-- btn-col  -->
+                                    <div class="col-lg-3 col-md-6">
+                                       <button class="site-btn w-100 font-weight-500"><i class="fa-solid fa-clipboard-list"></i> Create Assignment</button>
+                                    </div>
+                                    <!-- btn-col  -->
+                                    <div class="col-lg-3 col-md-6">
+                                       <button class="site-btn w-100 font-weight-500"><i class="fa-solid fa-vr-cardboard"></i> Schedule VR Session</button>
+                                    </div>
+                                    <!-- btn-col  -->
+                                    <div class="col-lg-3 col-md-6">
+                                       <button class="site-btn w-100 font-weight-500"><i class="fa-solid fa-file-export"></i> Export Reports</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Footer -->
+                  <footer class="content-footer footer mb-4">
+                     <div class="container-xxl">
+                        <div class="card-bg w-100 d-flex flex-wrap justify-content-lg-between justify-content-center flex-md-row gap-lg-0 gap-2 text-center">
+                           <div class="mb-2 mb-md-0">
+                              <p><a href="index.html">&copy; 2025 Kitchen Guard Training Platform.</a> All rights reserved.</p>
+                           </div>
+                           <div>
+                              <a href="#" class="footer-link me-lg-3 me-2">Privacy Policy</a>
+                              <a href="#" class="footer-link me-lg-3 me-2">Terms of Service</a>
+                              <a href="#" class="footer-link me-lg-3 me-2">Support</a>
+                              <a href="#" class="footer-link">Documentation</a>
+                           </div>
+                        </div>
+                     </div>
+                  </footer>
+                  <!-- / Footer -->
+
+                  <div class="content-backdrop fade"></div>
+               </div>
+               <!-- Content wrapper -->
+            </div>
+            <!-- / Layout page -->
+         </div>
+
+         <!-- Overlay -->
+         <div class="layout-overlay layout-menu-toggle"></div>
+
+         <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+         <div class="drag-target"></div>
+      </div>
+      <!-- / Layout wrapper -->
+
+      <!-- Core JS -->
+      <!-- build:js ../assets/vendor/js/core.js -->
+      <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+      <script src="../assets/vendor/libs/popper/popper.js"></script>
+      <script src="../assets/vendor/js/bootstrap.js"></script>
+      <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+      <script src="../assets/vendor/libs/hammer/hammer.js"></script>
+      <script src="../assets/vendor/libs/i18n/i18n.js"></script>
+      <script src="../assets/vendor/libs/typeahead-js/typeahead.js"></script>
+
+      <script src="../assets/vendor/js/menu.js"></script>
+      <!-- endbuild -->
+
+      <!-- Vendors JS -->
+      <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+      <script src="../assets/vendor/libs/chartjs/chartjs.js"></script>
+
+      <!-- Main JS -->
+      <script src="../assets/js/main.js"></script>
+
+      <!-- Page JS -->
+      <script src="../assets/js/dashboards-crm.js"></script>
+      <script src="../assets/js/charts-custmize.js"></script>
+   </body>
+</html>
