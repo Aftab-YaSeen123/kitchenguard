@@ -167,150 +167,154 @@
             <div class="layout-page">
                 <!-- Navbar -->
 
-                <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme justify-content-between" id="layout-navbar">
-                    <div class="navbar-nav-right d-flex align-items-md-center align-items-start" id="navbar-collapse">
-                        <!-- heading-->
-                        <div class="layout-menu-toggle navbar-nav align-items-xl-center d-xl-none">
+                <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached bg-navbar-theme flex-gap user-header flex-row-reverse" id="layout-navbar">
+                    <div class="navbar-nav-right d-flex align-items-md-center align-items-start gap-1" id="navbar-collapse">
+                        <div class="flex-gap  gap-lg-3 order-1 user-content">
+                            <div class="nav-item dropdown-notifications navbar-dropdown dropdown order-xl-0 order-1">
+                                <a class="nav-link dropdown-toggle flat-icon hide-arrow p-1" href="javascript:void(0);" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                    <i class="green fa-solid fa-bell"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end py-0">
+                                    <li class="dropdown-menu-header border-bottom">
+                                        <div class="dropdown-header d-flex align-items-center py-3">
+                                            <h4 class="text-body mb-0 me-auto gray-1000">Notification</h4>
+                                            <a href="javascript:void(0)" class="dropdown-notifications-all text-body" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Mark all as read" data-bs-original-title="Mark all as read"><i class="bx fs-4 bx-envelope-open"></i></a>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-notifications-list scrollable-container ps ps--active-y">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                                <div class="d-flex">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <div class="avatar">
+                                                            <img src="../assets/img/custom/user-1.png" alt="" class="w-px-40 h-auto rounded-circle">
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="mb-1 gray-1000">Congratulation Lettie 🎉</h6>
+                                                        <p class="mb-0 gra-800">Won the monthly best seller gold badge</p>
+                                                        <small class="text-muted">1h ago</small>
+                                                    </div>
+
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                                <div class="d-flex">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <div class="avatar">
+                                                            <span class="avatar-initial rounded-circle bg-primary">CF</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="mb-1 gray-1000">Charles Franklin</h6>
+                                                        <p class="mb-0 gray-800">Accepted your connection</p>
+                                                        <small class="text-muted">12hr ago</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                        <div class="ps__rail-x" style="left: 0px; bottom: -86px;">
+                                            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                                        </div>
+                                        <div class="ps__rail-y" style="top: 86px; right: 0px; height: 480px;">
+                                            <div class="ps__thumb-y" tabindex="0" style="top: 41px; height: 228px;"></div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-menu-footer border-top">
+                                        <a href="javascript:void(0);" class="dropdown-item d-flex justify-content-center p-3"> View all notifications </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="vertical-rule d-xl-block d-none"></div>
+                            <div class="nav-item navbar-dropdown dropdown-user dropdown">
+                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="flex-gap lg-gap">
+                                        <div class="image md-size">
+                                            <img src="../assets/img/custom/boy-1.png" alt="User">
+                                        </div>
+                                        <div class="text">
+                                            <h4 class="gray-800">Downtown Franchise</h4>
+                                            <p>Manager Dashboard</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <i class="bx bx-user me-2 green"></i>
+                                            <span class="align-middle">My Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <i class="bx bx-cog me-2 green"></i>
+                                            <span class="align-middle">Settings</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <span class="d-flex align-items-center align-middle">
+                                                <i class="flex-shrink-0 bx bx-credit-card me-2 green"></i>
+                                                <span class="flex-grow-1 align-middle">Billing</span>
+
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="divider-rule"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <i class="bx bx-support me-2 green"></i>
+                                            <span class="align-middle">Help</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <i class="bx bx-help-circle me-2 green"></i>
+                                            <span class="align-middle">FAQ</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <i class="bx bx-dollar me-2 green"></i>
+                                            <span class="align-middle">Pricing</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="divider-rule"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <i class="bx bx-power-off me-2 green"></i>
+                                            <span class="align-middle">Log Out</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="layout-menu-toggle align-items-xl-center d-xl-none">
                             <a class="nav-item nav-link p-0" href="javascript:void(0)">
                                 <i class="menu-icon bx bx-menu bx-sm"></i>
                             </a>
                         </div>
-                        <div class="navbar-nav align-items-center">
-                            <form action="javascript:void()" class="search-field">
+                    </div>
+
+                    <div class="user-menu flex-between flex-grow-1">
+
+                        <!-- heading-->
+                        <div class="navbar-nav flex-between flex-grow-1">
+                            <form action="javascript:void()" class="search-field cust-width">
                                 <input class="form-control" id="src-icon" placeholder="Search training modules..." aria-label="Search">
                                 <label for="src-icon" class="src-bar">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </label>
                             </form>
-                        </div>
-                    </div>
-
-                    <div class="header-btns flex-grow-1 justify-content-end">
-                        <span class="lg-badge lg-skyblue-badge"><i class="fa-solid fa-fire"></i>7 Day Streak</span>
-                        <span class="lg-badge"><i class="fa-solid fa-star"></i>Level 12</span>
-                        <div class="nav-item dropdown-notifications navbar-dropdown dropdown">
-                            <a class="nav-link dropdown-toggle hide-arrow p-1" href="javascript:void(0);" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                                <i class="green fa-solid fa-bell"></i>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end py-0">
-                                <li class="dropdown-menu-header border-bottom">
-                                    <div class="dropdown-header d-flex align-items-center py-3">
-                                        <h5 class="text-body mb-0 me-auto gray-1000">Notification</h5>
-                                        <a href="javascript:void(0)" class="dropdown-notifications-all text-body" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Mark all as read" data-bs-original-title="Mark all as read"><i class="bx fs-4 bx-envelope-open"></i></a>
-                                    </div>
-                                </li>
-                                <li class="dropdown-notifications-list scrollable-container ps ps--active-y">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
-                                            <div class="d-flex">
-                                                <div class="flex-shrink-0 me-3">
-                                                    <div class="avatar">
-                                                        <img src="../assets/img/custom/user-1.png" alt="" class="w-px-40 h-auto rounded-circle">
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1">
-                                                    <h6 class="mb-1 gray-1000">Congratulation Lettie 🎉</h6>
-                                                    <p class="mb-0 gra-800">Won the monthly best seller gold badge</p>
-                                                    <small class="text-muted">1h ago</small>
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
-                                            <div class="d-flex">
-                                                <div class="flex-shrink-0 me-3">
-                                                    <div class="avatar">
-                                                        <span class="avatar-initial rounded-circle bg-primary">CF</span>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1">
-                                                    <h6 class="mb-1 gray-1000">Charles Franklin</h6>
-                                                    <p class="mb-0 gray-800">Accepted your connection</p>
-                                                    <small class="text-muted">12hr ago</small>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                    </ul>
-                                    <div class="ps__rail-x" style="left: 0px; bottom: -86px;">
-                                        <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
-                                    </div>
-                                    <div class="ps__rail-y" style="top: 86px; right: 0px; height: 480px;">
-                                        <div class="ps__thumb-y" tabindex="0" style="top: 41px; height: 228px;"></div>
-                                    </div>
-                                </li>
-                                <li class="dropdown-menu-footer border-top">
-                                    <a href="javascript:void(0);" class="dropdown-item d-flex justify-content-center p-3"> View all notifications </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="vertical-rule"></div>
-
-                        <div class="nav-item navbar-dropdown dropdown-user dropdown">
-                            <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
-                                <div class="flex-gap lg-gap">
-                                    <div class="image md-size">
-                                        <img src="../assets/img/custom/boy-1.png" alt="User">
-                                    </div>
-                                    <div class="text">
-                                        <h5 class="gray-800">Downtown Franchise</h5>
-                                        <p class="mt-1">Manager Dashboard</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li>
-                                    <a class="dropdown-item" href="javascript:void(0)">
-                                        <i class="bx bx-user me-2 green"></i>
-                                        <span class="align-middle">My Profile</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="javascript:void(0)">
-                                        <i class="bx bx-cog me-2 green"></i>
-                                        <span class="align-middle">Settings</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="javascript:void(0)">
-                                        <span class="d-flex align-items-center align-middle">
-                                            <i class="flex-shrink-0 bx bx-credit-card me-2 green"></i>
-                                            <span class="flex-grow-1 align-middle">Billing</span>
-
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <div class="divider-rule"></div>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="javascript:void(0)">
-                                        <i class="bx bx-support me-2 green"></i>
-                                        <span class="align-middle">Help</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="javascript:void(0)">
-                                        <i class="bx bx-help-circle me-2 green"></i>
-                                        <span class="align-middle">FAQ</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="javascript:void(0)">
-                                        <i class="bx bx-dollar me-2 green"></i>
-                                        <span class="align-middle">Pricing</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <div class="divider-rule"></div>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="javascript:void(0)">
-                                        <i class="bx bx-power-off me-2 green"></i>
-                                        <span class="align-middle">Log Out</span>
-                                    </a>
-                                </li>
-                            </ul>
+                            <div class="btn-badges flex-gap">
+                                <span class="lg-badge lg-skyblue-badge"><i class="fa-solid fa-fire"></i>7 Day Streak</span>
+                                <span class="lg-badge"><i class="fa-solid fa-star"></i>Level 12</span>
+                            </div>
                         </div>
                     </div>
 
@@ -334,7 +338,7 @@
                                     <div class="card-bg">
                                         <div class="flex-between">
                                             <div class="left-content">
-                                                <div class="flex-gap-start lg-gap mb-3">
+                                                <div class="flex-gap-start lg-gap flex-wrap">
                                                     <div class="image lg-size">
                                                         <img src="../assets/img/custom/boy-1.png" alt="User">
                                                     </div>
@@ -343,7 +347,7 @@
                                                             <h1>Good Morning, Marcus! </h1>
                                                             <p class="mt-1 font-14">Ready to continue your kitchen safety journey?</p>
                                                         </div>
-                                                        <div class="flex-gap gap-4">
+                                                        <div class="flex-gap gap-md-4 flex-wrap gap-2">
                                                             <div class="flex-gap sm-gap">
                                                                 <i class="fa-solid  green fa-calendar-check"></i>
                                                                 <p>Last login: Today, 8:30 Am</p>
@@ -357,7 +361,7 @@
                                                 </div>
 
                                             </div>
-                                            <div class="lg-badge white column-flex gap-1">
+                                            <div class="lg-badge white column-flex gap-1 box-badge">
                                                 <i class="fa-solid fa-fire"></i>
                                                 <h2 class="font-24 mt-1">7 Days</h2>
                                                 <p>Training Streak</p>
@@ -428,9 +432,9 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="card-wrapper">
-                                        <div class="row row-gx">
-                                            <div class="col-md-6">
+                                    <div class="card-wrapper  row-gx row-gy">
+                                        <div class="row">
+                                            <div class="col-lg-6">
                                                 <div class="card-bg h-100 half-circle-graph">
                                                     <div class="inner-title margin-bottom">
                                                         <h2>Training Path Progress</h2>
@@ -444,7 +448,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-lg-6">
                                                 <div class="card-bg h-100">
                                                     <div class="inner-title margin-bottom">
                                                         <h2>Weekly Activity</h2>
@@ -468,10 +472,10 @@
                                             <h2>Next Up Due Soon</h2>
                                             <a href="#" class="site-btn green-btn"><i class="fa-solid fa-calendar"></i>View Full Schedule</a>
                                         </div>
-                                        <div class="card-wrapper row-gx">
+                                        <div class="card-wrapper row-gx row-gy">
                                             <div class="row">
-                                                <div class="col-md-4">
-                                                    <div class="card-border">
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="card-border h-100">
                                                         <div class="flex-between">
                                                             <div class="cust-icon red-light-icon">
                                                                 <i class="fa-solid fa-triangle-exclamation"></i>
@@ -481,9 +485,9 @@
                                                         <div class="cust-body mt-3 mb-4">
                                                             <div class="text">
                                                                 <h2 class="mb-1">Fire Safety Quiz</h2>
-                                                                <p>Test your knowledge on kitchen fire prevention and emergency procedures.</p>
+                                                                <p>Test your knowledge on kitchen fire <br>prevention and emergency procedures.</p>
                                                             </div>
-                                                            <div class="flex-gap xgap-4 mt-3">
+                                                            <div class="flex-gap xl-gap mt-3">
                                                                 <div class="flex-gap sm-gap">
                                                                     <i class="fa-solid  green fa-calendar-check"></i>
                                                                     <p>15 minutes</p>
@@ -500,8 +504,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
-                                                    <div class="card-border">
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="card-border h-100">
                                                         <div class="flex-between">
                                                             <div class="cust-icon">
                                                                 <i class="fa-solid fa-play"></i>
@@ -513,7 +517,7 @@
                                                                 <h2 class="mb-1">Knife Safety Training</h2>
                                                                 <p>Learn proper knife handing techniques <br>and safety protocols.</p>
                                                             </div>
-                                                            <div class="flex-gap xgap-4 mt-3">
+                                                            <div class="flex-gap xl-gap mt-3">
                                                                 <div class="flex-gap sm-gap">
                                                                     <i class="fa-solid  green fa-calendar-check"></i>
                                                                     <p>25 minutes</p>
@@ -530,8 +534,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
-                                                    <div class="card-border">
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="card-border h-100">
                                                         <div class="flex-between">
                                                             <div class="cust-icon">
                                                                 <i class="fa-solid fa-vr-cardboard"></i>
@@ -543,7 +547,7 @@
                                                                 <h2 class="mb-1">VR Emergency Response</h2>
                                                                 <p>Practice emergency procedures in a <br>virtual kitchen environment.</p>
                                                             </div>
-                                                            <div class="flex-gap xgap-4 mt-3">
+                                                            <div class="flex-gap xl-gap mt-3">
                                                                 <div class="flex-gap sm-gap">
                                                                     <i class="fa-solid  green fa-calendar-check"></i>
                                                                     <p>30 minutes</p>
@@ -571,61 +575,61 @@
                                             <h2>Recent Achievements & Badges</h2>
                                             <a href="#" class="site-btn green-btn">View all Badges <i class="fa-solid fa-arrow-right"></i></a>
                                         </div>
-                                        <div class="card-wrapper row-gx">
+                                        <div class="card-wrapper row-gx row-gy">
                                             <div class="row">
-                                                <div class="col-md-3">
-                                                    <div class="card-border">
+                                                <div class="col-lg-3 col-md-6">
+                                                    <div class="card-border h-100">
                                                         <div class="cust-icon">
                                                             <i class="fa-solid fa-fire"></i>
                                                         </div>
                                                         <div class="text mt-3 mb-3">
-                                                            <h2 class="mb-2">Fire Safety Expert</h2>
-                                                            <p>Completed all fire safety <br> modules with 95%+ score </p>
+                                                            <h2 class="mb-1">Fire Safety Expert</h2>
+                                                            <p>Completed all fire safety <br class="d-block"> modules with 95%+ score </p>
                                                         </div>
                                                         <div class="cust-foot">
-                                                            <span>Earned 2 days ago</span>
+                                                            <span class="font-14">Earned 2 days ago</span>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3">
-                                                    <div class="card-border">
+                                                <div class="col-lg-3 col-md-6">
+                                                    <div class="card-border h-100">
                                                         <div class="cust-icon">
                                                             <i class="fa-solid fa-medal"></i>
                                                         </div>
                                                         <div class="text mt-3 mb-3">
-                                                            <h2 class="mb-2">Streak Master </h2>
-                                                            <p>Maintained a 7day training <br>streak</p>
+                                                            <h2 class="mb-1">Streak Master </h2>
+                                                            <p>Maintained a 7day training <br class="d-block">streak</p>
                                                         </div>
                                                         <div class="cust-foot">
-                                                            <span>Earned today</span>
+                                                            <span class="font-14">Earned today</span>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3">
-                                                    <div class="card-border">
+                                                <div class="col-lg-3 col-md-6">
+                                                    <div class="card-border h-100">
                                                         <div class="cust-icon">
                                                             <i class="fa-solid fa-graduation-cap"></i>
                                                         </div>
                                                         <div class="text mt-3 mb-3">
-                                                            <h2 class="mb-2">Quick Learner</h2>
-                                                            <p>Completed 5 modules in <br>one day</p>
+                                                            <h2 class="mb-1">Quick Learner</h2>
+                                                            <p>Completed 5 modules in <br class="d-block">one day</p>
                                                         </div>
                                                         <div class="cust-foot">
-                                                            <span>Earned 5 days ago</span>
+                                                            <span class="font-14">Earned 5 days ago</span>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-3">
-                                                    <div class="card-border">
+                                                <div class="col-lg-3 col-md-6">
+                                                    <div class="card-border h-100">
                                                         <div class="cust-icon">
                                                             <i class="fa-solid fa-vr-cardboard"></i>
                                                         </div>
                                                         <div class="text mt-3 mb-3">
-                                                            <h2 class="mb-2">VR Pioneer</h2>
-                                                            <p>Completed first VR training <br>session</p>
+                                                            <h2 class="mb-1">VR Pioneer</h2>
+                                                            <p>Completed first VR training <br class="d-block">session</p>
                                                         </div>
                                                         <div class="cust-foot">
-                                                            <span>Earned 1 week ago</span>
+                                                            <span class="font-14">Earned 1 week ago</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -638,9 +642,9 @@
                                         <div class="inner-title main-title">
                                             <h2>My Training Modules</h2>
                                         </div>
-                                        <div class="card-wrapper row-gx">
+                                        <div class="card-wrapper row-gx row-gy">
                                             <div class="row">
-                                                <div class="col-md-4">
+                                                <div class="col-lg-4 col-md-6">
                                                     <div class="card-border">
                                                         <div class="row gy-4">
                                                             <div class="col-12">
@@ -656,7 +660,7 @@
                                                                         <i class="fa-solid fa-check"></i>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <h5>Basic Food Safety</h5>
+                                                                        <h4>Basic Food Safety</h4>
                                                                         <p class="flex-gap mt-1">Completed <span>•</span>15 min</p>
                                                                     </div>
                                                                 </div>
@@ -667,7 +671,7 @@
                                                                         <i class="fa-solid fa-play"></i>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <h5>Knife Safety Training</h5>
+                                                                        <h4>Knife Safety Training</h4>
                                                                         <p class="flex-gap mt-1">In progress <span>•</span>8/25 min</p>
                                                                         <div class="progress-line mt-3">
                                                                             <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
@@ -683,7 +687,7 @@
                                                                         <i class="fa-solid fa-lock"></i>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <h5>Advanced Sanitation</h5>
+                                                                        <h4>Advanced Sanitation</h4>
                                                                         <p class="flex-gap mt-1">Locked<span>•</span>20 min</p>
                                                                     </div>
                                                                 </div>
@@ -696,7 +700,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-lg-4 col-md-6">
                                                     <div class="card-border h-100">
                                                         <div class="row gy-4">
                                                             <div class="col-12">
@@ -709,10 +713,10 @@
                                                             <div class="col-12">
                                                                 <div class="card-border flex-gap md-gap selected-card rounded-8">
                                                                     <div class="cust-icon">
-                                                                        <h5 class="green">95%</h5>
+                                                                        <h4 class="green">95%</h4>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <h5>Food Safety Quiz</h5>
+                                                                        <h4>Food Safety Quiz</h4>
                                                                         <p class="flex-gap mt-1">Passed <span>•</span>Attempt 1/3</p>
                                                                     </div>
                                                                 </div>
@@ -723,7 +727,7 @@
                                                                         <i class="fa-solid fa-info"></i>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <h5>Fire Safety Quiz</h5>
+                                                                        <h4>Fire Safety Quiz</h4>
                                                                         <p class="flex-gap mt-1">Due Today <span>•</span>NOt Started</p>
 
                                                                     </div>
@@ -732,10 +736,10 @@
                                                             <div class="col-12">
                                                                 <div class="card-border flex-gap md-gap selected-card rounded-8">
                                                                     <div class="cust-icon">
-                                                                        <h5 class="green">78%</h5>
+                                                                        <h4 class="green">78%</h4>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <h5>Equipment Safety</h5>
+                                                                        <h4>Equipment Safety</h4>
                                                                         <p>Retake Available</p>
                                                                     </div>
                                                                 </div>
@@ -748,7 +752,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-lg-4 col-md-6">
                                                     <div class="card-border h-100">
                                                         <div class="row gy-4">
                                                             <div class="col-12">
@@ -764,7 +768,7 @@
                                                                         <i class="fa-solid fa-check"></i>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <h5>Kitchen Layout Tour</h5>
+                                                                        <h4>Kitchen Layout Tour</h4>
                                                                         <p class="flex-gap mt-1">Completed <span>•</span>15 min</p>
                                                                     </div>
                                                                 </div>
@@ -775,7 +779,7 @@
                                                                         <i class="fa-solid fa-vr-cardboard"></i>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <h5>Emergency Procedures</h5>
+                                                                        <h4>Emergency Procedures</h4>
                                                                         <p class="flex-gap mt-1">Ready to Start<span>•</span>30 min</p>
                                                                     </div>
                                                                 </div>
@@ -786,7 +790,7 @@
                                                                         <i class="fa-solid fa-lock"></i>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <h5>Advanced Sanitation</h5>
+                                                                        <h4>Advanced Sanitation</h4>
                                                                         <p>Unlocks at Level 15</p>
                                                                     </div>
                                                                 </div>
@@ -810,7 +814,7 @@
                                         </div>
                                         <div class="card-wrapper row-gx row-gy">
                                             <div class="row">
-                                                <div class="col-md-7">
+                                                <div class="col-lg-7">
                                                     <div class="card-border h-100">
                                                         <div class="inner-title margin-bottom">
                                                             <h2>Monthly Progress Trend</h2>
@@ -826,7 +830,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-5">
+                                                <div class="col-lg-5">
                                                     <div class="card-border h-100">
                                                         <div class="inner-title margin-bottom">
                                                             <h2>Skill Development Radar</h2>
@@ -841,7 +845,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-lg-4 col-md-6">
                                                     <div class="card-border h-100">
                                                         <div class="cust-header">
                                                             <div class="flex-between">
@@ -868,7 +872,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-lg-4 col-md-6">
                                                     <div class="card-border h-100">
                                                         <div class="cust-header">
                                                             <div class="flex-between">
@@ -895,7 +899,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-lg-4 col-md-6">
                                                     <div class="card-border h-100">
                                                         <div class="cust-header">
                                                             <div class="flex-between">
@@ -913,7 +917,7 @@
                                                             <div class="flex-between mt-2 mb-2">
                                                                 <div class="text">
                                                                     <p>Knife Safety Video </p>
-                                                                    <span class="orange- font-12" font-12>Due Tomorrow </span>
+                                                                    <span class="orange-600 font-12">Due Tomorrow </span>
                                                                 </div>
                                                                 <i class="fa-solid fa-clock orange-600"></i>
                                                             </div>
@@ -937,10 +941,10 @@
                                             <h2>Certificate & Credentials</h2>
                                             <a href="#" class="site-btn green-btn"><i class="fa-solid fa-download"></i>Download All</a>
                                         </div>
-                                        <div class="card-wrapper row-gy">
+                                        <div class="card-wrapper row-gy row-gx">
                                             <div class="row">
-                                                <div class="col-md-4">
-                                                    <div class="card-border">
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="card-border h-100">
                                                         <div class="cust-header">
                                                             <div class="cust-icon">
                                                                 <i class="fa-solid fa-medal"></i>
@@ -955,15 +959,15 @@
                                                                 <p>Issued: March 15, 2024</p>
                                                                 <span class="cust-badge green-badge">Valid</span>
                                                             </div>
-                                                            <p>Demonstrates comprehensive understanding of food safety protocols and HACCP principles.</p>
+                                                            <p>Demonstrates comprehensive <br>understanding of food safety protocols <br>and HACCP principles.</p>
                                                         </div>
                                                         <div class="cust-foot mt-4">
                                                             <a href="#" class="site-btn green-btn">Download Certificate</a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
-                                                    <div class="card-border">
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="card-border h-100">
                                                         <div class="cust-header">
                                                             <div class="cust-icon">
                                                                 <i class="fa-solid fa-medal"></i>
@@ -978,14 +982,14 @@
                                                                 <p>Issued: March 10, 2024</p>
                                                                 <span class="cust-badge green-badge">Valid</span>
                                                             </div>
-                                                            <p>Advanced certification in kitchen safety procedures and emergency response protocols. </p>
+                                                            <p>Advanced certification in kitchen safety <br>procedures and emergency response <br> protocols. </p>
                                                         </div>
                                                         <div class="cust-foot mt-4">
                                                             <a href="#" class="site-btn green-btn">Download Certificate</a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-lg-4 col-md-6">
                                                     <div class="card-border text-center h-100 dashed-border flex-center">
                                                         <div class="inner-wrapper">
                                                             <div class="cust-icon cust-md-icon">
@@ -993,7 +997,7 @@
                                                             </div>
                                                             <div class="text mt-4 mb-4">
                                                                 <h2 class="mb-1">Next Certificate</h2>
-                                                                <p>Complete 3 more modules to earn your equipment mastery certificate.</p>
+                                                                <p>Complete 3 more modules to earn your <br>equipment mastery certificate.</p>
                                                             </div>
                                                             <div class="cust-foot mt-4">
                                                                 <div class="progress-line">
@@ -1018,7 +1022,7 @@
                                         <form action="javascript:void(0)" class="submit-form row-gx label-space">
                                             <div class="card-wrapper row-gy row-gx">
                                                 <div class="row">
-                                                    <div class="col-md-6">
+                                                    <div class="col-lg-6">
                                                         <div class="card-border row-gx h-100">
                                                             <div class="row gy-4">
                                                                 <div class="col-12">
@@ -1028,7 +1032,7 @@
 
                                                                 </div>
                                                                 <div class="col-12">
-                                                                    <div class="main position-relative d-inline-block">
+                                                                    <div class="main position-relative d-inline-block mb-2">
                                                                         <div class=" user-dp">
                                                                             <img src="../assets/img/custom/profile-pic.jpg" class="w-auto rounded-12" alt="Display Photo">
                                                                         </div>
@@ -1069,7 +1073,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-12">
-                                                                    <div class="form-group mt-5">
+                                                                    <div class="form-group mt-4">
                                                                         <button class="site-btn green-btn w-100">Update Profile</button>
                                                                     </div>
                                                                 </div>
@@ -1077,7 +1081,7 @@
 
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-6">
+                                                    <div class="col-lg-6">
                                                         <div class="card-wrapper row-gy h-100">
                                                             <div class="row">
                                                                 <div class="col-12">
@@ -1102,13 +1106,13 @@
                                                                             </div>
                                                                             <div class="col-12">
                                                                                 <div class="form-group">
-                                                                                    <label for="new-password">Confirm New Password </label>
-                                                                                    <input type="password" id="new-password" placeholder="Confirm new password" class="form-control">
+                                                                                    <label for="comfirm-new-password">Confirm New Password </label>
+                                                                                    <input type="password" id="comfirm-new-password" placeholder="Confirm new password" class="form-control">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-12">
                                                                                 <div class="form-group">
-                                                                                    <button class="site-btn green-btn w-100">Update Profile</button>
+                                                                                    <button class="site-btn green-btn w-100">Update Password</button>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -1175,8 +1179,8 @@
                     <footer class="content-footer footer mb-4 custmize-footer">
                         <div class="container-xxl">
                             <div class="wrapper card-bg">
-                                <div class="row justify-content-between">
-                                    <div class="col-md-3 col-lg-4">
+                                <div class="row justify-content-between gy-lg-0 gy-4">
+                                    <div class="col-lg-4">
                                         <div class="text">
                                             <a href="index.html">
                                                 <div class="footer-logo">
@@ -1191,7 +1195,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-auto">
+                                    <div class="col-lg-auto">
                                         <div class="footer-list">
                                             <h3>Quick Links</h3>
                                             <ul>
@@ -1211,7 +1215,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-md-auto">
+                                    <div class="col-lg-auto">
                                         <div class="footer-list">
                                             <h3>Support </h3>
                                             <ul>
@@ -1230,7 +1234,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-md-auto">
+                                    <div class="col-lg-auto">
                                         <div class="footer-list v2">
                                             <h3>Contact Info</h3>
                                             <ul>
