@@ -344,6 +344,11 @@ img {
    font-size: 20px;
 }
 
+.font-22,
+.font-22>* {
+   font-size: 22px !important;
+}
+
 .font-24 {
    font-size: 24px !important;
 }
@@ -476,12 +481,24 @@ img {
    background-color: #ff6600;
 }
 
+.bg-orange-50 {
+   background-color: var(--orange-50);
+}
+
 .bg-light-white {
    background-color: #f9fafb;
 }
 
 .bg-light-black {
    background-color: #36454f;
+}
+
+.bg-red-50 {
+   background-color: var(--red-50);
+}
+
+.bg-red-50 {
+   background-color: var(--red-50);
 }
 
 /* all-badges  */
@@ -543,6 +560,11 @@ img {
    color: var(--gray-600);
 }
 
+.orange-v2-badge {
+   color: #B54708;
+   background-color: #FEF0C7;
+}
+
 .square-badge {
    border-radius: 4px;
    color: var(--gray-800);
@@ -576,6 +598,22 @@ img {
    color: var(--green-700);
 }
 
+.fill-badge {
+   padding: 4px 12px;
+   border-radius: 8px;
+   font-size: 14px !important;
+   font-weight: 400;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--orange-600);
+   color: var(--white);
+}
+
+.fill-red-badge {
+   background-color: var(--red-600);
+}
+
 /* all-icons  */
 .cust-icon {
    min-width: 48px;
@@ -590,7 +628,8 @@ img {
 }
 
 .cust-icon span {
-   font-size: 16px !important;
+   font-size: 16px;
+   color: var(--primary-color);
 }
 
 .cust-md-icon {
@@ -947,13 +986,22 @@ img {
    background-color: var(--orange) !important;
 }
 
+.orange-600-dot::before {
+   background-color: var(--orange-600) !important;
+}
+
 .green-dot::before {
    background-color: var(--primary-color) !important;
+}
+
+.green-700-dot::before {
+   background-color: var(--green-700) !important;
 }
 
 .navy-blue-dot::before {
    background-color: var(--navyblue) !important;
 }
+
 
 .dropdown.icon i {
    font-size: 20px;
@@ -1137,10 +1185,6 @@ img {
 
 .search-field input::placeholder {
    color: var(--gray-600);
-}
-
-.cust-badge {
-   font-size: 15px !important;
 }
 
 .src-bar {
@@ -1688,6 +1732,10 @@ img {
 }
 
 /* #kitchen guard employee  */
+.padd-20 {
+   padding: 20px !important;
+}
+
 /* header  */
 .search-field.cust-width {
    max-width: unset;
@@ -1901,6 +1949,13 @@ img {
 
 .small-p p {
    font-size: 13px;
+}
+
+/* quizzes  */
+.date-card {
+   padding: 5px;
+   border-radius: 8px;
+   text-align: center;
 }
 
 /* media queries  */
@@ -2154,6 +2209,12 @@ img {
       gap: 10px;
    }
 
+   .flex-gap,
+   .flex-gap-start {
+      flex-wrap: wrap;
+      gap: 10px;
+   }
+
    .file-selection label {
       font-size: 16px;
    }
@@ -2183,6 +2244,10 @@ img {
    .layout-navbar.user-header {
       flex-direction: column-reverse;
       gap: 15px;
+   }
+
+   .font-30 {
+      font-size: 22px !important;
    }
 
    /* footer  */
@@ -2489,4 +2554,5 @@ img {
 
 button {
    background-color: transparent;
+   border: 0;
 }
