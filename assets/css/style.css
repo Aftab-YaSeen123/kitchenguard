@@ -1390,6 +1390,11 @@ img {
    padding: 9px;
 }
 
+.submit-form.label-color .form-switch label {
+   color: var(--gray-800);
+   font-size: 16px;
+}
+
 .submit-form .form-control:disabled {
    background-color: var(--light-gray);
 }
@@ -1958,6 +1963,67 @@ img {
    text-align: center;
 }
 
+/* vr-tutorial */
+.check-card {
+   position: relative;
+   z-index: 1;
+}
+
+.check-card label {
+   border: var(--border-gray-200);
+   color: var(--gray-800);
+   border-radius: 8px;
+   padding: 9px 25px;
+   width: 100%;
+   text-align: center;
+}
+
+.check-card input {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+}
+
+.check-card input:checked+label {
+   border-color: var(--primary-color);
+   color: var(--primary-color);
+   background-color: #EEFFE1;
+}
+
+/* profile-setting */
+.user-image img {
+   border-radius: 8px;
+   max-width: 100px;
+}
+
+.tab-wrapper .nav-tabs {
+   border-radius: 8px;
+   padding: 12px;
+   gap: 10px;
+   background-color: var(--white);
+
+}
+
+.tab-wrapper .nav-tabs .nav-link {
+   min-width: 209px;
+   background-color: transparent !important;
+   color: var(--gray-600) !important;
+
+}
+
+.tab-wrapper .nav-tabs .nav-link.active {
+   background-color: var(--primary-color) !important;
+   color: var(--white) !important;
+   border-radius: 8px;
+}
+
+.point-list.small-font li {
+   margin-top: 8px;
+   font-size: 14px !important;
+}
+
 /* media queries  */
 @media (max-width: 1199px) {
    h1 {
@@ -1982,6 +2048,10 @@ img {
 
    .font-20 {
       font-size: 19px;
+   }
+
+   .font-30 {
+      font-size: 27px;
    }
 
    .card-bg,
@@ -2109,6 +2179,8 @@ img {
    .full-video-card .video-text {
       width: 45%;
    }
+
+   /* vr-tutorials  */
 }
 
 /* tab  */

@@ -1,0 +1,1263 @@
+<!doctype html>
+
+<html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../assets/" data-template="vertical-menu-template-no-customizer">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Profile Settings | Kitchen Gaurd</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/custom/favicon.svg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/rtl/core.css" />
+    <link rel="stylesheet" href="../assets/vendor/css/rtl/theme-default.css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+    <link rel="stylesheet" href="../libs/fancybox/fancybox.css" />
+
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/js/config.js"></script>
+</head>
+
+<body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+        <div class="layout-container">
+            <!-- Menu -->
+
+            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+                <div class="app-brand demo">
+                    <a href="index.html" class="app-brand-link">
+                        <div class="app-brand-logo demo">
+                            <img src="../assets/img/custom/logo.svg" alt="Image" />
+                        </div>
+                    </a>
+                </div>
+
+                <ul class="menu-inner py-1">
+                    <!-- Dashboards -->
+                    <li class="menu-header">
+                        <span class="menu-header-text">Dashboard</span>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascipt:void(0)" class="menu-link">
+                            <i class="menu-icon fa-regular fa-house"></i>
+                            <div data-i18n="Overview">Overview</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascipt:void(0)" class="menu-link">
+                            <i class="menu-icon fa-light fa-chart-line"></i>
+                            <div data-i18n="Progress">Progress</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascipt:void(0)" class="menu-link">
+                            <i class="menu-icon menu-icon fa-light fa-book"></i>
+                            <div data-i18n="Progress">Progress</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascipt:void(0)" class="menu-link">
+                            <i class="menu-icon fa-solid fa-calendar-days"></i>
+                            <div data-i18n="Schedule">Schedule</div>
+                        </a>
+                    </li>
+                    <li class="menu-header">
+                        <span class="menu-header-text">My Training</span>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascipt:void(0)" class="menu-link">
+                            <i class="menu-icon fa-regular fa-play"></i>
+                            <div data-i18n="Video Library">Video Library</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link">
+                            <i class="menu-icon fa-light fa-circle-question"></i>
+                            <div data-i18n="Quizzes">Quizzes</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link">
+                            <i class="menu-icon fa-regular fa-vr-cardboard"></i>
+                            <div data-i18n="VR Tutorials">VR Tutorials</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link">
+                            <i class="menu-icon fa-light fa-certificate"></i>
+                            <div data-i18n="Certificates">Certificates</div>
+                        </a>
+                    </li>
+                    <li class="menu-header">
+                        <span class="menu-header-text">Performance</span>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascipt:void(0)" class="menu-link">
+                            <i class="menu-icon fa-regular fa-chart-bar"></i>
+                            <div data-i18n="My Stats">My Stats</div>
+                        </a>
+                    </li>
+
+
+
+                    <li class="menu-item">
+                        <a href="javascipt:void(0)" class="menu-link">
+                            <i class="menu-icon fa-light fa-trophy"></i>
+                            <div data-i18n="Achievements">Achievements</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascipt:void(0)" class="menu-link">
+                            <i class="menu-icon fa-thin fa-medal"></i>
+                            <div data-i18n="Badges">Badges</div>
+                        </a>
+                    </li>
+                    <li class="menu-header">
+                        <span class="menu-header-text">Account</span>
+                    </li>
+                    <li class="menu-item active">
+                        <a href="javascipt:void(0)" class="menu-link">
+                            <i class="menu-icon fa-light fa-user-gear"></i>
+                            <div data-i18n="Profile Settings">Profile Settings</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascipt:void(0)" class="menu-link">
+                            <i class="menu-icon fa-light fa-bell"></i>
+                            <div data-i18n="Notifications">Notifications</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascipt:void(0)" class="menu-link">
+                            <i class="menu-icon fa-thin fa-headset"></i>
+                            <div data-i18n="Support">Support</div>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <!-- / Menu -->
+
+            <!-- Layout container -->
+            <div class="layout-page">
+                <!-- Navbar -->
+
+                <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached bg-navbar-theme flex-gap user-header flex-row-reverse" id="layout-navbar">
+                    <div class="navbar-nav-right d-flex align-items-md-center align-items-start gap-md-0 gap-1" id="navbar-collapse">
+                        <div class="flex-gap  gap-lg-3 order-1 user-content">
+                            <div class="nav-item dropdown-notifications navbar-dropdown dropdown order-xl-0 order-1">
+                                <a class="nav-link dropdown-toggle flat-icon hide-arrow p-1" href="javascript:void(0);" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                    <i class="green fa-solid fa-bell"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end py-0">
+                                    <li class="dropdown-menu-header border-bottom">
+                                        <div class="dropdown-header d-flex align-items-center py-3">
+                                            <h4 class="text-body mb-0 me-auto gray-1000">Notification</h4>
+                                            <a href="javascript:void(0)" class="dropdown-notifications-all text-body" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Mark all as read" data-bs-original-title="Mark all as read"><i class="bx fs-4 bx-envelope-open"></i></a>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-notifications-list scrollable-container ps ps--active-y">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                                <div class="d-flex">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <div class="avatar">
+                                                            <img src="../assets/img/custom/user-1.png" alt="" class="w-px-40 h-auto rounded-circle">
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="mb-1 gray-1000">Congratulation Lettie 🎉</h6>
+                                                        <p class="mb-0 gra-800">Won the monthly best seller gold badge</p>
+                                                        <small class="text-muted">1h ago</small>
+                                                    </div>
+
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                                <div class="d-flex">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <div class="avatar">
+                                                            <span class="avatar-initial rounded-circle bg-primary">CF</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="mb-1 gray-1000">Charles Franklin</h6>
+                                                        <p class="mb-0 gray-800">Accepted your connection</p>
+                                                        <small class="text-muted">12hr ago</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                        <div class="ps__rail-x" style="left: 0px; bottom: -86px;">
+                                            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                                        </div>
+                                        <div class="ps__rail-y" style="top: 86px; right: 0px; height: 480px;">
+                                            <div class="ps__thumb-y" tabindex="0" style="top: 41px; height: 228px;"></div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-menu-footer border-top">
+                                        <a href="javascript:void(0);" class="dropdown-item d-flex justify-content-center p-3"> View all notifications </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="vertical-rule d-xl-block d-none"></div>
+                            <div class="nav-item navbar-dropdown dropdown-user dropdown">
+                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="flex-gap lg-gap">
+                                        <div class="image md-size">
+                                            <img src="../assets/img/custom/boy-1.png" alt="User">
+                                        </div>
+                                        <div class="text">
+                                            <h4 class="gray-800">Downtown Franchise</h4>
+                                            <p>Manager Dashboard</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <i class="bx bx-user me-2 green"></i>
+                                            <span class="align-middle">My Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <i class="bx bx-cog me-2 green"></i>
+                                            <span class="align-middle">Settings</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <span class="d-flex align-items-center align-middle">
+                                                <i class="flex-shrink-0 bx bx-credit-card me-2 green"></i>
+                                                <span class="flex-grow-1 align-middle">Billing</span>
+
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="divider-rule"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <i class="bx bx-support me-2 green"></i>
+                                            <span class="align-middle">Help</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <i class="bx bx-help-circle me-2 green"></i>
+                                            <span class="align-middle">FAQ</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <i class="bx bx-dollar me-2 green"></i>
+                                            <span class="align-middle">Pricing</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="divider-rule"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <i class="bx bx-power-off me-2 green"></i>
+                                            <span class="align-middle">Log Out</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="layout-menu-toggle align-items-xl-center d-xl-none">
+                            <a class="nav-item nav-link p-0" href="javascript:void(0)">
+                                <i class="menu-icon bx bx-menu bx-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="user-menu flex-between flex-grow-1">
+
+                        <!-- heading-->
+                        <div class="navbar-nav flex-between flex-grow-1">
+                            <form action="javascript:void()" class="search-field cust-width">
+                                <input class="form-control" id="src-icon" placeholder="Search VR tutorials..." aria-label="Search">
+                                <label for="src-icon" class="src-bar">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </label>
+                            </form>
+                            <div class="btn-badges flex-gap">
+                                <span class="lg-badge lg-skyblue-badge"><i class="fa-solid fa-fire"></i>7 Day Streak</span>
+                                <span class="lg-badge"><i class="fa-solid fa-star"></i>Level 12</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Search Small Screens -->
+                    <div class="navbar-search-wrapper search-input-wrapper d-none">
+                        <input type="text" class="form-control search-input container-xxl border-0" placeholder="Search..." aria-label="Search..." />
+                        <i class="menu-icon bx bx-x bx-sm search-toggler cursor-pointer"></i>
+                    </div>
+                </nav>
+
+                <!-- / Navbar -->
+
+                <!-- Content wrapper -->
+                <div class="content-wrapper">
+                    <!-- Content -->
+
+                    <div class="container-xxl flex-grow-1">
+                        <div class="main-wrapper section-space">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card-bg">
+                                        <div class="flex-between">
+                                            <div class="flex-gap lg-gap flex-wrap">
+                                                <div class="user-image">
+                                                    <img src="../assets/img/custom/user-profile-img.jpg" alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <div class="text mb-2">
+                                                        <h1>Marcus Johnson</h1>
+                                                        <p class="mt-1 font-14">Kitchen Staff Level 2</p>
+                                                    </div>
+                                                    <div class="flex-gap gap-md-4 flex-wrap gap-2">
+                                                        <div class="flex-gap sm-gap green">
+                                                            <i class="fa-solid fa-envelope"></i>
+                                                            <a href="#">marcus.johnson@kitchenguard.com</a>
+                                                        </div>
+                                                        <div class="flex-gap sm-gap green">
+                                                            <i class="fa-solid fa-phone"></i>
+                                                            <a href="#">+1 (555) 123-4567</a>
+                                                        </div>
+                                                        <div class="flex-gap sm-gap green">
+                                                            <i class="fa-solid fa-calendar-check"></i>
+                                                            <a href="#">Joined: Jan 15, 2024</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="lg-badge white column-flex gap-0 box-badge">
+                                                <i class="fa-solid fa-user-check font-24"></i>
+                                                <h2 class="font-24 mt-1">Verified</h2>
+                                                <p>Profile Complete</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="tab-wrapper">
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal-tab-pane" type="button" role="tab" aria-controls="personal-tab-pane" aria-selected="true">Personal Information</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="security-tab" data-bs-toggle="tab" data-bs-target="#security-tab-pane" type="button" role="tab" aria-controls="security-tab-pane" aria-selected="false">Security & Password</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="notifiation-tab" data-bs-toggle="tab" data-bs-target="#notifiation-tab-pane" type="button" role="tab" aria-controls="notifiation-tab-pane" aria-selected="false">Notifications</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="certification-tab" data-bs-toggle="tab" data-bs-target="#certification-tab-pane" type="button" role="tab" aria-controls="certification-tab-pane" aria-selected="false">Certifications</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="preferences-tab" data-bs-toggle="tab" data-bs-target="#preferences-tab-pane" type="button" role="tab" aria-controls="preferences-tab-pane" aria-selected="false">Preferences</button>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <!-- <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="personal-tab-pane" role="tabpanel" aria-labelledby="personal-tab" tabindex="0">1</div>
+                                        <div class="tab-pane fade" id="security-tab-pane" role="tabpanel" aria-labelledby="security-tab" tabindex="0">2</div>
+                                        <div class="tab-pane fade" id="notifiation-tab-pane" role="tabpanel" aria-labelledby="notifiation-tab" tabindex="0">3</div>
+                                        <div class="tab-pane fade" id="certification-tab-pane" role="tabpanel" aria-labelledby="certification-tab" tabindex="0">4</div>
+                                        <div class="tab-pane fade" id="preferences-tab-pane" role="tabpanel" aria-labelledby="preferences-tab" tabindex="0">5</div>
+                                    </div> -->
+                                    <div class="card-bg">
+                                        <div class="main-title flex-between">
+                                            <h2>Basic Information</h2>
+                                            <span class="cust-badge green-badge">Complete</span>
+                                        </div>
+
+                                        <form action="javascript:void(0)" class="submit-form label-space row-gx row-gy">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="first-name">First Name*</label>
+                                                        <input type="text" id="first-name" class="form-control" placeholder="Marcus">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="last-name">First Name*</label>
+                                                        <input type="text" id="last-name" class="form-control" placeholder="Johnson">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <label for="display-name">Display Name</label>
+                                                        <input type="text" id="display-name" class="form-control mb-1" placeholder="Marcus J.">
+                                                        <span class="font-12 gray-1000">This is how your name appears to other users and on certifications</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="employee-id">Employee ID</label>
+                                                        <input type="text" id="employee-id" class="form-control mb-1" placeholder="KG-2024-0847">
+                                                        <span class="font-12 gray-1000">Assigned by your organization</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="date-of-birth">Date of Birth</label>
+                                                        <input type="text" id="date-of-birth" class="form-control" placeholder="----">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="traning-role">Training Role*</label>
+                                                        <input type="text" id="traning-role" class="form-control mb-1" placeholder="Kitchen Staff Level 2" disabled>
+                                                        <span class="font-12 gray-1000">Your Training role determines available modules and certification paths</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="department">Department</label>
+                                                        <input type="text" id="department" class="form-control" placeholder="Main Kitchen" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="bio-about-me">Bio / About Me</label>
+                                                    <textarea id="bio-about-me" placeholder="Experienced kitchen professional with 5+ years in food service. passionate about food and continuous learning. currently working toward 
+level 3 certification." class="form-control"></textarea>
+                                                    <span class="font-12 gray-1000">This information may appear on your profile and certificates</span>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-bg">
+                                        <div class="main-title flex-between">
+                                            <h2>Contact Information</h2>
+                                            <span class="cust-badge blue-600-badge">Verified</span>
+                                        </div>
+
+                                        <form action="javascript:void(0)" class="submit-form label-space row-gx row-gy">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <label for="email-address">Email Address*</label>
+                                                        <input type="email" id="email-address" class="form-control mb-1" placeholder="marcus.johnson@kitchenguard.com">
+                                                        <span class="font-12 gray-1000">This emaill is used for login and important notifications</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <label for="secondary-email">Secondary Email</label>
+                                                        <input type="email" id="secondary-email" class="form-control" placeholder="backup@email.com">
+                                                        <span class="font-12 gray-1000">Optional backup email for account recovery</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="primary-phone">Primary Phone*</label>
+                                                        <input type="text" id="primary-phone" class="form-control" placeholder="+1 (555) 123-4567">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="emergency-contact">Emergency Contact</label>
+                                                        <input type="text" id="emergency-contact" class="form-control" placeholder="(555) 987-6543">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <label for="work-location">Work Location</label>
+                                                        <input type="text" id="work-location" class="form-control" placeholder="Main Kitchen - Downtown Location" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-bg">
+                                        <div class="main-title flex-between">
+                                            <h2>Emergency Contacts</h2>
+                                            <a href="#" class="site-btn"><i class="fa-solid fa-plus"></i>Add Contact</a>
+                                        </div>
+                                        <form action="javascript:void(0)" class="submit-form label-space row-gx row-gy card-border">
+                                            <div class="main-title flex-between">
+                                                <h2>Primary Emergency Contact</h2>
+                                                <button class="green"><i class="fa-solid fa-pen-to-square"></i></button>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="full-name-2">Full Name</label>
+                                                        <input type="text" id="full-name-2" class="form-control mb-1" placeholder="Sarah Johnson">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="relationship">Relationship</label>
+                                                        <input type="text" id="relationship" class="form-control" placeholder="Spouse" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="phone-number-2">Phone Number</label>
+                                                        <input type="text" id="phone-number-2" class="form-control" placeholder="(555) 987-6543">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="email-2">Email</label>
+                                                        <input type="text" id="email-2" class="form-control" placeholder="sarah.johnson@email.com">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div class="card-border dashed-border text-center mt-4">
+                                            <div class=" pt-4 pb-4">
+                                                <div class="cust-icon cust-md-icon"><i class="fa-solid fa-user-plus"></i></div>
+                                                <div class="text mt-4 mb-4">
+                                                    <h2>Add Secondary Emergency Contact</h2>
+                                                    <p>It’s recommended to have at least two emergency contacts</p>
+                                                </div>
+                                                <div class="cust-foot flex-center">
+                                                    <button class="site-btn center green-btn"><i class="fa-solid fa-plus"></i>Add Second Contact</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-wrapper">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="card-bg h-100">
+                                                    <div class="cust-header">
+                                                        <div>
+                                                            <h2>Profile Completion</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cust-body mt-4">
+                                                        <div class="flex-between">
+                                                            <p>Basic Information:</p>
+                                                            <span class="font-weight-500">Completed</span>
+                                                        </div>
+                                                        <div class="flex-between mt-2">
+                                                            <p>Contact Details:</p>
+                                                            <span class="font-weight-500">Completed</span>
+                                                        </div>
+                                                        <div class="flex-between mt-2">
+                                                            <p>Emergency Contacts:</p>
+                                                            <span class="font-weight-500">Partial</span>
+                                                        </div>
+                                                        <div class="flex-between mt-2">
+                                                            <p>Security Settings:</p>
+                                                            <span class="font-weight-500">Completed</span>
+                                                        </div>
+                                                        <div class="progress-content mt-3">
+                                                            <div class="flex-between">
+                                                                <p>Overall Progress</p>
+                                                                <span class="green">85%</span>
+                                                            </div>
+                                                            <div class="progress-line mt-2">
+                                                                <div class="progress mb-1" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                                    <div class="progress-bar" style="width: 40%"></div>
+                                                                </div>
+                                                                <span>Complete your emergency contacts to reach 100%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="card-bg h-100">
+                                                    <div class="cust-header">
+                                                        <div>
+                                                            <h2>Account Statistics</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cust-body mt-4">
+                                                        <div class="flex-between">
+                                                            <p>Member Since:</p>
+                                                            <span class="font-weight-500">Jan 15, 2024</span>
+                                                        </div>
+                                                        <div class="flex-between mt-3">
+                                                            <p>Last Login:</p>
+                                                            <span class="font-weight-500">Today, 8:30 AM</span>
+                                                        </div>
+                                                        <div class="flex-between mt-3">
+                                                            <p>Profile Views:</p>
+                                                            <span class="font-weight-500">47 times</span>
+                                                        </div>
+                                                        <div class="flex-between mt-3">
+                                                            <p>Training Hours:</p>
+                                                            <span class="font-weight-500">47h 23m</span>
+                                                        </div>
+                                                        <div class="flex-between mt-3">
+                                                            <p>Certificates Earned:</p>
+                                                            <span class="font-weight-500">3 certificates</span>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-wrapper">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="card-bg">
+                                                    <div class="main-title">
+                                                        <h2>Quick Actions</h2>
+                                                    </div>
+                                                    <div class="cust-body">
+                                                        <div class="card-border flex-gap">
+                                                            <i class="fa-solid fa-download green"></i>
+                                                            <p>Download Profile Data</p>
+                                                        </div>
+                                                        <div class="card-border flex-gap mt-3">
+                                                            <i class="fa-solid fa-print green"></i>
+                                                            <p>Print Profile Summary</p>
+                                                        </div>
+                                                        <div class="card-border flex-gap mt-3">
+                                                            <i class="fa-solid fa-share green"></i>
+                                                            <p>Share Profile Link</p>
+                                                        </div>
+                                                        <div class="card-border flex-gap mt-3">
+                                                            <i class="fa-solid fa-trash green"></i>
+                                                            <p>Delete Account</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="card-bg h-100">
+                                                    <div class="main-title">
+                                                        <h2>Privacy & Visibility</h2>
+                                                    </div>
+                                                    <div class="cust-body">
+                                                        <div class="card-border flex-between rounded-8">
+                                                            <div class="text">
+                                                                <h4 class="gray-800">Profile Visibility</h4>
+                                                                <p>Who can see your profile</p>
+                                                            </div>
+                                                            <button class="site-btn"><i class="fa-solid fa-users"></i>Team Member</button>
+                                                        </div>
+                                                        <div class="card-border flex-nowrap form-check form-switch toggle-btn ps-3 flex-between card-border mt-3 rounded-8">
+                                                            <label class="form-check-label mb-0" for="traning-progress">
+                                                                <div class="text">
+                                                                    <h4 class="gray-800">Show Training Progress</h4>
+                                                                    <p>Display progress to others</p>
+                                                                </div>
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" role="switch" id="traning-progress" checked="">
+                                                        </div>
+                                                        <div class="card-border flex-nowrap form-check form-switch toggle-btn ps-3 flex-between card-border mt-3 rounded-8">
+                                                            <label class="form-check-label mb-0" for="contact-detail">
+                                                                <div class="text">
+                                                                    <h4 class="gray-800">Show Contact Info</h4>
+                                                                    <p>Allow others to see contact details</p>
+                                                                </div>
+                                                            </label>
+                                                            <input class="form-check-input" type="checkbox" role="switch" id="contact-detail">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <!-- <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="personal-tab-pane" role="tabpanel" aria-labelledby="personal-tab" tabindex="0">1</div>
+                                        <div class="tab-pane fade" id="security-tab-pane" role="tabpanel" aria-labelledby="security-tab" tabindex="0">2</div>
+                                        <div class="tab-pane fade" id="notifiation-tab-pane" role="tabpanel" aria-labelledby="notifiation-tab" tabindex="0">3</div>
+                                        <div class="tab-pane fade" id="certification-tab-pane" role="tabpanel" aria-labelledby="certification-tab" tabindex="0">4</div>
+                                        <div class="tab-pane fade" id="preferences-tab-pane" role="tabpanel" aria-labelledby="preferences-tab" tabindex="0">5</div>
+                                    </div> -->
+                                    <div class="card-bg">
+                                        <div class="main-title">
+                                            <h2>Security & Password Management</h2>
+                                        </div>
+
+                                        <form action="javascript:void(0)" class="submit-form label-space row-gx row-gy card-border">
+                                            <div class="main-title flex-between">
+                                                <h2>Change Password</h2>
+                                                <span class="cust-badge green-badge">Last changed: 30 days ago</span>
+                                            </div>
+                                            <div class="card-bg shadow-none bg-light-gray rounded-8 mb-3">
+                                                <div class="flex-gap">
+                                                    <i class="fa-solid fa-triangle-exclamation green"></i>
+                                                    <h3 class="mb-1">Password Security Reminder</h3>
+                                                </div>
+                                                <p>Your password should be changed every 90 days for optimal security. Consider using a strong, unique password</p>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <label for="current-password">Current Password</label>
+                                                        <input type="password" id="current-password" class="form-control" placeholder="Enter your current password">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <label for="new-password">New Password</label>
+                                                        <input type="password" id="new-password" class="form-control" placeholder="marcus.johnson@kitchenguard.com">
+                                                        <div class="point-list small-font">
+                                                            <ul>
+                                                                <li>At least 8 characters long</li>
+                                                                <li>Contain uppercase and lowercase letters</li>
+                                                                <li>Contains at least one number</li>
+                                                                <li>Contain at least one special chracter</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <label for="confirm-new-password">Confirm New Password</label>
+                                                        <input type="text" id="confirm-new-password" class="form-control" placeholder="Confirm your new password">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button class="green-btn site-btn w-100"><i class="fa-solid fa-lock"></i>Update Password</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div class="card-border mt-3">
+                                            <div class="main-title flex-between">
+                                                <h2>Two-Factor Authentication</h2>
+                                                <span class="cust-badge red-badge">Disabled</span>
+                                            </div>
+                                            <div class="card-bg shadow-none bg-light-gray rounded-8 mb-3">
+                                                <div class="flex-gap">
+                                                    <i class="fa-solid fa-triangle-exclamation green"></i>
+                                                    <h3 class="mb-1">Enhanced Security</h3>
+                                                </div>
+                                                <p>Add an extra layer of security to your account. We recommend enabling 2FA for all training platform accounts.</p>
+                                            </div>
+                                            <div class="card-border flex-between">
+                                                <div class="content">
+                                                    <div class="flex-gap mb-2">
+                                                        <div class="cust-icon">
+                                                            <i class="fa-solid fa-mobile"></i>
+                                                        </div>
+                                                        <div class="text">
+                                                            <h4 class="gray-800">SMS Authentication</h4>
+                                                            <p>Receive codes via text message</p>
+                                                        </div>
+                                                    </div>
+                                                    <p>Your phone +1(555) 123-4567</p>
+                                                </div>
+                                                <button class="site-btn">Enable</button>
+                                            </div>
+                                            <div class="card-border flex-between mt-3">
+                                                <div class="content">
+                                                    <div class="flex-gap mb-2">
+                                                        <div class="cust-icon">
+                                                            <i class="fa-sharp fa-solid fa-qrcode"></i>
+                                                        </div>
+                                                        <div class="text">
+                                                            <h4 class="gray-800">Authenticator App</h4>
+                                                            <p>Use Google Authenticator or similar app</p>
+                                                        </div>
+                                                    </div>
+                                                    <p>More secure than SMS - recommended option</p>
+                                                </div>
+                                                <button class="site-btn">Setup</button>
+                                            </div>
+                                            <div class="card-border flex-between mt-3">
+                                                <div class="content">
+                                                    <div class="flex-gap mt-2">
+                                                        <div class="cust-icon">
+                                                            <i class="fa-solid fa-envelope"></i>
+                                                        </div>
+                                                        <div class="text">
+                                                            <h4 class="gray-800">Email Backup Codes</h4>
+                                                            <p>One-time backup codes via email</p>
+                                                        </div>
+                                                    </div>
+                                                    <p>Use only if other methods are unavaiable</p>
+                                                </div>
+                                                <button class="site-btn">Generate</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="card-bg">
+                                        <div class="main-title">
+                                            <h2>Recent Security Activity</h2>
+                                        </div>
+                                        <div class="cust-body">
+                                            <div class="card-border flex-between">
+                                                <div class="flex-gap flex-wrap">
+                                                    <div class="cust-icon">
+                                                        <i class="fa-solid fa-circle-check"></i>
+                                                    </div>
+                                                    <div class="text">
+                                                        <h4>Successful Login</h4>
+                                                        <p class="flex-gap mt-1">Chrome on Window<span>•</span>IP: 192.168.1.100</p>
+                                                    </div>
+                                                </div>
+                                                <p>Today, 8:30 AM</p>
+                                            </div>
+                                            <div class="card-border flex-between mt-3">
+                                                <div class="flex-gap flex-wrap">
+                                                    <div class="cust-icon">
+                                                        <i class="fa-solid fa-mobile"></i>
+                                                    </div>
+                                                    <div class="text">
+                                                        <h4>Mobile Login</h4>
+                                                        <p class="flex-gap mt-1">Safari on iPhone<span>•</span>IP: 192.168.1.105</p>
+                                                    </div>
+                                                </div>
+                                                <p>Yesterday, 6:45 PM</p>
+                                            </div>
+                                            <div class="card-border flex-between mt-3">
+                                                <div class="flex-gap flex-wrap">
+                                                    <div class="cust-icon">
+                                                        <i class="fa-solid fa-mobile"></i>
+                                                    </div>
+                                                    <div class="text">
+                                                        <h4>Profile Updated</h4>
+                                                        <p class="mt-1">Contact Information changed</p>
+                                                    </div>
+                                                </div>
+                                                <p>3 days ago</p>
+                                            </div>
+                                            <div class="card-border flex-between mt-3">
+                                                <div class="flex-gap flex-wrap">
+                                                    <div class="cust-icon">
+                                                        <i class="fa-solid fa-triangle-exclamation"></i>
+                                                    </div>
+                                                    <div class="text">
+                                                        <h4>Failed Login Attempt</h4>
+                                                        <p class="flex-gap mt-1">Unknown device<span>•</span>IP: 203.0.113.0</p>
+                                                    </div>
+                                                </div>
+                                                <p>1 week ago</p>
+                                            </div>
+
+                                            <div class="bottom-link text-center mt-3">
+                                                <a href="#" class="border-text green">View Complete Security Log</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="card-bg">
+                                        <div class="main-title">
+                                            <h2>Notifications Preferences</h2>
+                                        </div>
+                                        <div class="card-wrapper">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="card-border">
+                                                        <div class="main-title">
+                                                            <div class="flex-nowrap form-check form-switch toggle-btn ps-0 flex-between">
+                                                                <label class="form-check-label mb-0" for="email-notification">
+                                                                    <h2>Email Notifications</h2>
+                                                                </label>
+                                                                <div class="column-flex align-items-end">
+                                                                    <input class="form-check-input" type="checkbox" role="switch" id="email-notification" checked="">
+                                                                    <p>Master Toggle</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-wrapper row-gy">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="card-border">
+                                                                        <div class="inner-title mb-4">
+                                                                            <h5>Training & Progress</h5>
+                                                                        </div>
+                                                                        <div class="flex-nowrap form-check form-switch toggle-btn ps-0 flex-between">
+                                                                            <label class="form-check-label mb-0" for="traning-assignment">
+                                                                                <div class="text">
+                                                                                    <h4>New Training Assignments </h4>
+                                                                                    <p>When new modules are assigned to you</p>
+                                                                                </div>
+                                                                            </label>
+                                                                            <input class="form-check-input" type="checkbox" role="switch" id="traning-assignment" checked="">
+                                                                        </div>
+                                                                        <div class="flex-nowrap form-check form-switch toggle-btn ps-0 flex-between my-4">
+                                                                            <label class="form-check-label mb-0" for="training-reminder-2">
+                                                                                <div class="text">
+                                                                                    <h4>Training Reminders</h4>
+                                                                                    <p>Reminders for upcoming deadlines </p>
+                                                                                </div>
+                                                                            </label>
+                                                                            <input class="form-check-input" type="checkbox" role="switch" id="training-reminder-2" checked="">
+                                                                        </div>
+                                                                        <div class="flex-nowrap form-check form-switch toggle-btn ps-0 flex-between">
+                                                                            <label class="form-check-label mb-0" for="progress-milstones">
+                                                                                <div class="text">
+                                                                                    <h4>Progress Milestones </h4>
+                                                                                    <p>When you complete major milestones </p>
+                                                                                </div>
+                                                                            </label>
+                                                                            <input class="form-check-input" type="checkbox" role="switch" id="progress-milstones" checked="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="card-border">
+                                                                        <div class="inner-title mb-4">
+                                                                            <h5>Certificates & Achievements</h5>
+                                                                        </div>
+                                                                        <div class="flex-nowrap form-check form-switch toggle-btn ps-0 flex-between">
+                                                                            <label class="form-check-label mb-0" for="certificate-earned">
+                                                                                <div class="text">
+                                                                                    <h4>Certificate Earned </h4>
+                                                                                    <p>When you earn a new certificate</p>
+                                                                                </div>
+                                                                            </label>
+                                                                            <input class="form-check-input" type="checkbox" role="switch" id="certificate-earned" checked="">
+                                                                        </div>
+                                                                        <div class="flex-nowrap form-check form-switch toggle-btn ps-0 flex-between my-4">
+                                                                            <label class="form-check-label mb-0" for="badge-unlock">
+                                                                                <div class="text">
+                                                                                    <h4>Badge Unlocked </h4>
+                                                                                    <p>When you unlock achievement badges </p>
+                                                                                </div>
+                                                                            </label>
+                                                                            <input class="form-check-input" type="checkbox" role="switch" id="badge-unlock" checked="">
+                                                                        </div>
+                                                                        <div class="flex-nowrap form-check form-switch toggle-btn ps-0 flex-between">
+                                                                            <label class="form-check-label mb-0" for="certificate-expiry">
+                                                                                <div class="text">
+                                                                                    <h4>Certificate Expiry </h4>
+                                                                                    <p>30 days before certificate expiry</p>
+                                                                                </div>
+                                                                            </label>
+                                                                            <input class="form-check-input" type="checkbox" role="switch" id="certificate-expiry" checked="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="card-border">
+                                                                        <div class="inner-title mb-4">
+                                                                            <h5>System & Account </h5>
+                                                                        </div>
+                                                                        <div class="flex-nowrap form-check form-switch toggle-btn ps-0 flex-between">
+                                                                            <label class="form-check-label mb-0" for="security-alerts">
+                                                                                <div class="text">
+                                                                                    <h4>Security Alerts </h4>
+                                                                                    <p>login attempts and security changes </p>
+                                                                                </div>
+                                                                            </label>
+                                                                            <input class="form-check-input" type="checkbox" role="switch" id="security-alerts" checked="">
+                                                                        </div>
+                                                                        <div class="flex-nowrap form-check form-switch toggle-btn ps-0 flex-between mt-4">
+                                                                            <label class="form-check-label mb-0" for="badge-unlock">
+                                                                                <div class="text">
+                                                                                    <h4>System Updates </h4>
+                                                                                    <p>Platform updates and maintenance</p>
+                                                                                </div>
+                                                                            </label>
+                                                                            <input class="form-check-input" type="checkbox" role="switch" id="badge-unlock">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card-border">
+                                                        <div class="main-title">
+                                                            <div class="flex-nowrap form-check form-switch toggle-btn ps-0 flex-between">
+                                                                <label class="form-check-label mb-0" for="mobile-notification">
+                                                                    <h2>SMS & Mobile Notificaiton</h2>
+                                                                </label>
+                                                                <div class="column-flex align-items-end">
+                                                                    <input class="form-check-input" type="checkbox" role="switch" id="mobile-notification" checked="">
+                                                                    <p>Master Toggle</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card-wrapper row-gy">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="card-border flex-gap-start">
+                                                                        <div class="flat-icon"> <i class="fa-solid fa-circle-info green"></i></div>
+                                                                        <div class="text">
+                                                                            <h5>SMS Notifications Disabled</h5>
+                                                                            <p>Enable the master toggle above to receive SMS notifications. Standard messaging rates may apply.</p>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="card-border">
+                                                                        <div class="inner-title mb-4">
+                                                                            <h5>Urgent Notifications Only</h5>
+                                                                        </div>
+
+                                                                        <div class="flex-nowrap form-check form-switch toggle-btn ps-0 flex-between">
+                                                                            <label class="form-check-label mb-0" for="emergency-training">
+                                                                                <div class="text">
+                                                                                    <h4>Emergency Training </h4>
+                                                                                    <p>Critical safety training assignments </p>
+                                                                                </div>
+                                                                            </label>
+                                                                            <input class="form-check-input" type="checkbox" role="switch" id="emergency-training" checked="">
+                                                                        </div>
+                                                                        <div class="flex-nowrap form-check form-switch toggle-btn ps-0 flex-between my-4">
+                                                                            <label class="form-check-label mb-0" for="security-alert-2">
+                                                                                <div class="text">
+                                                                                    <h4>Security Alerts </h4>
+                                                                                    <p>Critical account security issues </p>
+                                                                                </div>
+                                                                            </label>
+                                                                            <input class="form-check-input" type="checkbox" role="switch" id="security-alert-2" checked="">
+                                                                        </div>
+                                                                        <div class="flex-nowrap form-check form-switch toggle-btn ps-0 flex-between">
+                                                                            <label class="form-check-label mb-0" for="deadline-warning">
+                                                                                <div class="text">
+                                                                                    <h4>Deadline Warnings </h4>
+                                                                                    <p>24 hours before critical deadlines </p>
+                                                                                </div>
+                                                                            </label>
+                                                                            <input class="form-check-input" type="checkbox" role="switch" id="deadline-warning" checked="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="inner-title mb-4">
+                                                                        <h5>Delivery Schedule</h5>
+                                                                    </div>
+
+                                                                    <div class="submit-form">
+                                                                        <h4 class="font-weight-400 mb-3">Quiet Hours</h4>
+                                                                        <div class="row">
+                                                                            <div class="col-md-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="from">From</label>
+                                                                                    <input type="text" class="form-control" id="from" placeholder="----">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <div class="form-group">
+                                                                                    <label for="to">to</label>
+                                                                                    <input type="text" class="form-control" id="to" placeholder="----">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="bottom-text mt-2">
+                                                                            <p>No SMS notifications during these hours</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="text">
+                                                                        <div class="flex-nowrap form-check form-switch toggle-btn ps-0 flex-align-start">
+                                                                            <label class="form-check-label mb-0" for="weekend-notification">
+                                                                                <h4>Weekend Notifications</h4>
+                                                                            </label>
+                                                                            <input class="form-check-input" type="checkbox" role="switch" id="weekend-notification" checked="">
+                                                                        </div>
+                                                                        <div class="text">
+                                                                            <p>Receive SMS notifications on weekends</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Footer -->
+                <footer class="content-footer footer mb-4 custmize-footer">
+                    <div class="container-xxl">
+                        <div class="wrapper card-bg">
+                            <div class="row justify-content-between gy-lg-0 gy-4">
+                                <div class="col-lg-4">
+                                    <div class="text">
+                                        <a href="index.html">
+                                            <div class="footer-logo">
+                                                <img src="../assets/img/custom/logo.svg" alt="Logo">
+                                            </div>
+                                        </a>
+                                        <p>Empowering kitchen professionals <br>with comprehensive safety training <br>and certification programs.</p>
+                                        <div class="social-links flex-gap">
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-auto">
+                                    <div class="footer-list">
+                                        <h3>Quick Links</h3>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Dashboard</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">My Training</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Certificates </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Progress Report</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-auto">
+                                    <div class="footer-list">
+                                        <h3>Support </h3>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Help Center </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Technical Support </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Contact Us </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">System Status</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-auto">
+                                    <div class="footer-list v2">
+                                        <h3>Contact Info</h3>
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="flex-gap"><i class="fa-solid fa-location-dot"></i>24/7 Support Available</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="flex-gap"><i class="fa-solid fa-phone"></i>1-800-Kitchen</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="flex-gap"><i class="fa-solid fa-envelope"></i>Support@kitchenguard.com</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider-rule"></div>
+                            <div class="bottom-text text-center">
+                                <p><a href="index.html">Copyright © 2024 Kitchen Guard Training Platform</a>. All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+
+
+            </div>
+
+        </div>
+        <!-- / Footer -->
+
+        <div class="content-backdrop fade"></div>
+    </div>
+    <!-- Content wrapper -->
+    </div>
+    <!-- Content wrapper -->
+    </div>
+    <!-- / Layout page -->
+    </div>
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="../assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="../assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="../assets/vendor/libs/typeahead-js/typeahead.js"></script>
+
+    <script src="../assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+    <script src="../assets/vendor/libs/chartjs/chartjs.js"></script>
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="../assets/js/dashboards-crm.js"></script>
+    <script src="../assets/js/charts-custmize.js"></script>
+    <!-- fancybox -->
+    <script src="..//libs/fancybox/fancybox.js"></script>
+    <script>
+        Fancybox.bind('[data-fancybox]', {});
+    </script>
+</body>
+
+</html>
