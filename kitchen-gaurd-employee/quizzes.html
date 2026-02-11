@@ -1,1060 +1,1060 @@
 <!DOCTYPE html>
 
 <html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../assets/" data-template="vertical-menu-template-no-customizer">
-   <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-      <title>Quizzes | Kitchen Gaurd</title>
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-      <meta name="description" content="" />
+   <title>Quizzes | Kitchen Gaurd</title>
 
-      <!-- Favicon -->
-      <link rel="icon" type="image/x-icon" href="../assets/img/custom/favicon.svg" />
+   <meta name="description" content="" />
 
-      <!-- Fonts -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <!-- Favicon -->
+   <link rel="icon" type="image/x-icon" href="../assets/img/custom/favicon.svg" />
 
-      <!-- Icons -->
-      <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
-      <link rel="stylesheet" href="../assets/vendor/fonts/flag-icons.css" />
+   <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-      <!-- Core CSS -->
-      <link rel="stylesheet" href="../assets/vendor/css/rtl/core.css" />
-      <link rel="stylesheet" href="../assets/vendor/css/rtl/theme-default.css" />
-      <link rel="stylesheet" href="../assets/css/demo.css" />
-      <link rel="stylesheet" href="../assets/css/style.css" />
+   <!-- Icons -->
+   <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+   <link rel="stylesheet" href="../assets/vendor/fonts/flag-icons.css" />
 
-      <!-- Vendors CSS -->
-      <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-      <link rel="stylesheet" href="../assets/vendor/libs/typeahead-js/typeahead.css" />
-      <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
-      <link rel="stylesheet" href="../libs/fancybox/fancybox.css" />
+   <!-- Core CSS -->
+   <link rel="stylesheet" href="../assets/vendor/css/rtl/core.css" />
+   <link rel="stylesheet" href="../assets/vendor/css/rtl/theme-default.css" />
+   <link rel="stylesheet" href="../assets/css/demo.css" />
+   <link rel="stylesheet" href="../assets/css/style.css" />
 
-      <!-- Page CSS -->
+   <!-- Vendors CSS -->
+   <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+   <link rel="stylesheet" href="../assets/vendor/libs/typeahead-js/typeahead.css" />
+   <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+   <link rel="stylesheet" href="../libs/fancybox/fancybox.css" />
 
-      <!-- Helpers -->
-      <script src="../assets/vendor/js/helpers.js"></script>
+   <!-- Page CSS -->
 
-      <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
-      <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-      <script src="../assets/js/config.js"></script>
-   </head>
+   <!-- Helpers -->
+   <script src="../assets/vendor/js/helpers.js"></script>
 
-   <body>
-      <!-- Layout wrapper -->
-      <div class="layout-wrapper layout-content-navbar">
-         <div class="layout-container">
-            <!-- Menu -->
+   <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+   <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+   <script src="../assets/js/config.js"></script>
+</head>
 
-            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-               <div class="app-brand demo">
-                  <a href="index.html" class="app-brand-link">
-                     <div class="app-brand-logo demo">
-                        <img src="../assets/img/custom/logo.svg" alt="Image" />
-                     </div>
+<body>
+   <!-- Layout wrapper -->
+   <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+         <!-- Menu -->
+
+         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+            <div class="app-brand demo">
+               <a href="index.html" class="app-brand-link">
+                  <div class="app-brand-logo demo">
+                     <img src="../assets/img/custom/logo.svg" alt="Image" />
+                  </div>
+               </a>
+            </div>
+
+            <ul class="menu-inner py-1">
+               <!-- Dashboards -->
+               <li class="menu-header">
+                  <span class="menu-header-text">Dashboard</span>
+               </li>
+               <li class="menu-item">
+                  <a href="index.html" class="menu-link">
+                     <i class="menu-icon fa-regular fa-house"></i>
+                     <div data-i18n="Overview">Overview</div>
                   </a>
+               </li>
+               <li class="menu-item">
+                  <a href="javascipt:void(0)" class="menu-link">
+                     <i class="menu-icon menu-icon fa-light fa-book"></i>
+                     <div data-i18n="Progress">Progress</div>
+                  </a>
+               </li>
+               <li class="menu-item">
+                  <a href="javascipt:void(0)" class="menu-link">
+                     <i class="menu-icon fa-solid fa-calendar-days"></i>
+                     <div data-i18n="Schedule">Schedule</div>
+                  </a>
+               </li>
+               <li class="menu-header">
+                  <span class="menu-header-text">My Training</span>
+               </li>
+               <li class="menu-item">
+                  <a href="video-library.html" class="menu-link">
+                     <i class="menu-icon fa-regular fa-play"></i>
+                     <div data-i18n="Video Library">Video Library</div>
+                  </a>
+               </li>
+               <li class="menu-item active">
+                  <a href="quizzes.html" class="menu-link">
+                     <i class="menu-icon fa-light fa-circle-question"></i>
+                     <div data-i18n="Quizzes">Quizzes</div>
+                  </a>
+               </li>
+               <li class="menu-item">
+                  <a href="vr-tutorials.html" class="menu-link">
+                     <i class="menu-icon fa-regular fa-vr-cardboard"></i>
+                     <div data-i18n="VR Tutorials">VR Tutorials</div>
+                  </a>
+               </li>
+
+               <li class="menu-item">
+                  <a href="javascript:void(0);" class="menu-link">
+                     <i class="menu-icon fa-light fa-certificate"></i>
+                     <div data-i18n="Certificates">Certificates</div>
+                  </a>
+               </li>
+               <li class="menu-header">
+                  <span class="menu-header-text">Performance</span>
+               </li>
+               <li class="menu-item">
+                  <a href="my-stats.html" class="menu-link">
+                     <i class="menu-icon fa-regular fa-chart-bar"></i>
+                     <div data-i18n="My Stats">My Stats</div>
+                  </a>
+               </li>
+
+               <li class="menu-item">
+                  <a href="javascipt:void(0)" class="menu-link">
+                     <i class="menu-icon fa-light fa-trophy"></i>
+                     <div data-i18n="Achievements">Achievements</div>
+                  </a>
+               </li>
+               <li class="menu-item">
+                  <a href="javascipt:void(0)" class="menu-link">
+                     <i class="menu-icon fa-thin fa-medal"></i>
+                     <div data-i18n="Badges">Badges</div>
+                  </a>
+               </li>
+               <li class="menu-header">
+                  <span class="menu-header-text">Account</span>
+               </li>
+               <li class="menu-item">
+                  <a href="profile-settings.html" class="menu-link">
+                     <i class="menu-icon fa-light fa-user-gear"></i>
+                     <div data-i18n="Profile Settings">Profile Settings</div>
+                  </a>
+               </li>
+               <li class="menu-item">
+                  <a href="javascipt:void(0)" class="menu-link">
+                     <i class="menu-icon fa-light fa-bell"></i>
+                     <div data-i18n="Notifications">Notifications</div>
+                  </a>
+               </li>
+               <li class="menu-item">
+                  <a href="javascipt:void(0)" class="menu-link">
+                     <i class="menu-icon fa-thin fa-headset"></i>
+                     <div data-i18n="Support">Support</div>
+                  </a>
+               </li>
+            </ul>
+         </aside>
+         <!-- / Menu -->
+
+         <!-- Layout container -->
+         <div class="layout-page">
+            <!-- Navbar -->
+
+            <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached bg-navbar-theme flex-gap user-header flex-row-reverse" id="layout-navbar">
+               <div class="navbar-nav-right d-flex align-items-md-center align-items-start gap-md-0 gap-1" id="navbar-collapse">
+                  <div class="flex-gap gap-lg-3 order-1 user-content">
+                     <div class="nav-item dropdown-notifications navbar-dropdown dropdown order-xl-0 order-1">
+                        <a class="nav-link dropdown-toggle flat-icon hide-arrow p-1" href="javascript:void(0);" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                           <i class="green fa-solid fa-bell"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end py-0">
+                           <li class="dropdown-menu-header border-bottom">
+                              <div class="dropdown-header d-flex align-items-center py-3">
+                                 <h4 class="text-body mb-0 me-auto gray-1000">Notification</h4>
+                                 <a href="javascript:void(0)" class="dropdown-notifications-all text-body" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Mark all as read" data-bs-original-title="Mark all as read"><i class="bx fs-4 bx-envelope-open"></i></a>
+                              </div>
+                           </li>
+                           <li class="dropdown-notifications-list scrollable-container ps ps--active-y">
+                              <ul class="list-group list-group-flush">
+                                 <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                    <div class="d-flex">
+                                       <div class="flex-shrink-0 me-3">
+                                          <div class="avatar">
+                                             <img src="../assets/img/custom/user-1.png" alt="" class="w-px-40 h-auto rounded-circle" />
+                                          </div>
+                                       </div>
+                                       <div class="flex-grow-1">
+                                          <h6 class="mb-1 gray-1000">Congratulation Lettie 🎉</h6>
+                                          <p class="mb-0 gra-800">Won the monthly best seller gold badge</p>
+                                          <small class="text-muted">1h ago</small>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                    <div class="d-flex">
+                                       <div class="flex-shrink-0 me-3">
+                                          <div class="avatar">
+                                             <span class="avatar-initial rounded-circle bg-primary">CF</span>
+                                          </div>
+                                       </div>
+                                       <div class="flex-grow-1">
+                                          <h6 class="mb-1 gray-1000">Charles Franklin</h6>
+                                          <p class="mb-0 gray-800">Accepted your connection</p>
+                                          <small class="text-muted">12hr ago</small>
+                                       </div>
+                                    </div>
+                                 </li>
+                              </ul>
+                              <div class="ps__rail-x" style="left: 0px; bottom: -86px">
+                                 <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px"></div>
+                              </div>
+                              <div class="ps__rail-y" style="top: 86px; right: 0px; height: 480px">
+                                 <div class="ps__thumb-y" tabindex="0" style="top: 41px; height: 228px"></div>
+                              </div>
+                           </li>
+                           <li class="dropdown-menu-footer border-top">
+                              <a href="javascript:void(0);" class="dropdown-item d-flex justify-content-center p-3"> View all notifications </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="vertical-rule d-xl-block d-none"></div>
+                     <div class="nav-item navbar-dropdown dropdown-user dropdown">
+                        <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
+                           <div class="flex-gap lg-gap">
+                              <div class="image md-size">
+                                 <img src="../assets/img/custom/boy-1.png" alt="User" />
+                              </div>
+                              <div class="text">
+                                 <h4 class="gray-800">Downtown Franchise</h4>
+                                 <p>Manager Dashboard</p>
+                              </div>
+                           </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                           <li>
+                              <a class="dropdown-item" href="javascript:void(0)">
+                                 <i class="bx bx-user me-2 green"></i>
+                                 <span class="align-middle">My Profile</span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="javascript:void(0)">
+                                 <i class="bx bx-cog me-2 green"></i>
+                                 <span class="align-middle">Settings</span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="javascript:void(0)">
+                                 <span class="d-flex align-items-center align-middle">
+                                    <i class="flex-shrink-0 bx bx-credit-card me-2 green"></i>
+                                    <span class="flex-grow-1 align-middle">Billing</span>
+                                 </span>
+                              </a>
+                           </li>
+                           <li>
+                              <div class="divider-rule"></div>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="javascript:void(0)">
+                                 <i class="bx bx-support me-2 green"></i>
+                                 <span class="align-middle">Help</span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="javascript:void(0)">
+                                 <i class="bx bx-help-circle me-2 green"></i>
+                                 <span class="align-middle">FAQ</span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="javascript:void(0)">
+                                 <i class="bx bx-dollar me-2 green"></i>
+                                 <span class="align-middle">Pricing</span>
+                              </a>
+                           </li>
+                           <li>
+                              <div class="divider-rule"></div>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="javascript:void(0)">
+                                 <i class="bx bx-power-off me-2 green"></i>
+                                 <span class="align-middle">Log Out</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="layout-menu-toggle align-items-xl-center d-xl-none">
+                     <a class="nav-item nav-link p-0" href="javascript:void(0)">
+                        <i class="menu-icon bx bx-menu bx-sm"></i>
+                     </a>
+                  </div>
                </div>
 
-               <ul class="menu-inner py-1">
-                  <!-- Dashboards -->
-                  <li class="menu-header">
-                     <span class="menu-header-text">Dashboard</span>
-                  </li>
-                  <li class="menu-item">
-                     <a href="index.html" class="menu-link">
-                        <i class="menu-icon fa-regular fa-house"></i>
-                        <div data-i18n="Overview">Overview</div>
-                     </a>
-                  </li>
-                  <li class="menu-item">
-                     <a href="javascipt:void(0)" class="menu-link">
-                        <i class="menu-icon menu-icon fa-light fa-book"></i>
-                        <div data-i18n="Progress">Progress</div>
-                     </a>
-                  </li>
-                  <li class="menu-item">
-                     <a href="javascipt:void(0)" class="menu-link">
-                        <i class="menu-icon fa-solid fa-calendar-days"></i>
-                        <div data-i18n="Schedule">Schedule</div>
-                     </a>
-                  </li>
-                  <li class="menu-header">
-                     <span class="menu-header-text">My Training</span>
-                  </li>
-                  <li class="menu-item">
-                     <a href="video-library.html" class="menu-link">
-                        <i class="menu-icon fa-regular fa-play"></i>
-                        <div data-i18n="Video Library">Video Library</div>
-                     </a>
-                  </li>
-                  <li class="menu-item active">
-                     <a href="quizzes.html" class="menu-link">
-                        <i class="menu-icon fa-light fa-circle-question"></i>
-                        <div data-i18n="Quizzes">Quizzes</div>
-                     </a>
-                  </li>
-                  <li class="menu-item">
-                     <a href="vr-tutorials.html" class="menu-link">
-                        <i class="menu-icon fa-regular fa-vr-cardboard"></i>
-                        <div data-i18n="VR Tutorials">VR Tutorials</div>
-                     </a>
-                  </li>
+               <div class="user-menu flex-between flex-grow-1">
+                  <!-- heading-->
+                  <div class="navbar-nav flex-between flex-grow-1">
+                     <form action="javascript:void()" class="search-field cust-width">
+                        <input class="form-control" id="src-icon" placeholder="Search quizzes and assessments..." aria-label="Search" />
+                        <label for="src-icon" class="src-bar">
+                           <i class="fa-solid fa-magnifying-glass"></i>
+                        </label>
+                     </form>
+                     <div class="btn-badges flex-gap">
+                        <span class="lg-badge lg-skyblue-badge"><i class="fa-solid fa-fire"></i>7 Day Streak</span>
+                        <span class="lg-badge"><i class="fa-solid fa-star"></i>Level 12</span>
+                     </div>
+                  </div>
+               </div>
 
-                  <li class="menu-item">
-                     <a href="javascript:void(0);" class="menu-link">
-                        <i class="menu-icon fa-light fa-certificate"></i>
-                        <div data-i18n="Certificates">Certificates</div>
-                     </a>
-                  </li>
-                  <li class="menu-header">
-                     <span class="menu-header-text">Performance</span>
-                  </li>
-                  <li class="menu-item">
-                     <a href="my-stats.html" class="menu-link">
-                        <i class="menu-icon fa-regular fa-chart-bar"></i>
-                        <div data-i18n="My Stats">My Stats</div>
-                     </a>
-                  </li>
+               <!-- Search Small Screens -->
+               <div class="navbar-search-wrapper search-input-wrapper d-none">
+                  <input type="text" class="form-control search-input container-xxl border-0" placeholder="Search..." aria-label="Search..." />
+                  <i class="menu-icon bx bx-x bx-sm search-toggler cursor-pointer"></i>
+               </div>
+            </nav>
 
-                  <li class="menu-item">
-                     <a href="javascipt:void(0)" class="menu-link">
-                        <i class="menu-icon fa-light fa-trophy"></i>
-                        <div data-i18n="Achievements">Achievements</div>
-                     </a>
-                  </li>
-                  <li class="menu-item">
-                     <a href="javascipt:void(0)" class="menu-link">
-                        <i class="menu-icon fa-thin fa-medal"></i>
-                        <div data-i18n="Badges">Badges</div>
-                     </a>
-                  </li>
-                  <li class="menu-header">
-                     <span class="menu-header-text">Account</span>
-                  </li>
-                  <li class="menu-item">
-                     <a href="profile-settings.html" class="menu-link">
-                        <i class="menu-icon fa-light fa-user-gear"></i>
-                        <div data-i18n="Profile Settings">Profile Settings</div>
-                     </a>
-                  </li>
-                  <li class="menu-item">
-                     <a href="javascipt:void(0)" class="menu-link">
-                        <i class="menu-icon fa-light fa-bell"></i>
-                        <div data-i18n="Notifications">Notifications</div>
-                     </a>
-                  </li>
-                  <li class="menu-item">
-                     <a href="javascipt:void(0)" class="menu-link">
-                        <i class="menu-icon fa-thin fa-headset"></i>
-                        <div data-i18n="Support">Support</div>
-                     </a>
-                  </li>
-               </ul>
-            </aside>
-            <!-- / Menu -->
+            <!-- / Navbar -->
 
-            <!-- Layout container -->
-            <div class="layout-page">
-               <!-- Navbar -->
+            <!-- Content wrapper -->
+            <div class="content-wrapper">
+               <!-- Content -->
 
-               <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached bg-navbar-theme flex-gap user-header flex-row-reverse" id="layout-navbar">
-                  <div class="navbar-nav-right d-flex align-items-md-center align-items-start gap-md-0 gap-1" id="navbar-collapse">
-                     <div class="flex-gap gap-lg-3 order-1 user-content">
-                        <div class="nav-item dropdown-notifications navbar-dropdown dropdown order-xl-0 order-1">
-                           <a class="nav-link dropdown-toggle flat-icon hide-arrow p-1" href="javascript:void(0);" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                              <i class="green fa-solid fa-bell"></i>
-                           </a>
-                           <ul class="dropdown-menu dropdown-menu-end py-0">
-                              <li class="dropdown-menu-header border-bottom">
-                                 <div class="dropdown-header d-flex align-items-center py-3">
-                                    <h4 class="text-body mb-0 me-auto gray-1000">Notification</h4>
-                                    <a href="javascript:void(0)" class="dropdown-notifications-all text-body" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Mark all as read" data-bs-original-title="Mark all as read"><i class="bx fs-4 bx-envelope-open"></i></a>
-                                 </div>
-                              </li>
-                              <li class="dropdown-notifications-list scrollable-container ps ps--active-y">
-                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item list-group-item-action dropdown-notifications-item">
-                                       <div class="d-flex">
-                                          <div class="flex-shrink-0 me-3">
-                                             <div class="avatar">
-                                                <img src="../assets/img/custom/user-1.png" alt="" class="w-px-40 h-auto rounded-circle" />
-                                             </div>
+               <div class="container-xxl flex-grow-1">
+                  <div class="main-wrapper section-space">
+                     <div class="row">
+                        <div class="col-12">
+                           <div class="card-bg">
+                              <div class="flex-between">
+                                 <div class="flex-gap-start lg-gap flex-wrap">
+                                    <div class="cust-icon">
+                                       <i class="fa-solid fa-clipboard-question"></i>
+                                    </div>
+                                    <div class="content">
+                                       <div class="text mb-3">
+                                          <h1>Training Quizzes & Assessments</h1>
+                                          <p class="mt-1 font-14">Test your knowledge and track your learning progress</p>
+                                       </div>
+                                       <div class="flex-gap gap-40 user-about">
+                                          <div class="flex-gap sm-gap">
+                                             <i class="fa-solid fa-chart-line green"></i>
+                                             <p>Average Score: 92%</p>
                                           </div>
-                                          <div class="flex-grow-1">
-                                             <h6 class="mb-1 gray-1000">Congratulation Lettie 🎉</h6>
-                                             <p class="mb-0 gra-800">Won the monthly best seller gold badge</p>
-                                             <small class="text-muted">1h ago</small>
+                                          <div class="flex-gap sm-gap">
+                                             <i class="fa-solid fa-trophy green"></i>
+                                             <p>Quizzes Completed: 18/22</p>
                                           </div>
                                        </div>
-                                    </li>
-                                    <li class="list-group-item list-group-item-action dropdown-notifications-item">
-                                       <div class="d-flex">
-                                          <div class="flex-shrink-0 me-3">
-                                             <div class="avatar">
-                                                <span class="avatar-initial rounded-circle bg-primary">CF</span>
-                                             </div>
-                                          </div>
-                                          <div class="flex-grow-1">
-                                             <h6 class="mb-1 gray-1000">Charles Franklin</h6>
-                                             <p class="mb-0 gray-800">Accepted your connection</p>
-                                             <small class="text-muted">12hr ago</small>
-                                          </div>
-                                       </div>
-                                    </li>
-                                 </ul>
-                                 <div class="ps__rail-x" style="left: 0px; bottom: -86px">
-                                    <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px"></div>
+                                    </div>
                                  </div>
-                                 <div class="ps__rail-y" style="top: 86px; right: 0px; height: 480px">
-                                    <div class="ps__thumb-y" tabindex="0" style="top: 41px; height: 228px"></div>
+
+                                 <div class="lg-badge white column-flex gap-1 box-badge">
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
+                                    <h2 class="font-24 mt-1">2</h2>
+                                    <p>Pending Quizzes</p>
                                  </div>
-                              </li>
-                              <li class="dropdown-menu-footer border-top">
-                                 <a href="javascript:void(0);" class="dropdown-item d-flex justify-content-center p-3"> View all notifications </a>
-                              </li>
-                           </ul>
+                              </div>
+                           </div>
                         </div>
-                        <div class="vertical-rule d-xl-block d-none"></div>
-                        <div class="nav-item navbar-dropdown dropdown-user dropdown">
-                           <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
-                              <div class="flex-gap lg-gap">
-                                 <div class="image md-size">
-                                    <img src="../assets/img/custom/boy-1.png" alt="User" />
+                        <div class="col-12">
+                           <div class="flex-between">
+                              <div class="flex-gap lg-gap flex-wrap">
+                                 <div class="cust-icon red-light-icon">
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
                                  </div>
                                  <div class="text">
-                                    <h4 class="gray-800">Downtown Franchise</h4>
-                                    <p>Manager Dashboard</p>
+                                    <h2 class="font-30">Fire Safety Assessment Due Today</h2>
+                                    <p class="mt-1">Complete this critical safety assessment before 11:59 PM</p>
                                  </div>
                               </div>
-                           </a>
-                           <ul class="dropdown-menu dropdown-menu-end">
-                              <li>
-                                 <a class="dropdown-item" href="javascript:void(0)">
-                                    <i class="bx bx-user me-2 green"></i>
-                                    <span class="align-middle">My Profile</span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a class="dropdown-item" href="javascript:void(0)">
-                                    <i class="bx bx-cog me-2 green"></i>
-                                    <span class="align-middle">Settings</span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a class="dropdown-item" href="javascript:void(0)">
-                                    <span class="d-flex align-items-center align-middle">
-                                       <i class="flex-shrink-0 bx bx-credit-card me-2 green"></i>
-                                       <span class="flex-grow-1 align-middle">Billing</span>
-                                    </span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <div class="divider-rule"></div>
-                              </li>
-                              <li>
-                                 <a class="dropdown-item" href="javascript:void(0)">
-                                    <i class="bx bx-support me-2 green"></i>
-                                    <span class="align-middle">Help</span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a class="dropdown-item" href="javascript:void(0)">
-                                    <i class="bx bx-help-circle me-2 green"></i>
-                                    <span class="align-middle">FAQ</span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a class="dropdown-item" href="javascript:void(0)">
-                                    <i class="bx bx-dollar me-2 green"></i>
-                                    <span class="align-middle">Pricing</span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <div class="divider-rule"></div>
-                              </li>
-                              <li>
-                                 <a class="dropdown-item" href="javascript:void(0)">
-                                    <i class="bx bx-power-off me-2 green"></i>
-                                    <span class="align-middle">Log Out</span>
-                                 </a>
-                              </li>
-                           </ul>
+                              <a href="#" class="site-btn green-btn"><i class="fa-solid fa-play"></i>Start Quiz Now</a>
+                           </div>
                         </div>
-                     </div>
-                     <div class="layout-menu-toggle align-items-xl-center d-xl-none">
-                        <a class="nav-item nav-link p-0" href="javascript:void(0)">
-                           <i class="menu-icon bx bx-menu bx-sm"></i>
-                        </a>
-                     </div>
-                  </div>
-
-                  <div class="user-menu flex-between flex-grow-1">
-                     <!-- heading-->
-                     <div class="navbar-nav flex-between flex-grow-1">
-                        <form action="javascript:void()" class="search-field cust-width">
-                           <input class="form-control" id="src-icon" placeholder="Search quizzes and assessments..." aria-label="Search" />
-                           <label for="src-icon" class="src-bar">
-                              <i class="fa-solid fa-magnifying-glass"></i>
-                           </label>
-                        </form>
-                        <div class="btn-badges flex-gap">
-                           <span class="lg-badge lg-skyblue-badge"><i class="fa-solid fa-fire"></i>7 Day Streak</span>
-                           <span class="lg-badge"><i class="fa-solid fa-star"></i>Level 12</span>
-                        </div>
-                     </div>
-                  </div>
-
-                  <!-- Search Small Screens -->
-                  <div class="navbar-search-wrapper search-input-wrapper d-none">
-                     <input type="text" class="form-control search-input container-xxl border-0" placeholder="Search..." aria-label="Search..." />
-                     <i class="menu-icon bx bx-x bx-sm search-toggler cursor-pointer"></i>
-                  </div>
-               </nav>
-
-               <!-- / Navbar -->
-
-               <!-- Content wrapper -->
-               <div class="content-wrapper">
-                  <!-- Content -->
-
-                  <div class="container-xxl flex-grow-1">
-                     <div class="main-wrapper section-space">
-                        <div class="row">
-                           <div class="col-12">
-                              <div class="card-bg">
-                                 <div class="flex-between">
-                                    <div class="flex-gap-start lg-gap flex-wrap">
-                                       <div class="cust-icon">
-                                          <i class="fa-solid fa-clipboard-question"></i>
-                                       </div>
-                                       <div class="content">
-                                          <div class="text mb-3">
-                                             <h1>Training Quizzes & Assessments</h1>
-                                             <p class="mt-1 font-14">Test your knowledge and track your learning progress</p>
+                        <div class="col-12">
+                           <div class="card-wrapper row-gx row-gy">
+                              <div class="row">
+                                 <div class="col-lg-4 col-md-6">
+                                    <div class="card-bg">
+                                       <div class="flex-gap-start lg-gap highlight">
+                                          <div class="cust-icon">
+                                             <i class="fa-solid fa-clock"></i>
                                           </div>
-                                          <div class="flex-gap gap-40 user-about">
-                                             <div class="flex-gap sm-gap">
-                                                <i class="fa-solid fa-chart-line green"></i>
-                                                <p>Average Score: 92%</p>
-                                             </div>
-                                             <div class="flex-gap sm-gap">
-                                                <i class="fa-solid fa-trophy green"></i>
-                                                <p>Quizzes Completed: 18/22</p>
-                                             </div>
+                                          <div class="text highlight">
+                                             <span>Time Limit</span>
+                                             <h3 class="mt-2">15 Minutes</h3>
+                                             <p class="green">Maximum allowed time</p>
                                           </div>
                                        </div>
                                     </div>
-
-                                    <div class="lg-badge white column-flex gap-1 box-badge">
-                                       <i class="fa-solid fa-triangle-exclamation"></i>
-                                       <h2 class="font-24 mt-1">2</h2>
-                                       <p>Pending Quizzes</p>
+                                 </div>
+                                 <div class="col-lg-4 col-md-6">
+                                    <div class="card-bg">
+                                       <div class="flex-gap-start lg-gap highlight">
+                                          <div class="cust-icon">
+                                             <i class="fa-solid fa-question"></i>
+                                          </div>
+                                          <div class="text highlight">
+                                             <span>Questions</span>
+                                             <h3 class="mt-2">20</h3>
+                                             <p class="green">Multiple choice & scenarios</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-4 col-md-6">
+                                    <div class="card-bg">
+                                       <div class="flex-gap-start lg-gap highlight">
+                                          <div class="cust-icon">
+                                             <i class="fa-solid fa-percent"></i>
+                                          </div>
+                                          <div class="text highlight">
+                                             <span>Pass Rate</span>
+                                             <h3 class="mt-2">80%</h3>
+                                             <p class="green">Minimum to pass</p>
+                                          </div>
+                                       </div>
                                     </div>
                                  </div>
                               </div>
                            </div>
-                           <div class="col-12">
-                              <div class="flex-between">
-                                 <div class="flex-gap lg-gap flex-wrap">
-                                    <div class="cust-icon red-light-icon">
-                                       <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                        <div class="col-12">
+                           <div class="inner-wrapper row-gx row-gy">
+                              <div class="main-title">
+                                 <h2 class="font-30">Quiz Dashboard</h2>
+                              </div>
+                              <div class="card-wrapper row-gx row-gy">
+                                 <div class="row">
+                                    <div class="col-lg-3 col-md-6">
+                                       <div class="card-bg">
+                                          <div class="cust-icon">
+                                             <i class="fa-solid fa-circle-check"></i>
+                                          </div>
+                                          <div class="highlight text mt-xl-4 mt-3">
+                                             <span>Completed Quizzes </span>
+                                             <h3>18</h3>
+                                             <p class="green">Out of 22 total</p>
+                                          </div>
+                                       </div>
                                     </div>
-                                    <div class="text">
-                                       <h2 class="font-30">Fire Safety Assessment Due Today</h2>
-                                       <p class="mt-1">Complete this critical safety assessment before 11:59 PM</p>
+                                    <div class="col-lg-3 col-md-6">
+                                       <div class="card-bg">
+                                          <div class="cust-icon">
+                                             <i class="fa-solid fa-star"></i>
+                                          </div>
+                                          <div class="highlight text mt-xl-4 mt-3">
+                                             <span>Average Score</span>
+                                             <h3>92%</h3>
+                                             <p class="green">+3% this month</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                       <div class="card-bg">
+                                          <div class="cust-icon">
+                                             <i class="fa-solid fa-triangle-exclamation"></i>
+                                          </div>
+                                          <div class="highlight text mt-xl-4 mt-3">
+                                             <span>Pending Quizzes </span>
+                                             <h3>2</h3>
+                                             <p class="green">Due this week</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                       <div class="card-bg">
+                                          <div class="cust-icon">
+                                             <i class="fa-solid fa-arrow-rotate-right"></i>
+                                          </div>
+                                          <div class="highlight text mt-xl-4 mt-3">
+                                             <span>Retake Available </span>
+                                             <h3>3</h3>
+                                             <p class="green">Improve your score</p>
+                                          </div>
+                                       </div>
                                     </div>
                                  </div>
-                                 <a href="#" class="site-btn green-btn"><i class="fa-solid fa-play"></i>Start Quiz Now</a>
                               </div>
                            </div>
-                           <div class="col-12">
+                        </div>
+                        <div class="col-12">
+                           <div class="inner-wrapper row-gx row-gy">
+                              <div class="row">
+                                 <div class="col-lg-7">
+                                    <div class="card-bg h-100">
+                                       <div class="inner-title margin-bottom">
+                                          <h2>Training Path Progress</h2>
+                                       </div>
+                                       <div class="trainingPath">
+                                          <canvas id="trainingPath" class="chartjs min-height-280"></canvas>
+                                       </div>
+                                       <div class="doted-list mt-4">
+                                          <ul class="justify-content-center">
+                                             <li class="purple-dot">Quiz Scores</li>
+                                             <li class="brown-dot">Target Score</li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-5">
+                                    <div class="card-bg h-100">
+                                       <div class="inner-title margin-bottom">
+                                          <h3>Category Breakdown</h3>
+                                       </div>
+                                       <div class="categoryBreakdown">
+                                          <canvas id="categoryBreakdown" class="chartjs"></canvas>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-12">
+                           <div class="card-bg">
+                              <div class="main-title flex-between">
+                                 <h2>Available Quizzes</h2>
+                                 <div class="flex-gap">
+                                    <select class="form-select cust-select" aria-label="Default select example" fdprocessedid="p6etmm">
+                                       <option selected="">All Categories</option>
+                                       <option>Half Categories</option>
+                                       <option>Some Categories</option>
+                                       <option>1 Categories</option>
+                                    </select>
+                                    <select class="form-select cust-select" aria-label="Default select example" fdprocessedid="7tl41">
+                                       <option selected="">All Status</option>
+                                       <option>Half Status</option>
+                                       <option>Some Status</option>
+                                       <option>1 Status</option>
+                                    </select>
+                                 </div>
+                              </div>
                               <div class="card-wrapper row-gx row-gy">
                                  <div class="row">
                                     <div class="col-lg-4 col-md-6">
-                                       <div class="card-bg">
-                                          <div class="flex-gap-start lg-gap highlight">
-                                             <div class="cust-icon">
-                                                <i class="fa-solid fa-clock"></i>
+                                       <div class="card-border h-100">
+                                          <div class="flex-between">
+                                             <span class="cust-badge red-badge">Due Today</span>
+                                             <div class="flex-gap sm-gap">
+                                                <i class="fa-solid fa-clock green"></i>
+                                                <span>15 min</span>
                                              </div>
-                                             <div class="text highlight">
-                                                <span>Time Limit</span>
-                                                <h3 class="mt-2">15 Minutes</h3>
-                                                <p class="green">Maximum allowed time</p>
+                                          </div>
+                                          <div class="cust-body mt-3 mb-4">
+                                             <div class="text">
+                                                <h3 class="mb-1">Fire Safety Assessment</h3>
+                                                <p>Critical safety procedures, emergency <br />protocols, and fire prevention measures.</p>
                                              </div>
+                                             <div class="flex-gap gap-5 mt-4 mb-3">
+                                                <div class="text">
+                                                   <h3 class="mb-2">20</h3>
+                                                   <p>Questions</p>
+                                                </div>
+                                                <div class="text">
+                                                   <h3 class="mb-2">80%</h3>
+                                                   <p>Pass Rate</p>
+                                                </div>
+                                             </div>
+                                             <div class="flex-gap xl-gap mt-3">
+                                                <div class="flex-gap sm-gap">
+                                                   <i class="fa-solid fa-star green"></i>
+                                                   <p>50 points</p>
+                                                </div>
+                                                <div class="flex-gap sm-gap">
+                                                   <i class="fa-solid fa-users green"></i>
+                                                   <p>147 taken</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="cust-footer">
+                                             <a href="#" class="site-btn green-btn"><i class="fa-solid fa-play"></i>Start Quiz</a>
                                           </div>
                                        </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6">
-                                       <div class="card-bg">
-                                          <div class="flex-gap-start lg-gap highlight">
-                                             <div class="cust-icon">
-                                                <i class="fa-solid fa-question"></i>
+                                       <div class="card-border h-100">
+                                          <div class="flex-between">
+                                             <span class="cust-badge orange-badge">Due Tomorrow</span>
+                                             <div class="flex-gap sm-gap">
+                                                <i class="fa-solid fa-clock green"></i>
+                                                <span>12 min</span>
                                              </div>
-                                             <div class="text highlight">
-                                                <span>Questions</span>
-                                                <h3 class="mt-2">20</h3>
-                                                <p class="green">Multiple choice & scenarios</p>
+                                          </div>
+                                          <div class="cust-body mt-3 mb-4">
+                                             <div class="text">
+                                                <h3 class="mb-1">Equipment Safety Quiz</h3>
+                                                <p>Safe operation of kitchen equipment, <br />maintenance protocols,</p>
                                              </div>
+                                             <div class="flex-gap gap-5 mt-4 mb-3">
+                                                <div class="text">
+                                                   <h3 class="mb-2">15</h3>
+                                                   <p>Questions</p>
+                                                </div>
+                                                <div class="text">
+                                                   <h3 class="mb-2">75%</h3>
+                                                   <p>Pass Rate</p>
+                                                </div>
+                                             </div>
+                                             <div class="flex-gap xl-gap mt-3">
+                                                <div class="flex-gap sm-gap">
+                                                   <i class="fa-solid fa-star green"></i>
+                                                   <p>35 points</p>
+                                                </div>
+                                                <div class="flex-gap sm-gap">
+                                                   <i class="fa-solid fa-users green"></i>
+                                                   <p>203 taken</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="cust-footer">
+                                             <a href="#" class="site-btn green-btn"><i class="fa-solid fa-play"></i>Start Quiz</a>
                                           </div>
                                        </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6">
-                                       <div class="card-bg">
-                                          <div class="flex-gap-start lg-gap highlight">
-                                             <div class="cust-icon">
-                                                <i class="fa-solid fa-percent"></i>
+                                       <div class="card-border h-100">
+                                          <div class="flex-between">
+                                             <span class="cust-badge green-badge">Retake available</span>
+                                             <div class="flex-gap sm-gap">
+                                                <i class="fa-solid fa-clock green"></i>
+                                                <span>10 min</span>
                                              </div>
-                                             <div class="text highlight">
-                                                <span>Pass Rate</span>
-                                                <h3 class="mt-2">80%</h3>
-                                                <p class="green">Minimum to pass</p>
+                                          </div>
+                                          <div class="cust-body mt-3 mb-4">
+                                             <div class="text">
+                                                <h3 class="mb-1">Hygiene Standards</h3>
+                                                <p>Personal hygiene, food handing <br />protocols, and sanitation requirements.</p>
                                              </div>
+                                             <div class="flex-gap gap-5 mt-4 mb-3">
+                                                <div class="text">
+                                                   <h3 class="mb-2">78%</h3>
+                                                   <p>last Score</p>
+                                                </div>
+                                                <div class="text">
+                                                   <h3 class="mb-2">2/3</h3>
+                                                   <p>Attempts</p>
+                                                </div>
+                                             </div>
+                                             <div class="flex-gap xl-gap mt-3">
+                                                <div class="flex-gap sm-gap">
+                                                   <i class="fa-solid fa-star green"></i>
+                                                   <p>25 points</p>
+                                                </div>
+                                                <div class="flex-gap sm-gap">
+                                                   <i class="menu-icon fa-solid fa-calendar-days green"></i>
+                                                   <p>Taken 3 days ago</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="cust-footer">
+                                             <a href="#" class="site-btn green-btn"><i class="fa-solid fa-arrow-rotate-right"></i>Retake Quiz</a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                       <div class="card-border h-100">
+                                          <div class="flex-between">
+                                             <span class="cust-badge green-badge">Completed</span>
+                                             <div class="flex-gap sm-gap">
+                                                <i class="fa-solid fa-circle-check green"></i>
+                                                <span>Passed</span>
+                                             </div>
+                                          </div>
+                                          <div class="cust-body mt-3 mb-4">
+                                             <div class="text">
+                                                <h3 class="mb-1">Food Safety Fundamentals</h3>
+                                                <p>Basic food safety principles, <br />temperature control, and Contamination <br />prevention.</p>
+                                             </div>
+                                             <div class="flex-gap gap-5 mt-4 mb-3">
+                                                <div class="text">
+                                                   <h3 class="mb-2">96%</h3>
+                                                   <p>Score</p>
+                                                </div>
+                                                <div class="text">
+                                                   <h3 class="mb-2">1/3</h3>
+                                                   <p>Attempts</p>
+                                                </div>
+                                             </div>
+                                             <div class="flex-gap xl-gap mt-3">
+                                                <div class="flex-gap sm-gap">
+                                                   <i class="fa-solid fa-star green"></i>
+                                                   <p>40 points earned</p>
+                                                </div>
+                                                <div class="flex-gap sm-gap">
+                                                   <i class="menu-icon fa-solid fa-calendar-days green"></i>
+                                                   <p>1 week ago</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="cust-footer">
+                                             <a href="#" class="site-btn green-outline"><i class="fa-solid fa-check"></i>Completed</a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                       <div class="card-border h-100">
+                                          <div class="flex-between">
+                                             <span class="cust-badge orange-badge">Locked</span>
+                                             <div class="flex-gap sm-gap">
+                                                <i class="fa-solid fa-lock green"></i>
+                                                <span>Level 15</span>
+                                             </div>
+                                          </div>
+                                          <div class="cust-body mt-3 mb-4">
+                                             <div class="text">
+                                                <h3 class="mb-1">Advanced HACCP Principles</h3>
+                                                <p>Advanced hazard analysis and critical <br />control point for food safety <br />management.</p>
+                                             </div>
+                                             <div class="flex-gap gap-5 mt-4 mb-3">
+                                                <div class="text">
+                                                   <h3 class="mb-2">15</h3>
+                                                   <p>Questions</p>
+                                                </div>
+                                                <div class="text">
+                                                   <h3 class="mb-2">75%</h3>
+                                                   <p>Pass Rate</p>
+                                                </div>
+                                             </div>
+                                             <div class="flex-gap xl-gap mt-3">
+                                                <div class="flex-gap sm-gap">
+                                                   <i class="fa-solid fa-star green"></i>
+                                                   <p>75 points</p>
+                                                </div>
+                                                <div class="flex-gap sm-gap">
+                                                   <i class="fa-solid fa-trophy green"></i>
+                                                   <p>Unlock at level 15</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="cust-footer">
+                                             <a href="#" class="site-btn green-outline"><i class="fa-solid fa-lock"></i>Locked</a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                       <div class="card-border h-100">
+                                          <div class="flex-between">
+                                             <span class="cust-badge green-badge">Practice</span>
+                                             <div class="flex-gap sm-gap">
+                                                <i class="fa-solid fa-clock green"></i>
+                                                <span>8 min</span>
+                                             </div>
+                                          </div>
+                                          <div class="cust-body mt-3 mb-4">
+                                             <div class="text">
+                                                <h3 class="mb-1">Kitchen Terminology</h3>
+                                                <p>Practice quiz covering essential kitchen <br />terms, cooking methods, and culinary <br />vocabulary.</p>
+                                             </div>
+                                             <div class="flex-gap gap-5 mt-4 mb-3">
+                                                <div class="text">
+                                                   <h3 class="mb-2">12</h3>
+                                                   <p>Questions</p>
+                                                </div>
+                                                <div class="text">
+                                                   <h3 class="mb-2">2/3</h3>
+                                                   <p>Attempts</p>
+                                                </div>
+                                             </div>
+                                             <div class="flex-gap xl-gap mt-3">
+                                                <div class="flex-gap sm-gap">
+                                                   <i class="fa-solid fa-brain green"></i>
+                                                   <p>Practice Mode</p>
+                                                </div>
+                                                <div class="flex-gap sm-gap">
+                                                   <i class="fa-solid fa-users green"></i>
+                                                   <p>89 Taken</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="cust-footer">
+                                             <a href="#" class="site-btn green-btn"><i class="fa-solid fa-play"></i>Practice Now</a>
                                           </div>
                                        </div>
                                     </div>
                                  </div>
                               </div>
                            </div>
-                           <div class="col-12">
-                              <div class="inner-wrapper row-gx row-gy">
-                                 <div class="main-title">
-                                    <h2 class="font-30">Quiz Dashboard</h2>
-                                 </div>
-                                 <div class="card-wrapper row-gx row-gy">
-                                    <div class="row">
-                                       <div class="col-lg-3 col-md-6">
-                                          <div class="card-bg">
-                                             <div class="cust-icon">
-                                                <i class="fa-solid fa-circle-check"></i>
-                                             </div>
-                                             <div class="highlight text mt-xl-4 mt-3">
-                                                <span>Completed Quizzes </span>
-                                                <h3>18</h3>
-                                                <p class="green">Out of 22 total</p>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-3 col-md-6">
-                                          <div class="card-bg">
-                                             <div class="cust-icon">
-                                                <i class="fa-solid fa-star"></i>
-                                             </div>
-                                             <div class="highlight text mt-xl-4 mt-3">
-                                                <span>Average Score</span>
-                                                <h3>92%</h3>
-                                                <p class="green">+3% this month</p>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-3 col-md-6">
-                                          <div class="card-bg">
-                                             <div class="cust-icon">
-                                                <i class="fa-solid fa-triangle-exclamation"></i>
-                                             </div>
-                                             <div class="highlight text mt-xl-4 mt-3">
-                                                <span>Pending Quizzes </span>
-                                                <h3>2</h3>
-                                                <p class="green">Due this week</p>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-3 col-md-6">
-                                          <div class="card-bg">
-                                             <div class="cust-icon">
-                                                <i class="fa-solid fa-arrow-rotate-right"></i>
-                                             </div>
-                                             <div class="highlight text mt-xl-4 mt-3">
-                                                <span>Retake Available </span>
-                                                <h3>3</h3>
-                                                <p class="green">Improve your score</p>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
+                        </div>
+                        <div class="col-12">
+                           <div class="card-bg">
+                              <div class="flex-between main-title">
+                                 <h2>Quiz History & Results</h2>
+                                 <div class="btns flex-gap">
+                                    <select class="form-select cust-select" aria-label="Default select example" fdprocessedid="7tl41">
+                                       <option selected="">Last 30 Days</option>
+                                       <option>Last One Month</option>
+                                       <option>Last 7 Days</option>
+                                       <option>Last One Year</option>
+                                    </select>
+                                    <a href="#" class="site-btn green-btn"><i class="fa-solid fa-download"></i>Export Results</a>
                                  </div>
                               </div>
-                           </div>
-                           <div class="col-12">
-                              <div class="inner-wrapper row-gx row-gy">
-                                 <div class="row">
-                                    <div class="col-lg-7">
-                                       <div class="card-bg h-100">
-                                          <div class="inner-title margin-bottom">
-                                             <h2>Training Path Progress</h2>
-                                          </div>
-                                          <div class="trainingPath">
-                                             <canvas id="trainingPath" class="chartjs min-height-280"></canvas>
-                                          </div>
-                                          <div class="doted-list mt-4">
-                                             <ul class="justify-content-center">
-                                                <li class="purple-dot">Quiz Scores</li>
-                                                <li class="brown-dot">Target Score</li>
-                                             </ul>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="col-lg-5">
-                                       <div class="card-bg h-100">
-                                          <div class="inner-title margin-bottom">
-                                             <h3>Category Breakdown</h3>
-                                          </div>
-                                          <div class="categoryBreakdown">
-                                             <canvas id="categoryBreakdown" class="chartjs"></canvas>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-12">
-                              <div class="card-bg">
-                                 <div class="main-title flex-between">
-                                    <h2>Available Quizzes</h2>
-                                    <div class="flex-gap">
-                                       <select class="form-select cust-select" aria-label="Default select example" fdprocessedid="p6etmm">
-                                          <option selected="">All Categories</option>
-                                          <option>Half Categories</option>
-                                          <option>Some Categories</option>
-                                          <option>1 Categories</option>
-                                       </select>
-                                       <select class="form-select cust-select" aria-label="Default select example" fdprocessedid="7tl41">
-                                          <option selected="">All Status</option>
-                                          <option>Half Status</option>
-                                          <option>Some Status</option>
-                                          <option>1 Status</option>
-                                       </select>
-                                    </div>
-                                 </div>
-                                 <div class="card-wrapper row-gx row-gy">
-                                    <div class="row">
-                                       <div class="col-lg-4 col-md-6">
-                                          <div class="card-border h-100">
-                                             <div class="flex-between">
-                                                <span class="cust-badge red-badge">Due Today</span>
-                                                <div class="flex-gap sm-gap">
-                                                   <i class="fa-solid fa-clock green"></i>
-                                                   <span>15 min</span>
-                                                </div>
-                                             </div>
-                                             <div class="cust-body mt-3 mb-4">
+                              <div class="cust-table">
+                                 <div class="table-responsive text-nowrap">
+                                    <table class="table">
+                                       <thead>
+                                          <tr class="text-nowrap">
+                                             <th>Quiz Name</th>
+                                             <th>Category</th>
+                                             <th>Score</th>
+                                             <th>Status</th>
+                                             <th>Attempts</th>
+                                             <th>Date</th>
+                                             <th>Actions</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <td>
                                                 <div class="text">
-                                                   <h3 class="mb-1">Fire Safety Assessment</h3>
-                                                   <p>Critical safety procedures, emergency <br />protocols, and fire prevention measures.</p>
+                                                   <p>Food Safety Fundamentals</p>
+                                                   <span>40 point earned</span>
                                                 </div>
-                                                <div class="flex-gap gap-5 mt-4 mb-3">
-                                                   <div class="text">
-                                                      <h3 class="mb-2">20</h3>
-                                                      <p>Questions</p>
-                                                   </div>
-                                                   <div class="text">
-                                                      <h3 class="mb-2">80%</h3>
-                                                      <p>Pass Rate</p>
-                                                   </div>
-                                                </div>
-                                                <div class="flex-gap xl-gap mt-3">
-                                                   <div class="flex-gap sm-gap">
-                                                      <i class="fa-solid fa-star green"></i>
-                                                      <p>50 points</p>
-                                                   </div>
-                                                   <div class="flex-gap sm-gap">
-                                                      <i class="fa-solid fa-users green"></i>
-                                                      <p>147 taken</p>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                             <div class="cust-footer">
-                                                <a href="#" class="site-btn green-btn"><i class="fa-solid fa-play"></i>Start Quiz</a>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-4 col-md-6">
-                                          <div class="card-border h-100">
-                                             <div class="flex-between">
-                                                <span class="cust-badge orange-badge">Due Tomorrow</span>
+                                             </td>
+                                             <td><span class="cust-badge green-badge">Food Safety </span></td>
+                                             <td>
                                                 <div class="flex-gap sm-gap">
-                                                   <i class="fa-solid fa-clock green"></i>
-                                                   <span>12 min</span>
+                                                   <p>95%</p>
+                                                   <i class="fa-solid fa-trophy yellow-300"></i>
                                                 </div>
-                                             </div>
-                                             <div class="cust-body mt-3 mb-4">
+                                             </td>
+
+                                             <td><span class="cust-badge green-badge">Passed </span></td>
+                                             <td>1/3</td>
+                                             <td>March 18, 2024</td>
+                                             <td>
+                                                <span class="flat-icon"><i class="fa-solid fa-eye"></i></span>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>
                                                 <div class="text">
-                                                   <h3 class="mb-1">Equipment Safety Quiz</h3>
-                                                   <p>Safe operation of kitchen equipment, <br />maintenance protocols,</p>
+                                                   <p>Equipment Safety</p>
+                                                   <span>19 point earned</span>
                                                 </div>
-                                                <div class="flex-gap gap-5 mt-4 mb-3">
-                                                   <div class="text">
-                                                      <h3 class="mb-2">15</h3>
-                                                      <p>Questions</p>
-                                                   </div>
-                                                   <div class="text">
-                                                      <h3 class="mb-2">75%</h3>
-                                                      <p>Pass Rate</p>
-                                                   </div>
-                                                </div>
-                                                <div class="flex-gap xl-gap mt-3">
-                                                   <div class="flex-gap sm-gap">
-                                                      <i class="fa-solid fa-star green"></i>
-                                                      <p>35 points</p>
-                                                   </div>
-                                                   <div class="flex-gap sm-gap">
-                                                      <i class="fa-solid fa-users green"></i>
-                                                      <p>203 taken</p>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                             <div class="cust-footer">
-                                                <a href="#" class="site-btn green-btn"><i class="fa-solid fa-play"></i>Start Quiz</a>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-4 col-md-6">
-                                          <div class="card-border h-100">
-                                             <div class="flex-between">
-                                                <span class="cust-badge green-badge">Retake available</span>
+                                             </td>
+                                             <td><span class="cust-badge blue-badge">Equipment</span></td>
+                                             <td>
                                                 <div class="flex-gap sm-gap">
-                                                   <i class="fa-solid fa-clock green"></i>
-                                                   <span>10 min</span>
+                                                   <p>78%</p>
+                                                   <i class="fa-solid fa-arrow-rotate-right yellow-300"></i>
                                                 </div>
-                                             </div>
-                                             <div class="cust-body mt-3 mb-4">
+                                             </td>
+
+                                             <td><span class="cust-badge orange-badge">Retake Available</span></td>
+                                             <td>2/3</td>
+                                             <td>March 15, 2024</td>
+                                             <td>
+                                                <div class="flex-gap">
+                                                   <span class="flat-icon"><i class="fa-solid fa-eye"></i></span>
+                                                   <span class="flat-icon"><i class="fa-solid fa-arrow-rotate-right"></i></span>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>
                                                 <div class="text">
-                                                   <h3 class="mb-1">Hygiene Standards</h3>
-                                                   <p>Personal hygiene, food handing <br />protocols, and sanitation requirements.</p>
+                                                   <p>Hygiene Standards</p>
+                                                   <span>23 points earned </span>
                                                 </div>
-                                                <div class="flex-gap gap-5 mt-4 mb-3">
-                                                   <div class="text">
-                                                      <h3 class="mb-2">78%</h3>
-                                                      <p>last Score</p>
-                                                   </div>
-                                                   <div class="text">
-                                                      <h3 class="mb-2">2/3</h3>
-                                                      <p>Attempts</p>
-                                                   </div>
-                                                </div>
-                                                <div class="flex-gap xl-gap mt-3">
-                                                   <div class="flex-gap sm-gap">
-                                                      <i class="fa-solid fa-star green"></i>
-                                                      <p>25 points</p>
-                                                   </div>
-                                                   <div class="flex-gap sm-gap">
-                                                      <i class="menu-icon fa-solid fa-calendar-days green"></i>
-                                                      <p>Taken 3 days ago</p>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                             <div class="cust-footer">
-                                                <a href="#" class="site-btn green-btn"><i class="fa-solid fa-arrow-rotate-right"></i>Retake Quiz</a>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-4 col-md-6">
-                                          <div class="card-border h-100">
-                                             <div class="flex-between">
-                                                <span class="cust-badge green-badge">Completed</span>
+                                             </td>
+                                             <td><span class="cust-badge blue-badge">Hygiene</span></td>
+                                             <td>
                                                 <div class="flex-gap sm-gap">
+                                                   <p>92%</p>
                                                    <i class="fa-solid fa-circle-check green"></i>
-                                                   <span>Passed</span>
                                                 </div>
-                                             </div>
-                                             <div class="cust-body mt-3 mb-4">
+                                             </td>
+
+                                             <td><span class="cust-badge green-badge">Passed </span></td>
+                                             <td>1/3</td>
+                                             <td>March 12, 2024</td>
+                                             <td>
+                                                <span class="flat-icon"><i class="fa-solid fa-eye"></i></span>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>
                                                 <div class="text">
-                                                   <h3 class="mb-1">Food Safety Fundamentals</h3>
-                                                   <p>Basic food safety principles, <br />temperature control, and Contamination <br />prevention.</p>
+                                                   <p>Emergency Procedures</p>
+                                                   <span>26 points earned</span>
                                                 </div>
-                                                <div class="flex-gap gap-5 mt-4 mb-3">
-                                                   <div class="text">
-                                                      <h3 class="mb-2">96%</h3>
-                                                      <p>Score</p>
-                                                   </div>
-                                                   <div class="text">
-                                                      <h3 class="mb-2">1/3</h3>
-                                                      <p>Attempts</p>
-                                                   </div>
-                                                </div>
-                                                <div class="flex-gap xl-gap mt-3">
-                                                   <div class="flex-gap sm-gap">
-                                                      <i class="fa-solid fa-star green"></i>
-                                                      <p>40 points earned</p>
-                                                   </div>
-                                                   <div class="flex-gap sm-gap">
-                                                      <i class="menu-icon fa-solid fa-calendar-days green"></i>
-                                                      <p>1 week ago</p>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                             <div class="cust-footer">
-                                                <a href="#" class="site-btn green-outline"><i class="fa-solid fa-check"></i>Completed</a>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-4 col-md-6">
-                                          <div class="card-border h-100">
-                                             <div class="flex-between">
-                                                <span class="cust-badge orange-badge">Locked</span>
+                                             </td>
+                                             <td><span class="cust-badge blue-badge">Emergency </span></td>
+                                             <td>
                                                 <div class="flex-gap sm-gap">
-                                                   <i class="fa-solid fa-lock green"></i>
-                                                   <span>Level 15</span>
+                                                   <p>88%</p>
+                                                   <i class="fa-solid fa-circle-check green"></i>
                                                 </div>
-                                             </div>
-                                             <div class="cust-body mt-3 mb-4">
+                                             </td>
+
+                                             <td><span class="cust-badge green-badge">Passed </span></td>
+                                             <td>1/3</td>
+                                             <td>March 10, 2024</td>
+                                             <td>
+                                                <span class="flat-icon"><i class="fa-solid fa-eye"></i></span>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>
                                                 <div class="text">
-                                                   <h3 class="mb-1">Advanced HACCP Principles</h3>
-                                                   <p>Advanced hazard analysis and critical <br />control point for food safety <br />management.</p>
+                                                   <p>Basic Kitchen Safety</p>
+                                                   <span>15 points earned</span>
                                                 </div>
-                                                <div class="flex-gap gap-5 mt-4 mb-3">
-                                                   <div class="text">
-                                                      <h3 class="mb-2">15</h3>
-                                                      <p>Questions</p>
-                                                   </div>
-                                                   <div class="text">
-                                                      <h3 class="mb-2">75%</h3>
-                                                      <p>Pass Rate</p>
-                                                   </div>
-                                                </div>
-                                                <div class="flex-gap xl-gap mt-3">
-                                                   <div class="flex-gap sm-gap">
-                                                      <i class="fa-solid fa-star green"></i>
-                                                      <p>75 points</p>
-                                                   </div>
-                                                   <div class="flex-gap sm-gap">
-                                                      <i class="fa-solid fa-trophy green"></i>
-                                                      <p>Unlock at level 15</p>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                             <div class="cust-footer">
-                                                <a href="#" class="site-btn green-outline"><i class="fa-solid fa-lock"></i>Locked</a>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-4 col-md-6">
-                                          <div class="card-border h-100">
-                                             <div class="flex-between">
-                                                <span class="cust-badge green-badge">Practice</span>
+                                             </td>
+                                             <td><span class="cust-badge orange-badge">Safety</span></td>
+                                             <td>
                                                 <div class="flex-gap sm-gap">
-                                                   <i class="fa-solid fa-clock green"></i>
-                                                   <span>8 min</span>
+                                                   <p>68%</p>
+                                                   <i class="fa-solid fa-circle-xmark red-600"></i>
                                                 </div>
-                                             </div>
-                                             <div class="cust-body mt-3 mb-4">
-                                                <div class="text">
-                                                   <h3 class="mb-1">Kitchen Terminology</h3>
-                                                   <p>Practice quiz covering essential kitchen <br />terms, cooking methods, and culinary <br />vocabulary.</p>
-                                                </div>
-                                                <div class="flex-gap gap-5 mt-4 mb-3">
-                                                   <div class="text">
-                                                      <h3 class="mb-2">12</h3>
-                                                      <p>Questions</p>
-                                                   </div>
-                                                   <div class="text">
-                                                      <h3 class="mb-2">2/3</h3>
-                                                      <p>Attempts</p>
-                                                   </div>
-                                                </div>
-                                                <div class="flex-gap xl-gap mt-3">
-                                                   <div class="flex-gap sm-gap">
-                                                      <i class="fa-solid fa-brain green"></i>
-                                                      <p>Practice Mode</p>
-                                                   </div>
-                                                   <div class="flex-gap sm-gap">
-                                                      <i class="fa-solid fa-users green"></i>
-                                                      <p>89 Taken</p>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                             <div class="cust-footer">
-                                                <a href="#" class="site-btn green-btn"><i class="fa-solid fa-play"></i>Practice Now</a>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
+                                             </td>
+
+                                             <td><span class="cust-badge red-light-icon">Failed </span></td>
+                                             <td>3/3</td>
+                                             <td>March 8, 2024</td>
+                                             <td>
+                                                <span class="flat-icon"><i class="fa-solid fa-eye"></i></span>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                              <div class="flex-between mt-4 flex-wrap gap-3">
+                                 <p>Showing 5 of 18 quiz attempts</p>
+
+                                 <div class="pagination">
+                                    <a href="#">Previous</a>
+                                    <a href="#" class="active">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">Next</a>
                                  </div>
                               </div>
                            </div>
-                           <div class="col-12">
-                              <div class="card-bg">
-                                 <div class="flex-between main-title">
-                                    <h2>Quiz History & Results</h2>
-                                    <div class="btns flex-gap">
-                                       <select class="form-select cust-select" aria-label="Default select example" fdprocessedid="7tl41">
-                                          <option selected="">Last 30 Days</option>
-                                          <option>Last One Month</option>
-                                          <option>Last 7 Days</option>
-                                          <option>Last One Year</option>
-                                       </select>
-                                       <a href="#" class="site-btn green-btn"><i class="fa-solid fa-download"></i>Export Results</a>
-                                    </div>
-                                 </div>
-                                 <div class="cust-table">
-                                    <div class="table-responsive text-nowrap">
-                                       <table class="table">
-                                          <thead>
-                                             <tr class="text-nowrap">
-                                                <th>Quiz Name</th>
-                                                <th>Category</th>
-                                                <th>Score</th>
-                                                <th>Status</th>
-                                                <th>Attempts</th>
-                                                <th>Date</th>
-                                                <th>Actions</th>
-                                             </tr>
-                                          </thead>
-                                          <tbody>
-                                             <tr>
-                                                <td>
-                                                   <div class="text">
-                                                      <p>Food Safety Fundamentals</p>
-                                                      <span>40 point earned</span>
-                                                   </div>
-                                                </td>
-                                                <td><span class="cust-badge green-badge">Food Safety </span></td>
-                                                <td>
-                                                   <div class="flex-gap sm-gap">
-                                                      <p>95%</p>
-                                                      <i class="fa-solid fa-trophy yellow-300"></i>
-                                                   </div>
-                                                </td>
-
-                                                <td><span class="cust-badge green-badge">Passed </span></td>
-                                                <td>1/3</td>
-                                                <td>March 18, 2024</td>
-                                                <td>
-                                                   <span class="flat-icon"><i class="fa-solid fa-eye"></i></span>
-                                                </td>
-                                             </tr>
-                                             <tr>
-                                                <td>
-                                                   <div class="text">
-                                                      <p>Equipment Safety</p>
-                                                      <span>19 point earned</span>
-                                                   </div>
-                                                </td>
-                                                <td><span class="cust-badge blue-badge">Equipment</span></td>
-                                                <td>
-                                                   <div class="flex-gap sm-gap">
-                                                      <p>78%</p>
-                                                      <i class="fa-solid fa-arrow-rotate-right yellow-300"></i>
-                                                   </div>
-                                                </td>
-
-                                                <td><span class="cust-badge orange-badge">Retake Available</span></td>
-                                                <td>2/3</td>
-                                                <td>March 15, 2024</td>
-                                                <td>
-                                                   <div class="flex-gap">
-                                                      <span class="flat-icon"><i class="fa-solid fa-eye"></i></span>
-                                                      <span class="flat-icon"><i class="fa-solid fa-arrow-rotate-right"></i></span>
-                                                   </div>
-                                                </td>
-                                             </tr>
-                                             <tr>
-                                                <td>
-                                                   <div class="text">
-                                                      <p>Hygiene Standards</p>
-                                                      <span>23 points earned </span>
-                                                   </div>
-                                                </td>
-                                                <td><span class="cust-badge blue-badge">Hygiene</span></td>
-                                                <td>
-                                                   <div class="flex-gap sm-gap">
-                                                      <p>92%</p>
-                                                      <i class="fa-solid fa-circle-check green"></i>
-                                                   </div>
-                                                </td>
-
-                                                <td><span class="cust-badge green-badge">Passed </span></td>
-                                                <td>1/3</td>
-                                                <td>March 12, 2024</td>
-                                                <td>
-                                                   <span class="flat-icon"><i class="fa-solid fa-eye"></i></span>
-                                                </td>
-                                             </tr>
-                                             <tr>
-                                                <td>
-                                                   <div class="text">
-                                                      <p>Emergency Procedures</p>
-                                                      <span>26 points earned</span>
-                                                   </div>
-                                                </td>
-                                                <td><span class="cust-badge blue-badge">Emergency </span></td>
-                                                <td>
-                                                   <div class="flex-gap sm-gap">
-                                                      <p>88%</p>
-                                                      <i class="fa-solid fa-circle-check green"></i>
-                                                   </div>
-                                                </td>
-
-                                                <td><span class="cust-badge green-badge">Passed </span></td>
-                                                <td>1/3</td>
-                                                <td>March 10, 2024</td>
-                                                <td>
-                                                   <span class="flat-icon"><i class="fa-solid fa-eye"></i></span>
-                                                </td>
-                                             </tr>
-                                             <tr>
-                                                <td>
-                                                   <div class="text">
-                                                      <p>Basic Kitchen Safety</p>
-                                                      <span>15 points earned</span>
-                                                   </div>
-                                                </td>
-                                                <td><span class="cust-badge orange-badge">Safety</span></td>
-                                                <td>
-                                                   <div class="flex-gap sm-gap">
-                                                      <p>68%</p>
-                                                      <i class="fa-solid fa-circle-xmark red-600"></i>
-                                                   </div>
-                                                </td>
-
-                                                <td><span class="cust-badge red-light-icon">Failed </span></td>
-                                                <td>3/3</td>
-                                                <td>March 8, 2024</td>
-                                                <td>
-                                                   <span class="flat-icon"><i class="fa-solid fa-eye"></i></span>
-                                                </td>
-                                             </tr>
-                                          </tbody>
-                                       </table>
-                                    </div>
-                                 </div>
-                                 <div class="flex-between mt-4 flex-wrap gap-3">
-                                    <p>Showing 5 of 18 quiz attempts</p>
-
-                                    <div class="pagination">
-                                       <a href="#">Previous</a>
-                                       <a href="#" class="active">1</a>
-                                       <a href="#">2</a>
-                                       <a href="#">3</a>
-                                       <a href="#">Next</a>
-                                    </div>
-                                 </div>
+                        </div>
+                        <div class="col-12">
+                           <div class="card-bg">
+                              <div class="main-title">
+                                 <h2>Latest Quiz Feedback Quiz Detailed</h2>
                               </div>
-                           </div>
-                           <div class="col-12">
-                              <div class="card-bg">
-                                 <div class="main-title">
-                                    <h2>Latest Quiz Feedback Quiz Detailed</h2>
-                                 </div>
-                                 <div class="card-wrapper row-gy">
-                                    <div class="row">
-                                       <div class="col-lg-6">
-                                          <div class="card-border">
-                                             <div class="main-title flex-between">
-                                                <h3 class="line-height">Equipment Safety Quiz Detailed <br />Feedback</h3>
-                                                <span class="cust-badge green-badge">Score: 78%</span>
-                                             </div>
-                                             <div class="card-wrapper row-gy">
-                                                <div class="row">
-                                                   <div class="col-12">
-                                                      <div class="card-border">
-                                                         <div class="inner-title mb-3">
-                                                            <h3>Strengths</h3>
-                                                         </div>
-                                                         <div class="flex-gap flex-nowrap">
-                                                            <span class="flat-icon"><i class="fa-solid fa-circle-check"></i></span>
-                                                            <p>Excellent understanding of equipment maintenance <br />protocols (90%)</p>
-                                                         </div>
-                                                         <div class="flex-gap flex-nowrap my-3">
-                                                            <span class="flat-icon"><i class="fa-solid fa-circle-check"></i></span>
-                                                            <p>Strong knowledge of safety shutdown procedures <br />(85%)</p>
-                                                         </div>
-                                                         <div class="flex-gap flex-nowrap">
-                                                            <span class="flat-icon"><i class="fa-solid fa-circle-check"></i></span>
-                                                            <p>Good grasp of personal protective equipment <br />requirements (82%)</p>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-
-                                                   <div class="col-12">
-                                                      <div class="card-border">
-                                                         <div class="inner-title mb-3">
-                                                            <h3>Areas for Improvement</h3>
-                                                         </div>
-                                                         <div class="flex-gap flex-nowrap">
-                                                            <span class="flat-icon red-600"><i class="fa-solid fa-circle-xmark"></i></span>
-                                                            <p>Equipment hazard identification needs work (65%)</p>
-                                                         </div>
-                                                         <div class="flex-gap flex-nowrap my-3">
-                                                            <span class="flat-icon red-600"><i class="fa-solid fa-circle-xmark"></i></span>
-                                                            <p>Emergency response procedures require review (70%)</p>
-                                                         </div>
-                                                         <div class="flex-gap flex-nowrap">
-                                                            <span class="flat-icon red-600"><i class="fa-solid fa-circle-xmark"></i></span>
-                                                            <p>Good grasp of personal protective equipment <br />requirements (82%)</p>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                   <div class="col-12">
-                                                      <div class="card-border">
-                                                         <div class="inner-title mb-3">
-                                                            <h3>Recommended Actions</h3>
-                                                         </div>
-                                                         <div class="flex-gap flex-nowrap">
-                                                            <span class="flat-icon green-700"><i class="fa-solid fa-lightbulb"></i></span>
-                                                            <p>Review "Equipment Hazard Identification" video module</p>
-                                                         </div>
-                                                         <div class="flex-gap flex-nowrap my-3">
-                                                            <span class="flat-icon green-700"><i class="fa-solid fa-lightbulb"></i></span>
-                                                            <p>Practice with VR Emergency Response simulation</p>
-                                                         </div>
-                                                         <div class="flex-gap flex-nowrap">
-                                                            <span class="flat-icon green-700"><i class="fa-solid fa-lightbulb"></i></span>
-                                                            <p>Retake quiz after completing additional training</p>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                             <div class="btns flex-gap xl-gap mt-4">
-                                                <a href="#" class="site-btn green-btn flex-grow-1"><i class="fa-solid fa-play"></i>Review Materials</a>
-                                                <a href="#" class="site-btn green-outline flex-grow-1"><i class="fa-solid fa-arrow-rotate-right"></i>Retake Quiz</a>
-                                             </div>
+                              <div class="card-wrapper row-gy">
+                                 <div class="row">
+                                    <div class="col-lg-6">
+                                       <div class="card-border">
+                                          <div class="main-title flex-between">
+                                             <h3 class="line-height">Equipment Safety Quiz Detailed <br />Feedback</h3>
+                                             <span class="cust-badge green-badge">Score: 78%</span>
                                           </div>
-                                       </div>
-                                       <div class="col-lg-6">
                                           <div class="card-wrapper row-gy">
                                              <div class="row">
                                                 <div class="col-12">
                                                    <div class="card-border">
-                                                      <div class="inner-title margin-bottom">
-                                                         <h3>Question Analysis</h3>
+                                                      <div class="inner-title mb-3">
+                                                         <h3>Strengths</h3>
                                                       </div>
-                                                      <div class="questionAnalysis">
-                                                         <canvas id="questionAnalysis" class="chartjs min-height-280"></canvas>
+                                                      <div class="flex-gap flex-nowrap">
+                                                         <span class="flat-icon"><i class="fa-solid fa-circle-check"></i></span>
+                                                         <p>Excellent understanding of equipment maintenance <br />protocols (90%)</p>
                                                       </div>
-                                                      <div class="doted-list mt-4">
-                                                         <ul class="justify-content-center">
-                                                            <li class="purple-dot">Completed Videos</li>
-                                                            <li class="brown-dot">Target</li>
-                                                         </ul>
+                                                      <div class="flex-gap flex-nowrap my-3">
+                                                         <span class="flat-icon"><i class="fa-solid fa-circle-check"></i></span>
+                                                         <p>Strong knowledge of safety shutdown procedures <br />(85%)</p>
+                                                      </div>
+                                                      <div class="flex-gap flex-nowrap">
+                                                         <span class="flat-icon"><i class="fa-solid fa-circle-check"></i></span>
+                                                         <p>Good grasp of personal protective equipment <br />requirements (82%)</p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+
+                                                <div class="col-12">
+                                                   <div class="card-border">
+                                                      <div class="inner-title mb-3">
+                                                         <h3>Areas for Improvement</h3>
+                                                      </div>
+                                                      <div class="flex-gap flex-nowrap">
+                                                         <span class="flat-icon red-600"><i class="fa-solid fa-circle-xmark"></i></span>
+                                                         <p>Equipment hazard identification needs work (65%)</p>
+                                                      </div>
+                                                      <div class="flex-gap flex-nowrap my-3">
+                                                         <span class="flat-icon red-600"><i class="fa-solid fa-circle-xmark"></i></span>
+                                                         <p>Emergency response procedures require review (70%)</p>
+                                                      </div>
+                                                      <div class="flex-gap flex-nowrap">
+                                                         <span class="flat-icon red-600"><i class="fa-solid fa-circle-xmark"></i></span>
+                                                         <p>Good grasp of personal protective equipment <br />requirements (82%)</p>
                                                       </div>
                                                    </div>
                                                 </div>
                                                 <div class="col-12">
                                                    <div class="card-border">
                                                       <div class="inner-title mb-3">
-                                                         <h3>Common Mistakes</h3>
+                                                         <h3>Recommended Actions</h3>
                                                       </div>
-                                                      <div class="flex-gap-start flex-nowrap">
-                                                         <span class="flat-icon red-600"><i class="fa-solid fa-circle-info"></i></span>
-                                                         <div class="text">
-                                                            <h4>Question 7: Equipment lockout Procedures</h4>
-                                                            <p class="mt-1 mb-1">
-                                                               Yes selected “Turn off power switch only” but the correct <br />
-                                                               answer is “Follow loto procedure with lockout tags”
-                                                            </p>
-                                                            <p class="font-weight-500">Remember: Always use proper lockout/tagout procedures <br />when servicing equipment</p>
-                                                         </div>
+                                                      <div class="flex-gap flex-nowrap">
+                                                         <span class="flat-icon green-700"><i class="fa-solid fa-lightbulb"></i></span>
+                                                         <p>Review "Equipment Hazard Identification" video module</p>
                                                       </div>
-                                                      <div class="flex-gap-start flex-nowrap mt-3">
-                                                         <span class="flat-icon red-600"><i class="fa-solid fa-circle-info"></i></span>
-                                                         <div class="text">
-                                                            <h4>Question 12: Emergency Shutdown</h4>
-                                                            <p class="mt-1 mb-1">You selected “Call supervisor first” but the correct answer is <br />“Hit emergency stop immediately”</p>
-                                                            <p class="font-weight-500">In emergencies, immediate action to stop equipment <br />takes priority</p>
-                                                         </div>
+                                                      <div class="flex-gap flex-nowrap my-3">
+                                                         <span class="flat-icon green-700"><i class="fa-solid fa-lightbulb"></i></span>
+                                                         <p>Practice with VR Emergency Response simulation</p>
+                                                      </div>
+                                                      <div class="flex-gap flex-nowrap">
+                                                         <span class="flat-icon green-700"><i class="fa-solid fa-lightbulb"></i></span>
+                                                         <p>Retake quiz after completing additional training</p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="btns flex-gap xl-gap mt-4">
+                                             <a href="#" class="site-btn green-btn flex-grow-1"><i class="fa-solid fa-play"></i>Review Materials</a>
+                                             <a href="#" class="site-btn green-outline flex-grow-1"><i class="fa-solid fa-arrow-rotate-right"></i>Retake Quiz</a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                       <div class="card-wrapper row-gy">
+                                          <div class="row">
+                                             <div class="col-12">
+                                                <div class="card-border">
+                                                   <div class="inner-title margin-bottom">
+                                                      <h3>Question Analysis</h3>
+                                                   </div>
+                                                   <div class="questionAnalysis">
+                                                      <canvas id="questionAnalysis" class="chartjs min-height-280"></canvas>
+                                                   </div>
+                                                   <div class="doted-list mt-4">
+                                                      <ul class="justify-content-center">
+                                                         <li class="purple-dot">Completed Videos</li>
+                                                         <li class="brown-dot">Target</li>
+                                                      </ul>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-12">
+                                                <div class="card-border">
+                                                   <div class="inner-title mb-3">
+                                                      <h3>Common Mistakes</h3>
+                                                   </div>
+                                                   <div class="flex-gap-start flex-nowrap">
+                                                      <span class="flat-icon red-600"><i class="fa-solid fa-circle-info"></i></span>
+                                                      <div class="text">
+                                                         <h4>Question 7: Equipment lockout Procedures</h4>
+                                                         <p class="mt-1 mb-1">
+                                                            Yes selected “Turn off power switch only” but the correct <br />
+                                                            answer is “Follow loto procedure with lockout tags”
+                                                         </p>
+                                                         <p class="font-weight-500">Remember: Always use proper lockout/tagout procedures <br />when servicing equipment</p>
+                                                      </div>
+                                                   </div>
+                                                   <div class="flex-gap-start flex-nowrap mt-3">
+                                                      <span class="flat-icon red-600"><i class="fa-solid fa-circle-info"></i></span>
+                                                      <div class="text">
+                                                         <h4>Question 12: Emergency Shutdown</h4>
+                                                         <p class="mt-1 mb-1">You selected “Call supervisor first” but the correct answer is <br />“Hit emergency stop immediately”</p>
+                                                         <p class="font-weight-500">In emergencies, immediate action to stop equipment <br />takes priority</p>
                                                       </div>
                                                    </div>
                                                 </div>
@@ -1065,131 +1065,131 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="col-12">
-                              <div class="card-bg">
-                                 <div class="main-title">
-                                    <h2>Personalized Study Recommendations</h2>
-                                 </div>
+                        </div>
+                        <div class="col-12">
+                           <div class="card-bg">
+                              <div class="main-title">
+                                 <h2>Personalized Study Recommendations</h2>
+                              </div>
 
-                                 <div class="card-wrapper row-gx row-gy">
-                                    <div class="row">
-                                       <div class="col-lg-4 col-md-6">
-                                          <div class="card-border h-100">
-                                             <div class="flex-gap lg-gap mb-4">
-                                                <div class="cust-icon">
-                                                   <i class="fa-solid fa-user-check"></i>
-                                                </div>
-                                                <div class="text">
-                                                   <h4>High Priority</h4>
-                                                   <p class="mt-1">Needs immediate attention</p>
-                                                </div>
+                              <div class="card-wrapper row-gx row-gy">
+                                 <div class="row">
+                                    <div class="col-lg-4 col-md-6">
+                                       <div class="card-border h-100">
+                                          <div class="flex-gap lg-gap mb-4">
+                                             <div class="cust-icon">
+                                                <i class="fa-solid fa-user-check"></i>
                                              </div>
-                                             <div class="card-wrapper row-gy">
-                                                <div class="row">
-                                                   <div class="col-12">
-                                                      <div class="card-border">
-                                                         <div class="text">
-                                                            <h3 class="line-height">Equipment Hazard Identification</h3>
-                                                            <p>Based on your quiz performance, focus on identifying potential equipment hazards.</p>
-                                                         </div>
-                                                         <div class="cust-footer flex-between mt-4">
-                                                            <h5>Score: 65%</h5>
-                                                            <a href="#" class="site-btn green-btn">Study Now</a>
-                                                         </div>
+                                             <div class="text">
+                                                <h4>High Priority</h4>
+                                                <p class="mt-1">Needs immediate attention</p>
+                                             </div>
+                                          </div>
+                                          <div class="card-wrapper row-gy">
+                                             <div class="row">
+                                                <div class="col-12">
+                                                   <div class="card-border">
+                                                      <div class="text">
+                                                         <h3 class="line-height">Equipment Hazard Identification</h3>
+                                                         <p>Based on your quiz performance, focus on identifying potential equipment hazards.</p>
+                                                      </div>
+                                                      <div class="cust-footer flex-between mt-4">
+                                                         <h5>Score: 65%</h5>
+                                                         <a href="#" class="site-btn green-btn">Study Now</a>
                                                       </div>
                                                    </div>
-                                                   <div class="col-12">
-                                                      <div class="card-border">
-                                                         <div class="text">
-                                                            <h3 class="line-height">Emergency Response Procedures</h3>
-                                                            <p>Review emergency shutdown and response protocols for kitchen equipment.</p>
-                                                         </div>
-                                                         <div class="cust-footer flex-between mt-4">
-                                                            <h5>Score: 70%</h5>
-                                                            <a href="#" class="site-btn green-btn">Study Now</a>
-                                                         </div>
+                                                </div>
+                                                <div class="col-12">
+                                                   <div class="card-border">
+                                                      <div class="text">
+                                                         <h3 class="line-height">Emergency Response Procedures</h3>
+                                                         <p>Review emergency shutdown and response protocols for kitchen equipment.</p>
+                                                      </div>
+                                                      <div class="cust-footer flex-between mt-4">
+                                                         <h5>Score: 70%</h5>
+                                                         <a href="#" class="site-btn green-btn">Study Now</a>
                                                       </div>
                                                    </div>
                                                 </div>
                                              </div>
                                           </div>
                                        </div>
-                                       <div class="col-lg-4 col-md-6">
-                                          <div class="card-border h-100">
-                                             <div class="flex-gap lg-gap mb-4">
-                                                <div class="cust-icon">
-                                                   <i class="fa-solid fa-clock"></i>
-                                                </div>
-                                                <div class="text">
-                                                   <h4>Medium Priority</h4>
-                                                   <p class="mt-1">Review when time permits</p>
-                                                </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                       <div class="card-border h-100">
+                                          <div class="flex-gap lg-gap mb-4">
+                                             <div class="cust-icon">
+                                                <i class="fa-solid fa-clock"></i>
                                              </div>
-                                             <div class="card-wrapper row-gy">
-                                                <div class="row">
-                                                   <div class="col-12">
-                                                      <div class="card-border">
-                                                         <div class="text">
-                                                            <h3 class="line-height">Food Temperature Control</h3>
-                                                            <p>Strengthen understanding of safe food temperature ranges and monitoring.</p>
-                                                         </div>
-                                                         <div class="cust-footer flex-between mt-4">
-                                                            <h5>Score: 82%</h5>
-                                                            <a href="#" class="site-btn green-btn">Review</a>
-                                                         </div>
+                                             <div class="text">
+                                                <h4>Medium Priority</h4>
+                                                <p class="mt-1">Review when time permits</p>
+                                             </div>
+                                          </div>
+                                          <div class="card-wrapper row-gy">
+                                             <div class="row">
+                                                <div class="col-12">
+                                                   <div class="card-border">
+                                                      <div class="text">
+                                                         <h3 class="line-height">Food Temperature Control</h3>
+                                                         <p>Strengthen understanding of safe food temperature ranges and monitoring.</p>
+                                                      </div>
+                                                      <div class="cust-footer flex-between mt-4">
+                                                         <h5>Score: 82%</h5>
+                                                         <a href="#" class="site-btn green-btn">Review</a>
                                                       </div>
                                                    </div>
-                                                   <div class="col-12">
-                                                      <div class="card-border">
-                                                         <div class="text">
-                                                            <h3 class="line-height">Cleaning Chemicals Safety</h3>
-                                                            <p>Review proper handling and <br />storage of cleaning and sanitizing chemicals.</p>
-                                                         </div>
-                                                         <div class="cust-footer flex-between mt-4">
-                                                            <h5>Score: 78%</h5>
-                                                            <a href="#" class="site-btn green-btn">Review</a>
-                                                         </div>
+                                                </div>
+                                                <div class="col-12">
+                                                   <div class="card-border">
+                                                      <div class="text">
+                                                         <h3 class="line-height">Cleaning Chemicals Safety</h3>
+                                                         <p>Review proper handling and <br />storage of cleaning and sanitizing chemicals.</p>
+                                                      </div>
+                                                      <div class="cust-footer flex-between mt-4">
+                                                         <h5>Score: 78%</h5>
+                                                         <a href="#" class="site-btn green-btn">Review</a>
                                                       </div>
                                                    </div>
                                                 </div>
                                              </div>
                                           </div>
                                        </div>
-                                       <div class="col-lg-4 col-md-6">
-                                          <div class="card-border h-100">
-                                             <div class="flex-gap lg-gap mb-4">
-                                                <div class="cust-icon">
-                                                   <i class="fa-solid fa-check"></i>
-                                                </div>
-                                                <div class="text">
-                                                   <h4>Strong Areas</h4>
-                                                   <p class="mt-1">Keep up the great work!</p>
-                                                </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                       <div class="card-border h-100">
+                                          <div class="flex-gap lg-gap mb-4">
+                                             <div class="cust-icon">
+                                                <i class="fa-solid fa-check"></i>
                                              </div>
-                                             <div class="card-wrapper row-gy">
-                                                <div class="row">
-                                                   <div class="col-12">
-                                                      <div class="card-border">
-                                                         <div class="text">
-                                                            <h3 class="line-height">Personal Hygiene <br />Standards</h3>
-                                                            <p>Excellent understanding of <br />personal hygiene requirements in food service.</p>
-                                                         </div>
-                                                         <div class="cust-footer flex-between mt-4">
-                                                            <h5>Score: 95%</h5>
-                                                            <i class="fa-solid fa-trophy green font-26"></i>
-                                                         </div>
+                                             <div class="text">
+                                                <h4>Strong Areas</h4>
+                                                <p class="mt-1">Keep up the great work!</p>
+                                             </div>
+                                          </div>
+                                          <div class="card-wrapper row-gy">
+                                             <div class="row">
+                                                <div class="col-12">
+                                                   <div class="card-border">
+                                                      <div class="text">
+                                                         <h3 class="line-height">Personal Hygiene <br />Standards</h3>
+                                                         <p>Excellent understanding of <br />personal hygiene requirements in food service.</p>
+                                                      </div>
+                                                      <div class="cust-footer flex-between mt-4">
+                                                         <h5>Score: 95%</h5>
+                                                         <i class="fa-solid fa-trophy green font-26"></i>
                                                       </div>
                                                    </div>
-                                                   <div class="col-12">
-                                                      <div class="card-border">
-                                                         <div class="text">
-                                                            <h3 class="line-height">Food Storage Protocols</h3>
-                                                            <p>Strong knowledge of proper food storage temperatures and procedures.</p>
-                                                         </div>
-                                                         <div class="cust-footer flex-between mt-4">
-                                                            <h5>Score: 92%</h5>
-                                                            <i class="fa-solid fa-medal green font-26"></i>
-                                                         </div>
+                                                </div>
+                                                <div class="col-12">
+                                                   <div class="card-border">
+                                                      <div class="text">
+                                                         <h3 class="line-height">Food Storage Protocols</h3>
+                                                         <p>Strong knowledge of proper food storage temperatures and procedures.</p>
+                                                      </div>
+                                                      <div class="cust-footer flex-between mt-4">
+                                                         <h5>Score: 92%</h5>
+                                                         <i class="fa-solid fa-medal green font-26"></i>
                                                       </div>
                                                    </div>
                                                 </div>
@@ -1200,258 +1200,258 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="col-12">
-                              <div class="card-bg">
+                        </div>
+                        <div class="col-12">
+                           <div class="card-bg">
+                              <div class="main-title flex-between">
+                                 <h2>Certificate & Credentials</h2>
+                                 <a href="#" class="site-btn green-btn"><i class="fa-solid fa-download"></i>Download All</a>
+                              </div>
+                              <div class="card-wrapper row-gx row-gy">
+                                 <div class="row">
+                                    <div class="col-lg-7">
+                                       <div class="card-border h-100">
+                                          <div class="inner-title mb-4">
+                                             <h3>Performance by Category</h3>
+                                          </div>
+                                          <div class="performanceCategory">
+                                             <canvas id="performanceCategory" class="chartjs"></canvas>
+                                          </div>
+                                          <div class="doted-list mt-4">
+                                             <ul class="justify-content-center">
+                                                <li class="purple-dot">Your Performance</li>
+                                                <li class="brown-dot">Team Average</li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                       <div class="card-border h-100">
+                                          <div class="inner-title mb-4">
+                                             <h3>Learning Progress Timeline</h3>
+                                          </div>
+                                          <div class="learningTimeline">
+                                             <canvas id="learningTimeline" class="chartjs min-height-280"></canvas>
+                                          </div>
+                                          <div class="doted-list mt-4">
+                                             <ul class="justify-content-center">
+                                                <li class="green-700-dot">Monthly Average</li>
+                                                <li class="orange-600-dot">Trend Line</li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="card-border">
+                                          <div class="cust-header">
+                                             <div>
+                                                <h3>Time Management</h3>
+                                             </div>
+                                          </div>
+                                          <div class="cust-body mt-3">
+                                             <div class="flex-between">
+                                                <p>Average Time Per Quiz</p>
+                                                <span class="font-weight-500">11.5 min</span>
+                                             </div>
+                                             <div class="flex-between mt-2 mb-2">
+                                                <p>Fastest Completion</p>
+                                                <span class="font-weight-500">7.2 min </span>
+                                             </div>
+                                             <div class="flex-between">
+                                                <p>Time Efficiency</p>
+                                                <span class="font-weight-500">87% </span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="card-border">
+                                          <div class="cust-header">
+                                             <div>
+                                                <h3>Question Types</h3>
+                                             </div>
+                                          </div>
+                                          <div class="cust-body mt-3">
+                                             <div class="flex-between">
+                                                <p>Multiple Choice</p>
+                                                <span class="font-weight-500">94% </span>
+                                             </div>
+                                             <div class="flex-between mt-2 mb-2">
+                                                <p>True/False</p>
+                                                <span class="font-weight-500">89% </span>
+                                             </div>
+                                             <div class="flex-between">
+                                                <p>Scenario Based</p>
+                                                <span class="font-weight-500">76%</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="card-border">
+                                          <div class="cust-header">
+                                             <div>
+                                                <h3>Improvement Rate</h3>
+                                             </div>
+                                          </div>
+                                          <div class="cust-body mt-3">
+                                             <div class="flex-between">
+                                                <p>This Month</p>
+                                                <span class="font-weight-500">+8% </span>
+                                             </div>
+                                             <div class="flex-between mt-2 mb-2">
+                                                <p>last Month</p>
+                                                <span class="font-weight-500">+5% </span>
+                                             </div>
+                                             <div class="flex-between">
+                                                <p>Overall Trend</p>
+                                                <span class="font-weight-500">improving </span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="card-border">
+                                          <div class="cust-header">
+                                             <div>
+                                                <h3>Peer Comparison</h3>
+                                             </div>
+                                          </div>
+                                          <div class="cust-body mt-3">
+                                             <div class="flex-between">
+                                                <p>Your Average</p>
+                                                <span class="font-weight-500">92% </span>
+                                             </div>
+                                             <div class="flex-between mt-2 mb-2">
+                                                <p>Team Average</p>
+                                                <span class="font-weight-500">85% </span>
+                                             </div>
+                                             <div class="flex-between">
+                                                <p>Ranking</p>
+                                                <span class="font-weight-500">Top 15%</span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-12">
+                           <div class="card-bg">
+                              <div class="main-title margin-bottom">
+                                 <h2 class="font-30">Weekly Schedule Overview</h2>
+                                 <p>Complete this critical safety assessment before 11:59 PM</p>
+                              </div>
+                              <div class="card-wrapper">
+                                 <div class="row gx-3 gy-3">
+                                    <div class="col-xl col-md-3 col-6">
+                                       <div class="date-card">
+                                          <h3>Mon</h3>
+                                          <p class="mt-2">Mar 25</p>
+                                       </div>
+                                    </div>
+                                    <div class="col-xl col-md-3 col-6">
+                                       <div class="date-card">
+                                          <h3>Tue</h3>
+                                          <p class="mt-2">Mar 26</p>
+                                       </div>
+                                    </div>
+                                    <div class="col-xl col-md-3 col-6">
+                                       <div class="date-card">
+                                          <h3>Wed</h3>
+                                          <p class="mt-2">Mar 27</p>
+                                       </div>
+                                    </div>
+                                    <div class="col-xl col-md-3 col-6">
+                                       <div class="date-card bg-red-50">
+                                          <h3>Thu</h3>
+                                          <p class="mt-2">Mar 28</p>
+                                          <div class="fill-badge fill-red-badge mt-2">Fire Safety Due</div>
+                                       </div>
+                                    </div>
+                                    <div class="col-xl col-md-3 col-6">
+                                       <div class="date-card bg-orange-50">
+                                          <h3>Fri</h3>
+                                          <p class="mt-2">Mar 29</p>
+                                          <div class="fill-badge mt-2">Equipotent Due</div>
+                                       </div>
+                                    </div>
+                                    <div class="col-xl col-md-3 col-6">
+                                       <div class="date-card">
+                                          <h3>Sat</h3>
+                                          <p class="mt-2">Mar 30</p>
+                                       </div>
+                                    </div>
+                                    <div class="col-xl col-md-3 col-6">
+                                       <div class="date-card bg-orange-50">
+                                          <h3>Sun</h3>
+                                          <p class="mt-2">Mar 31</p>
+                                          <div class="fill-badge mt-2">HACCP Opens</div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="card-border mt-4">
                                  <div class="main-title flex-between">
-                                    <h2>Certificate & Credentials</h2>
-                                    <a href="#" class="site-btn green-btn"><i class="fa-solid fa-download"></i>Download All</a>
-                                 </div>
-                                 <div class="card-wrapper row-gx row-gy">
-                                    <div class="row">
-                                       <div class="col-lg-7">
-                                          <div class="card-border h-100">
-                                             <div class="inner-title mb-4">
-                                                <h3>Performance by Category</h3>
-                                             </div>
-                                             <div class="performanceCategory">
-                                                <canvas id="performanceCategory" class="chartjs"></canvas>
-                                             </div>
-                                             <div class="doted-list mt-4">
-                                                <ul class="justify-content-center">
-                                                   <li class="purple-dot">Your Performance</li>
-                                                   <li class="brown-dot">Team Average</li>
-                                                </ul>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-5">
-                                          <div class="card-border h-100">
-                                             <div class="inner-title mb-4">
-                                                <h3>Learning Progress Timeline</h3>
-                                             </div>
-                                             <div class="learningTimeline">
-                                                <canvas id="learningTimeline" class="chartjs min-height-280"></canvas>
-                                             </div>
-                                             <div class="doted-list mt-4">
-                                                <ul class="justify-content-center">
-                                                   <li class="green-700-dot">Monthly Average</li>
-                                                   <li class="orange-600-dot">Trend Line</li>
-                                                </ul>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-md-6">
-                                          <div class="card-border">
-                                             <div class="cust-header">
-                                                <div>
-                                                   <h3>Time Management</h3>
-                                                </div>
-                                             </div>
-                                             <div class="cust-body mt-3">
-                                                <div class="flex-between">
-                                                   <p>Average Time Per Quiz</p>
-                                                   <span class="font-weight-500">11.5 min</span>
-                                                </div>
-                                                <div class="flex-between mt-2 mb-2">
-                                                   <p>Fastest Completion</p>
-                                                   <span class="font-weight-500">7.2 min </span>
-                                                </div>
-                                                <div class="flex-between">
-                                                   <p>Time Efficiency</p>
-                                                   <span class="font-weight-500">87% </span>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-md-6">
-                                          <div class="card-border">
-                                             <div class="cust-header">
-                                                <div>
-                                                   <h3>Question Types</h3>
-                                                </div>
-                                             </div>
-                                             <div class="cust-body mt-3">
-                                                <div class="flex-between">
-                                                   <p>Multiple Choice</p>
-                                                   <span class="font-weight-500">94% </span>
-                                                </div>
-                                                <div class="flex-between mt-2 mb-2">
-                                                   <p>True/False</p>
-                                                   <span class="font-weight-500">89% </span>
-                                                </div>
-                                                <div class="flex-between">
-                                                   <p>Scenario Based</p>
-                                                   <span class="font-weight-500">76%</span>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-md-6">
-                                          <div class="card-border">
-                                             <div class="cust-header">
-                                                <div>
-                                                   <h3>Improvement Rate</h3>
-                                                </div>
-                                             </div>
-                                             <div class="cust-body mt-3">
-                                                <div class="flex-between">
-                                                   <p>This Month</p>
-                                                   <span class="font-weight-500">+8% </span>
-                                                </div>
-                                                <div class="flex-between mt-2 mb-2">
-                                                   <p>last Month</p>
-                                                   <span class="font-weight-500">+5% </span>
-                                                </div>
-                                                <div class="flex-between">
-                                                   <p>Overall Trend</p>
-                                                   <span class="font-weight-500">improving </span>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-md-6">
-                                          <div class="card-border">
-                                             <div class="cust-header">
-                                                <div>
-                                                   <h3>Peer Comparison</h3>
-                                                </div>
-                                             </div>
-                                             <div class="cust-body mt-3">
-                                                <div class="flex-between">
-                                                   <p>Your Average</p>
-                                                   <span class="font-weight-500">92% </span>
-                                                </div>
-                                                <div class="flex-between mt-2 mb-2">
-                                                   <p>Team Average</p>
-                                                   <span class="font-weight-500">85% </span>
-                                                </div>
-                                                <div class="flex-between">
-                                                   <p>Ranking</p>
-                                                   <span class="font-weight-500">Top 15%</span>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-12">
-                              <div class="card-bg">
-                                 <div class="main-title margin-bottom">
-                                    <h2 class="font-30">Weekly Schedule Overview</h2>
-                                    <p>Complete this critical safety assessment before 11:59 PM</p>
+                                    <h2>Upcoming Quiz Schedule</h2>
+                                    <a href="#" class="site-btn green-btn"><i class="menu-icon fa-solid fa-calendar-days"></i>Schedule Reminder</a>
                                  </div>
                                  <div class="card-wrapper">
-                                    <div class="row gx-3 gy-3">
-                                       <div class="col-xl col-md-3 col-6">
-                                          <div class="date-card">
-                                             <h3>Mon</h3>
-                                             <p class="mt-2">Mar 25</p>
-                                          </div>
-                                       </div>
-                                       <div class="col-xl col-md-3 col-6">
-                                          <div class="date-card">
-                                             <h3>Tue</h3>
-                                             <p class="mt-2">Mar 26</p>
-                                          </div>
-                                       </div>
-                                       <div class="col-xl col-md-3 col-6">
-                                          <div class="date-card">
-                                             <h3>Wed</h3>
-                                             <p class="mt-2">Mar 27</p>
-                                          </div>
-                                       </div>
-                                       <div class="col-xl col-md-3 col-6">
-                                          <div class="date-card bg-red-50">
-                                             <h3>Thu</h3>
-                                             <p class="mt-2">Mar 28</p>
-                                             <div class="fill-badge fill-red-badge mt-2">Fire Safety Due</div>
-                                          </div>
-                                       </div>
-                                       <div class="col-xl col-md-3 col-6">
-                                          <div class="date-card bg-orange-50">
-                                             <h3>Fri</h3>
-                                             <p class="mt-2">Mar 29</p>
-                                             <div class="fill-badge mt-2">Equipotent Due</div>
-                                          </div>
-                                       </div>
-                                       <div class="col-xl col-md-3 col-6">
-                                          <div class="date-card">
-                                             <h3>Sat</h3>
-                                             <p class="mt-2">Mar 30</p>
-                                          </div>
-                                       </div>
-                                       <div class="col-xl col-md-3 col-6">
-                                          <div class="date-card bg-orange-50">
-                                             <h3>Sun</h3>
-                                             <p class="mt-2">Mar 31</p>
-                                             <div class="fill-badge mt-2">HACCP Opens</div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-
-                                 <div class="card-border mt-4">
-                                    <div class="main-title flex-between">
-                                       <h2>Upcoming Quiz Schedule</h2>
-                                       <a href="#" class="site-btn green-btn"><i class="menu-icon fa-solid fa-calendar-days"></i>Schedule Reminder</a>
-                                    </div>
-                                    <div class="card-wrapper">
-                                       <div class="row gy-3">
-                                          <div class="col-12">
-                                             <div class="card-border flex-between">
-                                                <div class="flex-gap-start">
-                                                   <div class="cust-icon">
-                                                      <span class="font-weight-500 font-22">27</span>
-                                                   </div>
-                                                   <div class="text">
-                                                      <h5>Fire Safety Assessment</h5>
-                                                      <p class="font-weight-500">Due Wednesday, March 27 at 11:59 Pm</p>
-                                                      <div class="flex-gap mt-2">
-                                                         <span class="cust-badge red-badge">Completed</span>
-                                                         <p class="flex-gap sm-gap">20 Question <span>•</span>15 Minutes<span>•</span>50 Point</p>
-                                                      </div>
+                                    <div class="row gy-3">
+                                       <div class="col-12">
+                                          <div class="card-border flex-between">
+                                             <div class="flex-gap-start">
+                                                <div class="cust-icon">
+                                                   <span class="font-weight-500 font-22">27</span>
+                                                </div>
+                                                <div class="text">
+                                                   <h5>Fire Safety Assessment</h5>
+                                                   <p class="font-weight-500">Due Wednesday, March 27 at 11:59 Pm</p>
+                                                   <div class="flex-gap mt-2">
+                                                      <span class="cust-badge red-badge">Completed</span>
+                                                      <p class="flex-gap sm-gap">20 Question <span>•</span>15 Minutes<span>•</span>50 Point</p>
                                                    </div>
                                                 </div>
-                                                <a href="#" class="site-btn green-btn">Start</a>
                                              </div>
+                                             <a href="#" class="site-btn green-btn">Start</a>
                                           </div>
-                                          <div class="col-12">
-                                             <div class="card-border flex-between">
-                                                <div class="flex-gap-start">
-                                                   <div class="cust-icon">
-                                                      <span class="font-weight-500 font-22">28</span>
-                                                   </div>
-                                                   <div class="text">
-                                                      <h5>Equipment Safety Quiz</h5>
-                                                      <p class="font-weight-500">Due Thursday, March 28 at 11:59 Pm</p>
-                                                      <div class="flex-gap mt-2">
-                                                         <span class="cust-badge orange-badge">Important </span>
-                                                         <p class="flex-gap sm-gap">15 Question <span>•</span>12 Minutes<span>•</span>35 Point</p>
-                                                      </div>
+                                       </div>
+                                       <div class="col-12">
+                                          <div class="card-border flex-between">
+                                             <div class="flex-gap-start">
+                                                <div class="cust-icon">
+                                                   <span class="font-weight-500 font-22">28</span>
+                                                </div>
+                                                <div class="text">
+                                                   <h5>Equipment Safety Quiz</h5>
+                                                   <p class="font-weight-500">Due Thursday, March 28 at 11:59 Pm</p>
+                                                   <div class="flex-gap mt-2">
+                                                      <span class="cust-badge orange-badge">Important </span>
+                                                      <p class="flex-gap sm-gap">15 Question <span>•</span>12 Minutes<span>•</span>35 Point</p>
                                                    </div>
                                                 </div>
-                                                <a href="#" class="site-btn green-btn">Preview</a>
                                              </div>
+                                             <a href="#" class="site-btn green-btn">Preview</a>
                                           </div>
-                                          <div class="col-12">
-                                             <div class="card-border flex-between">
-                                                <div class="flex-gap-start">
-                                                   <div class="cust-icon">
-                                                      <span class="font-weight-500 font-22">31</span>
-                                                   </div>
-                                                   <div class="text">
-                                                      <h5>HACCP Principles</h5>
-                                                      <p class="font-weight-500">Available Sunday, March 31, (No due data)</p>
-                                                      <div class="flex-gap mt-2">
-                                                         <span class="cust-badge green-badge">Optional </span>
-                                                         <p class="flex-gap sm-gap">25 Question <span>•</span>20 Minutes<span>•</span>75 Point</p>
-                                                      </div>
+                                       </div>
+                                       <div class="col-12">
+                                          <div class="card-border flex-between">
+                                             <div class="flex-gap-start">
+                                                <div class="cust-icon">
+                                                   <span class="font-weight-500 font-22">31</span>
+                                                </div>
+                                                <div class="text">
+                                                   <h5>HACCP Principles</h5>
+                                                   <p class="font-weight-500">Available Sunday, March 31, (No due data)</p>
+                                                   <div class="flex-gap mt-2">
+                                                      <span class="cust-badge green-badge">Optional </span>
+                                                      <p class="flex-gap sm-gap">25 Question <span>•</span>20 Minutes<span>•</span>75 Point</p>
                                                    </div>
                                                 </div>
-                                                <a href="#" class="site-btn green-btn">Locked</a>
                                              </div>
+                                             <a href="#" class="site-btn green-btn">Locked</a>
                                           </div>
                                        </div>
                                     </div>
@@ -1461,127 +1461,129 @@
                         </div>
                      </div>
                   </div>
-                  <!-- Footer -->
-                  <footer class="content-footer footer mb-4 custmize-footer">
-                     <div class="container-xxl">
-                        <div class="wrapper card-bg">
-                           <div class="row justify-content-between gy-lg-0 gy-4">
-                              <div class="col-lg-4">
-                                 <div class="text">
-                                    <a href="index.html">
-                                       <div class="footer-logo">
-                                          <img src="../assets/img/custom/logo.svg" alt="Logo" />
-                                       </div>
-                                    </a>
-                                    <p>Empowering kitchen professionals <br />with comprehensive safety training <br />and certification programs.</p>
-                                    <div class="social-links flex-gap">
-                                       <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                       <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                       <a href="#"><i class="fa-brands fa-twitter"></i></a>
+               </div>
+               <!-- Footer -->
+               <footer class="content-footer footer mb-4 custmize-footer">
+                  <div class="container-xxl">
+                     <div class="wrapper card-bg">
+                        <div class="row justify-content-between gy-lg-0 gy-md-5 gy-4">
+                           <div class="col-lg-4 col-md-6">
+                              <div class="text">
+                                 <a href="index.html">
+                                    <div class="footer-logo">
+                                       <img src="../assets/img/custom/logo.svg" alt="Logo" />
                                     </div>
-                                 </div>
-                              </div>
-                              <div class="col-lg-auto">
-                                 <div class="footer-list">
-                                    <h3>Quick Links</h3>
-                                    <ul>
-                                       <li>
-                                          <a href="#">Dashboard</a>
-                                       </li>
-                                       <li>
-                                          <a href="#">My Training</a>
-                                       </li>
-                                       <li>
-                                          <a href="#">Certificates </a>
-                                       </li>
-                                       <li>
-                                          <a href="#">Progress Report</a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                              <div class="col-lg-auto">
-                                 <div class="footer-list">
-                                    <h3>Support</h3>
-                                    <ul>
-                                       <li>
-                                          <a href="#">Help Center </a>
-                                       </li>
-                                       <li>
-                                          <a href="#">Technical Support </a>
-                                       </li>
-                                       <li>
-                                          <a href="#">Contact Us </a>
-                                       </li>
-                                       <li>
-                                          <a href="#">System Status</a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                              <div class="col-lg-auto">
-                                 <div class="footer-list v2">
-                                    <h3>Contact Info</h3>
-                                    <ul>
-                                       <li>
-                                          <a href="#" class="flex-gap"><i class="fa-solid fa-location-dot"></i>24/7 Support Available</a>
-                                       </li>
-                                       <li>
-                                          <a href="#" class="flex-gap"><i class="fa-solid fa-phone"></i>1-800-Kitchen</a>
-                                       </li>
-                                       <li>
-                                          <a href="#" class="flex-gap"><i class="fa-solid fa-envelope"></i>Support@kitchenguard.com</a>
-                                       </li>
-                                    </ul>
+                                 </a>
+                                 <p>Empowering kitchen professionals <br />with comprehensive safety training <br />and certification programs.</p>
+                                 <div class="social-links flex-gap">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
                                  </div>
                               </div>
                            </div>
-                           <div class="divider-rule"></div>
-                           <div class="bottom-text text-center">
-                              <p><a href="index.html">Copyright © 2024 Kitchen Guard Training Platform</a>. All rights reserved.</p>
+                           <div class="col-lg-auto col-md-5">
+                              <div class="footer-list">
+                                 <h3>Quick Links</h3>
+                                 <ul>
+                                    <li>
+                                       <a href="#">Dashboard</a>
+                                    </li>
+                                    <li>
+                                       <a href="#">My Training</a>
+                                    </li>
+                                    <li>
+                                       <a href="#">Certificates </a>
+                                    </li>
+                                    <li>
+                                       <a href="#">Progress Report</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="col-lg-auto col-md-5">
+                              <div class="footer-list">
+                                 <h3>Support</h3>
+                                 <ul>
+                                    <li>
+                                       <a href="#">Help Center </a>
+                                    </li>
+                                    <li>
+                                       <a href="#">Technical Support </a>
+                                    </li>
+                                    <li>
+                                       <a href="#">Contact Us </a>
+                                    </li>
+                                    <li>
+                                       <a href="#">System Status</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="col-lg-auto col-md-5">
+                              <div class="footer-list v2">
+                                 <h3>Contact Info</h3>
+                                 <ul>
+                                    <li>
+                                       <a href="#" class="flex-gap"><i class="fa-solid fa-location-dot"></i>24/7 Support Available</a>
+                                    </li>
+                                    <li>
+                                       <a href="#" class="flex-gap"><i class="fa-solid fa-phone"></i>1-800-Kitchen</a>
+                                    </li>
+                                    <li>
+                                       <a href="#" class="flex-gap"><i class="fa-solid fa-envelope"></i>Support@kitchenguard.com</a>
+                                    </li>
+                                 </ul>
+                              </div>
                            </div>
                         </div>
+                        <div class="divider-rule"></div>
+                        <div class="bottom-text text-center">
+                           <p><a href="index.html">Copyright © 2024 Kitchen Guard Training Platform</a>. All rights reserved.</p>
+                        </div>
                      </div>
-                  </footer>
-               </div>
+                  </div>
+               </footer>
             </div>
-            <!-- / Footer -->
-
-            <div class="content-backdrop fade"></div>
          </div>
-         <!-- Content wrapper -->
+         <!-- / Footer -->
+
+         <div class="content-backdrop fade"></div>
       </div>
+      <!-- Content wrapper -->
+   </div>
 
-      <!-- / Layout wrapper -->
+   <!-- / Layout wrapper -->
 
-      <!-- Core JS -->
-      <!-- build:js assets/vendor/js/core.js -->
-      <script src="../assets/vendor/libs/jquery/jquery.js"></script>
-      <script src="../assets/vendor/libs/popper/popper.js"></script>
-      <script src="../assets/vendor/js/bootstrap.js"></script>
-      <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+   <!-- Core JS -->
+   <!-- build:js assets/vendor/js/core.js -->
+   <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+   <script src="../assets/vendor/libs/popper/popper.js"></script>
+   <script src="../assets/vendor/js/bootstrap.js"></script>
+   <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
-      <script src="../assets/vendor/libs/hammer/hammer.js"></script>
-      <script src="../assets/vendor/libs/i18n/i18n.js"></script>
-      <script src="../assets/vendor/libs/typeahead-js/typeahead.js"></script>
+   <script src="../assets/vendor/libs/hammer/hammer.js"></script>
+   <script src="../assets/vendor/libs/i18n/i18n.js"></script>
+   <script src="../assets/vendor/libs/typeahead-js/typeahead.js"></script>
 
-      <script src="../assets/vendor/js/menu.js"></script>
-      <!-- endbuild -->
+   <script src="../assets/vendor/js/menu.js"></script>
+   <!-- endbuild -->
 
-      <!-- Vendors JS -->
-      <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
-      <script src="../assets/vendor/libs/chartjs/chartjs.js"></script>
+   <!-- Vendors JS -->
+   <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+   <script src="../assets/vendor/libs/chartjs/chartjs.js"></script>
 
-      <!-- Main JS -->
-      <script src="../assets/js/main.js"></script>
+   <!-- Main JS -->
+   <script src="../assets/js/main.js"></script>
 
-      <!-- Page JS -->
-      <script src="../assets/js/dashboards-crm.js"></script>
-      <script src="../assets/js/charts-custmize.js"></script>
-      <!-- fancybox -->
-      <script src="..//libs/fancybox/fancybox.js"></script>
-      <script>
-         Fancybox.bind('[data-fancybox]', {});
-      </script>
-   </body>
+   <!-- Page JS -->
+   <script src="../assets/js/dashboards-crm.js"></script>
+   <script src="../assets/js/charts-custmize.js"></script>
+   <!-- fancybox -->
+   <script src="..//libs/fancybox/fancybox.js"></script>
+   <script>
+      Fancybox.bind('[data-fancybox]', {});
+   </script>
+</body>
+
 </html>
