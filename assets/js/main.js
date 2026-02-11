@@ -572,7 +572,7 @@ if (typeof $ !== 'undefined') {
 // my js
 $(document).ready(function () {
    $(window).scroll(function () {
-      if ($(window).scrollTop() > 10) {
+      if ($(window).scrollTop() > 70) {
          $('.layout-navbar').addClass('fixed-nav');
       } else {
          $('.layout-navbar').removeClass('fixed-nav');

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <div style="width: 100%; max-width: 500px; margin: auto">
+         <canvas id="radarChart"></canvas>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script>
+         const ctx = document.getElementById('radarChart').getContext('2d');
+
+         new Chart(ctx, {
+            type: 'radar',
+            data: {
+               labels: ['Food Safety', 'Equipment', 'Hygiene', 'Emergency', 'Teamwork', 'Communication'],
+               datasets: [
+                  {
+                     data: [5, 4.5, 4.8, 4.2, 4.5, 4.6], // Values based on your image
+                     backgroundColor: 'rgba(152, 208, 69, 0.2)', // Light green fill
+                     borderColor: '#98d045', // Solid green line
+                     borderWidth: 2,
+                     pointBackgroundColor: '#98d045', // Green dots
+                     pointRadius: 4,
+                     lineTension: 0.1 // Keeps lines straight
+                  }
+               ]
+            },
+            options: {
+               plugins: {
+                  legend: { display: false }
+               },
+               scales: {
+                  r: {
+                     angleLines: {
+                        display: true,
+                        color: '#ccc'
+                     },
+                     grid: {
+                        color: '#ccc'
+                     },
+                     suggestedMin: 0,
+                     suggestedMax: 5,
+                     ticks: {
+                        stepSize: 2.5,
+                        display: true, // Shows the 0, 2.5, 5 labels in center
+                        backdropColor: 'transparent'
+                     },
+                     pointLabels: {
+                        color: '#666',
+                        font: {
+                           size: 14
+                        }
+                     }
+                  }
+               }
+            }
+         });
+      </script>
+   </body>
+</html>

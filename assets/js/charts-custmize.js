@@ -464,6 +464,229 @@ if (contentEngagement) {
    });
 }
 
+// line chart 3    2 line
+const trainingPath = document.getElementById('trainingPath');
+if (trainingPath) {
+   new Chart(trainingPath, {
+      type: 'line',
+      data: {
+         labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6'],
+         datasets: [
+            {
+               label: 'VR Scenarios',
+               data: [60, 90, 70, 90, 70, 100],
+               tension: 0.5,
+               fill: true,
+               borderWidth: 1,
+               backgroundColor: context => {
+                  const bgColor = ['rgba(128, 0, 128, 0.1)', 'rgba(128, 0, 128, 0)'];
+                  if (!context.chart.chartArea) {
+                     return;
+                  }
+                  const {
+                     ctx,
+                     data,
+                     chartArea: { top, bottom }
+                  } = context.chart;
+                  const gradientBg = ctx.createLinearGradient(0, top, 0, bottom);
+                  const colorTranches = 1 / (bgColor.length - 1);
+                  // console.log(colorTranches);
+                  for (let i = 0; i < bgColor.length; i++) {
+                     gradientBg.addColorStop(0 + i * colorTranches, bgColor[i]);
+                  }
+                  return gradientBg;
+               },
+               borderColor: '#800080',
+               pointRadius: 3,
+               pointHoverRadius: 6,
+               pointHoverBorderWidth: 6,
+               pointBackgroundColor: '#800080',
+               pointBorderColor: 'transparent',
+               pointHoverBackgroundColor: '#d9b6df',
+               pointHoverBorderColor: '#fff'
+            },
+
+            {
+               label: 'Video Training',
+               data: [20, 40, 20, 40, 20, 40],
+               tension: 0.5,
+               fill: true,
+               borderWidth: 1,
+
+               backgroundColor: context => {
+                  const bgColor = ['rgba(156, 136, 71, 0.1)', 'rgba(156, 136, 71, 0)'];
+                  if (!context.chart.chartArea) {
+                     return;
+                  }
+                  const {
+                     ctx,
+                     data,
+                     chartArea: { top, bottom }
+                  } = context.chart;
+                  const gradientBg = ctx.createLinearGradient(0, top, 0, bottom);
+                  const colorTranches = 1 / (bgColor.length - 1);
+                  // console.log(colorTranches);
+                  for (let i = 0; i < bgColor.length; i++) {
+                     gradientBg.addColorStop(0 + i * colorTranches, bgColor[i]);
+                  }
+                  return gradientBg;
+               },
+               pointStyle: 'circle',
+               borderColor: '#DA7742',
+               pointRadius: 0.5,
+               pointBackgroundColor: '#689522',
+               pointRadius: 3,
+               pointHoverRadius: 4,
+               pointHoverBorderWidth: 4,
+               pointBorderColor: 'transparent',
+               pointHoverBackgroundColor: '#DA7742',
+               pointHoverBorderColor: '#fff'
+            }
+         ]
+      },
+      options: {
+         responsive: true,
+         maintainAspectRatio: false,
+         plugins: {
+            legend: {
+               display: false
+            },
+
+            datalabels: {
+               anchor: 'end',
+               align: 'end'
+            }
+         },
+         scales: {
+            y: {
+               grid: {
+                  color: 'transparent',
+                  borderColor: 'rgba(0, 35, 59, 0.1)'
+               },
+               beginAtZero: true
+            },
+            x: {
+               grid: {
+                  // color: "transparent",
+                  borderColor: 'rgba(0, 35, 59, 0.1)'
+               }
+            }
+         }
+      }
+   });
+}
+
+// line chart 4   2 line
+const performanceMetrics = document.getElementById('performanceMetrics');
+if (performanceMetrics) {
+   new Chart(performanceMetrics, {
+      type: 'line',
+      data: {
+         labels: ['Session 1', 'Session 2', 'Session 3', 'Session 4', 'Session 5'],
+         datasets: [
+            {
+               label: 'VR Scenarios',
+               data: [100, 70, 100, 65, 100, 65],
+               tension: 0.5,
+               fill: true,
+               borderWidth: 1,
+               backgroundColor: context => {
+                  const bgColor = ['rgba(128, 0, 128, 0.1)', 'rgba(128, 0, 128, 0)'];
+                  if (!context.chart.chartArea) {
+                     return;
+                  }
+                  const {
+                     ctx,
+                     data,
+                     chartArea: { top, bottom }
+                  } = context.chart;
+                  const gradientBg = ctx.createLinearGradient(0, top, 0, bottom);
+                  const colorTranches = 1 / (bgColor.length - 1);
+                  // console.log(colorTranches);
+                  for (let i = 0; i < bgColor.length; i++) {
+                     gradientBg.addColorStop(0 + i * colorTranches, bgColor[i]);
+                  }
+                  return gradientBg;
+               },
+               borderColor: '#800080',
+               pointRadius: 3,
+               pointHoverRadius: 6,
+               pointHoverBorderWidth: 6,
+               pointBackgroundColor: '#800080',
+               pointBorderColor: 'transparent',
+               pointHoverBackgroundColor: '#d9b6df',
+               pointHoverBorderColor: '#fff'
+            },
+
+            {
+               label: 'Video Training',
+               data: [60, 20, 50, 20, 22, 65],
+               tension: 0.5,
+               fill: true,
+               borderWidth: 1,
+               backgroundColor: context => {
+                  const bgColor = ['rgba(156, 136, 71, 0.1)', 'rgba(156, 136, 71, 0)'];
+                  if (!context.chart.chartArea) {
+                     return;
+                  }
+                  const {
+                     ctx,
+                     data,
+                     chartArea: { top, bottom }
+                  } = context.chart;
+                  const gradientBg = ctx.createLinearGradient(0, top, 0, bottom);
+                  const colorTranches = 1 / (bgColor.length - 1);
+                  // console.log(colorTranches);
+                  for (let i = 0; i < bgColor.length; i++) {
+                     gradientBg.addColorStop(0 + i * colorTranches, bgColor[i]);
+                  }
+                  return gradientBg;
+               },
+               pointStyle: 'circle',
+               borderColor: '#9C8847',
+               pointRadius: 0.5,
+               pointBackgroundColor: '#689522',
+               pointRadius: 3,
+               pointHoverRadius: 4,
+               pointHoverBorderWidth: 4,
+               pointBorderColor: 'transparent',
+               pointHoverBackgroundColor: '#9C8847',
+               pointHoverBorderColor: '#fff'
+            }
+         ]
+      },
+      options: {
+         responsive: true,
+         maintainAspectRatio: false,
+         plugins: {
+            legend: {
+               display: false
+            },
+
+            datalabels: {
+               anchor: 'end',
+               align: 'end'
+            }
+         },
+         scales: {
+            y: {
+               grid: {
+                  color: 'transparent',
+                  borderColor: 'rgba(0, 35, 59, 0.1)'
+               },
+               beginAtZero: true
+            },
+            x: {
+               grid: {
+                  // color: "transparent",
+                  borderColor: 'rgba(0, 35, 59, 0.1)'
+               }
+            }
+         }
+      }
+   });
+}
+
 // doughnut chart
 const moduleDistribution = document.getElementById('moduleDistribution');
 if (moduleDistribution) {
@@ -662,6 +885,49 @@ if (overallCompletion) {
          responsive: true
       },
       plugins: [createCenterTextPlugin('87%', 38, '#4a4a4a')]
+   });
+}
+
+// doughnut chart 6
+const categoryProgress = document.getElementById('categoryProgress');
+if (categoryProgress) {
+   new Chart(categoryProgress, {
+      type: 'doughnut',
+      data: {
+         labels: ['Food Safety', 'Equipment Safety', 'Hygiene Standards', 'Emergency Procedures', 'Team Communication'],
+         datasets: [
+            {
+               data: [30, 15, 20, 20, 25],
+               backgroundColor: ['#133F5C', '#9C8847', '#F3A533', '#800080', '#EB5F5E'],
+               borderWidth: 0,
+               cutout: '68%',
+               borderRadius: 15,
+               spacing: 10
+            }
+         ]
+      },
+      options: {
+         responsive: true,
+         maintainAspectRatio: false,
+         plugins: {
+            legend: {
+               display: false,
+               position: 'right',
+               labels: {
+                  usePointStyle: true,
+                  font: { size: 14 }
+               }
+            },
+            tooltip: {
+               callbacks: {
+                  label: function (context) {
+                     let value = context.raw.toLocaleString();
+                     return `${context.label}: $${value}`;
+                  }
+               }
+            }
+         }
+      }
    });
 }
 
@@ -1106,6 +1372,127 @@ if (completionForecast) {
    });
 }
 
+// bar chart 8
+const weeklyCompletion = document.getElementById('weeklyCompletion');
+if (weeklyCompletion) {
+   new Chart(weeklyCompletion, {
+      type: 'bar',
+      data: {
+         labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+         datasets: [
+            {
+               label: 'Completion Rate',
+               data: [90, 80, 80, 90],
+               backgroundColor: '#800080',
+               borderRadius: 4,
+               // barThickness: 25,
+               categoryPercentage: 0.3,
+               barPercentage: 0.8
+            },
+            {
+               label: 'Pass Rate',
+               data: [80, 70, 70, 80],
+               backgroundColor: '#9C8847',
+               borderRadius: 4,
+               // barThickness: 25,
+               categoryPercentage: 0.3,
+               barPercentage: 0.8
+            }
+         ]
+      },
+      options: {
+         responsive: true,
+         maintainAspectRatio: false,
+         plugins: {
+            legend: {
+               display: false
+            },
+
+            datalabels: {
+               anchor: 'end',
+               align: 'end'
+            }
+         },
+         scales: {
+            y: {
+               beginAtZero: true
+            },
+
+            x: {
+               categoryPercentage: 0.8, // Default is 0.8 (80%)
+               barPercentage: 0.6 // Default is 0.9 (90%)
+            }
+         }
+      }
+   });
+}
+
+// bar chart 9
+const vrSession = document.getElementById('vrSession');
+if (vrSession) {
+   new Chart(vrSession, {
+      type: 'bar',
+      data: {
+         labels: ['Kitchen Layout', 'Knife Safety', 'Equipment Basics', 'Fire Safety', 'Food Handling', 'Food Handling'],
+         datasets: [
+            {
+               data: [100, 78, 68, 65, 72, 78],
+               backgroundColor: '#98d045',
+               borderSkipped: false,
+               barPercentage: 0.9,
+               borderRadius: {
+                  topLeft: 6,
+                  topRight: 6,
+                  bottomLeft: 0,
+                  bottomRight: 0
+               },
+               barThickness: function () {
+                  return window.innerWidth <= 992 ? 20 : 100;
+               }
+            }
+         ]
+      },
+      options: {
+         plugins: {
+            legend: { display: false }
+         },
+         scales: {
+            y: {
+               beginAtZero: true,
+               max: 100,
+               ticks: {
+                  stepSize: 25,
+                  color: '#535353'
+               },
+               grid: {
+                  drawBorder: false,
+                  color: '#eee'
+               }
+            },
+            x: {
+               grid: {
+                  display: false // Hide vertical grid lines
+               },
+               ticks: {
+                  callback: function (value, index) {
+                     const label = this.getLabelForValue(value);
+                     if (label.length > 20) {
+                        return label.split(' ');
+                     }
+                     return label;
+                  },
+                  display: function (context) {
+                     return context.chart.width > 768;
+                  },
+                  color: '#535353',
+                  font: { size: 16 }
+               }
+            }
+         }
+      }
+   });
+}
+
 //  line chart 1
 const growthChart = document.getElementById('growthChart');
 if (growthChart) {
@@ -1265,6 +1652,57 @@ if (peerComparison) {
                   padding: 20,
                   color: '#535353',
                   font: { size: 16 }
+               }
+            }
+         }
+      }
+   });
+}
+
+// radar chart
+const skillDevelopment = document.getElementById('skillDevelopment');
+if (skillDevelopment) {
+   new Chart(skillDevelopment, {
+      type: 'radar',
+      data: {
+         labels: ['Food Safety', 'Equipment', 'Hygiene', 'Emergency', 'Teamwork', 'Communication'],
+         datasets: [
+            {
+               data: [5, 4.5, 4.8, 4.2, 4.5, 4.6], // Values based on your image
+               backgroundColor: 'rgba(152, 208, 69, 0.2)', // Light green fill
+               borderColor: '#80B52B', // Solid green line
+               borderWidth: 2,
+               pointBackgroundColor: '#EEFFE1', // Green dots
+               pointRadius: 4,
+               lineTension: 0.1 // Keeps lines straight
+            }
+         ]
+      },
+      options: {
+         plugins: {
+            legend: { display: false }
+         },
+         scales: {
+            r: {
+               angleLines: {
+                  display: true,
+                  color: '#C0BEBE'
+               },
+               grid: {
+                  color: '#C0BEBE'
+               },
+               suggestedMin: 0,
+               suggestedMax: 5,
+               ticks: {
+                  stepSize: 2.5,
+                  display: true, // Shows the 0, 2.5, 5 labels in center
+                  backdropColor: 'transparent'
+               },
+               pointLabels: {
+                  color: '#666',
+                  font: {
+                     size: 16
+                  }
                }
             }
          }
