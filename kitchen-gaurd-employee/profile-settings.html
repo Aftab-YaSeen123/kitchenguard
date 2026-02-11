@@ -64,15 +64,9 @@
                         <span class="menu-header-text">Dashboard</span>
                     </li>
                     <li class="menu-item">
-                        <a href="javascipt:void(0)" class="menu-link">
+                        <a href="index.html" class="menu-link">
                             <i class="menu-icon fa-regular fa-house"></i>
                             <div data-i18n="Overview">Overview</div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="javascipt:void(0)" class="menu-link">
-                            <i class="menu-icon fa-light fa-chart-line"></i>
-                            <div data-i18n="Progress">Progress</div>
                         </a>
                     </li>
                     <li class="menu-item">
@@ -91,19 +85,19 @@
                         <span class="menu-header-text">My Training</span>
                     </li>
                     <li class="menu-item">
-                        <a href="javascipt:void(0)" class="menu-link">
+                        <a href="video-library.html" class="menu-link">
                             <i class="menu-icon fa-regular fa-play"></i>
                             <div data-i18n="Video Library">Video Library</div>
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="javascript:void(0);" class="menu-link">
+                        <a href="quizzes.html" class="menu-link">
                             <i class="menu-icon fa-light fa-circle-question"></i>
                             <div data-i18n="Quizzes">Quizzes</div>
                         </a>
                     </li>
-                    <li class="menu-item">
-                        <a href="javascript:void(0);" class="menu-link">
+                    <li class="menu-item active">
+                        <a href="vr-tutorials.html" class="menu-link">
                             <i class="menu-icon fa-regular fa-vr-cardboard"></i>
                             <div data-i18n="VR Tutorials">VR Tutorials</div>
                         </a>
@@ -119,13 +113,11 @@
                         <span class="menu-header-text">Performance</span>
                     </li>
                     <li class="menu-item">
-                        <a href="javascipt:void(0)" class="menu-link">
+                        <a href="my-stats.html" class="menu-link">
                             <i class="menu-icon fa-regular fa-chart-bar"></i>
                             <div data-i18n="My Stats">My Stats</div>
                         </a>
                     </li>
-
-
 
                     <li class="menu-item">
                         <a href="javascipt:void(0)" class="menu-link">
@@ -142,8 +134,8 @@
                     <li class="menu-header">
                         <span class="menu-header-text">Account</span>
                     </li>
-                    <li class="menu-item active">
-                        <a href="javascipt:void(0)" class="menu-link">
+                    <li class="menu-item">
+                        <a href="profile-settings.html" class="menu-link">
                             <i class="menu-icon fa-light fa-user-gear"></i>
                             <div data-i18n="Profile Settings">Profile Settings</div>
                         </a>
@@ -347,7 +339,7 @@
                                                         <h1>Marcus Johnson</h1>
                                                         <p class="mt-1 font-14">Kitchen Staff Level 2</p>
                                                     </div>
-                                                    <div class="flex-gap gap-md-4 flex-wrap gap-2">
+                                                    <div class="flex-gap user-about xl-gap">
                                                         <div class="flex-gap sm-gap green">
                                                             <i class="fa-solid fa-envelope"></i>
                                                             <a href="#">marcus.johnson@kitchenguard.com</a>
@@ -417,7 +409,7 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="last-name">First Name*</label>
+                                                        <label for="last-name">Last Name*</label>
                                                         <input type="text" id="last-name" class="form-control" placeholder="Johnson">
                                                     </div>
                                                 </div>
@@ -468,7 +460,7 @@ level 3 certification." class="form-control"></textarea>
                                     <div class="card-bg">
                                         <div class="main-title flex-between">
                                             <h2>Contact Information</h2>
-                                            <span class="cust-badge blue-600-badge">Verified</span>
+                                            <span class="cust-badge green-badge">Verified</span>
                                         </div>
 
                                         <form action="javascript:void(0)" class="submit-form label-space row-gx row-gy">
@@ -476,7 +468,10 @@ level 3 certification." class="form-control"></textarea>
                                                 <div class="col-12">
                                                     <div class="form-group">
                                                         <label for="email-address">Email Address*</label>
-                                                        <input type="email" id="email-address" class="form-control mb-1" placeholder="marcus.johnson@kitchenguard.com">
+                                                        <div class="input-icon">
+                                                            <input type="email" id="email-address" class="form-control mb-1" placeholder="marcus.johnson@kitchenguard.com">
+                                                            <button><i class="fa-solid fa-circle-check green"></i></button>
+                                                        </div>
                                                         <span class="font-12 gray-1000">This emaill is used for login and important notifications</span>
                                                     </div>
                                                 </div>
@@ -563,7 +558,7 @@ level 3 certification." class="form-control"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="card-wrapper">
+                                    <div class="card-wrapper row-gx row-gy">
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="card-bg h-100">
@@ -640,10 +635,10 @@ level 3 certification." class="form-control"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="card-wrapper">
+                                    <div class="card-wrapper row-gx row-gy">
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <div class="card-bg">
+                                                <div class="card-bg h-100">
                                                     <div class="main-title">
                                                         <h2>Quick Actions</h2>
                                                     </div>
@@ -705,13 +700,7 @@ level 3 certification." class="form-control"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <!-- <div class="tab-content" id="myTabContent">
-                                        <div class="tab-pane fade show active" id="personal-tab-pane" role="tabpanel" aria-labelledby="personal-tab" tabindex="0">1</div>
-                                        <div class="tab-pane fade" id="security-tab-pane" role="tabpanel" aria-labelledby="security-tab" tabindex="0">2</div>
-                                        <div class="tab-pane fade" id="notifiation-tab-pane" role="tabpanel" aria-labelledby="notifiation-tab" tabindex="0">3</div>
-                                        <div class="tab-pane fade" id="certification-tab-pane" role="tabpanel" aria-labelledby="certification-tab" tabindex="0">4</div>
-                                        <div class="tab-pane fade" id="preferences-tab-pane" role="tabpanel" aria-labelledby="preferences-tab" tabindex="0">5</div>
-                                    </div> -->
+
                                     <div class="card-bg">
                                         <div class="main-title">
                                             <h2>Security & Password Management</h2>
@@ -725,22 +714,28 @@ level 3 certification." class="form-control"></textarea>
                                             <div class="card-bg shadow-none bg-light-gray rounded-8 mb-3">
                                                 <div class="flex-gap">
                                                     <i class="fa-solid fa-triangle-exclamation green"></i>
-                                                    <h3 class="mb-1">Password Security Reminder</h3>
+                                                    <h3>Password Security Reminder</h3>
                                                 </div>
-                                                <p>Your password should be changed every 90 days for optimal security. Consider using a strong, unique password</p>
+                                                <p class="mt-1">Your password should be changed every 90 days for optimal security. Consider using a strong, unique password</p>
 
                                             </div>
                                             <div class="row">
                                                 <div class="col-12">
                                                     <div class="form-group">
                                                         <label for="current-password">Current Password</label>
-                                                        <input type="password" id="current-password" class="form-control" placeholder="Enter your current password">
+                                                        <div class="input-icon">
+                                                            <input type="password" id="current-password" class="form-control" placeholder="Enter your current password">
+                                                            <button><i class="fa-solid fa-eye green"></i></button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-12">
                                                     <div class="form-group">
                                                         <label for="new-password">New Password</label>
-                                                        <input type="password" id="new-password" class="form-control" placeholder="marcus.johnson@kitchenguard.com">
+                                                        <div class="input-icon">
+                                                            <input type="password" id="new-password" class="form-control" placeholder="marcus.johnson@kitchenguard.com">
+                                                            <button><i class="fa-solid fa-eye green"></i></button>
+                                                        </div>
                                                         <div class="point-list small-font">
                                                             <ul>
                                                                 <li>At least 8 characters long</li>
@@ -754,7 +749,10 @@ level 3 certification." class="form-control"></textarea>
                                                 <div class="col-12">
                                                     <div class="form-group">
                                                         <label for="confirm-new-password">Confirm New Password</label>
-                                                        <input type="text" id="confirm-new-password" class="form-control" placeholder="Confirm your new password">
+                                                        <div class="input-icon">
+                                                            <input type="text" id="confirm-new-password" class="form-control" placeholder="Confirm your new password">
+                                                            <button><i class="fa-solid fa-eye green"></i></button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-12">
@@ -806,7 +804,7 @@ level 3 certification." class="form-control"></textarea>
                                             </div>
                                             <div class="card-border flex-between mt-3">
                                                 <div class="content">
-                                                    <div class="flex-gap mt-2">
+                                                    <div class="flex-gap mb-2">
                                                         <div class="cust-icon">
                                                             <i class="fa-solid fa-envelope"></i>
                                                         </div>
@@ -856,7 +854,7 @@ level 3 certification." class="form-control"></textarea>
                                             <div class="card-border flex-between mt-3">
                                                 <div class="flex-gap flex-wrap">
                                                     <div class="cust-icon">
-                                                        <i class="fa-solid fa-mobile"></i>
+                                                        <i class="fa-solid fa-pencil"></i>
                                                     </div>
                                                     <div class="text">
                                                         <h4>Profile Updated</h4>
@@ -890,9 +888,9 @@ level 3 certification." class="form-control"></textarea>
                                         <div class="main-title">
                                             <h2>Notifications Preferences</h2>
                                         </div>
-                                        <div class="card-wrapper">
+                                        <div class="card-wrapper row-gy">
                                             <div class="row">
-                                                <div class="col-md-6">
+                                                <div class="col-lg-6">
                                                     <div class="card-border">
                                                         <div class="main-title">
                                                             <div class="flex-nowrap form-check form-switch toggle-btn ps-0 flex-between">
@@ -1006,8 +1004,8 @@ level 3 certification." class="form-control"></textarea>
 
                                                     </div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <div class="card-border">
+                                                <div class="col-lg-6">
+                                                    <div class="card-border h-100">
                                                         <div class="main-title">
                                                             <div class="flex-nowrap form-check form-switch toggle-btn ps-0 flex-between">
                                                                 <label class="form-check-label mb-0" for="mobile-notification">
@@ -1098,11 +1096,9 @@ level 3 certification." class="form-control"></textarea>
                                                                         <div class="flex-nowrap form-check form-switch toggle-btn ps-0 flex-align-start">
                                                                             <label class="form-check-label mb-0" for="weekend-notification">
                                                                                 <h4>Weekend Notifications</h4>
+                                                                                <p class="mt-3">Receive SMS notifications on weekends</p>
                                                                             </label>
-                                                                            <input class="form-check-input" type="checkbox" role="switch" id="weekend-notification" checked="">
-                                                                        </div>
-                                                                        <div class="text">
-                                                                            <p>Receive SMS notifications on weekends</p>
+                                                                            <input class=" form-check-input" type="checkbox" role="switch" id="weekend-notification" checked="">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1111,6 +1107,243 @@ level 3 certification." class="form-control"></textarea>
 
                                                     </div>
                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-bg">
+                                        <div class="main-title flex-between">
+                                            <h2>Browser Push Notifications</h2>
+                                            <div class="btns flex-gap">
+                                                <button class="site-btn green-600-btn">Enabled</button>
+                                                <a href="#" class="site-btn green-outline">Test Notification</a>
+                                            </div>
+
+                                        </div>
+                                        <div class="cust-body">
+                                            <div class="flex-nowrap form-check form-switch toggle-btn flex-between card-border">
+                                                <label class="form-check-label mb-0 flex-gap-start flex-wrap" for="browser-notitication">
+                                                    <div class="cust-icon">
+                                                        <i class="fa-solid fa-desktop"></i>
+                                                    </div>
+                                                    <div class="text">
+                                                        <h4>Desktop </h4>
+                                                        <p class="mt-1">Browser notifications</p>
+                                                        <span class="mt-1">Receive notification while browsing</span>
+                                                    </div>
+                                                </label>
+                                                <input class=" form-check-input" type="checkbox" role="switch" id="browser-notitication" checked="">
+                                            </div>
+                                            <div class="flex-nowrap form-check form-switch toggle-btn flex-between card-border mt-3">
+                                                <label class="form-check-label mb-0 flex-gap-start flex-wrap" for="mobile-browser-notification">
+                                                    <div class="cust-icon">
+                                                        <i class="fa-solid fa-mobile"></i>
+                                                    </div>
+                                                    <div class="text">
+                                                        <h4>Mobile </h4>
+                                                        <p class="mt-1">Mobile browser notifications</p>
+                                                        <span class="mt-1">Receive notifications on your mobile device</span>
+                                                    </div>
+                                                </label>
+                                                <input class=" form-check-input" type="checkbox" role="switch" id="mobile-browser-notification" checked="">
+                                            </div>
+                                            <div class="flex-nowrap form-check form-switch toggle-btn flex-between card-border mt-3">
+                                                <label class="form-check-label mb-0 flex-gap-start flex-wrap" for="sound-notification">
+                                                    <div class="cust-icon">
+                                                        <i class="fa-solid fa-volume"></i>
+                                                    </div>
+                                                    <div class="text">
+                                                        <h4>Sound </h4>
+                                                        <p class="mt-1">Notification sounds</p>
+                                                        <span class="mt-1">Play sounds with notifications</span>
+                                                    </div>
+                                                </label>
+                                                <input class=" form-check-input" type="checkbox" role="switch" id="sound-notification" checked="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-bg">
+                                        <div class="main-title flex-between">
+                                            <h2>Certifications Management</h2>
+                                            <div class="btns flex-gap">
+                                                <a href="#" class="site-btn"><i class="fa-solid fa-download"></i>Download all Certificates</a>
+                                                <a href="#" class="site-btn green-btn"><i class="fa-solid fa-share"></i>Share Portfolio</a>
+                                            </div>
+                                        </div>
+                                        <div class="card-wrapper row-gx">
+                                            <div class="row gy-4">
+                                                <div class="col-md-6">
+                                                    <div class="card-border">
+                                                        <div class="cust-header">
+                                                            <div class="flex-between">
+                                                                <div class="cust-icon">
+                                                                    <i class="fa-solid fa-certificate"></i>
+                                                                </div>
+                                                                <span class="cust-badge green-badge">Level 1</span>
+
+                                                            </div>
+                                                            <div class="text mt-3">
+                                                                <h3>Food Safety Certification</h3>
+                                                                <p class="mt-1">HACCP Principles & Implementation</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cust-body my-4">
+                                                            <div class="flex-between">
+                                                                <p>Validity</p>
+                                                                <span class="font-weight-500">Valid</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Issues:</p>
+                                                                <span class="font-weight-500">March 15, 2024</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Valid Until:</p>
+                                                                <span class="font-weight-500">March 15, 2027</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Score:</p>
+                                                                <span class="font-weight-500">65%</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cust-foot flex-gap">
+                                                            <a href="#" class="site-btn flex-grow-1 green-btn"><i class="fa-solid fa-download"></i>Download</a>
+                                                            <a href="#" class="site-btn flex-grow-1 green-outline"><i class="fa-solid fa-eye"></i>Preview</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card-border">
+                                                        <div class="cust-header">
+                                                            <div class="flex-between">
+                                                                <div class="cust-icon">
+                                                                    <i class="fa-solid fa-shield-halved"></i>
+                                                                </div>
+                                                                <span class="cust-badge green-badge">Advanced</span>
+
+                                                            </div>
+                                                            <div class="text mt-3">
+                                                                <h3>Kitchen Safety Expert</h3>
+                                                                <p class="mt-1">Emergency Response & Prevention</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cust-body my-4">
+                                                            <div class="flex-between">
+                                                                <p>Validity</p>
+                                                                <span class="font-weight-500">Valid</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Issues:</p>
+                                                                <span class="font-weight-500">March 10, 2024</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Valid Until:</p>
+                                                                <span class="font-weight-500">March 10, 2026</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Score:</p>
+                                                                <span class="font-weight-500">68%</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cust-foot flex-gap">
+                                                            <a href="#" class="site-btn flex-grow-1 green-btn"><i class="fa-solid fa-download"></i>Download</a>
+                                                            <a href="#" class="site-btn flex-grow-1 green-outline"><i class="fa-solid fa-eye"></i>Preview</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card-border">
+                                                        <div class="cust-header">
+                                                            <div class="flex-between">
+                                                                <div class="cust-icon">
+                                                                    <i class="fa-solid fa-vr-cardboard"></i>
+                                                                </div>
+                                                                <span class="cust-badge green-badge">Level 1</span>
+
+                                                            </div>
+                                                            <div class="text mt-3">
+                                                                <h3>Food Safety Certification</h3>
+                                                                <p class="mt-1">Virtual Totality Proficiency</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cust-body my-4">
+                                                            <div class="flex-between">
+                                                                <p>Validity</p>
+                                                                <span class="font-weight-500">Valid</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Issues:</p>
+                                                                <span class="font-weight-500">February 28, 2024</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Valid Until:</p>
+                                                                <span class="font-weight-500">February 28, 2025</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Score:</p>
+                                                                <span class="font-weight-500">92%</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cust-foot flex-gap">
+                                                            <a href="#" class="site-btn flex-grow-1 green-btn"><i class="fa-solid fa-download"></i>Download</a>
+                                                            <a href="#" class="site-btn flex-grow-1 green-outline"><i class="fa-solid fa-eye"></i>Preview</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card-border equal-card">
+                                                        <div class="cust-header">
+                                                            <div class="flex-between">
+                                                                <div class="cust-icon">
+                                                                    <i class="fa-solid fa-hourglass-half"></i>
+                                                                </div>
+                                                                <span class="cust-badge orange-badge">Need 3 more</span>
+
+                                                            </div>
+                                                            <div class="text mt-3">
+                                                                <h3>Equipment Mastery</h3>
+                                                                <p class="mt-1">Complete 3 more modules to earn this certificate</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cust-body my-4">
+                                                            <div class="progress-content">
+                                                                <p>60% Complete</p>
+                                                                <div class="progress-line mt-2">
+                                                                    <div class="progress mb-1" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                                        <div class="progress-bar" style="width: 40%"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cust-foot">
+                                                            <a href="#" class="site-btn flex-grow-1 green-btn"><i class="fa-solid fa-arrow-right"></i>Continue Training</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-bg">
+                                        <div class="main-title">
+                                            <h2>Certificate History & Activity</h2>
+                                        </div>
+                                        <div class="card-border flex-between">
+                                            <div class="flex-gap flex-wrap">
+                                                <div class="cust-icon">
+                                                    <i class="fa-solid fa-circle-check"></i>
+                                                </div>
+                                                <div class="text">
+                                                    <h4>Food Safety Certification Earned </h4>
+                                                    <p class="mt-1">Completed with 95% score</p>
+                                                </div>
+                                            </div>
+                                            <div class="text text-end">
+                                                <p>March 15, 2024</p>
+                                                <a href="#" class="border-text green">View Details</a>
                                             </div>
                                         </div>
                                     </div>

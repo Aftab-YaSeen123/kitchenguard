@@ -1,556 +1,915 @@
 <!DOCTYPE html>
 
 <html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../assets/" data-template="vertical-menu-template-no-customizer">
-   <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-      <title>Home | Kitchen Gaurd</title>
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-      <meta name="description" content="" />
+   <title>Home | Kitchen Gaurd</title>
 
-      <!-- Favicon -->
-      <link rel="icon" type="image/x-icon" href="../assets/img/custom/favicon.svg" />
+   <meta name="description" content="" />
 
-      <!-- Fonts -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <!-- Favicon -->
+   <link rel="icon" type="image/x-icon" href="../assets/img/custom/favicon.svg" />
 
-      <!-- Icons -->
-      <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
-      <link rel="stylesheet" href="../assets/vendor/fonts/flag-icons.css" />
+   <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-      <!-- Core CSS -->
-      <link rel="stylesheet" href="../assets/vendor/css/rtl/core.css" />
-      <link rel="stylesheet" href="../assets/vendor/css/rtl/theme-default.css" />
-      <link rel="stylesheet" href="../assets/css/demo.css" />
-      <link rel="stylesheet" href="../assets/css/style.css" />
+   <!-- Icons -->
+   <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+   <link rel="stylesheet" href="../assets/vendor/fonts/flag-icons.css" />
 
-      <!-- Vendors CSS -->
-      <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-      <link rel="stylesheet" href="../assets/vendor/libs/typeahead-js/typeahead.css" />
-      <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+   <!-- Core CSS -->
+   <link rel="stylesheet" href="../assets/vendor/css/rtl/core.css" />
+   <link rel="stylesheet" href="../assets/vendor/css/rtl/theme-default.css" />
+   <link rel="stylesheet" href="../assets/css/demo.css" />
+   <link rel="stylesheet" href="../assets/css/style.css" />
 
-      <!-- Page CSS -->
+   <!-- Vendors CSS -->
+   <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+   <link rel="stylesheet" href="../assets/vendor/libs/typeahead-js/typeahead.css" />
+   <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
 
-      <!-- Helpers -->
-      <script src="../assets/vendor/js/helpers.js"></script>
+   <!-- Page CSS -->
 
-      <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
-      <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-      <script src="../assets/js/config.js"></script>
-   </head>
+   <!-- Helpers -->
+   <script src="../assets/vendor/js/helpers.js"></script>
 
-   <body>
-      <!-- Layout wrapper -->
-      <div class="layout-wrapper layout-content-navbar">
-         <div class="layout-container">
-            <!-- Menu -->
+   <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+   <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+   <script src="../assets/js/config.js"></script>
+</head>
 
-            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-               <div class="app-brand demo">
-                  <a href="index.html" class="app-brand-link">
-                     <div class="app-brand-logo demo">
-                        <img src="../assets/img/custom/logo.svg" alt="Image" />
-                     </div>
+<body>
+   <!-- Layout wrapper -->
+   <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+         <!-- Menu -->
+
+         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+            <div class="app-brand demo">
+               <a href="index.html" class="app-brand-link">
+                  <div class="app-brand-logo demo">
+                     <img src="../assets/img/custom/logo.svg" alt="Image" />
+                  </div>
+               </a>
+            </div>
+
+            <ul class="menu-inner py-1">
+               <!-- Dashboards -->
+               <li class="menu-header">
+                  <span class="menu-header-text">Dashboard</span>
+               </li>
+               <li class="menu-item active">
+                  <a href="index.html" class="menu-link">
+                     <i class="menu-icon fa-regular fa-house"></i>
+                     <div data-i18n="Overview">Overview</div>
                   </a>
+               </li>
+               <li class="menu-item">
+                  <a href="javascipt:void(0)" class="menu-link">
+                     <i class="menu-icon menu-icon fa-light fa-book"></i>
+                     <div data-i18n="Progress">Progress</div>
+                  </a>
+               </li>
+               <li class="menu-item">
+                  <a href="javascipt:void(0)" class="menu-link">
+                     <i class="menu-icon fa-solid fa-calendar-days"></i>
+                     <div data-i18n="Schedule">Schedule</div>
+                  </a>
+               </li>
+               <li class="menu-header">
+                  <span class="menu-header-text">My Training</span>
+               </li>
+               <li class="menu-item">
+                  <a href="video-library.html" class="menu-link">
+                     <i class="menu-icon fa-regular fa-play"></i>
+                     <div data-i18n="Video Library">Video Library</div>
+                  </a>
+               </li>
+               <li class="menu-item">
+                  <a href="quizzes.html" class="menu-link">
+                     <i class="menu-icon fa-light fa-circle-question"></i>
+                     <div data-i18n="Quizzes">Quizzes</div>
+                  </a>
+               </li>
+               <li class="menu-item">
+                  <a href="vr-tutorials.html" class="menu-link">
+                     <i class="menu-icon fa-regular fa-vr-cardboard"></i>
+                     <div data-i18n="VR Tutorials">VR Tutorials</div>
+                  </a>
+               </li>
+
+               <li class="menu-item">
+                  <a href="javascript:void(0);" class="menu-link">
+                     <i class="menu-icon fa-light fa-certificate"></i>
+                     <div data-i18n="Certificates">Certificates</div>
+                  </a>
+               </li>
+               <li class="menu-header">
+                  <span class="menu-header-text">Performance</span>
+               </li>
+               <li class="menu-item">
+                  <a href="my-stats.html" class="menu-link">
+                     <i class="menu-icon fa-regular fa-chart-bar"></i>
+                     <div data-i18n="My Stats">My Stats</div>
+                  </a>
+               </li>
+
+               <li class="menu-item">
+                  <a href="javascipt:void(0)" class="menu-link">
+                     <i class="menu-icon fa-light fa-trophy"></i>
+                     <div data-i18n="Achievements">Achievements</div>
+                  </a>
+               </li>
+               <li class="menu-item">
+                  <a href="javascipt:void(0)" class="menu-link">
+                     <i class="menu-icon fa-thin fa-medal"></i>
+                     <div data-i18n="Badges">Badges</div>
+                  </a>
+               </li>
+               <li class="menu-header">
+                  <span class="menu-header-text">Account</span>
+               </li>
+               <li class="menu-item">
+                  <a href="profile-settings.html" class="menu-link">
+                     <i class="menu-icon fa-light fa-user-gear"></i>
+                     <div data-i18n="Profile Settings">Profile Settings</div>
+                  </a>
+               </li>
+               <li class="menu-item">
+                  <a href="javascipt:void(0)" class="menu-link">
+                     <i class="menu-icon fa-light fa-bell"></i>
+                     <div data-i18n="Notifications">Notifications</div>
+                  </a>
+               </li>
+               <li class="menu-item">
+                  <a href="javascipt:void(0)" class="menu-link">
+                     <i class="menu-icon fa-thin fa-headset"></i>
+                     <div data-i18n="Support">Support</div>
+                  </a>
+               </li>
+            </ul>
+         </aside>
+         <!-- / Menu -->
+
+         <!-- Layout container -->
+         <div class="layout-page">
+            <!-- Navbar -->
+
+            <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached bg-navbar-theme flex-gap user-header flex-row-reverse" id="layout-navbar">
+               <div class="navbar-nav-right d-flex align-items-md-center align-items-start gap-1" id="navbar-collapse">
+                  <div class="flex-gap gap-lg-3 order-1 user-content">
+                     <div class="nav-item dropdown-notifications navbar-dropdown dropdown order-xl-0 order-1">
+                        <a class="nav-link dropdown-toggle flat-icon hide-arrow p-1" href="javascript:void(0);" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                           <i class="green fa-solid fa-bell"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end py-0">
+                           <li class="dropdown-menu-header border-bottom">
+                              <div class="dropdown-header d-flex align-items-center py-3">
+                                 <h4 class="text-body mb-0 me-auto gray-1000">Notification</h4>
+                                 <a href="javascript:void(0)" class="dropdown-notifications-all text-body" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Mark all as read" data-bs-original-title="Mark all as read"><i class="bx fs-4 bx-envelope-open"></i></a>
+                              </div>
+                           </li>
+                           <li class="dropdown-notifications-list scrollable-container ps ps--active-y">
+                              <ul class="list-group list-group-flush">
+                                 <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                    <div class="d-flex">
+                                       <div class="flex-shrink-0 me-3">
+                                          <div class="avatar">
+                                             <img src="../assets/img/custom/user-1.png" alt="" class="w-px-40 h-auto rounded-circle" />
+                                          </div>
+                                       </div>
+                                       <div class="flex-grow-1">
+                                          <h6 class="mb-1 gray-1000">Congratulation Lettie 🎉</h6>
+                                          <p class="mb-0 gra-800">Won the monthly best seller gold badge</p>
+                                          <small class="text-muted">1h ago</small>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                    <div class="d-flex">
+                                       <div class="flex-shrink-0 me-3">
+                                          <div class="avatar">
+                                             <span class="avatar-initial rounded-circle bg-primary">CF</span>
+                                          </div>
+                                       </div>
+                                       <div class="flex-grow-1">
+                                          <h6 class="mb-1 gray-1000">Charles Franklin</h6>
+                                          <p class="mb-0 gray-800">Accepted your connection</p>
+                                          <small class="text-muted">12hr ago</small>
+                                       </div>
+                                    </div>
+                                 </li>
+                              </ul>
+                              <div class="ps__rail-x" style="left: 0px; bottom: -86px">
+                                 <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px"></div>
+                              </div>
+                              <div class="ps__rail-y" style="top: 86px; right: 0px; height: 480px">
+                                 <div class="ps__thumb-y" tabindex="0" style="top: 41px; height: 228px"></div>
+                              </div>
+                           </li>
+                           <li class="dropdown-menu-footer border-top">
+                              <a href="javascript:void(0);" class="dropdown-item d-flex justify-content-center p-3"> View all notifications </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="vertical-rule d-xl-block d-none"></div>
+                     <div class="nav-item navbar-dropdown dropdown-user dropdown">
+                        <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
+                           <div class="flex-gap lg-gap">
+                              <div class="image md-size">
+                                 <img src="../assets/img/custom/boy-1.png" alt="User" />
+                              </div>
+                              <div class="text">
+                                 <h4 class="gray-800">Downtown Franchise</h4>
+                                 <p>Manager Dashboard</p>
+                              </div>
+                           </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                           <li>
+                              <a class="dropdown-item" href="javascript:void(0)">
+                                 <i class="bx bx-user me-2 green"></i>
+                                 <span class="align-middle">My Profile</span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="javascript:void(0)">
+                                 <i class="bx bx-cog me-2 green"></i>
+                                 <span class="align-middle">Settings</span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="javascript:void(0)">
+                                 <span class="d-flex align-items-center align-middle">
+                                    <i class="flex-shrink-0 bx bx-credit-card me-2 green"></i>
+                                    <span class="flex-grow-1 align-middle">Billing</span>
+                                 </span>
+                              </a>
+                           </li>
+                           <li>
+                              <div class="divider-rule"></div>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="javascript:void(0)">
+                                 <i class="bx bx-support me-2 green"></i>
+                                 <span class="align-middle">Help</span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="javascript:void(0)">
+                                 <i class="bx bx-help-circle me-2 green"></i>
+                                 <span class="align-middle">FAQ</span>
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="javascript:void(0)">
+                                 <i class="bx bx-dollar me-2 green"></i>
+                                 <span class="align-middle">Pricing</span>
+                              </a>
+                           </li>
+                           <li>
+                              <div class="divider-rule"></div>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="javascript:void(0)">
+                                 <i class="bx bx-power-off me-2 green"></i>
+                                 <span class="align-middle">Log Out</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="layout-menu-toggle align-items-xl-center d-xl-none">
+                     <a class="nav-item nav-link p-0" href="javascript:void(0)">
+                        <i class="menu-icon bx bx-menu bx-sm"></i>
+                     </a>
+                  </div>
                </div>
 
-               <ul class="menu-inner py-1">
-                  <!-- Dashboards -->
-                  <li class="menu-header">
-                     <span class="menu-header-text">Dashboard</span>
-                  </li>
-                  <li class="menu-item active">
-                     <a href="javascipt:void(0)" class="menu-link">
-                        <i class="menu-icon fa-regular fa-house"></i>
-                        <div data-i18n="Overview">Overview</div>
-                     </a>
-                  </li>
-                  <li class="menu-item">
-                     <a href="javascipt:void(0)" class="menu-link">
-                        <i class="menu-icon fa-light fa-chart-line"></i>
-                        <div data-i18n="Progress">Progress</div>
-                     </a>
-                  </li>
-                  <li class="menu-item">
-                     <a href="javascipt:void(0)" class="menu-link">
-                        <i class="menu-icon menu-icon fa-light fa-book"></i>
-                        <div data-i18n="Progress">Progress</div>
-                     </a>
-                  </li>
-                  <li class="menu-item">
-                     <a href="javascipt:void(0)" class="menu-link">
-                        <i class="menu-icon fa-solid fa-calendar-days"></i>
-                        <div data-i18n="Schedule">Schedule</div>
-                     </a>
-                  </li>
-                  <li class="menu-header">
-                     <span class="menu-header-text">My Training</span>
-                  </li>
-                  <li class="menu-item">
-                     <a href="javascipt:void(0)" class="menu-link">
-                        <i class="menu-icon fa-regular fa-play"></i>
-                        <div data-i18n="Video Library">Video Library</div>
-                     </a>
-                  </li>
-                  <li class="menu-item">
-                     <a href="javascript:void(0);" class="menu-link">
-                        <i class="menu-icon fa-light fa-circle-question"></i>
-                        <div data-i18n="Quizzes">Quizzes</div>
-                     </a>
-                  </li>
-                  <li class="menu-item">
-                     <a href="javascript:void(0);" class="menu-link">
-                        <i class="menu-icon fa-regular fa-vr-cardboard"></i>
-                        <div data-i18n="VR Tutorials">VR Tutorials</div>
-                     </a>
-                  </li>
+               <div class="user-menu flex-between flex-grow-1">
+                  <!-- heading-->
+                  <div class="navbar-nav flex-between flex-grow-1">
+                     <form action="javascript:void()" class="search-field cust-width">
+                        <input class="form-control" id="src-icon" placeholder="Search training modules..." aria-label="Search" />
+                        <label for="src-icon" class="src-bar">
+                           <i class="fa-solid fa-magnifying-glass"></i>
+                        </label>
+                     </form>
+                     <div class="btn-badges flex-gap">
+                        <span class="lg-badge lg-skyblue-badge"><i class="fa-solid fa-fire"></i>7 Day Streak</span>
+                        <span class="lg-badge"><i class="fa-solid fa-star"></i>Level 12</span>
+                     </div>
+                  </div>
+               </div>
 
-                  <li class="menu-item">
-                     <a href="javascript:void(0);" class="menu-link">
-                        <i class="menu-icon fa-light fa-certificate"></i>
-                        <div data-i18n="Certificates">Certificates</div>
-                     </a>
-                  </li>
-                  <li class="menu-header">
-                     <span class="menu-header-text">Performance</span>
-                  </li>
-                  <li class="menu-item">
-                     <a href="javascipt:void(0)" class="menu-link">
-                        <i class="menu-icon fa-regular fa-chart-bar"></i>
-                        <div data-i18n="My Stats">My Stats</div>
-                     </a>
-                  </li>
+               <!-- Search Small Screens -->
+               <div class="navbar-search-wrapper search-input-wrapper d-none">
+                  <input type="text" class="form-control search-input container-xxl border-0" placeholder="Search..." aria-label="Search..." />
+                  <i class="menu-icon bx bx-x bx-sm search-toggler cursor-pointer"></i>
+               </div>
+            </nav>
 
-                  <li class="menu-item">
-                     <a href="javascipt:void(0)" class="menu-link">
-                        <i class="menu-icon fa-light fa-trophy"></i>
-                        <div data-i18n="Achievements">Achievements</div>
-                     </a>
-                  </li>
-                  <li class="menu-item">
-                     <a href="javascipt:void(0)" class="menu-link">
-                        <i class="menu-icon fa-thin fa-medal"></i>
-                        <div data-i18n="Badges">Badges</div>
-                     </a>
-                  </li>
-                  <li class="menu-header">
-                     <span class="menu-header-text">Account</span>
-                  </li>
-                  <li class="menu-item">
-                     <a href="javascipt:void(0)" class="menu-link">
-                        <i class="menu-icon fa-light fa-user-gear"></i>
-                        <div data-i18n="Profile Settings">Profile Settings</div>
-                     </a>
-                  </li>
-                  <li class="menu-item">
-                     <a href="javascipt:void(0)" class="menu-link">
-                        <i class="menu-icon fa-light fa-bell"></i>
-                        <div data-i18n="Notifications">Notifications</div>
-                     </a>
-                  </li>
-                  <li class="menu-item">
-                     <a href="javascipt:void(0)" class="menu-link">
-                        <i class="menu-icon fa-thin fa-headset"></i>
-                        <div data-i18n="Support">Support</div>
-                     </a>
-                  </li>
-               </ul>
-            </aside>
-            <!-- / Menu -->
+            <!-- / Navbar -->
 
-            <!-- Layout container -->
-            <div class="layout-page">
-               <!-- Navbar -->
+            <!-- Content wrapper -->
+            <div class="content-wrapper">
+               <!-- Content -->
 
-               <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached bg-navbar-theme flex-gap user-header flex-row-reverse" id="layout-navbar">
-                  <div class="navbar-nav-right d-flex align-items-md-center align-items-start gap-1" id="navbar-collapse">
-                     <div class="flex-gap gap-lg-3 order-1 user-content">
-                        <div class="nav-item dropdown-notifications navbar-dropdown dropdown order-xl-0 order-1">
-                           <a class="nav-link dropdown-toggle flat-icon hide-arrow p-1" href="javascript:void(0);" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                              <i class="green fa-solid fa-bell"></i>
-                           </a>
-                           <ul class="dropdown-menu dropdown-menu-end py-0">
-                              <li class="dropdown-menu-header border-bottom">
-                                 <div class="dropdown-header d-flex align-items-center py-3">
-                                    <h4 class="text-body mb-0 me-auto gray-1000">Notification</h4>
-                                    <a href="javascript:void(0)" class="dropdown-notifications-all text-body" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Mark all as read" data-bs-original-title="Mark all as read"><i class="bx fs-4 bx-envelope-open"></i></a>
-                                 </div>
-                              </li>
-                              <li class="dropdown-notifications-list scrollable-container ps ps--active-y">
-                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item list-group-item-action dropdown-notifications-item">
-                                       <div class="d-flex">
-                                          <div class="flex-shrink-0 me-3">
-                                             <div class="avatar">
-                                                <img src="../assets/img/custom/user-1.png" alt="" class="w-px-40 h-auto rounded-circle" />
-                                             </div>
-                                          </div>
-                                          <div class="flex-grow-1">
-                                             <h6 class="mb-1 gray-1000">Congratulation Lettie 🎉</h6>
-                                             <p class="mb-0 gra-800">Won the monthly best seller gold badge</p>
-                                             <small class="text-muted">1h ago</small>
-                                          </div>
+               <div class="container-xxl flex-grow-1">
+                  <div class="main-wrapper section-space">
+                     <div class="row">
+                        <div class="col-12">
+                           <div class="card-bg">
+                              <div class="flex-between">
+                                 <div class="left-content">
+                                    <div class="flex-gap-start lg-gap">
+                                       <div class="image lg-size">
+                                          <img src="../assets/img/custom/boy-1.png" alt="User" />
                                        </div>
-                                    </li>
-                                    <li class="list-group-item list-group-item-action dropdown-notifications-item">
-                                       <div class="d-flex">
-                                          <div class="flex-shrink-0 me-3">
-                                             <div class="avatar">
-                                                <span class="avatar-initial rounded-circle bg-primary">CF</span>
+                                       <div class="content">
+                                          <div class="text mb-lg-3 mb-2">
+                                             <h1>Good Morning, Marcus!</h1>
+                                             <p class="mt-1 font-14">Ready to continue your kitchen safety journey?</p>
+                                          </div>
+                                          <div class="flex-gap xl-gap user-about">
+                                             <div class="flex-gap sm-gap">
+                                                <i class="fa-solid green fa-calendar-check"></i>
+                                                <p>Last login: Today, 8:30 Am</p>
                                              </div>
-                                          </div>
-                                          <div class="flex-grow-1">
-                                             <h6 class="mb-1 gray-1000">Charles Franklin</h6>
-                                             <p class="mb-0 gray-800">Accepted your connection</p>
-                                             <small class="text-muted">12hr ago</small>
-                                          </div>
-                                       </div>
-                                    </li>
-                                 </ul>
-                                 <div class="ps__rail-x" style="left: 0px; bottom: -86px">
-                                    <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px"></div>
-                                 </div>
-                                 <div class="ps__rail-y" style="top: 86px; right: 0px; height: 480px">
-                                    <div class="ps__thumb-y" tabindex="0" style="top: 41px; height: 228px"></div>
-                                 </div>
-                              </li>
-                              <li class="dropdown-menu-footer border-top">
-                                 <a href="javascript:void(0);" class="dropdown-item d-flex justify-content-center p-3"> View all notifications </a>
-                              </li>
-                           </ul>
-                        </div>
-                        <div class="vertical-rule d-xl-block d-none"></div>
-                        <div class="nav-item navbar-dropdown dropdown-user dropdown">
-                           <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
-                              <div class="flex-gap lg-gap">
-                                 <div class="image md-size">
-                                    <img src="../assets/img/custom/boy-1.png" alt="User" />
-                                 </div>
-                                 <div class="text">
-                                    <h4 class="gray-800">Downtown Franchise</h4>
-                                    <p>Manager Dashboard</p>
-                                 </div>
-                              </div>
-                           </a>
-                           <ul class="dropdown-menu dropdown-menu-end">
-                              <li>
-                                 <a class="dropdown-item" href="javascript:void(0)">
-                                    <i class="bx bx-user me-2 green"></i>
-                                    <span class="align-middle">My Profile</span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a class="dropdown-item" href="javascript:void(0)">
-                                    <i class="bx bx-cog me-2 green"></i>
-                                    <span class="align-middle">Settings</span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a class="dropdown-item" href="javascript:void(0)">
-                                    <span class="d-flex align-items-center align-middle">
-                                       <i class="flex-shrink-0 bx bx-credit-card me-2 green"></i>
-                                       <span class="flex-grow-1 align-middle">Billing</span>
-                                    </span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <div class="divider-rule"></div>
-                              </li>
-                              <li>
-                                 <a class="dropdown-item" href="javascript:void(0)">
-                                    <i class="bx bx-support me-2 green"></i>
-                                    <span class="align-middle">Help</span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a class="dropdown-item" href="javascript:void(0)">
-                                    <i class="bx bx-help-circle me-2 green"></i>
-                                    <span class="align-middle">FAQ</span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a class="dropdown-item" href="javascript:void(0)">
-                                    <i class="bx bx-dollar me-2 green"></i>
-                                    <span class="align-middle">Pricing</span>
-                                 </a>
-                              </li>
-                              <li>
-                                 <div class="divider-rule"></div>
-                              </li>
-                              <li>
-                                 <a class="dropdown-item" href="javascript:void(0)">
-                                    <i class="bx bx-power-off me-2 green"></i>
-                                    <span class="align-middle">Log Out</span>
-                                 </a>
-                              </li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div class="layout-menu-toggle align-items-xl-center d-xl-none">
-                        <a class="nav-item nav-link p-0" href="javascript:void(0)">
-                           <i class="menu-icon bx bx-menu bx-sm"></i>
-                        </a>
-                     </div>
-                  </div>
-
-                  <div class="user-menu flex-between flex-grow-1">
-                     <!-- heading-->
-                     <div class="navbar-nav flex-between flex-grow-1">
-                        <form action="javascript:void()" class="search-field cust-width">
-                           <input class="form-control" id="src-icon" placeholder="Search training modules..." aria-label="Search" />
-                           <label for="src-icon" class="src-bar">
-                              <i class="fa-solid fa-magnifying-glass"></i>
-                           </label>
-                        </form>
-                        <div class="btn-badges flex-gap">
-                           <span class="lg-badge lg-skyblue-badge"><i class="fa-solid fa-fire"></i>7 Day Streak</span>
-                           <span class="lg-badge"><i class="fa-solid fa-star"></i>Level 12</span>
-                        </div>
-                     </div>
-                  </div>
-
-                  <!-- Search Small Screens -->
-                  <div class="navbar-search-wrapper search-input-wrapper d-none">
-                     <input type="text" class="form-control search-input container-xxl border-0" placeholder="Search..." aria-label="Search..." />
-                     <i class="menu-icon bx bx-x bx-sm search-toggler cursor-pointer"></i>
-                  </div>
-               </nav>
-
-               <!-- / Navbar -->
-
-               <!-- Content wrapper -->
-               <div class="content-wrapper">
-                  <!-- Content -->
-
-                  <div class="container-xxl flex-grow-1">
-                     <div class="main-wrapper section-space">
-                        <div class="row">
-                           <div class="col-12">
-                              <div class="card-bg">
-                                 <div class="flex-between">
-                                    <div class="left-content">
-                                       <div class="flex-gap-start lg-gap flex-wrap">
-                                          <div class="image lg-size">
-                                             <img src="../assets/img/custom/boy-1.png" alt="User" />
-                                          </div>
-                                          <div class="content">
-                                             <div class="text mb-3">
-                                                <h1>Good Morning, Marcus!</h1>
-                                                <p class="mt-1 font-14">Ready to continue your kitchen safety journey?</p>
-                                             </div>
-                                             <div class="flex-gap gap-md-4 flex-wrap gap-2">
-                                                <div class="flex-gap sm-gap">
-                                                   <i class="fa-solid green fa-calendar-check"></i>
-                                                   <p>Last login: Today, 8:30 Am</p>
-                                                </div>
-                                                <div class="flex-gap sm-gap">
-                                                   <i class="fa-solid green fa-calendar-check"></i>
-                                                   <p>Training role: Kitchen Staff Level 2</p>
-                                                </div>
+                                             <div class="flex-gap sm-gap">
+                                                <i class="fa-solid green fa-calendar-check"></i>
+                                                <p>Training role: Kitchen Staff Level 2</p>
                                              </div>
                                           </div>
                                        </div>
                                     </div>
-                                    <div class="lg-badge white column-flex gap-1 box-badge">
-                                       <i class="fa-solid fa-fire"></i>
-                                       <h2 class="font-24 mt-1">7 Days</h2>
-                                       <p>Training Streak</p>
+                                 </div>
+                                 <div class="lg-badge white column-flex gap-1 box-badge">
+                                    <i class="fa-solid fa-fire"></i>
+                                    <h2 class="font-24 mt-1">7 Days</h2>
+                                    <p>Training Streak</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-12">
+                           <div class="card-wrapper row-gx row-gy">
+                              <div class="row">
+                                 <!-- card  -->
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="card-bg">
+                                       <div class="cust-icon">
+                                          <i class="fa-solid fa-chart-line"></i>
+                                       </div>
+                                       <div class="highlight text mt-xl-4 mt-3">
+                                          <span>Overall Progress</span>
+                                          <h3>78%</h3>
+                                          <p class="green">+ 12% this week</p>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <!-- card  -->
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="card-bg">
+                                       <div class="cust-icon">
+                                          <i class="fa-solid fa-play"></i>
+                                       </div>
+                                       <div class="highlight text mt-xl-4 mt-3">
+                                          <span>Videos Completed</span>
+                                          <h3>24/30</h3>
+                                          <p class="green">6 remaining</p>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <!-- card  -->
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="card-bg">
+                                       <div class="cust-icon">
+                                          <i class="fa-solid fa-circle-question"></i>
+                                       </div>
+                                       <div class="highlight text mt-xl-4 mt-3">
+                                          <span>Quiz Average</span>
+                                          <h3>92%</h3>
+                                          <p class="green">Excellent!</p>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <!-- card  -->
+                                 <div class="col-lg-3 col-md-6">
+                                    <div class="card-bg">
+                                       <div class="cust-icon">
+                                          <i class="fa-solid fa-vr-cardboard"></i>
+                                       </div>
+                                       <div class="highlight text mt-xl-4 mt-3">
+                                          <span>VR Sessions</span>
+                                          <h3>78%</h3>
+                                          <p class="green">+ 12% this week</p>
+                                       </div>
                                     </div>
                                  </div>
                               </div>
                            </div>
-                           <div class="col-12">
+                        </div>
+                        <div class="col-12">
+                           <div class="card-wrapper row-gx row-gy">
+                              <div class="row">
+                                 <div class="col-lg-6">
+                                    <div class="card-bg h-100 half-circle-graph">
+                                       <div class="inner-title margin-bottom">
+                                          <h2>Training Path Progress</h2>
+                                       </div>
+                                       <div class="donut-graph">
+                                          <div class="image half-circle-graph">
+                                             <img src="../assets/img/custom/half-circle-graph.png" style="max-width: 370px; margin: auto; display: block" alt="Image" />
+                                          </div>
+                                          <div class="flex-between text">
+                                             <p class="font-26 font-weight-500">0</p>
+                                             <p class="font-26 font-weight-500">100</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-6">
+                                    <div class="card-bg h-100">
+                                       <div class="inner-title margin-bottom">
+                                          <h2>Weekly Activity</h2>
+                                       </div>
+                                       <div class="image">
+                                          <img src="../assets/img/custom/purple-graph.png" alt="Graph" />
+                                       </div>
+                                       <div class="doted-list mt-4">
+                                          <ul class="justify-content-center">
+                                             <li class="purple-dot">Training Time</li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-12">
+                           <div class="card-bg">
+                              <div class="main-title flex-between">
+                                 <h2>Next Up Due Soon</h2>
+                                 <a href="#" class="site-btn green-btn"><i class="fa-solid fa-calendar"></i>View Full Schedule</a>
+                              </div>
                               <div class="card-wrapper row-gx row-gy">
                                  <div class="row">
-                                    <!-- card  -->
-                                    <div class="col-lg-3 col-md-6">
-                                       <div class="card-bg">
-                                          <div class="cust-icon">
-                                             <i class="fa-solid fa-chart-line"></i>
+                                    <div class="col-lg-4 col-md-6">
+                                       <div class="card-border h-100">
+                                          <div class="flex-between">
+                                             <div class="cust-icon red-light-icon">
+                                                <i class="fa-solid fa-triangle-exclamation"></i>
+                                             </div>
+                                             <span class="cust-badge red-badge">Due Today</span>
                                           </div>
-                                          <div class="highlight text mt-xl-4 mt-3">
-                                             <span>Overall Progress</span>
-                                             <h3>78%</h3>
-                                             <p class="green">+ 12% this week</p>
+                                          <div class="cust-body mt-3 mb-4">
+                                             <div class="text">
+                                                <h2 class="mb-1">Fire Safety Quiz</h2>
+                                                <p>Test your knowledge on kitchen fire <br />prevention and emergency procedures.</p>
+                                             </div>
+                                             <div class="flex-gap xl-gap mt-3">
+                                                <div class="flex-gap sm-gap">
+                                                   <i class="fa-solid green fa-calendar-check"></i>
+                                                   <p>15 minutes</p>
+                                                </div>
+                                                <div class="flex-gap sm-gap">
+                                                   <i class="fa-solid fa-star green"></i>
+                                                   <p>20 points</p>
+                                                </div>
+                                             </div>
                                           </div>
-                                       </div>
-                                    </div>
-
-                                    <!-- card  -->
-                                    <div class="col-lg-3 col-md-6">
-                                       <div class="card-bg">
-                                          <div class="cust-icon">
-                                             <i class="fa-solid fa-play"></i>
-                                          </div>
-                                          <div class="highlight text mt-xl-4 mt-3">
-                                             <span>Videos Completed</span>
-                                             <h3>24/30</h3>
-                                             <p class="green">6 remaining</p>
-                                          </div>
-                                       </div>
-                                    </div>
-
-                                    <!-- card  -->
-                                    <div class="col-lg-3 col-md-6">
-                                       <div class="card-bg">
-                                          <div class="cust-icon">
-                                             <i class="fa-solid fa-circle-question"></i>
-                                          </div>
-                                          <div class="highlight text mt-xl-4 mt-3">
-                                             <span>Quiz Average</span>
-                                             <h3>92%</h3>
-                                             <p class="green">Excellent!</p>
+                                          <div class="cust-footer">
+                                             <a href="#" class="site-btn green-btn">Take Quiz Now</a>
                                           </div>
                                        </div>
                                     </div>
-
-                                    <!-- card  -->
+                                    <div class="col-lg-4 col-md-6">
+                                       <div class="card-border h-100">
+                                          <div class="flex-between">
+                                             <div class="cust-icon">
+                                                <i class="fa-solid fa-play"></i>
+                                             </div>
+                                             <span class="cust-badge orange-badge">Due Tomorrow</span>
+                                          </div>
+                                          <div class="cust-body mt-3 mb-4">
+                                             <div class="text">
+                                                <h2 class="mb-1">Knife Safety Training</h2>
+                                                <p>Learn proper knife handing techniques <br />and safety protocols.</p>
+                                             </div>
+                                             <div class="flex-gap xl-gap mt-3">
+                                                <div class="flex-gap sm-gap">
+                                                   <i class="fa-solid green fa-calendar-check"></i>
+                                                   <p>25 minutes</p>
+                                                </div>
+                                                <div class="flex-gap sm-gap">
+                                                   <i class="fa-solid fa-star green"></i>
+                                                   <p>35 points</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="cust-footer">
+                                             <a href="#" class="site-btn green-btn">Start Video</a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                       <div class="card-border h-100">
+                                          <div class="flex-between">
+                                             <div class="cust-icon">
+                                                <i class="fa-solid fa-vr-cardboard"></i>
+                                             </div>
+                                             <span class="cust-badge green-badge">Due in 3 Days</span>
+                                          </div>
+                                          <div class="cust-body mt-3 mb-4">
+                                             <div class="text">
+                                                <h2 class="mb-1">VR Emergency Response</h2>
+                                                <p>Practice emergency procedures in a <br />virtual kitchen environment.</p>
+                                             </div>
+                                             <div class="flex-gap xl-gap mt-3">
+                                                <div class="flex-gap sm-gap">
+                                                   <i class="fa-solid green fa-calendar-check"></i>
+                                                   <p>30 minutes</p>
+                                                </div>
+                                                <div class="flex-gap sm-gap">
+                                                   <i class="fa-solid fa-star green"></i>
+                                                   <p>50 points</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="cust-footer">
+                                             <a href="#" class="site-btn green-btn">Launch VR Session</a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-12">
+                           <div class="card-bg">
+                              <div class="flex-between main-title">
+                                 <h2>Recent Achievements & Badges</h2>
+                                 <a href="#" class="site-btn green-btn">View all Badges <i class="fa-solid fa-arrow-right"></i></a>
+                              </div>
+                              <div class="card-wrapper row-gx row-gy">
+                                 <div class="row">
                                     <div class="col-lg-3 col-md-6">
-                                       <div class="card-bg">
+                                       <div class="card-border h-100">
+                                          <div class="cust-icon">
+                                             <i class="fa-solid fa-fire"></i>
+                                          </div>
+                                          <div class="text mt-3 mb-3">
+                                             <h2 class="mb-1">Fire Safety Expert</h2>
+                                             <p>
+                                                Completed all fire safety <br class="d-block" />
+                                                modules with 95%+ score
+                                             </p>
+                                          </div>
+                                          <div class="cust-foot">
+                                             <span class="font-14">Earned 2 days ago</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                       <div class="card-border h-100">
+                                          <div class="cust-icon">
+                                             <i class="fa-solid fa-medal"></i>
+                                          </div>
+                                          <div class="text mt-3 mb-3">
+                                             <h2 class="mb-1">Streak Master</h2>
+                                             <p>Maintained a 7day training <br class="d-block" />streak</p>
+                                          </div>
+                                          <div class="cust-foot">
+                                             <span class="font-14">Earned today</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                       <div class="card-border h-100">
+                                          <div class="cust-icon">
+                                             <i class="fa-solid fa-graduation-cap"></i>
+                                          </div>
+                                          <div class="text mt-3 mb-3">
+                                             <h2 class="mb-1">Quick Learner</h2>
+                                             <p>Completed 5 modules in <br class="d-block" />one day</p>
+                                          </div>
+                                          <div class="cust-foot">
+                                             <span class="font-14">Earned 5 days ago</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                       <div class="card-border h-100">
                                           <div class="cust-icon">
                                              <i class="fa-solid fa-vr-cardboard"></i>
                                           </div>
-                                          <div class="highlight text mt-xl-4 mt-3">
-                                             <span>VR Sessions</span>
-                                             <h3>78%</h3>
-                                             <p class="green">+ 12% this week</p>
+                                          <div class="text mt-3 mb-3">
+                                             <h2 class="mb-1">VR Pioneer</h2>
+                                             <p>Completed first VR training <br class="d-block" />session</p>
+                                          </div>
+                                          <div class="cust-foot">
+                                             <span class="font-14">Earned 1 week ago</span>
                                           </div>
                                        </div>
                                     </div>
                                  </div>
                               </div>
                            </div>
-                           <div class="col-12">
+                        </div>
+                        <div class="col-12">
+                           <div class="card-bg">
+                              <div class="inner-title main-title">
+                                 <h2>My Training Modules</h2>
+                              </div>
                               <div class="card-wrapper row-gx row-gy">
                                  <div class="row">
-                                    <div class="col-lg-6">
-                                       <div class="card-bg h-100 half-circle-graph">
-                                          <div class="inner-title margin-bottom">
-                                             <h2>Training Path Progress</h2>
-                                          </div>
-                                          <div class="donut-graph">
-                                             <div class="image half-circle-graph">
-                                                <img src="../assets/img/custom/half-circle-graph.png" style="max-width: 370px; margin: auto; display: block" alt="Image" />
+                                    <div class="col-lg-4 col-md-6">
+                                       <div class="card-border">
+                                          <div class="row gy-lg-4 gy-3">
+                                             <div class="col-12">
+                                                <div class="flex-between">
+                                                   <h3>Video Library</h3>
+                                                   <span class="cust-badge green-badge">24/30</span>
+                                                </div>
                                              </div>
-                                             <div class="flex-between text">
-                                                <p class="font-26 font-weight-500">0</p>
-                                                <p class="font-26 font-weight-500">100</p>
+                                             <div class="col-12">
+                                                <div class="card-border flex-gap md-gap selected-card rounded-8">
+                                                   <div class="cust-icon">
+                                                      <i class="fa-solid fa-check"></i>
+                                                   </div>
+                                                   <div class="text">
+                                                      <h4>Basic Food Safety</h4>
+                                                      <p class="flex-gap mt-1">Completed <span>•</span>15 min</p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-12">
+                                                <div class="card-border flex-gap md-gap selected-card rounded-8 active">
+                                                   <div class="cust-icon">
+                                                      <i class="fa-solid fa-play"></i>
+                                                   </div>
+                                                   <div class="text">
+                                                      <h4>Knife Safety Training</h4>
+                                                      <p class="flex-gap mt-1">In progress <span>•</span>8/25 min</p>
+                                                      <div class="progress-line mt-3">
+                                                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar height-10" style="width: 40%"></div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-12">
+                                                <div class="card-border flex-gap md-gap selected-card rounded-8 disabled-card">
+                                                   <div class="cust-icon">
+                                                      <i class="fa-solid fa-lock"></i>
+                                                   </div>
+                                                   <div class="text">
+                                                      <h4>Advanced Sanitation</h4>
+                                                      <p class="flex-gap mt-1">Locked<span>•</span>20 min</p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-12">
+                                                <div>
+                                                   <a href="#" class="site-btn green-btn">Continue Learning</a>
+                                                </div>
                                              </div>
                                           </div>
                                        </div>
                                     </div>
-                                    <div class="col-lg-6">
-                                       <div class="card-bg h-100">
+                                    <div class="col-lg-4 col-md-6">
+                                       <div class="card-border h-100">
+                                          <div class="row gy-lg-4 gy-3">
+                                             <div class="col-12">
+                                                <div class="flex-between">
+                                                   <h3>Quizzes</h3>
+                                                   <span class="cust-badge green-badge">Avg: 92%</span>
+                                                </div>
+                                             </div>
+                                             <div class="col-12">
+                                                <div class="card-border flex-gap md-gap selected-card rounded-8">
+                                                   <div class="cust-icon">
+                                                      <h4 class="green">95%</h4>
+                                                   </div>
+                                                   <div class="text">
+                                                      <h4>Food Safety Quiz</h4>
+                                                      <p class="flex-gap mt-1">Passed <span>•</span>Attempt 1/3</p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-12">
+                                                <div class="card-border flex-gap md-gap selected-card rounded-8 active">
+                                                   <div class="cust-icon">
+                                                      <i class="fa-solid fa-info"></i>
+                                                   </div>
+                                                   <div class="text">
+                                                      <h4>Fire Safety Quiz</h4>
+                                                      <p class="flex-gap mt-1">Due Today <span>•</span>Not Started</p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-12">
+                                                <div class="card-border flex-gap md-gap selected-card rounded-8">
+                                                   <div class="cust-icon">
+                                                      <h4 class="green">78%</h4>
+                                                   </div>
+                                                   <div class="text">
+                                                      <h4>Equipment Safety</h4>
+                                                      <p>Retake Available</p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-12">
+                                                <div>
+                                                   <a href="#" class="site-btn green-btn">Take Quiz</a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                       <div class="card-border h-100">
+                                          <div class="row gy-lg-4 gy-3">
+                                             <div class="col-12">
+                                                <div class="flex-between">
+                                                   <h3>VR Tutorials</h3>
+                                                   <span class="cust-badge green-badge">5/8</span>
+                                                </div>
+                                             </div>
+                                             <div class="col-12">
+                                                <div class="card-border flex-gap md-gap selected-card rounded-8">
+                                                   <div class="cust-icon">
+                                                      <i class="fa-solid fa-check"></i>
+                                                   </div>
+                                                   <div class="text">
+                                                      <h4>Kitchen Layout Tour</h4>
+                                                      <p class="flex-gap mt-1">Completed <span>•</span>15 min</p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-12">
+                                                <div class="card-border flex-gap md-gap selected-card rounded-8 active">
+                                                   <div class="cust-icon">
+                                                      <i class="fa-solid fa-vr-cardboard"></i>
+                                                   </div>
+                                                   <div class="text">
+                                                      <h4>Emergency Procedures</h4>
+                                                      <p class="flex-gap mt-1">Ready to Start<span>•</span>30 min</p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-12">
+                                                <div class="card-border flex-gap md-gap selected-card rounded-8 disabled-card">
+                                                   <div class="cust-icon">
+                                                      <i class="fa-solid fa-lock"></i>
+                                                   </div>
+                                                   <div class="text">
+                                                      <h4>Advanced Sanitation</h4>
+                                                      <p>Unlocks at Level 15</p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-12">
+                                                <div>
+                                                   <a href="#" class="site-btn green-btn">Launch VR Session</a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-12">
+                           <div class="card-bg">
+                              <div class="inner-title mb-4">
+                                 <h2>Detailed Performance Statistics</h2>
+                              </div>
+                              <div class="card-wrapper row-gx row-gy">
+                                 <div class="row">
+                                    <div class="col-lg-7">
+                                       <div class="card-border h-100">
                                           <div class="inner-title margin-bottom">
-                                             <h2>Weekly Activity</h2>
+                                             <h2>Monthly Progress Trend</h2>
                                           </div>
                                           <div class="image">
-                                             <img src="../assets/img/custom/purple-graph.png" alt="Graph" />
+                                             <img src="../assets/img/custom/graph-3.png" alt="graph" />
                                           </div>
                                           <div class="doted-list mt-4">
                                              <ul class="justify-content-center">
-                                                <li class="purple-dot">Training Time</li>
+                                                <li class="purple-dot">Overall Progress</li>
+                                                <li class="brown-dot">Quiz Scores</li>
                                              </ul>
                                           </div>
                                        </div>
                                     </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-12">
-                              <div class="card-bg">
-                                 <div class="main-title flex-between">
-                                    <h2>Next Up Due Soon</h2>
-                                    <a href="#" class="site-btn green-btn"><i class="fa-solid fa-calendar"></i>View Full Schedule</a>
-                                 </div>
-                                 <div class="card-wrapper row-gx row-gy">
-                                    <div class="row">
-                                       <div class="col-lg-4 col-md-6">
-                                          <div class="card-border h-100">
+                                    <div class="col-lg-5">
+                                       <div class="card-border h-100">
+                                          <div class="inner-title margin-bottom">
+                                             <h2>Skill Development Radar</h2>
+                                          </div>
+                                          <div class="image pt-3">
+                                             <img src="../assets/img/custom/labeled-graph.png" alt="graph" />
+                                          </div>
+                                          <div class="doted-list mt-4">
+                                             <ul class="justify-content-center">
+                                                <li class="green-dot">Current Skills</li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                       <div class="card-border h-100">
+                                          <div class="cust-header">
                                              <div class="flex-between">
-                                                <div class="cust-icon red-light-icon">
-                                                   <i class="fa-solid fa-triangle-exclamation"></i>
-                                                </div>
-                                                <span class="cust-badge red-badge">Due Today</span>
+                                                <h3>Quiz Performance</h3>
                                              </div>
-                                             <div class="cust-body mt-3 mb-4">
-                                                <div class="text">
-                                                   <h2 class="mb-1">Fire Safety Quiz</h2>
-                                                   <p>Test your knowledge on kitchen fire <br />prevention and emergency procedures.</p>
-                                                </div>
-                                                <div class="flex-gap xl-gap mt-3">
-                                                   <div class="flex-gap sm-gap">
-                                                      <i class="fa-solid green fa-calendar-check"></i>
-                                                      <p>15 minutes</p>
-                                                   </div>
-                                                   <div class="flex-gap sm-gap">
-                                                      <i class="fa-solid fa-star green"></i>
-                                                      <p>20 points</p>
-                                                   </div>
-                                                </div>
+                                          </div>
+                                          <div class="cust-body mt-4">
+                                             <div class="flex-between">
+                                                <p>Food Safety</p>
+                                                <span class="font-weight-500">95% </span>
                                              </div>
-                                             <div class="cust-footer">
-                                                <a href="#" class="site-btn green-btn">Take Quiz Now</a>
+                                             <div class="flex-between mt-2 mb-2">
+                                                <p>Equipment Safety</p>
+                                                <span class="font-weight-500">78% </span>
+                                             </div>
+                                             <div class="flex-between">
+                                                <p>Hygiene Standards</p>
+                                                <span class="font-weight-500">92% </span>
+                                             </div>
+                                             <div class="flex-between mt-2">
+                                                <p>Emergency Procedures</p>
+                                                <span class="font-weight-500">88% </span>
                                              </div>
                                           </div>
                                        </div>
-                                       <div class="col-lg-4 col-md-6">
-                                          <div class="card-border h-100">
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                       <div class="card-border h-100">
+                                          <div class="cust-header">
                                              <div class="flex-between">
-                                                <div class="cust-icon">
-                                                   <i class="fa-solid fa-play"></i>
-                                                </div>
-                                                <span class="cust-badge orange-badge">Due Tomorrow</span>
+                                                <h3>Time Spent Learning</h3>
                                              </div>
-                                             <div class="cust-body mt-3 mb-4">
-                                                <div class="text">
-                                                   <h2 class="mb-1">Knife Safety Training</h2>
-                                                   <p>Learn proper knife handing techniques <br />and safety protocols.</p>
-                                                </div>
-                                                <div class="flex-gap xl-gap mt-3">
-                                                   <div class="flex-gap sm-gap">
-                                                      <i class="fa-solid green fa-calendar-check"></i>
-                                                      <p>25 minutes</p>
-                                                   </div>
-                                                   <div class="flex-gap sm-gap">
-                                                      <i class="fa-solid fa-star green"></i>
-                                                      <p>35 points</p>
-                                                   </div>
-                                                </div>
+                                          </div>
+                                          <div class="cust-body mt-4">
+                                             <div class="flex-between">
+                                                <p>This Week</p>
+                                                <span class="font-weight-500">4h 32m</span>
                                              </div>
-                                             <div class="cust-footer">
-                                                <a href="#" class="site-btn green-btn">Start Video</a>
+                                             <div class="flex-between mt-2 mb-2">
+                                                <p>Last Week</p>
+                                                <span class="font-weight-500">3h 45m</span>
+                                             </div>
+                                             <div class="flex-between">
+                                                <p>Monthly Average</p>
+                                                <span class="font-weight-500">3h 12m</span>
+                                             </div>
+                                             <div class="flex-between mt-2">
+                                                <p>Total Hours</p>
+                                                <span class="font-weight-500">47h 23m</span>
                                              </div>
                                           </div>
                                        </div>
-                                       <div class="col-lg-4 col-md-6">
-                                          <div class="card-border h-100">
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                       <div class="card-border h-100">
+                                          <div class="cust-header">
                                              <div class="flex-between">
-                                                <div class="cust-icon">
-                                                   <i class="fa-solid fa-vr-cardboard"></i>
-                                                </div>
-                                                <span class="cust-badge green-badge">Due in 3 Days</span>
+                                                <h3>Upcoming Deadlines</h3>
                                              </div>
-                                             <div class="cust-body mt-3 mb-4">
+                                          </div>
+                                          <div class="cust-body mt-4">
+                                             <div class="flex-between">
                                                 <div class="text">
-                                                   <h2 class="mb-1">VR Emergency Response</h2>
-                                                   <p>Practice emergency procedures in a <br />virtual kitchen environment.</p>
+                                                   <p>Fire Safety Quiz</p>
+                                                   <span class="red-600 font-12">Due Today</span>
                                                 </div>
-                                                <div class="flex-gap xl-gap mt-3">
-                                                   <div class="flex-gap sm-gap">
-                                                      <i class="fa-solid green fa-calendar-check"></i>
-                                                      <p>30 minutes</p>
-                                                   </div>
-                                                   <div class="flex-gap sm-gap">
-                                                      <i class="fa-solid fa-star green"></i>
-                                                      <p>50 points</p>
-                                                   </div>
-                                                </div>
+                                                <i class="fa-solid fa-triangle-exclamation red-600"></i>
                                              </div>
-                                             <div class="cust-footer">
-                                                <a href="#" class="site-btn green-btn">Launch VR Session</a>
+                                             <div class="flex-between mt-2 mb-2">
+                                                <div class="text">
+                                                   <p>Knife Safety Video</p>
+                                                   <span class="orange-600 font-12">Due Tomorrow </span>
+                                                </div>
+                                                <i class="fa-solid fa-clock orange-600"></i>
+                                             </div>
+                                             <div class="flex-between">
+                                                <div class="text">
+                                                   <p>VR Emergency Response</p>
+                                                   <span class="font-12">Due in 3 days</span>
+                                                </div>
+                                                <i class="fa-solid fa-calendar green"></i>
                                              </div>
                                           </div>
                                        </div>
@@ -558,235 +917,80 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="col-12">
-                              <div class="card-bg">
-                                 <div class="flex-between main-title">
-                                    <h2>Recent Achievements & Badges</h2>
-                                    <a href="#" class="site-btn green-btn">View all Badges <i class="fa-solid fa-arrow-right"></i></a>
-                                 </div>
-                                 <div class="card-wrapper row-gx row-gy">
-                                    <div class="row">
-                                       <div class="col-lg-3 col-md-6">
-                                          <div class="card-border h-100">
-                                             <div class="cust-icon">
-                                                <i class="fa-solid fa-fire"></i>
-                                             </div>
-                                             <div class="text mt-3 mb-3">
-                                                <h2 class="mb-1">Fire Safety Expert</h2>
-                                                <p>
-                                                   Completed all fire safety <br class="d-block" />
-                                                   modules with 95%+ score
-                                                </p>
-                                             </div>
-                                             <div class="cust-foot">
-                                                <span class="font-14">Earned 2 days ago</span>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-3 col-md-6">
-                                          <div class="card-border h-100">
+                        </div>
+                        <div class="col-12">
+                           <div class="card-bg">
+                              <div class="main-title flex-between">
+                                 <h2>Certificate & Credentials</h2>
+                                 <a href="#" class="site-btn green-btn"><i class="fa-solid fa-download"></i>Download All</a>
+                              </div>
+                              <div class="card-wrapper row-gy row-gx">
+                                 <div class="row">
+                                    <div class="col-lg-4 col-md-6">
+                                       <div class="card-border h-100">
+                                          <div class="cust-header">
                                              <div class="cust-icon">
                                                 <i class="fa-solid fa-medal"></i>
                                              </div>
-                                             <div class="text mt-3 mb-3">
-                                                <h2 class="mb-1">Streak Master</h2>
-                                                <p>Maintained a 7day training <br class="d-block" />streak</p>
-                                             </div>
-                                             <div class="cust-foot">
-                                                <span class="font-14">Earned today</span>
+                                             <div class="text mt-3">
+                                                <h2>Food Safety Certificaton</h2>
+                                                <p>Level 1 Complete</p>
                                              </div>
                                           </div>
+                                          <div class="cust-body">
+                                             <div class="flex-between mt-3 mb-3">
+                                                <p>Issued: March 15, 2024</p>
+                                                <span class="cust-badge green-badge">Valid</span>
+                                             </div>
+                                             <p>Demonstrates comprehensive <br />understanding of food safety protocols <br />and HACCP principles.</p>
+                                          </div>
+                                          <div class="cust-foot mt-4">
+                                             <a href="#" class="site-btn green-btn">Download Certificate</a>
+                                          </div>
                                        </div>
-                                       <div class="col-lg-3 col-md-6">
-                                          <div class="card-border h-100">
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                       <div class="card-border h-100">
+                                          <div class="cust-header">
                                              <div class="cust-icon">
-                                                <i class="fa-solid fa-graduation-cap"></i>
+                                                <i class="fa-solid fa-medal"></i>
                                              </div>
-                                             <div class="text mt-3 mb-3">
-                                                <h2 class="mb-1">Quick Learner</h2>
-                                                <p>Completed 5 modules in <br class="d-block" />one day</p>
-                                             </div>
-                                             <div class="cust-foot">
-                                                <span class="font-14">Earned 5 days ago</span>
+                                             <div class="text mt-3">
+                                                <h2>Kitchen Safety Export</h2>
+                                                <p>Advanced Level</p>
                                              </div>
                                           </div>
-                                       </div>
-                                       <div class="col-lg-3 col-md-6">
-                                          <div class="card-border h-100">
-                                             <div class="cust-icon">
-                                                <i class="fa-solid fa-vr-cardboard"></i>
+                                          <div class="cust-body">
+                                             <div class="flex-between mt-3 mb-3">
+                                                <p>Issued: March 10, 2024</p>
+                                                <span class="cust-badge green-badge">Valid</span>
                                              </div>
-                                             <div class="text mt-3 mb-3">
-                                                <h2 class="mb-1">VR Pioneer</h2>
-                                                <p>Completed first VR training <br class="d-block" />session</p>
-                                             </div>
-                                             <div class="cust-foot">
-                                                <span class="font-14">Earned 1 week ago</span>
-                                             </div>
+                                             <p>
+                                                Advanced certification in kitchen safety <br />procedures and emergency response <br />
+                                                protocols.
+                                             </p>
+                                          </div>
+                                          <div class="cust-foot mt-4">
+                                             <a href="#" class="site-btn green-btn">Download Certificate</a>
                                           </div>
                                        </div>
                                     </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-12">
-                              <div class="card-bg">
-                                 <div class="inner-title main-title">
-                                    <h2>My Training Modules</h2>
-                                 </div>
-                                 <div class="card-wrapper row-gx row-gy">
-                                    <div class="row">
-                                       <div class="col-lg-4 col-md-6">
-                                          <div class="card-border">
-                                             <div class="row gy-4">
-                                                <div class="col-12">
-                                                   <div class="flex-between">
-                                                      <h3>Video Library</h3>
-                                                      <span class="cust-badge green-badge">24/30</span>
-                                                   </div>
-                                                </div>
-                                                <div class="col-12">
-                                                   <div class="card-border flex-gap md-gap selected-card rounded-8">
-                                                      <div class="cust-icon">
-                                                         <i class="fa-solid fa-check"></i>
-                                                      </div>
-                                                      <div class="text">
-                                                         <h4>Basic Food Safety</h4>
-                                                         <p class="flex-gap mt-1">Completed <span>•</span>15 min</p>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                                <div class="col-12">
-                                                   <div class="card-border flex-gap md-gap selected-card rounded-8 active">
-                                                      <div class="cust-icon">
-                                                         <i class="fa-solid fa-play"></i>
-                                                      </div>
-                                                      <div class="text">
-                                                         <h4>Knife Safety Training</h4>
-                                                         <p class="flex-gap mt-1">In progress <span>•</span>8/25 min</p>
-                                                         <div class="progress-line mt-3">
-                                                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                               <div class="progress-bar height-10" style="width: 40%"></div>
-                                                            </div>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                                <div class="col-12">
-                                                   <div class="card-border flex-gap md-gap selected-card rounded-8 disabled-card">
-                                                      <div class="cust-icon">
-                                                         <i class="fa-solid fa-lock"></i>
-                                                      </div>
-                                                      <div class="text">
-                                                         <h4>Advanced Sanitation</h4>
-                                                         <p class="flex-gap mt-1">Locked<span>•</span>20 min</p>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                                <div class="col-12">
-                                                   <div>
-                                                      <a href="#" class="site-btn green-btn">Continue Learning</a>
-                                                   </div>
-                                                </div>
+                                    <div class="col-lg-4 col-md-6">
+                                       <div class="card-border text-center h-100 dashed-border flex-center">
+                                          <div class="inner-wrapper">
+                                             <div class="cust-icon cust-md-icon">
+                                                <i class="fa-solid fa-chart-bar"></i>
                                              </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-4 col-md-6">
-                                          <div class="card-border h-100">
-                                             <div class="row gy-4">
-                                                <div class="col-12">
-                                                   <div class="flex-between">
-                                                      <h3>Quizzes</h3>
-                                                      <span class="cust-badge green-badge">Avg: 92%</span>
-                                                   </div>
-                                                </div>
-                                                <div class="col-12">
-                                                   <div class="card-border flex-gap md-gap selected-card rounded-8">
-                                                      <div class="cust-icon">
-                                                         <h4 class="green">95%</h4>
-                                                      </div>
-                                                      <div class="text">
-                                                         <h4>Food Safety Quiz</h4>
-                                                         <p class="flex-gap mt-1">Passed <span>•</span>Attempt 1/3</p>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                                <div class="col-12">
-                                                   <div class="card-border flex-gap md-gap selected-card rounded-8 active">
-                                                      <div class="cust-icon">
-                                                         <i class="fa-solid fa-info"></i>
-                                                      </div>
-                                                      <div class="text">
-                                                         <h4>Fire Safety Quiz</h4>
-                                                         <p class="flex-gap mt-1">Due Today <span>•</span>NOt Started</p>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                                <div class="col-12">
-                                                   <div class="card-border flex-gap md-gap selected-card rounded-8">
-                                                      <div class="cust-icon">
-                                                         <h4 class="green">78%</h4>
-                                                      </div>
-                                                      <div class="text">
-                                                         <h4>Equipment Safety</h4>
-                                                         <p>Retake Available</p>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                                <div class="col-12">
-                                                   <div>
-                                                      <a href="#" class="site-btn green-btn">Take Quiz</a>
-                                                   </div>
-                                                </div>
+                                             <div class="text mt-4 mb-4">
+                                                <h2 class="mb-1">Next Certificate</h2>
+                                                <p>Complete 3 more modules to earn your <br />equipment mastery certificate.</p>
                                              </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-4 col-md-6">
-                                          <div class="card-border h-100">
-                                             <div class="row gy-4">
-                                                <div class="col-12">
-                                                   <div class="flex-between">
-                                                      <h3>VR Tutorials</h3>
-                                                      <span class="cust-badge green-badge">5/8</span>
+                                             <div class="cust-foot mt-4">
+                                                <div class="progress-line">
+                                                   <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      <div class="progress-bar" style="width: 40%"></div>
                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                   <div class="card-border flex-gap md-gap selected-card rounded-8">
-                                                      <div class="cust-icon">
-                                                         <i class="fa-solid fa-check"></i>
-                                                      </div>
-                                                      <div class="text">
-                                                         <h4>Kitchen Layout Tour</h4>
-                                                         <p class="flex-gap mt-1">Completed <span>•</span>15 min</p>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                                <div class="col-12">
-                                                   <div class="card-border flex-gap md-gap selected-card rounded-8 active">
-                                                      <div class="cust-icon">
-                                                         <i class="fa-solid fa-vr-cardboard"></i>
-                                                      </div>
-                                                      <div class="text">
-                                                         <h4>Emergency Procedures</h4>
-                                                         <p class="flex-gap mt-1">Ready to Start<span>•</span>30 min</p>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                                <div class="col-12">
-                                                   <div class="card-border flex-gap md-gap selected-card rounded-8 disabled-card">
-                                                      <div class="cust-icon">
-                                                         <i class="fa-solid fa-lock"></i>
-                                                      </div>
-                                                      <div class="text">
-                                                         <h4>Advanced Sanitation</h4>
-                                                         <p>Unlocks at Level 15</p>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                                <div class="col-12">
-                                                   <div>
-                                                      <a href="#" class="site-btn green-btn">Launch VR Session</a>
-                                                   </div>
+                                                   <p class="text-center mt-3">60% Complete</p>
                                                 </div>
                                              </div>
                                           </div>
@@ -795,358 +999,148 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="col-12">
-                              <div class="card-bg">
-                                 <div class="inner-title mb-4">
-                                    <h2>Detailed Performance Statistics</h2>
-                                 </div>
-                                 <div class="card-wrapper row-gx row-gy">
-                                    <div class="row">
-                                       <div class="col-lg-7">
-                                          <div class="card-border h-100">
-                                             <div class="inner-title margin-bottom">
-                                                <h2>Monthly Progress Trend</h2>
-                                             </div>
-                                             <div class="image">
-                                                <img src="../assets/img/custom/graph-3.png" alt="graph" />
-                                             </div>
-                                             <div class="doted-list mt-4">
-                                                <ul class="justify-content-center">
-                                                   <li class="purple-dot">Overall Progress</li>
-                                                   <li class="brown-dot">Quiz Scores</li>
-                                                </ul>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-5">
-                                          <div class="card-border h-100">
-                                             <div class="inner-title margin-bottom">
-                                                <h2>Skill Development Radar</h2>
-                                             </div>
-                                             <div class="image pt-3">
-                                                <img src="../assets/img/custom/labeled-graph.png" alt="graph" />
-                                             </div>
-                                             <div class="doted-list mt-4">
-                                                <ul class="justify-content-center">
-                                                   <li class="green-dot">Current Skills</li>
-                                                </ul>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-4 col-md-6">
-                                          <div class="card-border h-100">
-                                             <div class="cust-header">
-                                                <div class="flex-between">
-                                                   <h3>Quiz Performance</h3>
-                                                </div>
-                                             </div>
-                                             <div class="cust-body mt-4">
-                                                <div class="flex-between">
-                                                   <p>Food Safety</p>
-                                                   <span class="font-weight-500">95% </span>
-                                                </div>
-                                                <div class="flex-between mt-2 mb-2">
-                                                   <p>Equipment Safety</p>
-                                                   <span class="font-weight-500">78% </span>
-                                                </div>
-                                                <div class="flex-between">
-                                                   <p>Hygiene Standards</p>
-                                                   <span class="font-weight-500">92% </span>
-                                                </div>
-                                                <div class="flex-between mt-2">
-                                                   <p>Emergency Procedures</p>
-                                                   <span class="font-weight-500">88% </span>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-4 col-md-6">
-                                          <div class="card-border h-100">
-                                             <div class="cust-header">
-                                                <div class="flex-between">
-                                                   <h3>Time Spent Learning</h3>
-                                                </div>
-                                             </div>
-                                             <div class="cust-body mt-4">
-                                                <div class="flex-between">
-                                                   <p>This Week</p>
-                                                   <span class="font-weight-500">4h 32m</span>
-                                                </div>
-                                                <div class="flex-between mt-2 mb-2">
-                                                   <p>Last Week</p>
-                                                   <span class="font-weight-500">3h 45m</span>
-                                                </div>
-                                                <div class="flex-between">
-                                                   <p>Monthly Average</p>
-                                                   <span class="font-weight-500">3h 12m</span>
-                                                </div>
-                                                <div class="flex-between mt-2">
-                                                   <p>Total Hours</p>
-                                                   <span class="font-weight-500">47h 23m</span>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-4 col-md-6">
-                                          <div class="card-border h-100">
-                                             <div class="cust-header">
-                                                <div class="flex-between">
-                                                   <h3>Upcoming Deadlines</h3>
-                                                </div>
-                                             </div>
-                                             <div class="cust-body mt-4">
-                                                <div class="flex-between">
-                                                   <div class="text">
-                                                      <p>Fire Safety Quiz</p>
-                                                      <span class="red-600 font-12">Due Today</span>
-                                                   </div>
-                                                   <i class="fa-solid fa-triangle-exclamation red-600"></i>
-                                                </div>
-                                                <div class="flex-between mt-2 mb-2">
-                                                   <div class="text">
-                                                      <p>Knife Safety Video</p>
-                                                      <span class="orange-600 font-12">Due Tomorrow </span>
-                                                   </div>
-                                                   <i class="fa-solid fa-clock orange-600"></i>
-                                                </div>
-                                                <div class="flex-between">
-                                                   <div class="text">
-                                                      <p>VR Emergency Response</p>
-                                                      <span class="font-12">Due in 3 days</span>
-                                                   </div>
-                                                   <i class="fa-solid fa-calendar green"></i>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
+                        </div>
+                        <div class="col-12">
+                           <div class="card-bg">
+                              <div class="main-title margin-bottom">
+                                 <h2>Profile Settings</h2>
                               </div>
-                           </div>
-                           <div class="col-12">
-                              <div class="card-bg">
-                                 <div class="main-title flex-between">
-                                    <h2>Certificate & Credentials</h2>
-                                    <a href="#" class="site-btn green-btn"><i class="fa-solid fa-download"></i>Download All</a>
-                                 </div>
+                              <form action="javascript:void(0)" class="submit-form row-gx label-space">
                                  <div class="card-wrapper row-gy row-gx">
                                     <div class="row">
-                                       <div class="col-lg-4 col-md-6">
-                                          <div class="card-border h-100">
-                                             <div class="cust-header">
-                                                <div class="cust-icon">
-                                                   <i class="fa-solid fa-medal"></i>
+                                       <div class="col-lg-6">
+                                          <div class="card-border row-gx h-100">
+                                             <div class="row gy-lg-4 gy-3">
+                                                <div class="col-12">
+                                                   <div class="inner-title">
+                                                      <h2>Personal Information</h2>
+                                                   </div>
                                                 </div>
-                                                <div class="text mt-3">
-                                                   <h2>Food Safety Certificaton</h2>
-                                                   <p>Level 1 Complete</p>
-                                                </div>
-                                             </div>
-                                             <div class="cust-body">
-                                                <div class="flex-between mt-3 mb-3">
-                                                   <p>Issued: March 15, 2024</p>
-                                                   <span class="cust-badge green-badge">Valid</span>
-                                                </div>
-                                                <p>Demonstrates comprehensive <br />understanding of food safety protocols <br />and HACCP principles.</p>
-                                             </div>
-                                             <div class="cust-foot mt-4">
-                                                <a href="#" class="site-btn green-btn">Download Certificate</a>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-4 col-md-6">
-                                          <div class="card-border h-100">
-                                             <div class="cust-header">
-                                                <div class="cust-icon">
-                                                   <i class="fa-solid fa-medal"></i>
-                                                </div>
-                                                <div class="text mt-3">
-                                                   <h2>Kitchen Safety Export</h2>
-                                                   <p>Advanced Level</p>
-                                                </div>
-                                             </div>
-                                             <div class="cust-body">
-                                                <div class="flex-between mt-3 mb-3">
-                                                   <p>Issued: March 10, 2024</p>
-                                                   <span class="cust-badge green-badge">Valid</span>
-                                                </div>
-                                                <p>
-                                                   Advanced certification in kitchen safety <br />procedures and emergency response <br />
-                                                   protocols.
-                                                </p>
-                                             </div>
-                                             <div class="cust-foot mt-4">
-                                                <a href="#" class="site-btn green-btn">Download Certificate</a>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="col-lg-4 col-md-6">
-                                          <div class="card-border text-center h-100 dashed-border flex-center">
-                                             <div class="inner-wrapper">
-                                                <div class="cust-icon cust-md-icon">
-                                                   <i class="fa-solid fa-chart-bar"></i>
-                                                </div>
-                                                <div class="text mt-4 mb-4">
-                                                   <h2 class="mb-1">Next Certificate</h2>
-                                                   <p>Complete 3 more modules to earn your <br />equipment mastery certificate.</p>
-                                                </div>
-                                                <div class="cust-foot mt-4">
-                                                   <div class="progress-line">
-                                                      <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                         <div class="progress-bar" style="width: 40%"></div>
+                                                <div class="col-12">
+                                                   <div class="main-image position-relative d-inline-block">
+                                                      <div class="user-dp">
+                                                         <img src="../assets/img/custom/profile-pic.jpg" class="rounded-12" alt="Display Photo" />
                                                       </div>
-                                                      <p class="text-center mt-3">60% Complete</p>
+                                                      <div class="img-selection">
+                                                         <input type="file" id="open-gallery" hidden />
+                                                         <label for="open-gallery"><i class="fa-solid green fa-pen-to-square"></i></label>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                   <div class="form-group">
+                                                      <label for="first-name">First Name</label>
+                                                      <input type="text" id="first-name" placeholder="Marcus" class="form-control" />
+                                                   </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                   <div class="form-group">
+                                                      <label for="last-name">Last Name</label>
+                                                      <input type="text" id="last-name" placeholder="Johnson" class="form-control" />
+                                                   </div>
+                                                </div>
+                                                <div class="col-12">
+                                                   <div class="form-group">
+                                                      <label for="email-address">Email Address</label>
+                                                      <input type="email" id="email-address" placeholder="marcus.johnson@kitchenguard.com" class="form-control" />
+                                                   </div>
+                                                </div>
+                                                <div class="col-12">
+                                                   <div class="form-group">
+                                                      <label for="retraining-alert">Retraining Alerts </label>
+                                                      <input type="text" id="retraining-alert" placeholder="+1(555) 123-4567" class="form-control" />
+                                                   </div>
+                                                </div>
+                                                <div class="col-12">
+                                                   <div class="form-group">
+                                                      <label for="traning-role">Training Role</label>
+                                                      <input type="text" id="traning-role" placeholder="Kitchen Staff Level 2" class="form-control" disabled />
+                                                   </div>
+                                                </div>
+                                                <div class="col-12">
+                                                   <div class="form-group mt-4">
+                                                      <button class="site-btn green-btn w-100">Update Profile</button>
                                                    </div>
                                                 </div>
                                              </div>
                                           </div>
                                        </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-12">
-                              <div class="card-bg">
-                                 <div class="main-title margin-bottom">
-                                    <h2>Profile Settings</h2>
-                                 </div>
-                                 <form action="javascript:void(0)" class="submit-form row-gx label-space">
-                                    <div class="card-wrapper row-gy row-gx">
-                                       <div class="row">
-                                          <div class="col-lg-6">
-                                             <div class="card-border row-gx h-100">
-                                                <div class="row gy-4">
-                                                   <div class="col-12">
-                                                      <div class="inner-title">
-                                                         <h2>Personal Information</h2>
-                                                      </div>
-                                                   </div>
-                                                   <div class="col-12">
-                                                      <div class="main position-relative d-inline-block mb-2">
-                                                         <div class="user-dp">
-                                                            <img src="../assets/img/custom/profile-pic.jpg" class="w-auto rounded-12" alt="Display Photo" />
+                                       <div class="col-lg-6">
+                                          <div class="card-wrapper row-gy h-100">
+                                             <div class="row">
+                                                <div class="col-12">
+                                                   <div class="card-border">
+                                                      <div class="row gy-lg-4 gy-3">
+                                                         <div class="col-12">
+                                                            <div class="inner-title">
+                                                               <h2>Security Settings</h2>
+                                                            </div>
                                                          </div>
-                                                         <div class="img-selection">
-                                                            <input type="file" id="open-gallery" hidden />
-                                                            <label for="open-gallery"><i class="fa-solid green fa-pen-to-square"></i></label>
+                                                         <div class="col-12">
+                                                            <div class="form-group">
+                                                               <label for="current-password">Current Password </label>
+                                                               <input type="password" id="current-password" placeholder="Enter current password" class="form-control" />
+                                                            </div>
                                                          </div>
-                                                      </div>
-                                                   </div>
-                                                   <div class="col-md-6">
-                                                      <div class="form-group">
-                                                         <label for="first-name">First Name</label>
-                                                         <input type="text" id="first-name" placeholder="Marcus" class="form-control" />
-                                                      </div>
-                                                   </div>
-                                                   <div class="col-md-6">
-                                                      <div class="form-group">
-                                                         <label for="last-name">Last Name</label>
-                                                         <input type="text" id="last-name" placeholder="Johnson" class="form-control" />
-                                                      </div>
-                                                   </div>
-                                                   <div class="col-12">
-                                                      <div class="form-group">
-                                                         <label for="email-address">Email Address</label>
-                                                         <input type="email" id="email-address" placeholder="marcus.johnson@kitchenguard.com" class="form-control" />
-                                                      </div>
-                                                   </div>
-                                                   <div class="col-12">
-                                                      <div class="form-group">
-                                                         <label for="retraining-alert">Retraining Alerts </label>
-                                                         <input type="text" id="retraining-alert" placeholder="+1(555) 123-4567" class="form-control" />
-                                                      </div>
-                                                   </div>
-                                                   <div class="col-12">
-                                                      <div class="form-group">
-                                                         <label for="traning-role">Training Role</label>
-                                                         <input type="text" id="traning-role" placeholder="Kitchen Staff Level 2" class="form-control" disabled />
-                                                      </div>
-                                                   </div>
-                                                   <div class="col-12">
-                                                      <div class="form-group mt-4">
-                                                         <button class="site-btn green-btn w-100">Update Profile</button>
+                                                         <div class="col-12">
+                                                            <div class="form-group">
+                                                               <label for="new-password">New Password </label>
+                                                               <input type="password" id="new-password" placeholder="Enter new password" class="form-control" />
+                                                            </div>
+                                                         </div>
+                                                         <div class="col-12">
+                                                            <div class="form-group">
+                                                               <label for="comfirm-new-password">Confirm New Password </label>
+                                                               <input type="password" id="comfirm-new-password" placeholder="Confirm new password" class="form-control" />
+                                                            </div>
+                                                         </div>
+                                                         <div class="col-12">
+                                                            <div class="form-group">
+                                                               <button class="site-btn green-btn w-100">Update Password</button>
+                                                            </div>
+                                                         </div>
                                                       </div>
                                                    </div>
                                                 </div>
-                                             </div>
-                                          </div>
-                                          <div class="col-lg-6">
-                                             <div class="card-wrapper row-gy h-100">
-                                                <div class="row">
-                                                   <div class="col-12">
-                                                      <div class="card-border">
-                                                         <div class="row gy-4">
-                                                            <div class="col-12">
-                                                               <div class="inner-title">
-                                                                  <h2>Security Settings</h2>
-                                                               </div>
-                                                            </div>
-                                                            <div class="col-12">
-                                                               <div class="form-group">
-                                                                  <label for="current-password">Current Password </label>
-                                                                  <input type="password" id="current-password" placeholder="Enter current password" class="form-control" />
-                                                               </div>
-                                                            </div>
-                                                            <div class="col-12">
-                                                               <div class="form-group">
-                                                                  <label for="new-password">New Password </label>
-                                                                  <input type="password" id="new-password" placeholder="Enter new password" class="form-control" />
-                                                               </div>
-                                                            </div>
-                                                            <div class="col-12">
-                                                               <div class="form-group">
-                                                                  <label for="comfirm-new-password">Confirm New Password </label>
-                                                                  <input type="password" id="comfirm-new-password" placeholder="Confirm new password" class="form-control" />
-                                                               </div>
-                                                            </div>
-                                                            <div class="col-12">
-                                                               <div class="form-group">
-                                                                  <button class="site-btn green-btn w-100">Update Password</button>
-                                                               </div>
+                                                <div class="col-12">
+                                                   <div class="card-border">
+                                                      <div class="row gy-lg-4 gy-3">
+                                                         <div class="col-12">
+                                                            <div class="inner-title">
+                                                               <h2>Notification Preferences</h2>
                                                             </div>
                                                          </div>
-                                                      </div>
-                                                   </div>
-                                                   <div class="col-12">
-                                                      <div class="card-border">
-                                                         <div class="row gy-4">
-                                                            <div class="col-12">
-                                                               <div class="inner-title">
-                                                                  <h2>Notification Preferences</h2>
-                                                               </div>
+                                                         <div class="col-12">
+                                                            <div class="form-check form-switch toggle-btn ps-0 flex-between">
+                                                               <label class="form-check-label mb-0" for="compliance-mode">
+                                                                  <div class="text">
+                                                                     <h4>Email Notifications</h4>
+                                                                     <p>Receive training updates via email</p>
+                                                                  </div>
+                                                               </label>
+                                                               <input class="form-check-input" type="checkbox" role="switch" id="compliance-mode" checked="" />
                                                             </div>
-                                                            <div class="col-12">
-                                                               <div class="form-check form-switch toggle-btn ps-0 flex-between">
-                                                                  <label class="form-check-label mb-0" for="compliance-mode">
-                                                                     <div class="text">
-                                                                        <h4>Email Notifications</h4>
-                                                                        <p>Receive training updates via email</p>
-                                                                     </div>
-                                                                  </label>
-                                                                  <input class="form-check-input" type="checkbox" role="switch" id="compliance-mode" checked="" />
-                                                               </div>
+                                                         </div>
+                                                         <div class="col-12">
+                                                            <div class="form-check form-switch toggle-btn ps-0 flex-between">
+                                                               <label class="form-check-label mb-0" for="preference">
+                                                                  <div class="text">
+                                                                     <h4>SMS Notifications</h4>
+                                                                     <p>Receive urgent updates via SMS</p>
+                                                                  </div>
+                                                               </label>
+                                                               <input class="form-check-input" type="checkbox" role="switch" id="preference" />
                                                             </div>
-                                                            <div class="col-12">
-                                                               <div class="form-check form-switch toggle-btn ps-0 flex-between">
-                                                                  <label class="form-check-label mb-0" for="preference">
-                                                                     <div class="text">
-                                                                        <h4>SMS Notifications</h4>
-                                                                        <p>Receive urgent updates via SMS</p>
-                                                                     </div>
-                                                                  </label>
-                                                                  <input class="form-check-input" type="checkbox" role="switch" id="preference" />
-                                                               </div>
-                                                            </div>
-                                                            <div class="col-12">
-                                                               <div class="form-check form-switch toggle-btn ps-0 flex-between">
-                                                                  <label class="form-check-label mb-0" for="auto-clear">
-                                                                     <div class="text">
-                                                                        <h4>Push Notifications</h4>
-                                                                        <p>Browser push notifications</p>
-                                                                     </div>
-                                                                  </label>
-                                                                  <input class="form-check-input" type="checkbox" role="switch" id="auto-clear" checked="" />
-                                                               </div>
+                                                         </div>
+                                                         <div class="col-12">
+                                                            <div class="form-check form-switch toggle-btn ps-0 flex-between">
+                                                               <label class="form-check-label mb-0" for="auto-clear">
+                                                                  <div class="text">
+                                                                     <h4>Push Notifications</h4>
+                                                                     <p>Browser push notifications</p>
+                                                                  </div>
+                                                               </label>
+                                                               <input class="form-check-input" type="checkbox" role="switch" id="auto-clear" checked="" />
                                                             </div>
                                                          </div>
                                                       </div>
@@ -1156,131 +1150,133 @@
                                           </div>
                                        </div>
                                     </div>
-                                 </form>
-                              </div>
+                                 </div>
+                              </form>
                            </div>
                         </div>
                      </div>
                   </div>
-                  <!-- Footer -->
-                  <footer class="content-footer footer mb-4 custmize-footer">
-                     <div class="container-xxl">
-                        <div class="wrapper card-bg">
-                           <div class="row justify-content-between gy-lg-0 gy-4">
-                              <div class="col-lg-4">
-                                 <div class="text">
-                                    <a href="index.html">
-                                       <div class="footer-logo">
-                                          <img src="../assets/img/custom/logo.svg" alt="Logo" />
-                                       </div>
-                                    </a>
-                                    <p>Empowering kitchen professionals <br />with comprehensive safety training <br />and certification programs.</p>
-                                    <div class="social-links flex-gap">
-                                       <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                       <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                       <a href="#"><i class="fa-brands fa-twitter"></i></a>
+               </div>
+               <!-- Footer -->
+               <footer class="content-footer footer mb-4 custmize-footer">
+                  <div class="container-xxl">
+                     <div class="wrapper card-bg">
+                        <div class="row justify-content-between gy-lg-0 gy-4">
+                           <div class="col-lg-4">
+                              <div class="text">
+                                 <a href="index.html">
+                                    <div class="footer-logo">
+                                       <img src="../assets/img/custom/logo.svg" alt="Logo" />
                                     </div>
-                                 </div>
-                              </div>
-                              <div class="col-lg-auto">
-                                 <div class="footer-list">
-                                    <h3>Quick Links</h3>
-                                    <ul>
-                                       <li>
-                                          <a href="#">Dashboard</a>
-                                       </li>
-                                       <li>
-                                          <a href="#">My Training</a>
-                                       </li>
-                                       <li>
-                                          <a href="#">Certificates </a>
-                                       </li>
-                                       <li>
-                                          <a href="#">Progress Report</a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                              <div class="col-lg-auto">
-                                 <div class="footer-list">
-                                    <h3>Support</h3>
-                                    <ul>
-                                       <li>
-                                          <a href="#">Help Center </a>
-                                       </li>
-                                       <li>
-                                          <a href="#">Technical Support </a>
-                                       </li>
-                                       <li>
-                                          <a href="#">Contact Us </a>
-                                       </li>
-                                       <li>
-                                          <a href="#">System Status</a>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                              <div class="col-lg-auto">
-                                 <div class="footer-list v2">
-                                    <h3>Contact Info</h3>
-                                    <ul>
-                                       <li>
-                                          <a href="#" class="flex-gap"><i class="fa-solid fa-location-dot"></i>24/7 Support Available</a>
-                                       </li>
-                                       <li>
-                                          <a href="#" class="flex-gap"><i class="fa-solid fa-phone"></i>1-800-Kitchen</a>
-                                       </li>
-                                       <li>
-                                          <a href="#" class="flex-gap"><i class="fa-solid fa-envelope"></i>Support@kitchenguard.com</a>
-                                       </li>
-                                    </ul>
+                                 </a>
+                                 <p>Empowering kitchen professionals <br />with comprehensive safety training <br />and certification programs.</p>
+                                 <div class="social-links flex-gap">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
                                  </div>
                               </div>
                            </div>
-                           <div class="divider-rule"></div>
-                           <div class="bottom-text text-center">
-                              <p><a href="index.html">Copyright © 2024 Kitchen Guard Training Platform</a>. All rights reserved.</p>
+                           <div class="col-lg-auto">
+                              <div class="footer-list">
+                                 <h3>Quick Links</h3>
+                                 <ul>
+                                    <li>
+                                       <a href="#">Dashboard</a>
+                                    </li>
+                                    <li>
+                                       <a href="#">My Training</a>
+                                    </li>
+                                    <li>
+                                       <a href="#">Certificates </a>
+                                    </li>
+                                    <li>
+                                       <a href="#">Progress Report</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="col-lg-auto">
+                              <div class="footer-list">
+                                 <h3>Support</h3>
+                                 <ul>
+                                    <li>
+                                       <a href="#">Help Center </a>
+                                    </li>
+                                    <li>
+                                       <a href="#">Technical Support </a>
+                                    </li>
+                                    <li>
+                                       <a href="#">Contact Us </a>
+                                    </li>
+                                    <li>
+                                       <a href="#">System Status</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="col-lg-auto">
+                              <div class="footer-list v2">
+                                 <h3>Contact Info</h3>
+                                 <ul>
+                                    <li>
+                                       <a href="#" class="flex-gap"><i class="fa-solid fa-location-dot"></i>24/7 Support Available</a>
+                                    </li>
+                                    <li>
+                                       <a href="#" class="flex-gap"><i class="fa-solid fa-phone"></i>1-800-Kitchen</a>
+                                    </li>
+                                    <li>
+                                       <a href="#" class="flex-gap"><i class="fa-solid fa-envelope"></i>Support@kitchenguard.com</a>
+                                    </li>
+                                 </ul>
+                              </div>
                            </div>
                         </div>
+                        <div class="divider-rule"></div>
+                        <div class="bottom-text text-center">
+                           <p><a href="index.html">Copyright © 2024 Kitchen Guard Training Platform</a>. All rights reserved.</p>
+                        </div>
                      </div>
-                  </footer>
-               </div>
+                  </div>
+               </footer>
             </div>
-            <!-- / Footer -->
-
-            <div class="content-backdrop fade"></div>
          </div>
-         <!-- Content wrapper -->
+         <!-- / Footer -->
+
+         <div class="content-backdrop fade"></div>
       </div>
+      <!-- Content wrapper -->
+   </div>
 
-      <!-- Overlay -->
-      <div class="layout-overlay layout-menu-toggle"></div>
+   <!-- Overlay -->
+   <div class="layout-overlay layout-menu-toggle"></div>
 
-      <!-- / Layout wrapper -->
+   <!-- / Layout wrapper -->
 
-      <!-- Core JS -->
-      <!-- build:js assets/vendor/js/core.js -->
-      <script src="../assets/vendor/libs/jquery/jquery.js"></script>
-      <script src="../assets/vendor/libs/popper/popper.js"></script>
-      <script src="../assets/vendor/js/bootstrap.js"></script>
-      <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+   <!-- Core JS -->
+   <!-- build:js assets/vendor/js/core.js -->
+   <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+   <script src="../assets/vendor/libs/popper/popper.js"></script>
+   <script src="../assets/vendor/js/bootstrap.js"></script>
+   <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
-      <script src="../assets/vendor/libs/hammer/hammer.js"></script>
-      <script src="../assets/vendor/libs/i18n/i18n.js"></script>
-      <script src="../assets/vendor/libs/typeahead-js/typeahead.js"></script>
+   <script src="../assets/vendor/libs/hammer/hammer.js"></script>
+   <script src="../assets/vendor/libs/i18n/i18n.js"></script>
+   <script src="../assets/vendor/libs/typeahead-js/typeahead.js"></script>
 
-      <script src="../assets/vendor/js/menu.js"></script>
-      <!-- endbuild -->
+   <script src="../assets/vendor/js/menu.js"></script>
+   <!-- endbuild -->
 
-      <!-- Vendors JS -->
-      <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
-      <script src="../assets/vendor/libs/chartjs/chartjs.js"></script>
+   <!-- Vendors JS -->
+   <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+   <script src="../assets/vendor/libs/chartjs/chartjs.js"></script>
 
-      <!-- Main JS -->
-      <script src="../assets/js/main.js"></script>
+   <!-- Main JS -->
+   <script src="../assets/js/main.js"></script>
 
-      <!-- Page JS -->
-      <script src="../assets/js/dashboards-crm.js"></script>
-      <script src="../assets/js/charts-custmize.js"></script>
-   </body>
+   <!-- Page JS -->
+   <script src="../assets/js/dashboards-crm.js"></script>
+   <script src="../assets/js/charts-custmize.js"></script>
+</body>
+
 </html>
