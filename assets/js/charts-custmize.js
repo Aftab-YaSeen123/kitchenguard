@@ -829,7 +829,7 @@ if (completionRates) {
                max: 100,
                ticks: {
                   stepSize: 50,
-                  color: '#999'
+                  color: '#535353'
                },
                grid: {
                   drawBorder: false,
@@ -860,7 +860,6 @@ if (quizPerformance) {
             {
                data: [100, 78, 68, 65, 72, 78, 78, 78],
                backgroundColor: '#98d045',
-               borderRadius: 8,
                borderSkipped: false,
                barPercentage: 0.9,
                borderRadius: {
@@ -960,14 +959,15 @@ if (certificationProgress) {
             },
             x: {
                grid: { display: false },
-               ticks: { color: '#999' }
+               ticks: { color: '#535353' }
             }
          }
       }
    });
 }
+
 // bar chart 6
-const learningVelocity = document.getElementById('learningVelocity').getContext('2d');
+const learningVelocity = document.getElementById('learningVelocity');
 if (learningVelocity) {
    new Chart(learningVelocity, {
       type: 'bar',
@@ -999,7 +999,7 @@ if (learningVelocity) {
                grid: { display: false },
                border: { display: false },
                ticks: {
-                  color: '#999',
+                  color: '#535353',
                   font: {
                      size: 14,
                      weight: '500'
@@ -1008,6 +1008,100 @@ if (learningVelocity) {
             }
          },
          events: []
+      }
+   });
+}
+
+// bar chart 7
+const completionForecast = document.getElementById('completionForecast');
+if (completionForecast) {
+   new Chart(completionForecast, {
+      type: 'bar',
+      data: {
+         labels: ['Field Tech', 'Kitchen Cleaner', 'Supervisor'],
+         datasets: [
+            {
+               label: 'Metric 1',
+               data: [100, 95, 62],
+               backgroundColor: '#800080',
+               barPercentage: 0.8,
+               categoryPercentage: function () {
+                  return window.innerWidth <= 992 ? 0.5 : 0.3;
+               },
+               borderRadius: {
+                  topLeft: 6,
+                  topRight: 6,
+                  bottomLeft: 0,
+                  bottomRight: 0
+               }
+            },
+            {
+               label: 'Metric 2',
+               data: [92, 88, 58],
+               backgroundColor: '#9C8847',
+               barPercentage: 0.8,
+               categoryPercentage: function () {
+                  return window.innerWidth <= 992 ? 0.5 : 0.3;
+               },
+               borderRadius: {
+                  topLeft: 6,
+                  topRight: 6,
+                  bottomLeft: 0,
+                  bottomRight: 0
+               }
+            },
+            {
+               label: 'Metric 3',
+               data: [92, 88, 54],
+               backgroundColor: '#133F5C',
+               borderRadius: 5,
+               barPercentage: 0.8,
+               categoryPercentage: function () {
+                  return window.innerWidth <= 992 ? 0.5 : 0.3;
+               },
+               borderRadius: {
+                  topLeft: 6,
+                  topRight: 6,
+                  bottomLeft: 0,
+                  bottomRight: 0
+               }
+            }
+         ]
+      },
+      options: {
+         plugins: {
+            legend: { display: false }
+         },
+         scales: {
+            y: {
+               beginAtZero: true,
+               max: 120,
+               ticks: {
+                  stepSize: 20
+               },
+               grid: {
+                  color: '#C0BEBE',
+                  drawBorder: false
+               }
+            },
+            x: {
+               grid: {
+                  display: false
+               },
+               font: {
+                  size: 20
+               },
+               ticks: {
+                  display: function (context) {
+                     return context.chart.width > 768;
+                  },
+                  color: '#535353',
+                  font: {
+                     size: 16
+                  }
+               }
+            }
+         }
       }
    });
 }

@@ -59,6 +59,23 @@
          .max-height-300 {
             max-height: 300px;
          }
+
+         .font-22 {
+            font-size: 22px !important;
+         }
+
+         .chk-card input:checked + label {
+            border-color: #689522;
+            background-color: #eeffe1;
+         }
+
+         .point-start li {
+            align-items: baseline;
+         }
+
+         .h-52 {
+            height: 52px !important;
+         }
       </style>
       <!-- Layout wrapper -->
       <div class="layout-wrapper layout-content-navbar">
@@ -517,7 +534,7 @@
                            <div class="col-12">
                               <div class="card-bg">
                                  <div class="main-title flex-wrap gap-2 flex-between">
-                                    <h2>Score Distribution</h2>
+                                    <h2>Quiz Scores & Performance Analysis</h2>
                                     <h3 class="flex-gap">Average Score: <strong class="green fs-3">92%</strong></h3>
                                  </div>
                                  <div class="card-wrapper">
@@ -1169,18 +1186,420 @@
                                                 <h2>Department Rankings</h2>
                                              </div>
                                              <div class="card-body">
-                                                <div class="row">
+                                                <div class="row g-3">
+                                                   <!-- check card  -->
                                                    <div class="col-lg-6">
-                                                      <div class="form-check custom-option custom-option-image custom-option-image-radio">
-                                                         <input name="rank" class="form-check-input" type="radio" value="customRadioImg1" id="customRadioImg1" checked="" />
-                                                         <label class="form-check-label custom-option-content" for="customRadioImg1"> </label>
+                                                      <div class="chk-card">
+                                                         <input name="rank" class="form-check-input" type="radio" id="option" hidden />
+                                                         <label class="card-border w-100 py-2 rounded-8" for="option">
+                                                            <div class="flex-between">
+                                                               <p class="flex-gap"><strong class="green font-22 font-weight-500">1st</strong>Sarah Chen - 94%</p>
+                                                               <span> <i class="fa-solid fa-crown" style="color: #93d033"></i></span>
+                                                            </div>
+                                                         </label>
+                                                      </div>
+                                                   </div>
+                                                   <!-- check card  -->
+                                                   <div class="col-lg-6">
+                                                      <div class="chk-card">
+                                                         <input name="rank" class="form-check-input" type="radio" id="option2" hidden />
+                                                         <label class="card-border w-100 py-2 rounded-8" for="option2">
+                                                            <div class="flex-between">
+                                                               <p class="flex-gap"><strong class="green font-22 font-weight-500">2nd</strong>Mike Rodriguez - 85%</p>
+                                                               <span> <i class="fa-solid fa-medal" style="color: #93d033"></i></span>
+                                                            </div>
+                                                         </label>
+                                                      </div>
+                                                   </div>
+                                                   <!-- check card  -->
+                                                   <div class="col-lg-4">
+                                                      <div class="chk-card">
+                                                         <input name="rank" class="form-check-input" type="radio" id="option3" hidden checked />
+                                                         <label class="card-border w-100 py-2 rounded-8" for="option3">
+                                                            <div class="flex-between">
+                                                               <p class="flex-gap"><strong class="green font-22 font-weight-500">3rd</strong>You - 78%</p>
+                                                               <span> <i class="fa-solid fa-medal" style="color: #93d033"></i></span>
+                                                            </div>
+                                                         </label>
+                                                      </div>
+                                                   </div>
+                                                   <!-- check card  -->
+                                                   <div class="col-lg-4">
+                                                      <div class="chk-card">
+                                                         <input name="rank" class="form-check-input" type="radio" id="option4" hidden />
+                                                         <label class="card-border w-100 py-2 rounded-8" for="option4">
+                                                            <div class="flex-between">
+                                                               <p class="flex-gap"><strong class="green font-22 font-weight-500">4th</strong>Lisa Park - 72%</p>
+                                                               <span class="d-none"> <i class="fa-solid fa-medal" style="color: #93d033"></i></span>
+                                                            </div>
+                                                         </label>
+                                                      </div>
+                                                   </div>
+                                                   <!-- check card  -->
+                                                   <div class="col-lg-4">
+                                                      <div class="chk-card">
+                                                         <input name="rank" class="form-check-input" type="radio" id="option5" hidden />
+                                                         <label class="card-border w-100 py-2 rounded-8" for="option5">
+                                                            <div class="flex-between">
+                                                               <p class="flex-gap"><strong class="green font-22 font-weight-500">5th</strong>James Wilson - 68%</p>
+                                                               <span class="d-none"> <i class="fa-solid fa-medal" style="color: #93d033"></i></span>
+                                                            </div>
+                                                         </label>
                                                       </div>
                                                    </div>
                                                 </div>
                                              </div>
-                                             <div class="card-border selected-card rounded-8 active mt-4">
-                                                <h4><i class="fa-solid fa-trophy green me-1"></i> Excellent Performance!</h4>
-                                                <p class="flex-gap mt-2">You’re in the top 15% of all trainees with your quiz performance</p>
+                                             <div class="card-border selected-card rounded-8 mt-4 border-0" style="background-color: #f6f6f6">
+                                                <h4><i class="fa-solid fa-circle-info green me-1"></i> Performance Insight</h4>
+                                                <p class="flex-gap mt-2">You’re performing 12% above department average. Focus on equipment safety to reach 2nd place!</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-12">
+                              <div class="card-bg">
+                                 <div class="main-title">
+                                    <h2>Historical Performance Trends</h2>
+                                 </div>
+                                 <div class="card-wrapper">
+                                    <div class="card-border position-relative mt-4 mb-4">
+                                       <div class="inner-title mb-4">
+                                          <h3>Content Engagement Trends</h3>
+                                       </div>
+                                       <div class="rotate-text">
+                                          <p>Views / Completions</p>
+                                       </div>
+
+                                       <div class="cashChart ps-md-5 ps-4">
+                                          <canvas id="cashChart" class="chartjs"></canvas>
+                                       </div>
+                                       <div class="doted-list mt-4 flex-center gap-lg-4 gap-2">
+                                          <ul>
+                                             <li class="purple-dot">Video Views</li>
+                                             <li class="brown-dot">Quiz Attempts</li>
+                                             <li class="orange-dot">VR Sessions</li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-12">
+                              <div class="card-bg">
+                                 <div class="main-title">
+                                    <h2>Goal Tracking & Milestones</h2>
+                                 </div>
+                                 <div class="card-border">
+                                    <div class="heading mb-4">
+                                       <h2>Current Goals Progress</h2>
+                                    </div>
+                                    <div class="card-wrapper row-gx row-gy">
+                                       <div class="row">
+                                          <div class="col-lg-6">
+                                             <div class="card-border rounded-8">
+                                                <div class="flex-between">
+                                                   <p>Complete All Video Modules</p>
+                                                   <p>80%</p>
+                                                </div>
+                                                <div class="progress-line mt-3">
+                                                   <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      <div class="progress-bar height-10" style="width: 80%"></div>
+                                                   </div>
+                                                </div>
+                                                <div class="flex-between mt-2">
+                                                   <p>24 of 30 sompleted</p>
+                                                   <p>6 remaining</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-lg-6">
+                                             <div class="card-border rounded-8">
+                                                <div class="flex-between">
+                                                   <p>Achieve 95% Quiz Average</p>
+                                                   <p>92%</p>
+                                                </div>
+                                                <div class="progress-line mt-3">
+                                                   <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      <div class="progress-bar height-10" style="width: 92%"></div>
+                                                   </div>
+                                                </div>
+                                                <div class="flex-between mt-2">
+                                                   <p>Current Average: 92%</p>
+                                                   <p>3% to go</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="col-12">
+                                             <div class="card-border rounded-8">
+                                                <div class="flex-between">
+                                                   <p>Complete VR Training Path</p>
+                                                   <p>63%</p>
+                                                </div>
+                                                <div class="progress-line mt-3">
+                                                   <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      <div class="progress-bar height-10" style="width: 63%"></div>
+                                                   </div>
+                                                </div>
+                                                <div class="flex-between mt-2">
+                                                   <p>5 of 8 sessions</p>
+                                                   <p>3 remaining</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="card-border mt-4">
+                                    <div class="heading mb-4">
+                                       <h2>Achievement Milestones</h2>
+                                    </div>
+                                    <div class="card-wrapper row-gx row-gy">
+                                       <div class="row">
+                                          <div class="col-lg-6">
+                                             <div class="card-border">
+                                                <div class="flex-gap md-gap rounded-8">
+                                                   <div class="cust-icon">
+                                                      <i class="fa-solid fa-check"></i>
+                                                   </div>
+                                                   <div class="text">
+                                                      <h4>First Week Complete</h4>
+                                                      <p class="flex-gap mt-1">Completed your first week of training</p>
+                                                   </div>
+                                                </div>
+                                                <p class="green mt-2">Achieved March 1, 2024</p>
+                                             </div>
+                                          </div>
+                                          <div class="col-lg-6">
+                                             <div class="card-border">
+                                                <div class="flex-gap md-gap rounded-8">
+                                                   <div class="cust-icon">
+                                                      <i class="fa-solid fa-check"></i>
+                                                   </div>
+                                                   <div class="text">
+                                                      <h4>Quiz Master</h4>
+                                                      <p class="flex-gap mt-1 flex-wrap">Scored 90% <span>•</span>on 5 consecutive quizzes</p>
+                                                   </div>
+                                                </div>
+                                                <p class="green mt-2">Achieved March 10, 2024</p>
+                                             </div>
+                                          </div>
+                                          <div class="col-lg-6">
+                                             <div class="card-border">
+                                                <div class="flex-gap md-gap rounded-8">
+                                                   <div class="cust-icon">
+                                                      <i class="fa-solid fa-check"></i>
+                                                   </div>
+                                                   <div class="text">
+                                                      <h4>VR Explorer</h4>
+                                                      <p class="flex-gap mt-1">Completed your first VR training session</p>
+                                                   </div>
+                                                </div>
+                                                <p class="green mt-2">Achieved March 8, 2024</p>
+                                             </div>
+                                          </div>
+                                          <div class="col-lg-6">
+                                             <div class="card-border">
+                                                <div class="flex-gap md-gap rounded-8">
+                                                   <div class="cust-icon">
+                                                      <i class="fa-solid fa-circle-question"></i>
+                                                   </div>
+                                                   <div class="text">
+                                                      <h4>Perfect Month</h4>
+                                                      <p class="flex-gap mt-1">Complete all training for 30 days</p>
+                                                   </div>
+                                                </div>
+                                                <p class="green mt-2">7 days remaining</p>
+                                             </div>
+                                          </div>
+                                          <div class="col-12">
+                                             <div class="card-border flex-between flex-wrap gap-2">
+                                                <div class="flex-gap md-gap rounded-8">
+                                                   <div class="cust-icon">
+                                                      <i class="fa-solid fa-check"></i>
+                                                   </div>
+                                                   <div class="text">
+                                                      <h4>Training Champion</h4>
+                                                      <p class="flex-gap mt-1">Reach top position in department</p>
+                                                   </div>
+                                                </div>
+                                                <p class="flex-gap mt-2 flex-wrap green">Requires 85% <span>•</span>overall score</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-12">
+                              <div class="card-bg">
+                                 <div class="card-wrapper row-gx row-gy">
+                                    <div class="main-title">
+                                       <h2>Predictive Analytics & Recommendations</h2>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-12">
+                                          <div class="card-border h-100">
+                                             <div class="heading mb-4">
+                                                <h2>Completion Forecast</h2>
+                                             </div>
+                                             <div class="completionForecast">
+                                                <canvas id="completionForecast" class="chartjs max-height-300"></canvas>
+                                             </div>
+                                             <div class="doted-list mt-4 flex-center gap-lg-4 gap-2">
+                                                <ul>
+                                                   <li class="purple-dot">Completed</li>
+                                                   <li class="brown-dot">InProgress</li>
+                                                   <li class="orange-dot">Not Started</li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-12">
+                                          <div class="card-border">
+                                             <div class="main-title">
+                                                <h2>Performance Predictions</h2>
+                                             </div>
+                                             <div class="card-body">
+                                                <div class="row g-3">
+                                                   <!-- card  -->
+                                                   <div class="col-lg-6">
+                                                      <div class="card-border h-100">
+                                                         <h4 class="mb-md-4 mb-3"><i class="fa-solid fa-circle-question green me-1 font-20"></i> Next Month Projection</h4>
+                                                         <div class="row g-3">
+                                                            <div class="col-md-6">
+                                                               <div class="outline-cust-badge">
+                                                                  <h2 class="fs-2 mb-1 green">95%</h2>
+                                                                  <p>Expected Completion</p>
+                                                               </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                               <div class="outline-cust-badge">
+                                                                  <h2 class="fs-2 mb-1 green">94%</h2>
+                                                                  <p>Predicted Quiz Average</p>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-lg-6">
+                                                      <div class="card-border h-100">
+                                                         <h4 class="mb-3"><i class="fa-solid fa-circle-question green me-1 font-20"></i> AI Recommendations</h4>
+                                                         <div class="point-list font-16 point-start">
+                                                            <ul>
+                                                               <li>Focus on equipment safety modules to improve week areas</li>
+                                                               <li>Schedule VR sessions during morning hours for better retentions</li>
+                                                               <li>Review fire safety quiz before retaking for better score</li>
+                                                            </ul>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-lg-6">
+                                                      <div class="card-border p-3">
+                                                         <div class="flex-gap md-gap rounded-8">
+                                                            <div class="cust-icon">
+                                                               <i class="fa-solid fa-check"></i>
+                                                            </div>
+                                                            <div class="text">
+                                                               <h4>VR Explorer</h4>
+                                                               <p class="flex-gap mt-1">Completed your first VR training session</p>
+                                                            </div>
+                                                         </div>
+                                                         <p class="green mt-2">Achieved March 8, 2024</p>
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-lg-6">
+                                                      <div class="card-border p-3">
+                                                         <div class="flex-gap md-gap rounded-8">
+                                                            <div class="cust-icon">
+                                                               <i class="fa-solid fa-circle-question"></i>
+                                                            </div>
+                                                            <div class="text">
+                                                               <h4>Perfect Month</h4>
+                                                               <p class="flex-gap mt-1">Complete all training for 30 days</p>
+                                                            </div>
+                                                         </div>
+                                                         <p class="green mt-2">7 days remaining</p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="card-border selected-card rounded-8 mt-4 border-0" style="background-color: #f6f6f6">
+                                                <h4><i class="fa-solid fa-circle-info green me-1"></i> Risk Assessment</h4>
+                                                <p class="flex-gap mt-2">Based on current progress, there’s moderate risk of missing the equipment mastery certification deadline.</p>
+                                                <div class="progress-line flex-gap mt-2">
+                                                   <div class="progress flex-grow-1" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                      <div class="progress-bar height-10" style="width: 35%"></div>
+                                                   </div>
+                                                   <p>35% Risk</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-12">
+                              <div class="card-bg">
+                                 <div class="main-title">
+                                    <h2>Performance Predictions</h2>
+                                 </div>
+                                 <div class="card-border">
+                                    <div class="heading mb-4">
+                                       <h2>Export Options</h2>
+                                    </div>
+                                    <div class="card-wrapper row-gy row-gx">
+                                       <div class="row g-3">
+                                          <div class="col-md-6">
+                                             <div class="flex-align-start rounded-8 card-border h-52 green">
+                                                <div class="flex-gap">
+                                                   <i class="fa-solid fa-file-pdf font-18"></i>
+                                                   <p class="gray-800">Export as PDF Report</p>
+                                                </div>
+                                                <button class="flat-btn"><i class="fa-solid fa-download"></i></button>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                             <div class="flex-align-start rounded-8 card-border h-52 green">
+                                                <div class="flex-gap">
+                                                   <i class="fa-solid fa-file-excel font-18"></i>
+                                                   <p class="gray-800">Export to Excel</p>
+                                                </div>
+                                                <button class="flat-btn"><i class="fa-solid fa-download"></i></button>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                             <div class="flex-align-start rounded-8 card-border h-52 green">
+                                                <div class="flex-gap">
+                                                   <i class="fa-solid fa-chart-line font-18"></i>
+                                                   <p class="gray-800">Generate Charts Package</p>
+                                                </div>
+                                                <button class="flat-btn"><i class="fa-solid fa-download"></i></button>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                             <div class="flex-align-start rounded-8 card-border h-52 green">
+                                                <div class="flex-gap">
+                                                   <i class="fa-solid fa-file-code font-18"></i>
+                                                   <p class="gray-800">Export Raw Data (JSON)</p>
+                                                </div>
+                                                <button class="flat-btn"><i class="fa-solid fa-download"></i></button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="card-wrapper mt-4 row-gy row-gx">
+                                       <div class="row">
+                                          <div class="col-12">
+                                             <div class="flex-align-start rounded-8 card-border h-52 green">
+                                                <div class="flex-gap">
+                                                   <i class="fa-solid fa-share font-18"></i>
+                                                   <p class="gray-800">Share with Supervisor</p>
+                                                </div>
+                                                <button class="flat-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></button>
                                              </div>
                                           </div>
                                        </div>
