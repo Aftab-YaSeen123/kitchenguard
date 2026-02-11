@@ -316,6 +316,7 @@ if (franchisePerformance) {
       }
    });
 }
+
 // line chart 3
 const contentEngagement = document.getElementById('contentEngagement');
 if (contentEngagement) {
@@ -464,7 +465,167 @@ if (contentEngagement) {
    });
 }
 
-// line chart 3    2 line
+//  line chart 4
+const growthChart = document.getElementById('growthChart');
+if (growthChart) {
+   new Chart(growthChart, {
+      type: 'line',
+      data: {
+         labels: ['', 'Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', ''],
+         datasets: [
+            {
+               label: 'Activity',
+               data: [1500, 3600, 2200, 1800, 3100, 2800, 1800, 1400],
+               tension: 0.5,
+               fill: true,
+               borderWidth: 1,
+               backgroundColor: context => {
+                  const bgColor = ['rgba(104, 149, 34, 0.6)', 'rgba(104, 149, 34, 0)'];
+                  if (!context.chart.chartArea) {
+                     return;
+                  }
+                  const {
+                     ctx,
+                     data,
+                     chartArea: { top, bottom }
+                  } = context.chart;
+                  const gradientBg = ctx.createLinearGradient(0, top, 0, bottom);
+                  const colorTranches = 1 / (bgColor.length - 1);
+                  // console.log(colorTranches);
+                  for (let i = 0; i < bgColor.length; i++) {
+                     gradientBg.addColorStop(0 + i * colorTranches, bgColor[i]);
+                  }
+                  return gradientBg;
+               },
+               pointRadius: [0, 0, 0, 0, 10, 0, 0],
+               pointBackgroundColor: '#7AA33E',
+               pointBorderColor: '#fff',
+               pointBorderWidth: 6,
+               pointHoverRadius: 10,
+               borderColor: '#7AA33E',
+               borderWidth: 3,
+               tension: 0.5
+            }
+         ]
+      },
+      options: {
+         plugins: {
+            legend: { display: false }
+         },
+         scales: {
+            y: {
+               beginAtZero: true,
+               max: 4000,
+               ticks: {
+                  stepSize: 1000,
+                  callback: value => (value === 0 ? 0 : value / 1000 + 'k')
+               },
+               grid: {
+                  display: false
+               }
+            },
+            x: {
+               grid: {
+                  display: true,
+                  color: '#C0BEBE',
+                  borderDash: [5, 5],
+                  drawTicks: false
+               },
+               ticks: {
+                  display: function (context) {
+                     return context.chart.width > 450;
+                  },
+                  padding: 20,
+                  color: '#535353',
+                  font: { size: 16 }
+               }
+            }
+         }
+      }
+   });
+}
+
+// line chart 5
+const peerComparison = document.getElementById('peerComparison');
+if (peerComparison) {
+   new Chart(peerComparison, {
+      type: 'line',
+      data: {
+         labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7'],
+         datasets: [
+            {
+               label: 'Activity',
+               data: [1500, 3600, 2200, 1800, 3100, 2800, 1800, 1400],
+               tension: 0.5,
+               fill: true,
+               borderWidth: 1,
+               backgroundColor: context => {
+                  const bgColor = ['rgba(104, 149, 34, 0.6)', 'rgba(104, 149, 34, 0)'];
+                  if (!context.chart.chartArea) {
+                     return;
+                  }
+                  const {
+                     ctx,
+                     data,
+                     chartArea: { top, bottom }
+                  } = context.chart;
+                  const gradientBg = ctx.createLinearGradient(0, top, 0, bottom);
+                  const colorTranches = 1 / (bgColor.length - 1);
+                  // console.log(colorTranches);
+                  for (let i = 0; i < bgColor.length; i++) {
+                     gradientBg.addColorStop(0 + i * colorTranches, bgColor[i]);
+                  }
+                  return gradientBg;
+               },
+               pointRadius: [0, 0, 0, 0, 10, 0, 0],
+               pointBackgroundColor: '#7AA33E',
+               pointBorderColor: '#fff',
+               pointBorderWidth: 6,
+               pointHoverRadius: 10,
+               borderColor: '#7AA33E',
+               borderWidth: 3,
+               tension: 0.5
+            }
+         ]
+      },
+      options: {
+         plugins: {
+            legend: { display: false }
+         },
+         scales: {
+            y: {
+               beginAtZero: true,
+               max: 4000,
+               ticks: {
+                  stepSize: 1000,
+                  callback: value => (value === 0 ? 0 : value / 1000 + 'k')
+               },
+               grid: {
+                  display: false
+               }
+            },
+            x: {
+               grid: {
+                  display: true,
+                  color: '#C0BEBE',
+                  borderDash: [5, 5],
+                  drawTicks: false
+               },
+               ticks: {
+                  display: function (context) {
+                     return context.chart.width > 768;
+                  },
+                  padding: 20,
+                  color: '#535353',
+                  font: { size: 16 }
+               }
+            }
+         }
+      }
+   });
+}
+
+// line chart 6    2 line
 const trainingPath = document.getElementById('trainingPath');
 if (trainingPath) {
    new Chart(trainingPath, {
@@ -576,7 +737,7 @@ if (trainingPath) {
    });
 }
 
-// line chart 4   2 line
+// line chart 7   2 line
 const performanceMetrics = document.getElementById('performanceMetrics');
 if (performanceMetrics) {
    new Chart(performanceMetrics, {
@@ -692,7 +853,7 @@ if (performanceMetrics) {
    });
 }
 
-// line chart 5   2 line
+// line chart 8   2 line
 const learningTimeline = document.getElementById('learningTimeline');
 if (learningTimeline) {
    new Chart(learningTimeline, {
@@ -1417,7 +1578,7 @@ if (learningVelocity) {
          },
          scales: {
             y: {
-               display: false,
+               display: true,
                beginAtZero: true
             },
             x: {
@@ -1431,8 +1592,7 @@ if (learningVelocity) {
                   }
                }
             }
-         },
-         events: []
+         }
       }
    });
 }
@@ -1753,7 +1913,7 @@ if (performanceCategory) {
                   color: '#666',
                   font: { size: 16 },
                   display: function (context) {
-                     return context.chart.width > 500;
+                     return context.chart.width > 768;
                   }
                }
             }
@@ -1761,172 +1921,6 @@ if (performanceCategory) {
          // Adjust spacing between groups
          categoryPercentage: 0.8,
          barPercentage: 0.9
-      }
-   });
-}
-
-//  line chart 1
-const growthChart = document.getElementById('growthChart');
-if (growthChart) {
-   new Chart(growthChart, {
-      type: 'line',
-      data: {
-         labels: ['', '', 'Week 1', '', 'Week 2', '', 'Week 3', '', 'Week 4', '', ''],
-         datasets: [
-            {
-               label: 'VR Scenarios',
-               data: [1500, 3200, 2300, 2450, 1800, 1600, 2850, 2700, 1900, 2000, 1300, 1400],
-               tension: 0.5,
-               fill: true,
-               borderWidth: 1,
-               // backgroundColor: "#06215C",
-               backgroundColor: context => {
-                  const bgColor = ['rgba(104, 149, 34, 0.6)', 'rgba(104, 149, 34, 0)'];
-                  if (!context.chart.chartArea) {
-                     return;
-                  }
-                  const {
-                     ctx,
-                     data,
-                     chartArea: { top, bottom }
-                  } = context.chart;
-                  const gradientBg = ctx.createLinearGradient(0, top, 0, bottom);
-                  const colorTranches = 1 / (bgColor.length - 1);
-                  // console.log(colorTranches);
-                  for (let i = 0; i < bgColor.length; i++) {
-                     gradientBg.addColorStop(0 + i * colorTranches, bgColor[i]);
-                  }
-                  return gradientBg;
-               },
-               pointRadius: context => (context.dataIndex === 6 ? 10 : 0),
-               pointBackgroundColor: '#7AA33E',
-               pointBorderColor: '#fff',
-               pointBorderWidth: 6,
-               pointHoverRadius: 10,
-               borderColor: '#7AA33E',
-               borderWidth: 3,
-               tension: 0.5
-            }
-         ]
-      },
-      options: {
-         responsive: true,
-         maintainAspectRatio: false,
-         plugins: {
-            legend: { display: false }
-         },
-         scales: {
-            y: {
-               min: 0,
-               max: 4000,
-               ticks: {
-                  stepSize: 1000,
-                  callback: value => (value === 0 ? '0' : value / 1000 + 'k'),
-                  color: '#535353',
-                  font: { size: 16 }
-               },
-               grid: { display: false },
-               border: { display: false }
-            },
-            x: {
-               ticks: {
-                  color: '#535353',
-                  font: { size: 16 },
-                  maxRotation: 0,
-                  autoSkip: false,
-                  display: function (context) {
-                     return context.chart.width > 768;
-                  }
-               },
-               grid: {
-                  drawOnChartArea: true,
-                  color: '#ddd',
-                  borderDash: [5, 5],
-                  drawTicks: false
-               },
-               border: { display: false }
-            }
-         }
-      }
-   });
-}
-
-// line chart 2
-const peerComparison = document.getElementById('peerComparison');
-if (peerComparison) {
-   new Chart(peerComparison, {
-      type: 'line',
-      data: {
-         labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7'],
-         datasets: [
-            {
-               label: 'Activity',
-               data: [1500, 3600, 2200, 1800, 3100, 2800, 1800, 1400],
-               tension: 0.5,
-               fill: true,
-               borderWidth: 1,
-               backgroundColor: context => {
-                  const bgColor = ['rgba(104, 149, 34, 0.6)', 'rgba(104, 149, 34, 0)'];
-                  if (!context.chart.chartArea) {
-                     return;
-                  }
-                  const {
-                     ctx,
-                     data,
-                     chartArea: { top, bottom }
-                  } = context.chart;
-                  const gradientBg = ctx.createLinearGradient(0, top, 0, bottom);
-                  const colorTranches = 1 / (bgColor.length - 1);
-                  // console.log(colorTranches);
-                  for (let i = 0; i < bgColor.length; i++) {
-                     gradientBg.addColorStop(0 + i * colorTranches, bgColor[i]);
-                  }
-                  return gradientBg;
-               },
-               pointRadius: [0, 0, 0, 0, 10, 0, 0],
-               pointBackgroundColor: '#7AA33E',
-               pointBorderColor: '#fff',
-               pointBorderWidth: 6,
-               pointHoverRadius: 10,
-               borderColor: '#7AA33E',
-               borderWidth: 3,
-               tension: 0.5
-            }
-         ]
-      },
-      options: {
-         plugins: {
-            legend: { display: false }
-         },
-         scales: {
-            y: {
-               beginAtZero: true,
-               max: 4000,
-               ticks: {
-                  stepSize: 1000,
-                  callback: value => (value === 0 ? 0 : value / 1000 + 'k')
-               },
-               grid: {
-                  display: false
-               }
-            },
-            x: {
-               grid: {
-                  display: true,
-                  color: '#C0BEBE',
-                  borderDash: [5, 5],
-                  drawTicks: false
-               },
-               ticks: {
-                  display: function (context) {
-                     return context.chart.width > 768;
-                  },
-                  padding: 20,
-                  color: '#535353',
-                  font: { size: 16 }
-               }
-            }
-         }
       }
    });
 }
