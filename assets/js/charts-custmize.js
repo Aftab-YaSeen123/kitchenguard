@@ -680,6 +680,122 @@ if (performanceMetrics) {
                grid: {
                   // color: "transparent",
                   borderColor: 'rgba(0, 35, 59, 0.1)'
+               },
+               ticks: {
+                  display: function (context) {
+                     return context.chart.width > 768;
+                  }
+               }
+            }
+         }
+      }
+   });
+}
+
+// line chart 5   2 line
+const learningTimeline = document.getElementById('learningTimeline');
+if (learningTimeline) {
+   new Chart(learningTimeline, {
+      type: 'line',
+      data: {
+         labels: ['Jan', 'Fab', 'Mar', 'Apr', 'May', 'Jun'],
+         datasets: [
+            {
+               label: 'Monthly Average',
+               data: [100, 70, 100, 65, 100, 80],
+               tension: 0.5,
+               fill: true,
+               borderWidth: 1,
+               backgroundColor: context => {
+                  const bgColor = ['rgba(156, 136, 71, 0.2)', 'rgba(156, 136, 71, 0)'];
+                  if (!context.chart.chartArea) {
+                     return;
+                  }
+                  const {
+                     ctx,
+                     data,
+                     chartArea: { top, bottom }
+                  } = context.chart;
+                  const gradientBg = ctx.createLinearGradient(0, top, 0, bottom);
+                  const colorTranches = 1 / (bgColor.length - 1);
+                  // console.log(colorTranches);
+                  for (let i = 0; i < bgColor.length; i++) {
+                     gradientBg.addColorStop(0 + i * colorTranches, bgColor[i]);
+                  }
+                  return gradientBg;
+               },
+               borderColor: '#689522',
+               pointRadius: 3,
+               pointHoverRadius: 6,
+               pointHoverBorderWidth: 6,
+               pointBackgroundColor: '#689522',
+               pointBorderColor: 'transparent',
+               pointHoverBackgroundColor: '#d9b6df',
+               pointHoverBorderColor: '#fff'
+            },
+
+            {
+               label: 'Trend Line',
+               data: [60, 20, 50, 20, 22, 65],
+               tension: 0.5,
+               fill: true,
+               borderWidth: 1,
+               backgroundColor: context => {
+                  const bgColor = ['rgba(220, 104, 3, 0.2)', 'rgba(220, 104, 3, 0)'];
+                  if (!context.chart.chartArea) {
+                     return;
+                  }
+                  const {
+                     ctx,
+                     data,
+                     chartArea: { top, bottom }
+                  } = context.chart;
+                  const gradientBg = ctx.createLinearGradient(0, top, 0, bottom);
+                  const colorTranches = 1 / (bgColor.length - 1);
+                  // console.log(colorTranches);
+                  for (let i = 0; i < bgColor.length; i++) {
+                     gradientBg.addColorStop(0 + i * colorTranches, bgColor[i]);
+                  }
+                  return gradientBg;
+               },
+               pointStyle: 'circle',
+               borderColor: '#DC6803',
+               pointRadius: 0.5,
+               pointBackgroundColor: '#DC6803',
+               pointRadius: 3,
+               pointHoverRadius: 4,
+               pointHoverBorderWidth: 4,
+               pointBorderColor: 'transparent',
+               pointHoverBackgroundColor: '#DC6803',
+               pointHoverBorderColor: '#fff'
+            }
+         ]
+      },
+      options: {
+         responsive: true,
+         maintainAspectRatio: false,
+         plugins: {
+            legend: {
+               display: false
+            },
+
+            datalabels: {
+               anchor: 'end',
+               align: 'end'
+            }
+         },
+         scales: {
+            y: {
+               grid: {
+                  color: 'transparent',
+                  borderColor: 'rgba(0, 35, 59, 0.1)'
+               },
+               beginAtZero: true
+            },
+            x: {
+               grid: {
+                  // color: "transparent",
+                  borderColor: 'rgba(0, 35, 59, 0.1)'
                }
             }
          }
@@ -899,6 +1015,49 @@ if (categoryProgress) {
             {
                data: [30, 15, 20, 20, 25],
                backgroundColor: ['#133F5C', '#9C8847', '#F3A533', '#800080', '#EB5F5E'],
+               borderWidth: 0,
+               cutout: '68%',
+               borderRadius: 15,
+               spacing: 10
+            }
+         ]
+      },
+      options: {
+         responsive: true,
+         maintainAspectRatio: false,
+         plugins: {
+            legend: {
+               display: false,
+               position: 'right',
+               labels: {
+                  usePointStyle: true,
+                  font: { size: 14 }
+               }
+            },
+            tooltip: {
+               callbacks: {
+                  label: function (context) {
+                     let value = context.raw.toLocaleString();
+                     return `${context.label}: $${value}`;
+                  }
+               }
+            }
+         }
+      }
+   });
+}
+
+// doughnut chart 2
+const categoryBreakdown = document.getElementById('categoryBreakdown');
+if (categoryBreakdown) {
+   new Chart(categoryBreakdown, {
+      type: 'doughnut',
+      data: {
+         labels: ['Food Safety', 'Equipment ', 'Hygiene ', 'Emergency'],
+         datasets: [
+            {
+               data: [30, 20, 25, 25],
+               backgroundColor: ['#133F5C', '#9C8847', '#F3A533', '#EB5F5E'],
                borderWidth: 0,
                cutout: '68%',
                borderRadius: 15,
@@ -1489,6 +1648,119 @@ if (vrSession) {
                }
             }
          }
+      }
+   });
+}
+
+// bar chart 10
+const questionAnalysis = document.getElementById('questionAnalysis');
+if (questionAnalysis) {
+   new Chart(questionAnalysis, {
+      type: 'bar',
+      data: {
+         labels: ['Q1-5', 'Q6-10', 'Q11-15'],
+         datasets: [
+            {
+               label: 'Completed Videos',
+               data: [90, 80, 80],
+               backgroundColor: '#800080',
+               borderRadius: 4,
+               categoryPercentage: 0.3,
+               barPercentage: 0.8
+            },
+            {
+               label: 'Target',
+               data: [80, 70, 70],
+               backgroundColor: '#9C8847',
+               borderRadius: 4,
+               categoryPercentage: 0.3,
+               barPercentage: 0.8
+            }
+         ]
+      },
+      options: {
+         responsive: true,
+         maintainAspectRatio: false,
+         plugins: {
+            legend: {
+               display: false
+            },
+
+            datalabels: {
+               anchor: 'end',
+               align: 'end'
+            }
+         },
+         scales: {
+            y: {
+               beginAtZero: true
+            },
+
+            x: {
+               categoryPercentage: 0.8, // Default is 0.8 (80%)
+               barPercentage: 0.6 // Default is 0.9 (90%)
+            }
+         }
+      }
+   });
+}
+
+// bar chart 10
+const performanceCategory = document.getElementById('performanceCategory');
+if (performanceCategory) {
+   new Chart(performanceCategory, {
+      type: 'bar',
+      data: {
+         labels: ['Food Safety', 'Equipment Safety', 'Hygiene Standards', 'Emergency Procedures', 'Chemical Safety', 'Personal Safety'],
+         datasets: [
+            {
+               label: 'Team Average',
+               data: [100, 88, 100, 100, 98, 98],
+               backgroundColor: '#a68942', // Gold/Tan
+               borderRadius: 4,
+               categoryPercentage: 0.7,
+               barPercentage: 0.8
+            },
+            {
+               label: 'Your Performance',
+               data: [92, 92, 92, 92, 88, 92],
+               backgroundColor: '#800080', // Purple
+               borderRadius: 4,
+               categoryPercentage: 0.7,
+               barPercentage: 0.8
+            }
+         ]
+      },
+      options: {
+         indexAxis: 'y', // This makes the chart horizontal
+         plugins: {
+            legend: {
+               display: false,
+               position: 'bottom',
+               labels: { usePointStyle: true, boxWidth: 10 }
+            }
+         },
+         scales: {
+            x: {
+               beginAtZero: true,
+               max: 100,
+               ticks: { stepSize: 25 },
+               grid: { color: '#C0BEBE', drawBorder: false }
+            },
+            y: {
+               grid: { display: false }, // Hide horizontal lines for clean look
+               ticks: {
+                  color: '#666',
+                  font: { size: 16 },
+                  display: function (context) {
+                     return context.chart.width > 500;
+                  }
+               }
+            }
+         },
+         // Adjust spacing between groups
+         categoryPercentage: 0.8,
+         barPercentage: 0.9
       }
    });
 }
