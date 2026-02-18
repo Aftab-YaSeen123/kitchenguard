@@ -222,7 +222,7 @@ img {
 }
 
 .green-btn:hover {
-   color: var(--primary-color);
+   color: var(--primary-color) !important;
    background-color: transparent;
    border-color: var(--primary-color);
 }
@@ -419,6 +419,10 @@ button {
    --bs-gutter-x: 12px
 }
 
+.gy-12>.row {
+   --bs-gutter-y: 12px
+}
+
 /* all-colors  */
 
 .red-600,
@@ -438,6 +442,11 @@ button {
 .green-700,
 .green-700>* {
    color: var(--green-700) !important;
+}
+
+.green-800,
+.green-800>* {
+   color: var(--green-800) !important;
 }
 
 .orange-600,
@@ -2073,7 +2082,15 @@ button {
    gap: 10px;
    background-color: var(--white);
    justify-content: space-between;
+   flex-wrap: nowrap;
+   overflow: auto;
+   white-space: nowrap;
 }
+
+.tab-wrapper .nav-tabs::-webkit-scrollbar {
+   display: none;
+}
+
 
 .tab-wrapper .nav-tabs .nav-link {
    min-width: 209px;
@@ -2097,15 +2114,6 @@ button {
 }
 
 /* profile-setting */
-.tab-wrapper .nav-tabs {
-   flex-wrap: nowrap;
-   overflow: auto;
-   white-space: nowrap;
-}
-
-.tab-wrapper .nav-tabs::-webkit-scrollbar {
-   display: none;
-}
 
 .input-icon {
    position: relative;
@@ -2181,12 +2189,23 @@ button {
 }
 
 /* reports  */
+.report-tabbing {
+   overflow: auto;
+}
+
 .report-tabbing .nav-tabs {
    display: inline-flex;
    background-color: var(--light-gray);
    border-radius: 8px;
    padding: 6px;
    gap: 5px;
+   overflow: auto;
+   white-space: nowrap;
+   flex-wrap: nowrap;
+}
+
+.report-tabbing::-webkit-scrollbar {
+   display: none;
 }
 
 .report-tabbing .nav-tabs .nav-link {
@@ -2352,6 +2371,10 @@ button {
 
    .full-video-card .video-text {
       width: 45%;
+   }
+
+   .tab-wrapper .nav-tabs .nav-link {
+      min-width: 180px;
    }
 
    /* #kitchem-guard-franchise */
