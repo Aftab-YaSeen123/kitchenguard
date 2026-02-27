@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+
+<html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../assets/" data-template="vertical-menu-template-no-customizer">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Content-Library | Kitchen Gaurd</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/custom/favicon.svg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/rtl/core.css" />
+    <link rel="stylesheet" href="../assets/vendor/css/rtl/theme-default.css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+    <link rel="stylesheet" href="../libs/fancybox/fancybox.css" />
+
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/js/config.js"></script>
+</head>
+
+<body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+        <div class="layout-container">
+            <!-- Menu -->
+
+            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+                <div class="app-brand demo">
+                    <a href="index.html" class="app-brand-link">
+                        <div class="app-brand-logo demo">
+                            <img src="../assets/img/custom/logo.svg" alt="Image" />
+                        </div>
+                    </a>
+                </div>
+
+                <ul class="menu-inner py-1">
+                    <!-- Dashboards -->
+                    <li class="menu-item">
+                        <a href="index.html" class="menu-link">
+                            <i class="menu-icon fa-light fa-gauge-high"></i>
+                            <div data-i18n="Dashboard">Dashboard</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0)" class="menu-link menu-toggle">
+                            <i class="menu-icon fa-light fa-users"></i>
+                            <div data-i18n="Team Management">Team Management</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="team-management.html" class="menu-link active">
+                                    <div data-i18n="Management">Management</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="javascript:void(0)" class="menu-link">
+                                    <div data-i18n="VR Scenarios">VR Scenarios</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0)" class="menu-link">
+                            <i class="menu-icon fa-light fa-graduation-cap"></i>
+                            <div data-i18n="Training Paths">Training Paths</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0)" class="menu-link menu-toggle">
+                            <i class="menu-icon fa-light fa-clipboard-list"></i>
+                            <div data-i18n="Assignments">Assignments</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="javascript:void(0)" class="menu-link">
+                                    <div data-i18n="Quiz Management">Quiz Management</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="javascript:void(0)" class="menu-link">
+                                    <div data-i18n="VR Scenarios">VR Scenarios</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="report.html" class="menu-link">
+                            <i class="menu-icon fa-light fa-chart-bar"></i>
+                            <div data-i18n="Reports">Reports</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="certifications.html" class="menu-link">
+                            <i class="menu-icon fa-light fa-certificate"></i>
+                            <div data-i18n="Certifications">Certifications</div>
+                        </a>
+                    </li>
+                    <li class="menu-item active">
+                        <a href="content-library.html" class="menu-link">
+                            <i class="menu-icon fa-regular fa-circle-play"></i>
+                            <div data-i18n="Content Library">Content Library</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0)" class="menu-link">
+                            <i class="menu-icon fa-regular fa-vr-cardboard"></i>
+                            <div data-i18n="VR Training">VR Training</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="settings.html" class="menu-link">
+                            <i class="menu-icon fa-light fa-gear"></i>
+                            <div data-i18n="Settings">Settings</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0)" class="menu-link">
+                            <i class="menu-icon fa-sharp fa-light fa-headset"></i>
+                            <div data-i18n="Support">Support</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0)" class="menu-link">
+                            <i class="menu-icon fa-light fa-right-from-bracket"></i>
+                            <div data-i18n="Logout">Logout</div>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <!-- / Menu -->
+
+            <!-- Layout container -->
+            <div class="layout-page">
+                <!-- Navbar  -->
+                <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached bg-navbar-theme flex-gap user-header flex-row-reverse" id="layout-navbar">
+                    <div class="navbar-nav-right d-flex align-items-md-center align-items-start gap-1" id="navbar-collapse">
+                        <div class="flex-gap gap-lg-3 order-1 user-content">
+                            <div class="nav-item dropdown-notifications navbar-dropdown dropdown order-xl-0 order-1">
+                                <a class="nav-link dropdown-toggle flat-icon hide-arrow p-1" href="javascript:void(0);" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                    <i class="green fa-solid fa-bell"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end py-0">
+                                    <li class="dropdown-menu-header border-bottom">
+                                        <div class="dropdown-header d-flex align-items-center py-3">
+                                            <h4 class="text-body mb-0 me-auto gray-1000">Notification</h4>
+                                            <a href="javascript:void(0)" class="dropdown-notifications-all text-body" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Mark all as read" data-bs-original-title="Mark all as read"><i class="bx fs-4 bx-envelope-open"></i></a>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-notifications-list scrollable-container ps ps--active-y">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                                <div class="d-flex">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <div class="avatar">
+                                                            <img src="../assets/img/custom/user-1.png" alt="" class="w-px-40 h-auto rounded-circle" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="mb-1 gray-1000">Congratulation Lettie 🎉</h6>
+                                                        <p class="mb-0 gra-800">Won the monthly best seller gold badge</p>
+                                                        <small class="text-muted">1h ago</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                                <div class="d-flex">
+                                                    <div class="flex-shrink-0 me-3">
+                                                        <div class="avatar">
+                                                            <span class="avatar-initial rounded-circle bg-primary">CF</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <h6 class="mb-1 gray-1000">Charles Franklin</h6>
+                                                        <p class="mb-0 gray-800">Accepted your connection</p>
+                                                        <small class="text-muted">12hr ago</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="ps__rail-x" style="left: 0px; bottom: -86px">
+                                            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px"></div>
+                                        </div>
+                                        <div class="ps__rail-y" style="top: 86px; right: 0px; height: 480px">
+                                            <div class="ps__thumb-y" tabindex="0" style="top: 41px; height: 228px"></div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-menu-footer border-top">
+                                        <a href="javascript:void(0);" class="dropdown-item d-flex justify-content-center p-3"> View all notifications </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="vertical-rule d-xl-block d-none"></div>
+                            <div class="nav-item navbar-dropdown dropdown-user dropdown">
+                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="flex-gap lg-gap">
+                                        <div class="image md-size">
+                                            <img src="../assets/img/custom/boy-1.png" alt="User" />
+                                        </div>
+                                        <div class="text">
+                                            <h4 class="gray-800">Downtown Franchise</h4>
+                                            <p>Manager Dashboard</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <i class="bx bx-user me-2 green"></i>
+                                            <span class="align-middle">My Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <i class="bx bx-cog me-2 green"></i>
+                                            <span class="align-middle">Settings</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <span class="d-flex align-items-center align-middle">
+                                                <i class="flex-shrink-0 bx bx-credit-card me-2 green"></i>
+                                                <span class="flex-grow-1 align-middle">Billing</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="divider-rule"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <i class="bx bx-support me-2 green"></i>
+                                            <span class="align-middle">Help</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <i class="bx bx-help-circle me-2 green"></i>
+                                            <span class="align-middle">FAQ</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <i class="bx bx-dollar me-2 green"></i>
+                                            <span class="align-middle">Pricing</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="divider-rule"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)">
+                                            <i class="bx bx-power-off me-2 green"></i>
+                                            <span class="align-middle">Log Out</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="layout-menu-toggle align-items-xl-center d-xl-none">
+                            <a class="nav-item nav-link p-0" href="javascript:void(0)">
+                                <i class="menu-icon bx bx-menu bx-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="user-menu flex-between flex-grow-1">
+                        <!-- heading-->
+                        <div class="navbar-nav flex-between flex-grow-1">
+                            <form action="javascript:void()" class="search-field cust-width">
+                                <input class="form-control" id="src-icon" placeholder="Search certificates, employees..." aria-label="Search" />
+                                <label for="src-icon" class="src-bar">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Search Small Screens -->
+                    <div class="navbar-search-wrapper search-input-wrapper d-none">
+                        <input type="text" class="form-control search-input container-xxl border-0" placeholder="Search..." aria-label="Search..." />
+                        <i class="menu-icon bx bx-x bx-sm search-toggler cursor-pointer"></i>
+                    </div>
+                </nav>
+                <!-- / Navbar -->
+
+                <!-- Content wrapper -->
+                <div class="content-wrapper py-lg-4 py-3">
+                    <!-- Content -->
+
+                    <div class="container-xxl flex-grow-1">
+                        <div class="main-wrapper section-space">
+                            <!-- title  -->
+                            <div class="flex-between main-title">
+                                <div class="heading">
+                                    <h1>Content Library</h1>
+                                    <p>Browse training videos, quizzes, and VR tutorials available <br>for your team</p>
+                                </div>
+                                <div class="btns flex-gap">
+                                    <div class="sorting-btns v2 flex-gap">
+                                        <div class="cust-icon active">
+                                            <i class="fa-solid fa-grid"></i>
+                                        </div>
+                                        <div class="cust-icon">
+                                            <i class="fa-solid fa-list"></i>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="site-btn"><i class="fa-solid fa-lightbulb"></i>Suggest Content</a>
+                                    <a href="#" class="site-btn green-btn"><i class="fa-solid fa-plus"></i>Request Addition</a>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card-bg">
+                                        <div class="filteration-row flex-gap lg-gap">
+                                            <select class="form-select cust-select flex-grow-1" aria-label="Default select example" fdprocessedid="p6etmm">
+                                                <option selected="">Content Type</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                            <select class="form-select cust-select flex-grow-1" aria-label="Default select example" fdprocessedid="7tl41">
+                                                <option selected="">Categories</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                            <select class="form-select cust-select flex-grow-1" aria-label="Default select example" fdprocessedid="7tl41">
+                                                <option selected="">Duration</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select> <select class="form-select cust-select flex-grow-1" aria-label="Default select example" fdprocessedid="7tl41">
+                                                <option selected="">Sort by</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-wrapper row-gy row-gx">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="card-bg">
+                                                    <div class="flex-gap lg-gap">
+                                                        <div class="cust-icon">
+                                                            <i class="fa-solid fa-video"></i>
+                                                        </div>
+                                                        <div class="text highlight-2">
+                                                            <span class="mt-2">Total Videos</span>
+                                                            <h3>156</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-gap green mt-4">
+                                                        <i class="fa-solid fa-circle-play"></i>
+                                                        <p>24 new this month</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="card-bg">
+                                                    <div class="flex-gap lg-gap">
+                                                        <div class="cust-icon">
+                                                            <i class="fa-solid fa-clipboard-question"></i>
+                                                        </div>
+                                                        <div class="text highlight-2">
+                                                            <span class="mt-2">Interactive Quizzes</span>
+                                                            <h3>89</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-gap green mt-4">
+                                                        <i class="fa-solid fa-circle-question"></i>
+                                                        <p>12 new this month</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="card-bg">
+                                                    <div class="flex-gap lg-gap">
+                                                        <div class="cust-icon">
+                                                            <i class="fa-solid fa-vr-cardboard"></i>
+                                                        </div>
+                                                        <div class="text highlight-2">
+                                                            <span class="mt-2">VR Experiences</span>
+                                                            <h3>34</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-gap green mt-4">
+                                                        <i class="fa-solid fa-vr-cardboard"></i>
+                                                        <p>8 new this month</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="card-bg">
+                                                    <div class="flex-gap lg-gap">
+                                                        <div class="cust-icon">
+                                                            <i class="fa-solid fa-vr-cardboard"></i>
+                                                        </div>
+                                                        <div class="text highlight-2">
+                                                            <span class="mt-2">Total Hours</span>
+                                                            <h3>287</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-gap green mt-4">
+                                                        <i class="fa-solid fa-clock"></i>
+                                                        <p>Training content</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-bg">
+                                        <div class="main-title flex-between">
+                                            <h2>Featured Training Content</h2>
+                                            <a href="#" class="site-btn">View All Featured <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                        <div class="card-wrapper row-gy row-gx">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="card-border h-100">
+                                                        <div class="flex-between">
+                                                            <div class="cust-icon">
+                                                                <i class="fa-solid fa-shield-halved"></i>
+                                                            </div>
+                                                            <div class="badges flex-gap sm-gap">
+                                                                <span class="cust-badge green-badge">New</span>
+                                                                <span class="cust-badge red-badge">VR</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text mt-3">
+                                                            <h3>Advanced Safety Protocols VR</h3>
+                                                            <p class="mt-1">Immersive virtual reality training for complex safety scenarios and <br>emergency response procedures.</p>
+                                                        </div>
+                                                        <div class="cust-body my-4">
+                                                            <div class="flex-between">
+                                                                <p>Time:</p>
+                                                                <span class="font-weight-500">25 minutes</span>
+                                                            </div>
+                                                            <div class="flex-between">
+                                                                <p>Rating:</p>
+                                                                <div class="rating-review flex-gap">
+                                                                    <div class="stars yellow">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                    </div>
+                                                                    <p class="font-weight-500">(4.9)</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cust-footer flex-gap">
+                                                            <a href="#" class="site-btn vr-cardboard flex-grow-1"><i class="fa-solid fa-vr-cardboard"></i> Launch VR Experience</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="card-border h-100">
+                                                        <div class="flex-between">
+                                                            <div class="cust-icon">
+                                                                <i class="fa-solid fa-spray-can"></i>
+                                                            </div>
+                                                            <div class="badges flex-gap sm-gap">
+                                                                <span class="cust-badge green-700-badge">Popular</span>
+                                                                <span class="cust-badge orange-badge">Video</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text mt-3">
+                                                            <h3>Chemical Safety Masterclass</h3>
+                                                            <p class="mt-1">Comprehensive video series covering proper handling, storage, and disposal <br> of cleaning chemicals.</p>
+                                                        </div>
+                                                        <div class="cust-body my-4">
+                                                            <div class="flex-between">
+                                                                <p>Time:</p>
+                                                                <span class="font-weight-500">18 minutes</span>
+                                                            </div>
+                                                            <div class="flex-between">
+                                                                <p>Rating:</p>
+                                                                <div class="rating-review flex-gap">
+                                                                    <div class="stars yellow">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                    </div>
+                                                                    <p class="font-weight-500">(4.7)</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cust-footer flex-gap">
+                                                            <a href="#" class="site-btn vr-cardboard flex-grow-1"><i class="fa-solid fa-circle-play"></i> Watch Video</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="card-border h-100">
+                                                        <div class="flex-between">
+                                                            <div class="cust-icon">
+                                                                <i class="fa-solid fa-brain"></i>
+                                                            </div>
+                                                            <div class="badges flex-gap sm-gap">
+                                                                <span class="cust-badge blue-600-badge">Updated</span>
+                                                                <span class="cust-badge purple-badge">Quiz</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text mt-3">
+                                                            <h3>Kitchen Equipment Assessment</h3>
+                                                            <p class="mt-1">Interactive quiz testing knowledge of commercial kitchen equipment <br>operation abd maintenance.</p>
+                                                        </div>
+                                                        <div class="cust-body my-4">
+                                                            <div class="flex-between">
+                                                                <p>Questions:</p>
+                                                                <span class="font-weight-500">15 questions</span>
+                                                            </div>
+                                                            <div class="flex-between">
+                                                                <p>Rating:</p>
+                                                                <div class="rating-review flex-gap">
+                                                                    <div class="stars yellow">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                    </div>
+                                                                    <p class="font-weight-500">(4.8)</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cust-footer flex-gap">
+                                                            <a href="#" class="site-btn vr-cardboard flex-grow-1"><i class="fa-solid fa-circle-question"></i> Take Quiz</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-bg">
+                                        <div class="flex-between main-title">
+                                            <h2>Training Videos</h2>
+                                            <a href="#" class="site-btn">Browse All Videos <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                        <div class="card-wrapper row-gx row-gy">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="video-card d-flex gray-200-border h-100">
+                                                        <div class="video-thumbnail black-overlay">
+                                                            <img src="../assets/img/custom/protective-equip-img.png">
+                                                            <div class="absolute-text flex-between">
+                                                                <span class="cust-badge green-badge">Safety</span>
+                                                                <div class="dropdown icon">
+                                                                    <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" fdprocessedid="tw7ibr">
+                                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    </button>
+                                                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
+                                                                        <a class="dropdown-item" href="javascript:void(0);">View More</a>
+                                                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://youtu.be/3kmDuLVwM48?si=EezImKF51DP0VD5S" data-fancybox="">
+                                                                <div class="abs-btn">
+                                                                    <img src="../assets/img/custom/play-btn.svg " alt="play-btn">
+                                                                </div>
+                                                            </a>
+                                                            <span class="cust-badge square-badge">12:45</span>
+                                                        </div>
+
+                                                        <div class="video-text">
+                                                            <div class="cust-header">
+                                                                <h4 class="line-height">Personal Protective <br>Equippment</h4>
+                                                                <p>Essential PPE guideline for kitchen <br>and field work environments.</p>
+                                                            </div>
+                                                            <div class="flex-between my-4">
+                                                                <span class="cust-badge green-badge">Beginner</span>
+                                                                <div class="rating-review flex-gap">
+                                                                    <div class="stars yellow">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                    </div>
+                                                                    <p class="font-weight-500">(4.6)</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="cust-footer  flex-gap">
+                                                                <a href="#" class="site-btn sm-gap flex-grow-1"><i class="fa-solid fa-play"></i>Watch</a>
+                                                                <div class="cust-icon">
+                                                                    <i class="fa-solid fa-lightbulb"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="video-card d-flex gray-200-border h-100">
+                                                        <div class="video-thumbnail black-overlay">
+                                                            <img src="../assets/img/custom/industrial-cleaning-img.png">
+                                                            <div class="absolute-text flex-between">
+                                                                <span class="cust-badge orange-badge">Equipment</span>
+                                                                <div class="dropdown icon">
+                                                                    <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" fdprocessedid="tw7ibr">
+                                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    </button>
+                                                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
+                                                                        <a class="dropdown-item" href="javascript:void(0);">View More</a>
+                                                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://youtu.be/3kmDuLVwM48?si=EezImKF51DP0VD5S" data-fancybox="">
+                                                                <div class="abs-btn">
+                                                                    <img src="../assets/img/custom/play-btn.svg " alt="play-btn">
+                                                                </div>
+                                                            </a>
+                                                            <span class="cust-badge square-badge">8:32</span>
+                                                        </div>
+
+                                                        <div class="video-text">
+                                                            <div class="cust-header">
+                                                                <h4 class="line-height">Industrial Cleaning <br>Equipment</h4>
+                                                                <p>Proper operation and maintenance <br>of commercial cleaning machinery</p>
+                                                            </div>
+                                                            <div class="flex-between my-4">
+                                                                <span class="cust-badge orange-badge">Intermediate</span>
+                                                                <div class="rating-review flex-gap">
+                                                                    <div class="stars yellow">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                    </div>
+                                                                    <p class="font-weight-500">(4.9)</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="cust-footer  flex-gap">
+                                                                <a href="#" class="site-btn sm-gap flex-grow-1"><i class="fa-solid fa-play"></i>Watch</a>
+                                                                <div class="cust-icon">
+                                                                    <i class="fa-solid fa-lightbulb"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="video-card d-flex gray-200-border h-100">
+                                                        <div class="video-thumbnail black-overlay">
+                                                            <img src="../assets/img/custom/customer-relation-img.png">
+                                                            <div class="absolute-text flex-between">
+                                                                <span class="cust-badge blue-600-badge">Service</span>
+                                                                <div class="dropdown icon">
+                                                                    <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" fdprocessedid="tw7ibr">
+                                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    </button>
+                                                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
+                                                                        <a class="dropdown-item" href="javascript:void(0);">View More</a>
+                                                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://youtu.be/3kmDuLVwM48?si=EezImKF51DP0VD5S" data-fancybox="">
+                                                                <div class="abs-btn">
+                                                                    <img src="../assets/img/custom/play-btn.svg " alt="play-btn">
+                                                                </div>
+                                                            </a>
+                                                            <span class="cust-badge square-badge">15:21</span>
+                                                        </div>
+
+                                                        <div class="video-text">
+                                                            <div class="cust-header">
+                                                                <h4 class="line-height">Customer Relations Exellence</h4>
+                                                                <p>Building positive customer <br>relationships and handling difficult situation</p>
+                                                            </div>
+                                                            <div class="flex-between my-4">
+                                                                <span class="cust-badge green-700-badge">Beginner</span>
+                                                                <div class="rating-review flex-gap">
+                                                                    <div class="stars yellow">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                    </div>
+                                                                    <p class="font-weight-500">(4.7)</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="cust-footer  flex-gap">
+                                                                <a href="#" class="site-btn sm-gap flex-grow-1"><i class="fa-solid fa-play"></i>Watch</a>
+                                                                <div class="cust-icon">
+                                                                    <i class="fa-solid fa-lightbulb"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="video-card d-flex gray-200-border h-100">
+                                                        <div class="video-thumbnail black-overlay">
+                                                            <img src="../assets/img/custom/emergency-response-img.png">
+                                                            <div class="absolute-text flex-between">
+                                                                <span class="cust-badge red-badge">Emergency</span>
+                                                                <div class="dropdown icon">
+                                                                    <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" fdprocessedid="tw7ibr">
+                                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    </button>
+                                                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
+                                                                        <a class="dropdown-item" href="javascript:void(0);">View More</a>
+                                                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <a href="https://youtu.be/3kmDuLVwM48?si=EezImKF51DP0VD5S" data-fancybox="">
+                                                                <div class="abs-btn">
+                                                                    <img src="../assets/img/custom/play-btn.svg " alt="play-btn">
+                                                                </div>
+                                                            </a>
+                                                            <span class="cust-badge square-badge">22:17</span>
+                                                        </div>
+
+                                                        <div class="video-text">
+                                                            <div class="cust-header">
+                                                                <h4 class="line-height">Emergency Response <br>Procedures</h4>
+                                                                <p>Critical emergency protocols for <br>fire, chemical spills, and injuries</p>
+                                                            </div>
+                                                            <div class="flex-between my-4">
+                                                                <span class="cust-badge orange-badge">Advanced</span>
+                                                                <div class="rating-review flex-gap">
+                                                                    <div class="stars yellow">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                    </div>
+                                                                    <p class="font-weight-500">(4.8)</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="cust-footer  flex-gap">
+                                                                <a href="#" class="site-btn sm-gap flex-grow-1"><i class="fa-solid fa-play"></i>Watch</a>
+                                                                <div class="cust-icon">
+                                                                    <i class="fa-solid fa-lightbulb"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-bg">
+                                        <div class="main-title flex-between">
+                                            <h2>Interactive Quizzes</h2>
+                                            <a href="#" class="site-btn">Browse All Quizzes <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                        <div class="card-wrapper row-gy row-gy">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="card-border h-100">
+                                                        <div class="flex-between">
+                                                            <span class="cust-icon"><i class="fa-solid fa-shield-halved"></i></span>
+                                                            <span class="cust-badge green-badge">15 Questions</span>
+                                                        </div>
+                                                        <div class="text mt-3">
+                                                            <h3>Food Safety Fundamentals</h3>
+                                                            <p class="mt-1">Test your knowledge of basic food <br>safety principles, temperature control, <br>and hygiene practices.</p>
+                                                        </div>
+                                                        <div class="cust-body my-4">
+                                                            <div class="flex-between">
+                                                                <p>Level:</p>
+                                                                <span class="font-weight-500">Beginner</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Time:</p>
+                                                                <span class="font-weight-500">8 minutes</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Pass Rate:</p>
+                                                                <span class="font-weight-500 green-600">92%</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Attempts:</p>
+                                                                <span class="font-weight-500">1,247</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Rating:</p>
+                                                                <div class="rating-review flex-gap">
+                                                                    <div class="stars yellow">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                    </div>
+                                                                    <p class="font-weight-500">(4.9)</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cust-footer  flex-gap">
+                                                            <a href="#" class="site-btn sm-gap flex-grow-1"><i class="fa-solid fa-play"></i>Start Quiz</a>
+                                                            <div class="cust-icon">
+                                                                <i class="fa-solid fa-lightbulb"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="card-border h-100">
+                                                        <div class="flex-between">
+                                                            <span class="cust-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                                                            <span class="cust-badge blue-600-badge">20 Questions</span>
+                                                        </div>
+                                                        <div class="text mt-3">
+                                                            <h3>Equipment Maintenance</h3>
+                                                            <p class="mt-1">Assess your understanding of proper equipment care, troubleshooting, and maintenance schedules.</p>
+                                                        </div>
+                                                        <div class="cust-body my-4">
+                                                            <div class="flex-between">
+                                                                <p>Level:</p>
+                                                                <span class="font-weight-500">Intermediate</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Time:</p>
+                                                                <span class="font-weight-500">12 minutes</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Pass Rate:</p>
+                                                                <span class="font-weight-500 green-600">87%</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Attempts:</p>
+                                                                <span class="font-weight-500">934</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Rating:</p>
+                                                                <div class="rating-review flex-gap">
+                                                                    <div class="stars yellow">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                    </div>
+                                                                    <p class="font-weight-500">(4.8)</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cust-footer  flex-gap">
+                                                            <a href="#" class="site-btn sm-gap flex-grow-1"><i class="fa-solid fa-play"></i>Start Quiz</a>
+                                                            <div class="cust-icon">
+                                                                <i class="fa-solid fa-lightbulb"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="card-border h-100">
+                                                        <div class="flex-between">
+                                                            <span class="cust-icon"><i class="fa-solid fa-handshake"></i></span>
+                                                            <span class="cust-badge orange-badge">12 Questions</span>
+                                                        </div>
+                                                        <div class="text mt-3">
+                                                            <h3>Customer Service Excellence</h3>
+                                                            <p class="mt-1">Evaluate your customer service skills, communication techniques, and <br>problem solving abilities.</p>
+                                                        </div>
+                                                        <div class="cust-body my-4">
+                                                            <div class="flex-between">
+                                                                <p>Level:</p>
+                                                                <span class="font-weight-500">Beginner</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Time:</p>
+                                                                <span class="font-weight-500">6 minutes</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Pass Rate:</p>
+                                                                <span class="font-weight-500 green-600">94%</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Attempts:</p>
+                                                                <span class="font-weight-500">1,156</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Rating:</p>
+                                                                <div class="rating-review flex-gap">
+                                                                    <div class="stars yellow">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                    </div>
+                                                                    <p class="font-weight-500">(4.6)</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cust-footer  flex-gap">
+                                                            <a href="#" class="site-btn sm-gap flex-grow-1"><i class="fa-solid fa-play"></i>Start Quiz</a>
+                                                            <div class="cust-icon">
+                                                                <i class="fa-solid fa-lightbulb"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-bg">
+                                        <div class="main-title flex-between">
+                                            <h2>VR Training Experiences</h2>
+                                            <a href="#" class="site-btn">Browse All VR Content<i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                        <div class="card-wrapper row-gy row-gy">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="card-border h-100">
+                                                        <div class="flex-between">
+                                                            <span class="cust-icon"><i class="fa-solid fa-fire-extinguisher"></i></span>
+                                                            <span class="cust-badge green-badge">VR Experience</span>
+                                                        </div>
+                                                        <div class="text mt-3">
+                                                            <h3>Fire Emergency Response</h3>
+                                                            <p class="mt-1">Immersive fire safety training with <br>realistic emergency scenarios and evacuation procedures</p>
+                                                        </div>
+                                                        <div class="cust-body my-4">
+                                                            <div class="flex-between">
+                                                                <p>Level:</p>
+                                                                <span class="font-weight-500">Advanced</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Time:</p>
+                                                                <span class="font-weight-500">25 minutes</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Completion Rate:</p>
+                                                                <span class="font-weight-500 green-600">89%</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Avg Performance:</p>
+                                                                <span class="font-weight-500 green-600">92%</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Rating:</p>
+                                                                <div class="rating-review flex-gap">
+                                                                    <div class="stars yellow">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                    </div>
+                                                                    <p class="font-weight-500">(4.9)</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cust-footer  flex-gap">
+                                                            <a href="#" class="site-btn sm-gap flex-grow-1"><i class="fa-solid fa-play"></i>Launch VR</a>
+                                                            <div class="cust-icon">
+                                                                <i class="fa-solid fa-lightbulb"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="card-border h-100">
+                                                        <div class="flex-between">
+                                                            <span class="cust-icon"><i class="fa-solid fa-helmet-safety"></i></span>
+                                                            <span class="cust-badge blue-600-badge">VR Experience</span>
+                                                        </div>
+                                                        <div class="text mt-3">
+                                                            <h3>Workplace Safety Simulation</h3>
+                                                            <p class="mt-1">Virtual workplace environment to <br>practice safety protocols and hazard identification</p>
+                                                        </div>
+                                                        <div class="cust-body my-4">
+                                                            <div class="flex-between">
+                                                                <p>Level:</p>
+                                                                <span class="font-weight-500">Intermediate</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Time:</p>
+                                                                <span class="font-weight-500">18 minutes</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Completion Rate:</p>
+                                                                <span class="font-weight-500 green-600">95%</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Avg Performance:</p>
+                                                                <span class="font-weight-500 green-600">88%</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Rating:</p>
+                                                                <div class="rating-review flex-gap">
+                                                                    <div class="stars yellow">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-regular fa-star"></i>
+                                                                    </div>
+                                                                    <p class="font-weight-500">(4.7)</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cust-footer  flex-gap">
+                                                            <a href="#" class="site-btn sm-gap flex-grow-1"><i class="fa-solid fa-play"></i>Launch VR</a>
+                                                            <div class="cust-icon">
+                                                                <i class="fa-solid fa-lightbulb"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6">
+                                                    <div class="card-border h-100">
+                                                        <div class="flex-between">
+                                                            <span class="cust-icon"><i class="fa-solid fa-utensils"></i></span>
+                                                            <span class="cust-badge orange-badge">VR Experience</span>
+                                                        </div>
+                                                        <div class="text mt-3">
+                                                            <h3>Kitchen Operations Training</h3>
+                                                            <p class="mt-1">Comprehensive kitchen environment <br>simulation covering equipment <br>operation and workflow</p>
+                                                        </div>
+                                                        <div class="cust-body my-4">
+                                                            <div class="flex-between">
+                                                                <p>Level:</p>
+                                                                <span class="font-weight-500">Intermediate</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Time:</p>
+                                                                <span class="font-weight-500">22 minutes</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Completion Rate:</p>
+                                                                <span class="font-weight-500 green-600">91%</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Avg Performance:</p>
+                                                                <span class="font-weight-500 green-600">90%</span>
+                                                            </div>
+                                                            <div class="flex-between mt-2">
+                                                                <p>Rating:</p>
+                                                                <div class="rating-review flex-gap">
+                                                                    <div class="stars yellow">
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                        <i class="fa-solid fa-star"></i>
+                                                                    </div>
+                                                                    <p class="font-weight-500">(4.8)</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cust-footer  flex-gap">
+                                                            <a href="#" class="site-btn sm-gap flex-grow-1"><i class="fa-solid fa-play"></i>Launch VR</a>
+                                                            <div class="cust-icon">
+                                                                <i class="fa-solid fa-lightbulb"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-wrapper row-gx row-gy">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="card-bg equal-card gap-4">
+                                                    <div class="cust-header">
+                                                        <div class="flex-gap main-title">
+                                                            <span class="flat-icon font-18"><i class="fa-solid fa-lightbulb"></i></span>
+                                                            <h2>Suggest Content Improvements</h2>
+                                                        </div>
+                                                        <div class="card-wrapper">
+                                                            <div class="row gy-3">
+                                                                <div class="col-12">
+                                                                    <div class="card-border rounded-8">
+                                                                        <div class="flex-align-start mb-3">
+                                                                            <div class="flex-gap card-col-d">
+                                                                                <div class="image sm-size">
+                                                                                    <img src="../assets/img/custom/girl-1.png" alt="User">
+                                                                                </div>
+                                                                                <div class="text">
+                                                                                    <h4>Sarah Johnson</h4>
+                                                                                    <p class="font-12 mt-1">2 days ago</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <span class="cust-badge orange-badge">Pending</span>
+                                                                        </div>
+                                                                        <p class="font-weight-500">Suggested updating the chemical safety video with new regulations</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="card-border rounded-8">
+                                                                        <div class="flex-align-start mb-3">
+                                                                            <div class="flex-gap card-col-d">
+                                                                                <div class="image sm-size">
+                                                                                    <img src="../assets/img/custom/boy-2.png" alt="User">
+                                                                                </div>
+                                                                                <div class="text">
+                                                                                    <h4>Mike Rodriguez</h4>
+                                                                                    <p class="font-12 mt-1">5 days ago</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <span class="cust-badge green-badge">Approved</span>
+                                                                        </div>
+                                                                        <p class="font-weight-500">Requested more interactive elements in Equipment Training</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="card-border rounded-8">
+                                                                        <div class="flex-align-start mb-3">
+                                                                            <div class="flex-gap card-col-d">
+                                                                                <div class="image sm-size">
+                                                                                    <img src="../assets/img/custom/boy-2.png" alt="User">
+                                                                                </div>
+                                                                                <div class="text">
+                                                                                    <h4>David Chen</h4>
+                                                                                    <p class="font-12 mt-1">1 week ago</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <span class="cust-badge blue-600-badge">In Review</span>
+                                                                        </div>
+                                                                        <p class="font-weight-500">Suggested adding multilingual subtitles to VR experiences</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cust-footer w-100">
+                                                        <a href="#" class="site-btn flex-grow-1"><i class="fa-solid fa-plus"></i> Submit New Suggestion</a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="card-bg equal-card gap-4">
+                                                    <div class="cust-header">
+                                                        <div class="flex-gap main-title">
+                                                            <span class="flat-icon font-18"><i class="fa-solid fa-lightbulb"></i></span>
+                                                            <h2>Request New Content</h2>
+                                                        </div>
+                                                        <div class="card-wrapper">
+                                                            <div class="row gy-3">
+                                                                <div class="col-12">
+                                                                    <div class="card-border rounded-8">
+                                                                        <div class="flex-align-start mb-3">
+                                                                            <div class="flex-gap card-col-d">
+                                                                                <span class="cust-icon cust-sm-icon"><i class="fa-solid fa-video"></i> </span>
+                                                                                <div class="text">
+                                                                                    <h4>Video</h4>
+                                                                                    <p class="font-12 mt-1">Requested by Emma Davis - 3 days ago</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <span class="cust-badge green-badge">Approved</span>
+                                                                        </div>
+                                                                        <p class="font-weight-500">Advanced Chemical Mixing Procedures</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="card-border rounded-8">
+                                                                        <div class="flex-align-start mb-3">
+                                                                            <div class="flex-gap card-col-d">
+                                                                                <span class="cust-icon cust-sm-icon"><i class="fa-solid fa-vr-cardboard"></i> </span>
+                                                                                <div class="text">
+                                                                                    <h4>VR</h4>
+                                                                                    <p class="font-12 mt-1">Requested by Alex Thompson - 1 week ago</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <span class="cust-badge blue-600-badge">In Development</span>
+                                                                        </div>
+                                                                        <p class="font-weight-500">Restaurant Rush Hour Simulation</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="card-border rounded-8">
+                                                                        <div class="flex-align-start mb-3">
+                                                                            <div class="flex-gap card-col-d">
+                                                                                <span class="cust-icon cust-sm-icon"><i class="fa-solid fa-circle-question"></i> </span>
+                                                                                <div class="text">
+                                                                                    <h4>Quiz</h4>
+                                                                                    <p class="font-12 mt-1">Requested by James Wilson - 2 week ago</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <span class="cust-badge orange-badge">Under Review</span>
+                                                                        </div>
+                                                                        <p class="font-weight-500">New Food Allergy Protocols</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cust-footer w-100">
+                                                        <a href="#" class="site-btn flex-grow-1"><i class="fa-solid fa-plus"></i>Request New Content</a>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-12">
+                                    <div class="card-bg">
+                                        <div class="main-title">
+                                            <h2>Request New Content</h2>
+                                        </div>
+                                        <div class="card-wrapper row-gx row-gy">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <div class="card-border">
+                                                        <div class="flex-gap">
+                                                            <div class="cust-icon">
+                                                                <i class="fa-solid fa-eye"></i>
+                                                            </div>
+                                                            <div class="text highlight-2">
+                                                                <span class="mt-2">Total views this month</span>
+                                                                <h3>12,847</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-gap green mt-4">
+                                                            <i class="fa-solid fa-arrow-up"></i>
+                                                            <p>+18% from last month</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer -->
+                <footer class="content-footer footer mb-4">
+                    <div class="container-xxl">
+                        <div class="card-bg w-100 d-flex flex-wrap justify-content-lg-between justify-content-center flex-md-row gap-lg-0 gap-2 text-center">
+                            <div class="mb-2 mb-md-0">
+                                <p><a href="index.html">&copy; 2025 Kitchen Guard Training Platform.</a> All rights reserved.</p>
+                            </div>
+                            <div>
+                                <a href="#" class="footer-link me-lg-3 me-2">Privacy Policy</a>
+                                <a href="#" class="footer-link me-lg-3 me-2">Terms of Service</a>
+                                <a href="#" class="footer-link me-lg-3 me-2">Support</a>
+                                <a href="#" class="footer-link">Documentation</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- / Footer -->
+            </div>
+
+
+
+        </div>
+
+        <div class="content-backdrop fade"></div>
+    </div>
+    <!-- Content wrapper -->
+    </div>
+    <!-- / Layout page -->
+    </div>
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js ../assets/vendor/js/core.js -->
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="../assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="../assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="../assets/vendor/libs/typeahead-js/typeahead.js"></script>
+
+    <script src="../assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+    <script src="../assets/vendor/libs/chartjs/chartjs.js"></script>
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="../assets/js/dashboards-crm.js"></script>
+    <script src="../assets/js/charts-custmize.js"></script>
+
+    <!-- fancybox -->
+    <script src="../libs/fancybox/fancybox.js"></script>
+    <script>
+        Fancybox.bind('[data-fancybox]', {});
+    </script>
+</body>
+
+</html>
