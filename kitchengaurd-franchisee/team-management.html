@@ -26,6 +26,7 @@
    <link rel="stylesheet" href="../assets/vendor/css/rtl/theme-default.css" />
    <link rel="stylesheet" href="../assets/css/demo.css" />
    <link rel="stylesheet" href="../assets/css/style.css" />
+   <link rel="stylesheet" href="../assets/css/k-g-franchise.css" />
 
    <!-- Vendors CSS -->
    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
@@ -72,7 +73,7 @@
                   </a>
                   <ul class="menu-sub">
                      <li class="menu-item">
-                        <a href="team-management.html" class="menu-link active">
+                        <a href="team-management.html" class="menu-link">
                            <div data-i18n="Management">Management</div>
                         </a>
                      </li>
@@ -120,7 +121,7 @@
                   </a>
                </li>
                <li class="menu-item">
-                  <a href="javascript:void(0);" class="menu-link">
+                  <a href="content-library.html" class="menu-link">
                      <i class="menu-icon fa-regular fa-circle-play"></i>
                      <div data-i18n="Content Library">Content Library</div>
                   </a>
@@ -328,8 +329,8 @@
 
                      <div class="row">
                         <div class="col-12">
-                           <div class="card-wrapper row-gy">
-                              <div class="row flex-xxl-nowrap gx-2 justify-content-start">
+                           <div class="card-wrapper gx-12 gy-12">
+                              <div class="row flex-xxl-nowrap justify-content-center">
                                  <!-- card  -->
                                  <div class="col-xxl col-lg-4 col-md-6">
                                     <div class="card-bg h-100 p-3">
@@ -338,7 +339,7 @@
                                              <i class="fa-solid fa-users"></i>
                                           </div>
                                           <div class="text highlight-2">
-                                             <span class="mt-2">Total Employees</span>
+                                             <span class="font-15">Total Employees</span>
                                              <h3>12</h3>
                                           </div>
                                        </div>
@@ -353,7 +354,7 @@
                                              <i class="fa-solid fa-wrench"></i>
                                           </div>
                                           <div class="text highlight-2">
-                                             <span class="mt-2">Field Technician</span>
+                                             <span class="font-15">Field Technician</span>
                                              <h3>6</h3>
                                           </div>
                                        </div>
@@ -368,7 +369,7 @@
                                              <i class="fa-solid fa-spray-can"></i>
                                           </div>
                                           <div class="text highlight-2">
-                                             <span class="mt-2">Kitchen Cleaner</span>
+                                             <span class="font-15">Kitchen Cleaner</span>
                                              <h3>4</h3>
                                           </div>
                                        </div>
@@ -383,7 +384,7 @@
                                              <i class="fa-solid fa-user-tie"></i>
                                           </div>
                                           <div class="text highlight-2">
-                                             <span class="mt-2">Supervisors</span>
+                                             <span class="font-15">Supervisors</span>
                                              <h3>2</h3>
                                           </div>
                                        </div>
@@ -398,7 +399,7 @@
                                              <i class="fa-solid fa-triangle-exclamation"></i>
                                           </div>
                                           <div class="text highlight-2">
-                                             <span class="mt-2">Pending Actions</span>
+                                             <span class="font-15">Pending Actions</span>
                                              <h3>7</h3>
                                           </div>
                                        </div>
@@ -420,40 +421,34 @@
                                        <label for="select-all">Select All</label>
                                     </div>
                                     <form action="javascript:void()" class="search-field">
-                                       <input class="form-control" id="src-icon" placeholder="Search by name, email, or ID..." aria-label="Search">
-                                       <label for="src-icon" class="src-bar">
+                                       <input class="form-control" id="src-icon-2" placeholder="Search by name, email, or ID..." aria-label="Search">
+                                       <label for="src-icon-2" class="src-bar">
                                           <i class="fa-solid fa-magnifying-glass"></i>
                                        </label>
                                     </form>
                                  </div>
                               </div>
-                              <div class="filteration-row v2 mb-3 mt-3 flex-gap flex-wrap">
-                                 <select class="form-select cust-select flex-grow-xl-1" aria-label="Default select example" fdprocessedid="p6etmm">
+                              <div class="filteration-row v2 mb-3 mt-3 flex-gap md-gap flex-wrap">
+                                 <select class="form-select cust-select flex-lg-grow-1" aria-label="Default select example" fdprocessedid="p6etmm">
                                     <option selected="">All Roles</option>
                                     <option>Specific Roles</option>
                                     <option>Important Roles</option>
                                     <option>Normal Roles</option>
                                  </select>
-                                 <select class="form-select cust-select flex-grow-xl-1" aria-label="Default select example" fdprocessedid="7tl41">
+                                 <select class="form-select cust-select flex-lg-grow-1" aria-label="Default select example" fdprocessedid="7tl41">
                                     <option selected="">All Status</option>
                                     <option>Half Status</option>
                                     <option>Some Status</option>
                                     <option>1 Status</option>
                                  </select>
-                                 <select class="form-select cust-select flex-grow-xl-1" aria-label="Default select example" fdprocessedid="7tl41">
-                                    <option selected="">All Status</option>
-                                    <option>Half Status</option>
-                                    <option>Some Status</option>
-                                    <option>1 Status</option>
-                                 </select>
-                                 <select class="form-select cust-select flex-grow-xl-1" aria-label="Default select example" fdprocessedid="7tl41">
+                                 <select class="form-select cust-select flex-lg-grow-1" aria-label="Default select example" fdprocessedid="7tl41">
                                     <option selected="">Training Progress</option>
                                     <option>Training Progress</option>
                                     <option>Training Progress</option>
                                     <option>Training Progress</option>
                                  </select>
-                                 <button class="site-btn flex-between flex-grow-xl-1"><i class="fa-solid fa-sliders"></i> More Filters</button>
-                                 <button class="site-btn flex-between flex-grow-xl-1">Sort<i class="fa-solid fa-angles-up-down"></i></button>
+                                 <button class="site-btn flex-between flex-lg-grow-1"><i class="fa-solid fa-sliders"></i> More Filters</button>
+                                 <button class="site-btn flex-between flex-lg-grow-1">Sort<i class="fa-solid fa-angles-up-down"></i></button>
                               </div>
                               <div class="cust-table">
                                  <div class="table-responsive text-nowrap">
@@ -676,7 +671,7 @@
                                  <div class="row">
                                     <div class="col-lg-4 col-md-6">
                                        <div class="card-border">
-                                          <div class="flex-gap">
+                                          <div class="flex-gap md-gap">
                                              <div class="cust-icon">
                                                 <i class="fa-solid fa-wrench"></i>
                                              </div>
@@ -723,7 +718,7 @@
                                              <div class="foot-card flex-between md-gap align-items-stretch">
                                                 <a href="#" class="site-btn green-btn flex-grow-1">Assign to Employee</a>
                                                 <button class="site-btn px-3">
-                                                   <i class="fa-solid fa-pen-to-square"></i>
+                                                   <i class="fa-solid fa-pen-to-square font-18"></i>
                                                 </button>
                                              </div>
                                           </div>
@@ -731,7 +726,7 @@
                                     </div>
                                     <div class="col-lg-4 col-md-6">
                                        <div class="card-border">
-                                          <div class="flex-gap">
+                                          <div class="flex-gap md-gap">
                                              <div class="cust-icon">
                                                 <i class="fa-solid fa-spray-can"></i>
                                              </div>
@@ -778,7 +773,7 @@
                                              <div class="foot-card flex-between md-gap align-items-stretch">
                                                 <a href="#" class="site-btn green-btn flex-grow-1">Assign to Employee</a>
                                                 <button class="site-btn px-3">
-                                                   <i class="fa-solid fa-pen-to-square"></i>
+                                                   <i class="fa-solid fa-pen-to-square font-18"></i>
                                                 </button>
                                              </div>
                                           </div>
@@ -786,7 +781,7 @@
                                     </div>
                                     <div class="col-lg-4 col-md-6">
                                        <div class="card-border">
-                                          <div class="flex-gap">
+                                          <div class="flex-gap md-gap">
                                              <div class="cust-icon">
                                                 <i class="fa-solid fa-user-tie"></i>
                                              </div>
@@ -822,18 +817,18 @@
                                              </div>
                                              <div class="flex-between mt-2">
                                                 <p>Compliance:</p>
-                                                <span class="font-weight-500 green-700"><i class="fa-solid fa-play"></i></span>
+                                                <span class="font-weight-500 green-700"><i class="fa-solid fa-check"></i></span>
                                              </div>
                                              <div class="flex-between mt-2">
                                                 <p>Advanced VR:</p>
-                                                <span class="font-weight-500 green-700"><i class="fa-solid fa-clock"></i></span>
+                                                <span class="font-weight-500 green-700"><i class="fa-solid fa-play"></i></span>
                                              </div>
                                           </div>
                                           <div class="cust-footer">
                                              <div class="foot-card flex-between md-gap align-items-stretch">
                                                 <a href="#" class="site-btn green-btn flex-grow-1">Assign to Employee</a>
                                                 <button class="site-btn px-3">
-                                                   <i class="fa-solid fa-pen-to-square"></i>
+                                                   <i class="fa-solid fa-pen-to-square font-18"></i>
                                                 </button>
                                              </div>
                                           </div>
@@ -860,7 +855,7 @@
                                              <h2>Bulk Assignment</h2>
                                           </div>
                                           <div class="cust-body mt-3 mb-4">
-                                             <p>Assign training paths to multiple employees simultaneously</p>
+                                             <p>Assign training paths to <br>multiple employees <br>simultaneously</p>
                                           </div>
                                           <div class="cust-footer">
                                              <a href="#" class="site-btn w-100"><i class="fa-solid fa-user-tie font-18"></i>Select Employees</a>
@@ -908,7 +903,7 @@
                                              <h2>Export <br>Data</h2>
                                           </div>
                                           <div class="cust-body mt-3 mb-4">
-                                             <p>Export employee data, progress reports, and <br>training records</p>
+                                             <p>Export employee data, <br>progress reports, and <br>training records</p>
                                           </div>
                                           <div class="cust-footer">
                                              <a href="#" class="site-btn w-100"><i class="fa-solid fa-clipboard font-18"></i>Generate Report</a>
@@ -949,57 +944,57 @@
                                              <h2>Training Progress by Role</h2>
                                           </div>
                                           <div class="row g-3">
-                                             <div class="col-md-6">
+                                             <div class="col-lg-6">
                                                 <div class="flex-between card-border rounded-8">
-                                                   <div class="flex-gap lg-gap">
+                                                   <div class="flex-gap">
                                                       <div class="cust-icon">
                                                          <i class="fa-solid fa-trophy"></i>
                                                       </div>
                                                       <div class="text">
                                                          <h4>Top Performer</h4>
-                                                         <p class="font-weight-500 mt-1">Sarah Johnson - 98% avg score</p>
+                                                         <p class="font-weight-500 mt-05">Sarah Johnson - 98% avg score</p>
                                                       </div>
                                                    </div>
                                                    <span class="cust-badge green-badge">Excellent</span>
                                                 </div>
                                              </div>
-                                             <div class="col-md-6">
+                                             <div class="col-lg-6">
                                                 <div class="flex-between card-border rounded-8">
-                                                   <div class="flex-gap lg-gap">
+                                                   <div class="flex-gap">
                                                       <div class="cust-icon">
                                                          <i class="fa-solid fa-clock"></i>
                                                       </div>
                                                       <div class="text">
                                                          <h4>Fastest Learner</h4>
-                                                         <p class="font-weight-500 mt-1">Emma Davis - 2.1 weeks avg</p>
+                                                         <p class="font-weight-500 mt-05">Emma Davis - 2.1 weeks avg</p>
                                                       </div>
                                                    </div>
                                                    <span class="cust-badge orange-badge">Efficient</span>
                                                 </div>
                                              </div>
-                                             <div class="col-md-6">
+                                             <div class="col-lg-6">
                                                 <div class="flex-between card-border rounded-8">
-                                                   <div class="flex-gap lg-gap">
+                                                   <div class="flex-gap">
                                                       <div class="cust-icon">
                                                          <i class="fa-solid fa-triangle-exclamation"></i>
                                                       </div>
                                                       <div class="text">
                                                          <h4>Needs Attention</h4>
-                                                         <p class="font-weight-500 mt-1">Alex Thompson - Behind schedule</p>
+                                                         <p class="font-weight-500 mt-05">Alex Thompson - Behind schedule</p>
                                                       </div>
                                                    </div>
                                                    <span class="cust-badge red-badge">At Risk</span>
                                                 </div>
                                              </div>
-                                             <div class="col-md-6">
+                                             <div class="col-lg-6">
                                                 <div class="flex-between card-border rounded-8">
-                                                   <div class="flex-gap lg-gap">
+                                                   <div class="flex-gap">
                                                       <div class="cust-icon">
                                                          <i class="fa-solid fa-vr-cardboard"></i>
                                                       </div>
                                                       <div class="text">
                                                          <h4>VR Champion</h4>
-                                                         <p class="font-weight-500 mt-1">David Chen - 95% VR completion</p>
+                                                         <p class="font-weight-500 mt-05">David Chen - 95% VR completion</p>
                                                       </div>
                                                    </div>
                                                    <span class="cust-badge green-700-badge">Expert</span>
@@ -1029,7 +1024,7 @@
                               <div class="card-wrapper tag-whitespace">
                                  <div class="row gy-3">
                                     <div class="col-12">
-                                       <div class="card-border flex-align-start">
+                                       <div class="card-border flex-align-start rounded-8">
                                           <div class="flex-gap">
                                              <div class="image">
                                                 <img src="../assets/img/custom/girl-1.png" alt="User">
@@ -1047,7 +1042,7 @@
                                        </div>
                                     </div>
                                     <div class="col-12">
-                                       <div class="card-border flex-align-start">
+                                       <div class="card-border flex-align-start rounded-8">
                                           <div class="flex-gap">
                                              <div class="image">
                                                 <img src="../assets/img/custom/boy-1.png" alt="User">
@@ -1065,7 +1060,7 @@
                                        </div>
                                     </div>
                                     <div class="col-12">
-                                       <div class="card-border flex-align-start">
+                                       <div class="card-border flex-align-start rounded-8">
                                           <div class="flex-gap">
                                              <div class="image">
                                                 <img src="../assets/img/custom/girl-1.png" alt="User">
@@ -1083,7 +1078,7 @@
                                        </div>
                                     </div>
                                     <div class="col-12">
-                                       <div class="card-border flex-align-start">
+                                       <div class="card-border flex-align-start rounded-8">
                                           <div class="flex-gap">
                                              <div class="image">
                                                 <img src="../assets/img/custom/boy-2.png" alt="User">
@@ -1101,7 +1096,7 @@
                                        </div>
                                     </div>
                                     <div class="col-12">
-                                       <div class="card-border flex-align-start">
+                                       <div class="card-border flex-align-start rounded-8">
                                           <div class="flex-gap">
                                              <div class="image">
                                                 <img src="../assets/img/custom/boy-1.png" alt="User">
@@ -1111,7 +1106,7 @@
                                                 <div class="flex-gap md-gap mt-2">
                                                    <span class="cust-badge green-700-badge">System Access</span>
                                                    <p>Session: 45 minutes</p>
-                                                   <p>Send Reminder</p>
+                                                   <p>Actions 12</p>
                                                 </div>
                                              </div>
                                           </div>
@@ -1132,7 +1127,7 @@
                                  <div class="row">
                                     <div class="col-md-6">
                                        <div class="card-border">
-                                          <div class="flex-gap md-gap">
+                                          <div class="flex-gap md-gap flex-nowrap">
                                              <div class="cust-icon">
                                                 <i class="fa-solid fa-user-plus"></i>
                                              </div>
@@ -1148,7 +1143,7 @@
                                     </div>
                                     <div class="col-md-6">
                                        <div class="card-border">
-                                          <div class="flex-gap md-gap">
+                                          <div class="flex-gap md-gap flex-nowrap">
                                              <div class="cust-icon">
                                                 <i class="fa-solid fa-clipboard-list"></i>
                                              </div>
@@ -1164,7 +1159,7 @@
                                     </div>
                                     <div class="col-md-6">
                                        <div class="card-border">
-                                          <div class="flex-gap md-gap">
+                                          <div class="flex-gap md-gap flex-nowrap">
                                              <div class="cust-icon">
                                                 <i class="fa-solid fa-graduation-cap"></i>
                                              </div>
@@ -1180,7 +1175,7 @@
                                     </div>
                                     <div class="col-md-6">
                                        <div class="card-border">
-                                          <div class="flex-gap md-gap">
+                                          <div class="flex-gap md-gap flex-nowrap">
                                              <div class="cust-icon">
                                                 <i class="fa-solid fa-clock"></i>
                                              </div>
@@ -1205,7 +1200,7 @@
                                     <h4>Onboarding Success Rate</h4>
                                     <p>Last 30 days performance</p>
                                  </div>
-                                 <div class="text green text-end">
+                                 <div class="text green text-md-end">
                                     <h3 class="font-28">89%</h3>
                                     <p>Average completion time: 18 days</p>
                                  </div>

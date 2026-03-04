@@ -144,6 +144,19 @@ img {
    height: auto;
 }
 
+.fw-medium {
+   font-weight: 500 !important;
+}
+
+.img-rounded-36 {
+   width: 40px;
+   aspect-ratio: 1;
+}
+
+.mt-05 {
+   margin-top: 2px !important;
+}
+
 /* card-properties */
 .card-bg,
 .card-border {
@@ -309,7 +322,7 @@ button {
 }
 
 .gap-40 {
-   gap: 40px;
+   gap: 40px !important;
 }
 
 /* text-properties  */
@@ -415,13 +428,6 @@ button {
    --bs-gutter-y: 20px;
 }
 
-.gx-12>.row {
-   --bs-gutter-x: 12px
-}
-
-.gy-12>.row {
-   --bs-gutter-y: 12px
-}
 
 /* all-colors  */
 
@@ -908,6 +914,7 @@ button {
 .menu-vertical .menu-sub .menu-link {
    padding-left: 40px !important;
 }
+
 
 /* header  */
 
@@ -2132,103 +2139,6 @@ button {
    padding: 0;
 }
 
-/* #kitchenguard-franchise */
-
-/* dashboard  */
-.franchiee-nav {
-   flex-wrap: nowrap;
-}
-
-.franchiee-nav .md-size img {
-   min-width: 45px;
-}
-
-.franchiee-nav .layout-menu-toggle .nav-item i {
-   margin: 0;
-}
-
-.fw-medium {
-   font-weight: 500 !important;
-}
-
-.img-rounded-36 {
-   width: 40px;
-   aspect-ratio: 1;
-}
-
-.navyblue {
-   color: #002f65 !important;
-}
-
-.mt-05 {
-   margin-top: 2px !important;
-}
-
-/* team-management  */
-
-.checkbox {
-   display: flex;
-   align-items: center;
-   gap: 8px;
-}
-
-.form-check-input:focus {
-   border: 0 !important;
-   box-shadow: unset;
-}
-
-.checkbox .form-check-input[type=checkbox] {
-   background-image: url(../img/custom/uncheck-box.svg);
-   border: 0;
-
-}
-
-.checkbox .form-check-input[type=checkbox]:checked {
-   background-image: url(../img/custom/simple-checkbox.png);
-   background-color: transparent;
-}
-
-/* reports  */
-.report-tabbing {
-   overflow: auto;
-}
-
-.report-tabbing .nav-tabs {
-   display: inline-flex;
-   background-color: var(--light-gray);
-   border-radius: 8px;
-   padding: 6px;
-   gap: 5px;
-   overflow: auto;
-   white-space: nowrap;
-   flex-wrap: nowrap;
-}
-
-.report-tabbing::-webkit-scrollbar {
-   display: none;
-}
-
-.report-tabbing .nav-tabs .nav-link {
-   color: var(--gray-600);
-   background-color: transparent !important;
-}
-
-.report-tabbing .nav-tabs .nav-link.active {
-   background-color: var(--primary-color) !important;
-   border: 0;
-   color: var(--white);
-   border-radius: 8px;
-}
-
-/* content-library  */
-
-.cust-sm-icon {
-   min-width: 36px;
-   height: 36px;
-   font-size: 20px;
-}
-
-
 /* media queries  */
 @media (max-width: 1199px) {
    h1 {
@@ -2371,7 +2281,7 @@ button {
    }
 
    .gap-40 {
-      gap: 25px;
+      gap: 25px !important;
    }
 
    .full-video-card .video-thumbnail {
@@ -2386,10 +2296,7 @@ button {
       min-width: 180px;
    }
 
-   /* #kitchem-guard-franchise */
-   .cust-select.form-select {
-      padding: 8px 40px 8px 20px;
-   }
+
 }
 
 @media (max-width: 991px) {
@@ -2546,6 +2453,7 @@ button {
       min-width: unset;
       font-size: 14px;
    }
+
 }
 
 /* mob  */
@@ -2835,41 +2743,4 @@ button {
       gap: 7px !important;
    }
 
-   /* #kitchenguard-franchise */
-   /* dashboard  */
-   .franchiee-nav {
-      flex-wrap: wrap;
-   }
-
-   .card-col-d {
-      flex-direction: column;
-      align-items: start;
-   }
-
-   .abs-spans-mob .cust-badge {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-   }
-
-   .abs-spans-mob .flex-nowrap.card-border {
-      position: relative;
-      z-index: 1;
-   }
-
-   /* team management  */
-   .tag-whitespace .card-border span,
-   .tag-whitespace .card-border p {
-      white-space: nowrap;
-   }
-
-   /* certification  */
-   .font-24 {
-      font-size: 20px !important;
-   }
-
-   .flex-align-start {
-      flex-wrap: wrap;
-      gap: 15px;
-   }
 }

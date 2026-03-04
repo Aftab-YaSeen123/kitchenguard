@@ -1,0 +1,289 @@
+/* #kitchenguard-franchise */
+
+.gx-12>.row {
+    --bs-gutter-x: 12px
+}
+
+.gy-12>.row {
+    --bs-gutter-y: 12px
+}
+
+/* dashboard  */
+.franchiee-nav {
+    flex-wrap: nowrap;
+}
+
+.franchiee-nav .md-size img {
+    min-width: 45px;
+}
+
+.franchiee-nav .layout-menu-toggle .nav-item i {
+    margin: 0;
+}
+
+.fw-medium {
+    font-weight: 500 !important;
+}
+
+.img-rounded-36 {
+    width: 40px;
+    aspect-ratio: 1;
+}
+
+.navyblue {
+    color: #002f65 !important;
+}
+
+.mt-05 {
+    margin-top: 2px !important;
+}
+
+/* team-management  */
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-check-input:focus {
+    border: 0 !important;
+    box-shadow: unset;
+}
+
+.checkbox .form-check-input[type=checkbox] {
+    background-image: url(../img/custom/uncheck-box.svg);
+    border: 0;
+    width: 22px;
+    height: 22px;
+
+}
+
+.checkbox .form-check-input[type=checkbox]:checked {
+    background-image: url(../img/custom/simple-checkbox.png);
+    background-color: transparent;
+}
+
+/* reports  */
+.report-tabbing {
+    overflow: auto;
+}
+
+.report-tabbing .nav-tabs {
+    display: inline-flex;
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    padding: 6px;
+    gap: 5px;
+    overflow: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+
+.report-tabbing::-webkit-scrollbar {
+    display: none;
+}
+
+.report-tabbing .nav-tabs .nav-link {
+    color: var(--gray-600);
+    background-color: transparent !important;
+}
+
+.report-tabbing .nav-tabs .nav-link.active {
+    background-color: var(--primary-color) !important;
+    border: 0;
+    color: var(--white);
+    border-radius: 8px;
+}
+
+/* content-library  */
+
+.cust-sm-icon {
+    min-width: 36px;
+    height: 36px;
+    font-size: 20px;
+}
+
+.font-15 {
+    font-size: 15px;
+}
+
+
+.folding-images {
+    display: flex;
+    align-items: center;
+}
+
+.folding-images img,
+.folding-images .folding-counter {
+    border: 1px solid var(--white);
+    margin-left: -16px;
+}
+
+.folding-images .image:first-child img {
+    margin-left: 0;
+}
+
+.folding-counter {
+    min-width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.folding-counter span {
+    color: var(--white);
+}
+
+/* settings  */
+.font-18 {
+    font-size: 18px !important;
+}
+
+.row-list.point-list ul {
+    display: flex;
+    align-items: center;
+}
+
+.flex-end {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.bg-red-25 {
+    background-color: var(--red-25);
+}
+
+.bg-red-50 {
+    background-color: var(--red-50);
+}
+
+.bg-green-100 {
+    background-color: var(--green-100);
+}
+
+.bg-gray-100 {
+    background-color: var(--gray-200);
+}
+
+.blue-border {
+    border: 1px solid var(--blue-600);
+}
+
+.red-border {
+    border: 1px solid var(--red-600);
+}
+
+.green-border {
+    border: 1px solid var(--green-700);
+}
+
+.padx-12 {
+    padding-inline: 12px !important;
+}
+
+.rounded-12 {
+    border-radius: 12px !important;
+}
+
+.split-list.point-list ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.split-list.point-list li {
+    width: 34%;
+}
+
+.mnh-11 {
+    min-height: 11px !important;
+}
+
+/* query  */
+@media (max-width: 1199px) {
+
+    /* #kitchem-guard-franchise */
+    .cust-select.form-select {
+        padding: 8px 40px 8px 20px;
+    }
+
+    /* .settings  */
+    .split-list.point-list li {
+        width: 40%;
+    }
+}
+
+@media (max-width: 991px) {
+
+    /* #kitchen-guard-franchise  */
+    /* content-library  */
+    .video-thumbnail {
+        max-height: 220px;
+    }
+
+    /* .settings  */
+    .split-list.point-list li {
+        width: 48%;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    /* #kitchenguard-franchise */
+    /* dashboard  */
+    .franchiee-nav {
+        flex-wrap: wrap;
+    }
+
+    .card-col-d {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .abs-spans-mob .cust-badge {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .abs-spans-mob .flex-nowrap.card-border {
+        position: relative;
+        z-index: 1;
+    }
+
+    /* team management  */
+    .tag-whitespace .card-border span,
+    .tag-whitespace .card-border p {
+        white-space: nowrap;
+    }
+
+    /* certification  */
+    .font-24 {
+        font-size: 20px !important;
+    }
+
+    .flex-align-start {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    /* settings  */
+    .row-list.point-list ul {
+        display: block;
+    }
+
+    .split-list.point-list li {
+        width: 100%;
+    }
+
+    .mnh-11 {
+        display: none;
+    }
+}

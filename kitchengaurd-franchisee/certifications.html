@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="../assets/vendor/css/rtl/theme-default.css" />
     <link rel="stylesheet" href="../assets/css/demo.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/k-g-franchise.css" />
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
@@ -72,7 +73,7 @@
                         </a>
                         <ul class="menu-sub">
                             <li class="menu-item">
-                                <a href="team-management.html" class="menu-link active">
+                                <a href="team-management.html" class="menu-link">
                                     <div data-i18n="Management">Management</div>
                                 </a>
                             </li>
@@ -614,8 +615,8 @@
                                             <h2>Employee Certificate Status</h2>
                                             <div class="check-search flex-gap flex-grow-1 justify-content-end">
                                                 <form action="javascript:void()" class="search-field">
-                                                    <input class="form-control" id="src-icon" placeholder="Search employees..." aria-label="Search">
-                                                    <label for="src-icon" class="src-bar">
+                                                    <input class="form-control" id="src-icon-2" placeholder="Search employees..." aria-label="Search">
+                                                    <label for="src-icon-2" class="src-bar">
                                                         <i class="fa-solid fa-magnifying-glass"></i>
                                                     </label>
                                                 </form>
@@ -1027,7 +1028,7 @@
                                                                                 <div class="text">
                                                                                     <h3>Sarah Johnson </h3>
                                                                                     <p class="mt-1 mb-2">Field technician safety protocols</p>
-                                                                                    <span class="font-14">Due: March 15, 2025</span>
+                                                                                    <span class="font-14 gray-600">Due: March 15, 2025</span>
                                                                                 </div>
                                                                             </div>
                                                                             <span class="cust-badge green-badge">12 months</span>
@@ -1045,7 +1046,7 @@
                                                                                 <div class="text">
                                                                                     <h3>Emma Davis</h3>
                                                                                     <p class="mt-1 mb-2">Kitchen cleaner chemical handling</p>
-                                                                                    <span class="font-14">Due: February 28, 2025</span>
+                                                                                    <span class="font-14 gray-600">Due: February 28, 2025</span>
                                                                                 </div>
                                                                             </div>
                                                                             <span class="cust-badge green-badge">6 months</span>
@@ -1063,7 +1064,7 @@
                                                                                 <div class="text">
                                                                                     <h3>David Chen</h3>
                                                                                     <p class="mt-1 mb-2">Supervisor management training</p>
-                                                                                    <span class="font-14">Due: June 30, 2025</span>
+                                                                                    <span class="font-14 gray-600">Due: June 30, 2025</span>
                                                                                 </div>
                                                                             </div>
                                                                             <span class="cust-badge green-badge">18 months</span>
@@ -1094,7 +1095,7 @@
                                                                                 <div class="text">
                                                                                     <h3>Alex Thompson</h3>
                                                                                     <p class="mt-1 mb-2">Field Technician all modules</p>
-                                                                                    <span class="font-14">Overdue: 15 days</span>
+                                                                                    <span class="font-14 gray-600">Overdue: 15 days</span>
                                                                                 </div>
                                                                             </div>
                                                                             <span class="cust-badge red-badge">Urgent </span>
@@ -1112,7 +1113,7 @@
                                                                                 <div class="text">
                                                                                     <h3>James Wilson</h3>
                                                                                     <p class="mt-1 mb-2">Kitchen cleaner safety update</p>
-                                                                                    <span class="font-14">Overdue: 7 days</span>
+                                                                                    <span class="font-14 gray-600">Overdue: 7 days</span>
                                                                                 </div>
                                                                             </div>
                                                                             <span class="cust-badge red-badge">Reminder Sent</span>
@@ -1149,7 +1150,7 @@
                                     <div class="card-bg">
                                         <div class="main-title flex-between">
                                             <h2>Notification Settings</h2>
-                                            <a href="#" class="site-btn green-btn"><i class="fa-solid fa-floppy-disk"></i>floppy-disk</a>
+                                            <a href="#" class="site-btn green-btn"><i class="fa-solid fa-floppy-disk"></i>Save Settings</a>
                                         </div>
                                         <div class="row g-4">
                                             <div class="col-lg-6">
@@ -1159,7 +1160,7 @@
                                                         <h2>Email Notifications</h2>
                                                     </div>
                                                     <div class="cust-body mt-3">
-                                                        <div class="form-check form-switch toggle-btn ps-0 flex-between">
+                                                        <div class="form-check form-switch toggle-btn ps-0 flex-between flex-nowrap">
                                                             <label class="form-check-label mb-0" for="training-assignment">
                                                                 <div class="text">
                                                                     <h4 class="mb-1">Training Assignments </h4>
@@ -1168,7 +1169,7 @@
                                                             </label>
                                                             <input class="form-check-input" type="checkbox" role="switch" id="training-assignment" checked="">
                                                         </div>
-                                                        <div class="form-check form-switch toggle-btn ps-0 flex-between mt-3">
+                                                        <div class="form-check form-switch toggle-btn ps-0 flex-between flex-nowrap mt-3">
                                                             <label class="form-check-label mb-0" for="completion-milestone">
                                                                 <div class="text">
                                                                     <h4 class="mb-1">Completion Milestones </h4>
@@ -1177,7 +1178,7 @@
                                                             </label>
                                                             <input class="form-check-input" type="checkbox" role="switch" id="completion-milestone" checked="">
                                                         </div>
-                                                        <div class="form-check form-switch toggle-btn ps-0 flex-between mt-3">
+                                                        <div class="form-check form-switch toggle-btn ps-0 flex-between flex-nowrap mt-3">
                                                             <label class="form-check-label mb-0" for="overdue-reminders">
                                                                 <div class="text">
                                                                     <h4 class="mb-1">Overdue Reminders </h4>
@@ -1186,7 +1187,7 @@
                                                             </label>
                                                             <input class="form-check-input" type="checkbox" role="switch" id="overdue-reminders" checked="">
                                                         </div>
-                                                        <div class="form-check form-switch toggle-btn ps-0 flex-between mt-3">
+                                                        <div class="form-check form-switch toggle-btn ps-0 flex-between flex-nowrap mt-3">
                                                             <label class="form-check-label mb-0" for="certificate-generation">
                                                                 <div class="text">
                                                                     <h4 class="mb-1">Certificate Generation </h4>
@@ -1265,184 +1266,151 @@
                                                             </div>
                                                             <div class="col-md-4">
                                                                 <div class="form-group">
-                                                                    <label for="overdue-reminders-2">Retraining Alerts </label>
-                                                                    <input type="text" id="overdue-reminders-2" placeholder="7 days before" class="form-control">
+                                                                    <label for="retraining-alert">Retraining Alerts </label>
+                                                                    <input type="text" id="retraining-alert" placeholder="7 days before" class="form-control">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </form>
                                                 </div>
                                             </div>
-                                            <div class="col-12">
-                                                <div class="card-bg">
-                                                    <div class="main-title flex-between">
-                                                        <h2>Certificate Analytics</h2>
-                                                        <div class="btns flex-gap">
-                                                            <select class="form-select cust-select" aria-label="Default select example" fdprocessedid="7tl41">
-                                                                <option selected="">Last 30 Days</option>
-                                                                <option>Last 15 Days</option>
-                                                                <option>Last 7 Days</option>
-                                                            </select>
-                                                            <a href="#" class="site-btn green-btn"> <i class="fa-solid fa-download"></i>Export Data</a>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-bg">
+                                        <div class="main-title flex-between">
+                                            <h2>Certificate Analytics</h2>
+                                            <div class="btns flex-gap">
+                                                <select class="form-select cust-select" aria-label="Default select example" fdprocessedid="7tl41">
+                                                    <option selected="">Last 30 Days</option>
+                                                    <option>Last 15 Days</option>
+                                                    <option>Last 7 Days</option>
+                                                </select>
+                                                <a href="#" class="site-btn green-btn"> <i class="fa-solid fa-download"></i>Export Data</a>
+                                            </div>
+                                        </div>
+                                        <div class="card-wrapper row-gx">
+                                            <div class="row gy-4">
+                                                <div class="col-lg-6 ">
+                                                    <div class="card-border h-100">
+                                                        <div class="margin-bottom">
+                                                            <h2>Certificate Generation Trend</h2>
+                                                        </div>
+                                                        <div class="image">
+                                                            <img src="../assets/img/custom/green-graph-2.png" alt="">
                                                         </div>
                                                     </div>
-                                                    <div class="card-wrapper row-gx">
-                                                        <div class="row gy-4">
-                                                            <div class="col-lg-6 ">
-                                                                <div class="card-border h-100">
-                                                                    <div class="margin-bottom">
-                                                                        <h2>Certificate Generation Trend</h2>
-                                                                    </div>
-                                                                    <div class="image">
-                                                                        <img src="../assets/img/custom/green-graph-2.png" alt="">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-6 ">
-                                                                <div class="card-border h-100">
-                                                                    <div class="main-title">
-                                                                        <h2>Certificate Rate by Role</h2>
-                                                                    </div>
-                                                                    <div class="section-space">
-                                                                        <div class="row gy-4">
-                                                                            <div class="col-12">
-                                                                                <div class="progress-content">
-                                                                                    <div class="flex-between mb-3">
-                                                                                        <p>Field Technician </p>
-                                                                                        <span>85% </span>
-                                                                                    </div>
-                                                                                    <div class="progress-line">
-                                                                                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                                                            <div class="progress-bar" style="width: 85%"></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-12">
-                                                                                <div class="progress-content">
-                                                                                    <div class="flex-between mb-3">
-                                                                                        <p>Kitchen Cleaner </p>
-                                                                                        <span>92% </span>
-                                                                                    </div>
-                                                                                    <div class="progress-line">
-                                                                                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                                                            <div class="progress-bar" style="width: 92%"></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-12">
-                                                                                <div class="progress-content">
-                                                                                    <div class="flex-between mb-3">
-                                                                                        <p>Supervisor </p>
-                                                                                        <span>78% </span>
-                                                                                    </div>
-                                                                                    <div class="progress-line">
-                                                                                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                                                            <div class="progress-bar" style="width: 78%"></div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-12">
-                                                                                <div class="flex-between mb-3">
-                                                                                    <p class="font-weight-500 gray-1000">VR Participation</p>
-                                                                                    <span class="font-weight-500 gray-1000">78%</span>
-                                                                                </div>
+                                                </div>
+                                                <div class="col-lg-6 ">
+                                                    <div class="card-border h-100">
+                                                        <div class="main-title">
+                                                            <h2>Certificate Rate by Role</h2>
+                                                        </div>
+                                                        <div class="section-space">
+                                                            <div class="row gy-4">
+                                                                <div class="col-12">
+                                                                    <div class="progress-content">
+                                                                        <div class="flex-between mb-3">
+                                                                            <p>Field Technician </p>
+                                                                            <span>85% </span>
+                                                                        </div>
+                                                                        <div class="progress-line">
+                                                                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                                                <div class="progress-bar" style="width: 85%"></div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <div class="inner-wrapper">
-                                                                    <div class="inner-title">
-                                                                        <h2>Monthly Certificate Generation Report</h2>
-                                                                    </div>
-                                                                    <div class="cust-table">
-                                                                        <div class="table-responsive text-nowrap">
-                                                                            <table class="table">
-                                                                                <thead>
-                                                                                    <tr class="text-nowrap">
-                                                                                        <th>Month</th>
-                                                                                        <th>Auto Generated </th>
-                                                                                        <th>Manual</th>
-                                                                                        <th>Total</th>
-                                                                                        <th>Success Rate</th>
-                                                                                        <th>Success Tate</th>
-                                                                                    </tr>
-                                                                                </thead>
-                                                                                <tbody>
-                                                                                    <tr>
-                                                                                        <td>January 2024</td>
-                                                                                        <td>12</td>
-                                                                                        <td>3</td>
-                                                                                        <td>15</td>
-                                                                                        <td>
-                                                                                            <span class="cust-badge green-badge">95%</span>
-                                                                                        </td>
-                                                                                        <td>3</td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>February 2024</td>
-                                                                                        <td>8</td>
-                                                                                        <td>2</td>
-                                                                                        <td>10</td>
-                                                                                        <td>
-                                                                                            <span class="cust-badge green-badge">92%</span>
-                                                                                        </td>
-                                                                                        <td>2</td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td>March 2024</td>
-                                                                                        <td>15</td>
-                                                                                        <td>7</td>
-                                                                                        <td>22</td>
-                                                                                        <td>
-                                                                                            <span class="cust-badge green-badge">87%</span>
-                                                                                        </td>
-                                                                                        <td>7</td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                            </table>
+                                                                <div class="col-12">
+                                                                    <div class="progress-content">
+                                                                        <div class="flex-between mb-3">
+                                                                            <p>Kitchen Cleaner </p>
+                                                                            <span>92% </span>
                                                                         </div>
+                                                                        <div class="progress-line">
+                                                                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                                                <div class="progress-bar" style="width: 92%"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="progress-content">
+                                                                        <div class="flex-between mb-3">
+                                                                            <p>Supervisor </p>
+                                                                            <span>78% </span>
+                                                                        </div>
+                                                                        <div class="progress-line">
+                                                                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                                                <div class="progress-bar" style="width: 78%"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="flex-between mb-3">
+                                                                        <p class="font-weight-500 gray-1000">VR Participation</p>
+                                                                        <span class="font-weight-500 gray-1000">78%</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="card-bg">
-                                                    <div class="main-title">
-                                                        <h2>Quick Action</h2>
-                                                    </div>
-                                                    <div class="card-wrapper row-gy row-gx">
-                                                        <div class="row">
-                                                            <div class="col-lg-3 col-md-6">
-                                                                <div class="card-border">
-                                                                    <span class="cust-icon"><i class="fa-solid fa-certificate"></i></span>
-                                                                    <h3 class="mt-3">Generate Certification</h3>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-3 col-md-6">
-                                                                <div class="card-border">
-                                                                    <span class="cust-icon"><i class="fa-solid fa-download"></i></span>
-                                                                    <h3 class="mt-3">Bulk Download</h3>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-3 col-md-6">
-                                                                <div class="card-border">
-                                                                    <span class="cust-icon"><i class="fa-solid fa-arrow-rotate-right"></i></span>
-                                                                    <h3 class="mt-3">Schedule Retraining</h3>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-3 col-md-6">
-                                                                <div class="card-border">
-                                                                    <span class="cust-icon"><i class="fa-solid fa-chart-bar"></i></span>
-                                                                    <h3 class="mt-3">View Analytics</h3>
-                                                                </div>
+                                                <div class="col-12">
+                                                    <div class="inner-wrapper">
+                                                        <div class="inner-title">
+                                                            <h2>Monthly Certificate Generation Report</h2>
+                                                        </div>
+                                                        <div class="cust-table">
+                                                            <div class="table-responsive text-nowrap">
+                                                                <table class="table">
+                                                                    <thead>
+                                                                        <tr class="text-nowrap">
+                                                                            <th>Month</th>
+                                                                            <th>Auto Generated </th>
+                                                                            <th>Manual</th>
+                                                                            <th>Total</th>
+                                                                            <th>Success Rate</th>
+                                                                            <th>Success Tate</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>January 2024</td>
+                                                                            <td>12</td>
+                                                                            <td>3</td>
+                                                                            <td>15</td>
+                                                                            <td>
+                                                                                <span class="cust-badge green-badge">95%</span>
+                                                                            </td>
+                                                                            <td>3</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>February 2024</td>
+                                                                            <td>8</td>
+                                                                            <td>2</td>
+                                                                            <td>10</td>
+                                                                            <td>
+                                                                                <span class="cust-badge green-badge">92%</span>
+                                                                            </td>
+                                                                            <td>2</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>March 2024</td>
+                                                                            <td>15</td>
+                                                                            <td>7</td>
+                                                                            <td>22</td>
+                                                                            <td>
+                                                                                <span class="cust-badge green-badge">87%</span>
+                                                                            </td>
+                                                                            <td>7</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1451,6 +1419,42 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-12">
+                                    <div class="card-bg">
+                                        <div class="main-title">
+                                            <h2>Quick Action</h2>
+                                        </div>
+                                        <div class="card-wrapper row-gy row-gx">
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-6">
+                                                    <div class="card-border">
+                                                        <span class="cust-icon"><i class="fa-solid fa-certificate"></i></span>
+                                                        <h3 class="mt-3">Generate Certification</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6">
+                                                    <div class="card-border">
+                                                        <span class="cust-icon"><i class="fa-solid fa-download"></i></span>
+                                                        <h3 class="mt-3">Bulk Download</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6">
+                                                    <div class="card-border">
+                                                        <span class="cust-icon"><i class="fa-solid fa-arrow-rotate-right"></i></span>
+                                                        <h3 class="mt-3">Schedule Retraining</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6">
+                                                    <div class="card-border">
+                                                        <span class="cust-icon"><i class="fa-solid fa-chart-bar"></i></span>
+                                                        <h3 class="mt-3">View Analytics</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
